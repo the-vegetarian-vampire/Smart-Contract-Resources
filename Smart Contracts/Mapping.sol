@@ -2,6 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract MyContract {
+    // mapping associates key value pairs; so uint number below associates with that particular string
     mapping(uint => string) public names;
     mapping(uint => Book) public books;
     mapping(address => mapping(uint => Book)) public myBooks;
