@@ -15,7 +15,8 @@ contract SimpleStorage {
     // empty dynamic array
     People[] public people;
 
-    function store(uint256 _favNum) public {
+    // virtual key word allows for overriding
+    function store(uint256 _favNum) public virtual {
         favNum = _favNum;
     }
 
