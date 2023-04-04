@@ -1,6 +1,8 @@
 # Solidity-Smart-Contracts
 
-Tutorial Resources:
+Remix: https://remix.ethereum.org
+
+## Tutorial Resources:
 
 1. Patrick Collins 32 hour course   
   - [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s)   
