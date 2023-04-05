@@ -1,8 +1,8 @@
 # Solidity-Smart-Contracts
 
-Remix: https://remix.ethereum.org
-Solidity documentation: https://docs.soliditylang.org/en/latest/index.html
-Solidity best practices: https://consensys.github.io/smart-contract-best-practices/
+Remix: https://remix.ethereum.org   
+Solidity documentation: https://docs.soliditylang.org/en/latest/index.html   
+Solidity best practices: https://consensys.github.io/smart-contract-best-practices/   
 
 ## Tutorial Resources:
 
