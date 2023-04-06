@@ -6,6 +6,7 @@ Solidity `documentation:` https://docs.soliditylang.org/en/latest/index.html
 Solidity `best practices:` https://consensys.github.io/smart-contract-best-practices/   
 
 [Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/)
+[ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/)
 
 ## Tutorial Resources:
 
