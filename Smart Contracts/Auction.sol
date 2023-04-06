@@ -1,7 +1,15 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-//
+interface IERC721 {
+    function transfer(address, uint) external;
+
+    function transferFrom(
+        address,
+        address,
+        uint
+    ) external;
+}
 
 contract Auction {
     event Start();
@@ -18,6 +26,10 @@ contract Auction {
     bool public ended;
     uint public endAt;
 
+    // defining NFT to auction with specific id
+     IERC721 public nft;
+     uint public nftId;
+
     uint public highestBid;
     address public highestBidder;
     // withdraw function allows for money returned if didn't win
@@ -28,14 +40,20 @@ contract Auction {
         seller = payable(msg.sender);
     }
 
-    function start(uint startingBid) public {
+    function start(IERC721, _nft, uint _nftId, uint startingBid) public {
         require(!started, "Already started.");
         require(msg.sender == seller, "Did not start the auction.");
+         // have to bid higher than current bid
+        highestBid = startingBid;
+
+        nft = _nft;
+        nftId = _nftId;
+        nft.transferFrom(msg.sender, address(this), nftId);
+
         started = true;
         // block is transaction on block
         endAt = block.timestamp + 2 days;
-        // have to bid higher than current bid
-        highestBid = startingBid;
+
         emit Start();
     }
 
