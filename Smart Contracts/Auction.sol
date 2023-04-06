@@ -40,7 +40,7 @@ contract Auction {
         seller = payable(msg.sender);
     }
 
-    function start(IERC721, _nft, uint _nftId, uint startingBid) public {
+    function start(IERC721 _nft, uint _nftId, uint startingBid) external {
         require(!started, "Already started.");
         require(msg.sender == seller, "Did not start the auction.");
          // have to bid higher than current bid
@@ -88,6 +88,13 @@ contract Auction {
         require(block.timestamp >= endAt, "Auction ongoing.");
         require(!ended, "Auction ended.");
 
+        if (highestBidder != address(0)) {
+            nft.transfer(highestBidder, nftId);
+            (bool sent, bytes memory data) = seller.call{value: highestBid}("");
+        require(sent, "Could not pay seller.");
+        } else {
+            nft.transfer(seller, nftId);
+        }
         ended = true;
         emit End(highestBidder, highestBid);
     }
