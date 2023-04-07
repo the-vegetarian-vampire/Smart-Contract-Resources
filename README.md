@@ -41,5 +41,5 @@ Others
 
 ## Reetrancy Attack 
 
-[Rekt](https://duckduckgo.com/?q=rekt.news&ia=web)
+[Rekt](https://duckduckgo.com/?q=rekt.news&ia=web)   
 Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
