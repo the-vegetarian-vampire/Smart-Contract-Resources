@@ -40,7 +40,7 @@ Others
 
 `Interview Questions`
 - 100 Solidity Questions: https://youtu.be/FoCM07HlfhU?t=1644
-- 10 https://www.youtube.com/watch?v=Vzjc-xffhJs
+- 10 Solidity Questions: https://www.youtube.com/watch?v=Vzjc-xffhJs
 
 ## Attacks 
 - Reetrancy    
