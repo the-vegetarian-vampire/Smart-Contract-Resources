@@ -50,6 +50,7 @@ Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
 ## Key Terms
 
 `_;` - the underscore proceeds with code   
+`ABI` - specifies interface of set of functions that can be accessed outside of smart contract; similar to a JSON interface   
 `Assert`   
 `Constant` - naming convention ALL_CAPS; more `gas efficient`   
 `Constructor` - called one when contract is deployed   
