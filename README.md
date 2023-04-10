@@ -58,7 +58,7 @@ Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
 `events`   
 `Fallback`   
 `invariant` -   
-`immutable` - set once outisde of sentence that are declared, more `gas efficient` - i_owner - i meaning immutable 
+`immutable` - set once outisde of sentence that are declared, more `gas efficient` - i_owner - i meaning immutable    
 `modifier` -
 `Pure` - static, does not effect or modify state, more computational [free function]   
 `recieve` -   
