@@ -4,6 +4,7 @@ Remix: https://remix.ethereum.org
 
 Solidity `Documentation:` https://docs.soliditylang.org/en/latest/index.html   
 Solidity `Best practices:` https://consensys.github.io/smart-contract-best-practices/   
+Solidity by example: https://solidity-by-example.org/
 
 [Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/)   
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/)
@@ -45,3 +46,29 @@ Solidity `Best practices:` https://consensys.github.io/smart-contract-best-pract
 [Rekt](https://duckduckgo.com/?q=rekt.news&ia=web)   
 Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
 - Sandwhich https://www.youtube.com/watch?v=26lWg6UIrKw
+
+## Key Terms
+
+`_;` - the underscore proceeds with code   
+`Assert`   
+`Constant` - naming convention ALL_CAPS; more `gas efficient`   
+`Constructor` - called one when contract is deployed   
+`Custom errors` - declared at top are more `gas efficient`   
+`enums`   
+`events`   
+`Fallback`   
+`invariant` -   
+`immutable` - set once outisde of sentence that are declared, more `gas efficient` - i_owner - i meaning immutable 
+`modifier` -
+`Pure` - static, does not effect or modify state, more computational [free function]   
+`recieve` -   
+`Require` -   
+`Revert` -gives back gas but loses some    
+
+Strings, arrays, and loops are computationally expensive    
+
+`Unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits.  
+
+
+
+
