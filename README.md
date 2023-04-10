@@ -63,7 +63,7 @@ Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
 `Pure` - static, does not effect or modify state, more computational [free function]   
 `recieve` -   
 `Require` -   
-`Revert` - gives back gas but loses some 
+`Revert` - gives back gas but loses some    
 `TVL` - or total value locked   
 
 Strings, arrays, and loops are computationally expensive    
