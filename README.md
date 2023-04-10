@@ -47,29 +47,32 @@ Solidity `By example:` https://solidity-by-example.org/
 Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
 - Sandwhich https://www.youtube.com/watch?v=26lWg6UIrKw
 
-## Key Terms   
+## Dictionary of Key Terms   
 `ABI` - specifies interface of set of functions that can be accessed outside of smart contract; similar to a JSON interface   
-`Assert`   
-`Constant` - naming convention ALL_CAPS; more `gas efficient`   
-`Constructor` - called once when contract is deployed   
-`Custom errors` - declared at top are more `gas efficient`   
+`assert`   
+`constant` - naming convention ALL_CAPS; more `gas efficient`   
+`constructor` - called once when contract is deployed   
+`custom errors` - declared at top, more `gas efficient`   
 `enums`   
 `events`   
-`Fallback`   
+`fallback`   
 `invariant` -   
-`immutable` - set once outisde of sentence that are declared, more `gas efficient` - i_owner - i meaning immutable    
+`immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: i_owner - i meaning immutable    
 `modifier` - `_;` - the underscore proceeds with code; code that can be run before and/or after a function call
   1. Restrict access
   2. Validate inputs
   3. Guard against reentrancy hack   
     
-`Pure` - static, does not effect or modify state, more computational [free function]   
+`pure` - static, does not effect or modify state, more computational [free function]   
 `recieve` -   
-`Require` -   
-`Revert` - gives back gas but loses some    
+`require` -   
+`revert` - gives back gas but loses some    
 `TVL` - or total value locked   
 
 Strings, arrays, and loops are computationally expensive    
+Reading and Writing to a State Variable: To write or update a state variable you need to send a transaction; you can read state variables, for free, without a transaction fee.
+
+
 
 `Unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits.  
 
