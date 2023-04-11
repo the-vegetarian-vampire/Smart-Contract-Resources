@@ -31,6 +31,9 @@ Solidity `By example:` https://solidity-by-example.org/
 `Interview Questions`
 - 100 Solidity Questions: https://youtu.be/FoCM07HlfhU?t=1644
 - 10 Solidity Questions: https://www.youtube.com/watch?v=Vzjc-xffhJs
+
+`Solidity Recruitment Test` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s   
+
 -----
 
 
