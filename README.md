@@ -43,12 +43,12 @@ Solidity `By example:` https://solidity-by-example.org/
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 `constructor` - called once when contract is deployed   
 `custom errors` - declared at top, more `gas efficient`   
-`enums`   
+`enums` - useful to model choice and keep track of state/can be declared outside of a contract 
 `events`   
 `fallback`    
 `gas` - transactions with higher gas price have higher priority to be included in a block;  
 `invariant` -   
-`immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: i_owner - i meaning immutable    
+`immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable    
 `modifier` - `_;` - the underscore proceeds with code; code that can be run before and/or after a function call
   1. Restrict access
   2. Validate inputs
@@ -58,11 +58,11 @@ Solidity `By example:` https://solidity-by-example.org/
 `recieve` -   
 `require` -   
 `revert` - gives back gas but loses some    
-`TVL` - or total value locked   
+`TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools     
 `Unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
-Strings, arrays, and loops are computationally expensive    
-Reading and Writing to a State Variable: To write/update a state variable you need to send a transaction; you can read state variables, for free, without a transaction fee    
+- Strings, arrays, and loops are `computationally expensive`    
+- Reading/Writing to a State Variable: To write/update a state variable transaction required; can read state variables for free, without a transaction    
 
 ----- 
 
