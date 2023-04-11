@@ -42,7 +42,12 @@ Solidity `By example:` https://solidity-by-example.org/
 `assert`   
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 `constructor` - called once when contract is deployed   
-`custom errors` - declared at top, more `gas efficient`   
+`custom errors` - declared at top, more `gas efficient`    
+`data Locations` - Storage, Memory and Calldata
+  1. storage - variable is a state variable (store on blockchain)
+  2. memory - variable is in memory and it exists while a function is being called
+  3. calldata - special data location that contains function arguments    
+  
 `enums` - useful to model choice and keep track of state/can be declared outside of a contract 
 `events`   
 `fallback`    
@@ -57,7 +62,8 @@ Solidity `By example:` https://solidity-by-example.org/
 `pure` - static, does not effect or modify state, more computational [free function]   
 `recieve` -   
 `require` -   
-`revert` - gives back gas but loses some    
+`revert` - gives back gas but loses some 
+`struct` - useful for grouping together related data, can be declared outside of a contract and imported in another contract     
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools     
 `Unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
