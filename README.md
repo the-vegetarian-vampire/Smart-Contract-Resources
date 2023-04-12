@@ -52,7 +52,8 @@ Solidity `By example:` https://solidity-by-example.org/
 `events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage   
 `fallback`    
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
-`immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable    
+`immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable   
+`Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3) or Secure Hash Algorithm    
 `modifier` - `_;` - the underscore proceeds with code; code that can be run before and/or after a function call
   1. Restrict access
   2. Validate inputs
