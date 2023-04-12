@@ -49,16 +49,15 @@ Solidity `By example:` https://solidity-by-example.org/
   3. calldata - special data location that contains function arguments    
   
 `enums` - useful to model choice and keep track of state/can be declared outside of a contract 
-`events`   
+`events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage   
 `fallback`    
-`gas` - transactions with higher gas price have higher priority to be included in a block;  
-`invariant` -   
+`gas` - transactions with higher gas price have higher priority to be included in a block;   
 `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable    
 `modifier` - `_;` - the underscore proceeds with code; code that can be run before and/or after a function call
   1. Restrict access
   2. Validate inputs
   3. Guard against reentrancy hack   
-    
+
 `pure` - static, does not effect or modify state, more computational [free function]   
 `recieve` -   
 `require` -   
@@ -83,8 +82,10 @@ Solidity `By example:` https://solidity-by-example.org/
 * ERC-173 - A standard interface for ownership of contracts.  
 -----
 
-## Attacks 
+## Security/Hacks 
+Video on Crosschain Transactions and Bridges: https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s  
+
 - Reetrancy    
-[Rekt](https://duckduckgo.com/?q=rekt.news&ia=web)   
+News: [Rekt](https://duckduckgo.com/?q=rekt.news&ia=web)   
 Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
 - Sandwhich https://www.youtube.com/watch?v=26lWg6UIrKw
