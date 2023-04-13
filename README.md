@@ -48,7 +48,7 @@ Solidity `By example:` https://solidity-by-example.org/
   2. memory - variable is in memory and it exists while a function is being called
   3. calldata - special data location that contains function arguments    
   
-`enums` - useful to model choice and keep track of state/can be declared outside of a contract 
+`enums` - useful to model choice and keep track of state/can be declared outside of a contract    
 `events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage   
 `fallback` - a special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send      
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
