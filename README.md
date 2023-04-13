@@ -50,7 +50,7 @@ Solidity `By example:` https://solidity-by-example.org/
   
 `enums` - useful to model choice and keep track of state/can be declared outside of a contract 
 `events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage   
-`fallback`    
+`fallback` - a special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send      
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
 `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable   
 `Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3) or Secure Hash Algorithm    
@@ -58,11 +58,13 @@ Solidity `By example:` https://solidity-by-example.org/
   1. Restrict access
   2. Validate inputs
   3. Guard against reentrancy hack   
-
+  
+`Nonce` - transaction code for this account starting with 0   
 `pure` - static, does not effect or modify state, more computational [free function]   
 `recieve` -   
 `require` -   
-`revert` - gives back gas but loses some 
+`revert` - gives back gas but loses some   
+`Solc` - the solidity compiler to byte code    
 `struct` - useful for grouping together related data, can be declared outside of a contract and imported in another contract     
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools     
 `Unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
@@ -84,9 +86,9 @@ Solidity `By example:` https://solidity-by-example.org/
 -----
 
 ## Security/Hacks 
-Video on Crosschain Transactions and Bridges: https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s  
+Video on Crosschain Transactions and Bridges: https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s   
+News: [Rekt](https://duckduckgo.com/?q=rekt.news&ia=web) 
 
 - Reetrancy    
-News: [Rekt](https://duckduckgo.com/?q=rekt.news&ia=web)   
-Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
+  Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
 - Sandwhich https://www.youtube.com/watch?v=26lWg6UIrKw
