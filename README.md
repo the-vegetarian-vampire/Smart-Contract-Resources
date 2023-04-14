@@ -26,7 +26,10 @@ Solidity `By example:` https://solidity-by-example.org/
   
 `4. HashLips NFT`
   - [Youtub](https://www.youtube.com/@HashLipsNFT)
-  - Git: https://github.com/hashlips
+  - Git: https://github.com/hashlips    
+  
+ `5. Smart Contract Programmer`
+ - [Youtube](https://www.youtube.com/@smartcontractprogrammer)
 
 `Interview Questions`
 - 100 Solidity Questions: https://youtu.be/FoCM07HlfhU?t=1644
@@ -53,7 +56,7 @@ Solidity `By example:` https://solidity-by-example.org/
 `fallback` - a special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send      
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
 `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable   
-`Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3) or Secure Hash Algorithm    
+`Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3)/Secure Hash Algorithm; using it in a [contract](https://www.youtube.com/watch?v=wCD3fOlsGc4)   
 `modifier` - `_;` - the underscore proceeds with code; code that can be run before and/or after a function call
   1. Restrict access
   2. Validate inputs
