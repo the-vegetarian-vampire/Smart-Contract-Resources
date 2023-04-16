@@ -29,20 +29,26 @@ Solidity `By example:` https://solidity-by-example.org/
   - Git: https://github.com/hashlips    
   
  `5. Smart Contract Programmer`
- - [Youtube](https://www.youtube.com/@smartcontractprogrammer)
-
-`Interview Questions`
-- 100 Solidity Questions: https://youtu.be/FoCM07HlfhU?t=1644
+ - [Youtube](https://www.youtube.com/@smartcontractprogrammer) one of the creators of Solidity by example     
+ -----
+ 
+## Interviews and Questions   
 - 10 Solidity Questions: https://www.youtube.com/watch?v=Vzjc-xffhJs
+- 100 Solidity Questions: https://youtu.be/FoCM07HlfhU?t=1644
 
-`Solidity Recruitment Test` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s   
+`Peter Robinson's channel` - Head of Blockchain Research at Immutable  [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)   
+`Solidity Recruitment Test` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s with   
+
+`Andy Li's channel` - https://www.youtube.com/@andyli - great interviews and resource about smart contract auditing and cyber security
+
+-----
+## People to connect with  
 
 -----
 
-
 ## Dictionary of Key Terms   
 `ABI` - specifies interface of set of functions that can be accessed outside of smart contract; similar to a JSON interface   
-`assert`   
+`assertEQ`   
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 `constructor` - called once when contract is deployed   
 `custom errors` - declared at top, more `gas efficient`    
@@ -72,11 +78,16 @@ Solidity `By example:` https://solidity-by-example.org/
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools     
 `Unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
-- Strings, arrays, and loops are `computationally expensive`    
-- Reading/Writing to a State Variable: To write/update a state variable transaction required; can read state variables for free, without a transaction    
-
 ----- 
 
+## GAS OPTIMIZATION
+- Reading/Writing to a State Variable: To write/update a state variable transaction required; can read state variables for free, without a transaction    
+- Strings, arrays, and loops are `computationally expensive` 
+-`custom errors` - declared at top, more `gas efficient`   
+- `constant` - naming convention ALL_CAPS; more `gas efficient` 
+- `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable    
+
+----- 
   
 ## Tokens
 * ERC-20 - Token contract for fungible assets.
@@ -88,10 +99,19 @@ Solidity `By example:` https://solidity-by-example.org/
 * ERC-173 - A standard interface for ownership of contracts.  
 -----
 
-## Security/Hacks 
+## Hacks 
 Video on Crosschain Transactions and Bridges: https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s   
 News: [Rekt](https://duckduckgo.com/?q=rekt.news&ia=web) 
 
 - Reetrancy    
   Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
 - Sandwhich https://www.youtube.com/watch?v=26lWg6UIrKw
+
+-----   
+
+## Audits
+`What is an audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee   
+`Tools`
+  - Slither
+  -
+
