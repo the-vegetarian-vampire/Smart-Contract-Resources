@@ -11,25 +11,16 @@ Solidity `By example:` https://solidity-by-example.org/
 
 ## Tutorial Resources:
 
-`1. Patrick Collins 32 hour course`   
-  - [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s)   
-  - Git: https://github.com/smartcontractkit/full-blockchain-solidity-course-js
+`1. Patrick Collins 32 hour course`: [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
  
-`2. Dapp University`   
-  - [Youtube](https://www.youtube.com/watch?v=EhPeHeoKF88&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=5131s)  
-  - [More Youtube](https://www.youtube.com/watch?v=eoQJ6nFZOcs)
-  - Git: https://github.com/dappuniversity/master_solidity
+`2. Dapp University`: [Youtube](https://www.youtube.com/watch?v=EhPeHeoKF88&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=5131s); [More Youtube](https://www.youtube.com/watch?v=eoQJ6nFZOcs) and [Github](https://github.com/dappuniversity/master_solidity)
   
-`3. Tech With Tim`   
-  - [Youtube](https://www.youtube.com/watch?v=vwBxc8qfei8)     
-  - Git: https://github.com/techwithtim
+`3. Tech With Tim`: [Youtube](https://www.youtube.com/watch?v=vwBxc8qfei8) and [Github](https://github.com/techwithtim)
   
-`4. HashLips NFT`
-  - [Youtub](https://www.youtube.com/@HashLipsNFT)
-  - Git: https://github.com/hashlips    
+`4. HashLips NFT`: [Youtub](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
   
- `5. Smart Contract Programmer`
- - [Youtube](https://www.youtube.com/@smartcontractprogrammer) one of the creators of Solidity by example     
+ `5. Smart Contract Programmer` [Youtube](https://www.youtube.com/@smartcontractprogrammer) one of the creators of Solidity by example  
+ 
  -----
  
 ## Interviews and Questions   
@@ -37,9 +28,9 @@ Solidity `By example:` https://solidity-by-example.org/
 - 100 Solidity Questions: https://youtu.be/FoCM07HlfhU?t=1644
 
 `Peter Robinson's channel` - Head of Blockchain Research at Immutable  [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)   
-`Solidity Recruitment Test` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s with   
+`Solidity Recruitment Test` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s   
 
-`Andy Li's channel` - https://www.youtube.com/@andyli - great interviews and resource about smart contract auditing and cyber security
+`Andy Li's channel` - https://www.youtube.com/@andyli - interviews about smart contract auditing and cyber security
 
 -----
 ## People to connect with  
@@ -68,7 +59,8 @@ Solidity `By example:` https://solidity-by-example.org/
   2. Validate inputs
   3. Guard against reentrancy hack   
   
-`Nonce` - transaction code for this account starting with 0   
+`Nonce` - transaction code for this account starting with 0  
+`Oracle manipulation` - 
 `pure` - static, does not effect or modify state, more computational [free function]   
 `recieve` -   
 `require` -   
@@ -110,8 +102,11 @@ News: [Rekt](https://duckduckgo.com/?q=rekt.news&ia=web)
 -----   
 
 ## Audits
-`What is an audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee   
+`What is an audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee 
+
 `Tools`
   - Slither
   -
+  
+ Jackson K audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM
 
