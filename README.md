@@ -32,7 +32,8 @@ Solidity `By example:` https://solidity-by-example.org/
 
 -----
 ## People to connect with  
-- YAcademy: https://yacademy.dev/about/
+- YAcademy: https://yacademy.dev/about/   
+- Spearbit https://spearbit.com/   
 -----
 
 ## Dictionary of Key Terms   
