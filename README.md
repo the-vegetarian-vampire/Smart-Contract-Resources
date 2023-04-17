@@ -18,6 +18,10 @@ Solidity `By example:` https://solidity-by-example.org/
 `3. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (One of the creators of Solidity by example)   
   
 `4. HashLips NFT:` [Youtub](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
+
+## Books 
+Mastering Ethereum - https://github.com/ethereumbook/ethereumbook   
+Christoph Michel's book - https://learneos.dev/#packages
  
  -----
  
