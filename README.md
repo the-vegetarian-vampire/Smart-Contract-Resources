@@ -23,6 +23,8 @@ Solidity `By example:` https://solidity-by-example.org/
 Christoph Michel's book - https://learneos.dev/#packages     
 How to DeFi: Beginner - https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG   
 Mastering Ethereum - https://github.com/ethereumbook/ethereumbook   
+
+Teachyourselfcrypto.com     
  
  -----
  
@@ -43,8 +45,9 @@ Mastering Ethereum - https://github.com/ethereumbook/ethereumbook
 - YAcademy: https://yacademy.dev/about/   
 -----
 
-## Dictionary of Key Terms   
-`ABI` - specifies interface of set of functions that can be accessed outside of smart contract; similar to a JSON interface   
+## Dictionary of Key Terms (Solidity) 
+`ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON   
+`Address` - (Ethereum; other blockchains will be different) is a 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front   
 `assertEQ`   
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 `constructor` - called once when contract is deployed   
@@ -78,6 +81,8 @@ Mastering Ethereum - https://github.com/ethereumbook/ethereumbook
 `struct` - useful for grouping together related data, can be declared outside of a contract and imported in another contract     
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools     
 `Unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
+
+Broader Crypto dictionary of terms: https://coinmarketcap.com/alexandria/glossary   
 
 ----- 
 
@@ -115,18 +120,24 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
 
 - Flash loans   
 
+- Double spending: https://www.investopedia.com/terms/d/doublespending.asp - 51% is one of the most commonly cited attacks, while the unconfirmed transaction attack is most commonly seen   
+
 -----   
 
 ## Audits
-`What is an audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee    
-Auditor Road Map from `Andy Li`: https://youtu.be/-469Gcye-ZE    
+`What is an Audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee    
+
+5 Solidity Code Smells: https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde   
+
+Auditor Road Map from `Andy Li:` https://youtu.be/-469Gcye-ZE    
 
 `Tools`
   - Slither
   - Foundry
+  - In-line bookmarks    
   
- Jackson K audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM   
- 5 Solidity Code Smells: https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde
+Jackson Kelley's -- Audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM   
+Patrick Collins -- How to Audit a Smart Contract: https://www.youtube.com/watch?v=TmZ8gH-toX0   
  
  -----   
 
