@@ -61,7 +61,8 @@ Solidity `By example:` https://solidity-by-example.org/
   3. Guard against reentrancy hack   
   
 `Nonce` - transaction code for this account starting with 0  
-`Oracle manipulation` - 
+`Oracle manipulation` -    
+`Proof of concept` a piece of code that concretely demonstrates that the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
 `pure` - static, does not effect or modify state, more computational [free function]   
 `recieve` -   
 `require` -   
@@ -93,18 +94,21 @@ Solidity `By example:` https://solidity-by-example.org/
 -----
 
 ## Hacks 
-Video on Crosschain Transactions and Bridges: https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s   
-News: [Rekt](https://duckduckgo.com/?q=rekt.news&ia=web) 
+News: [Rekt](https://duckduckgo.com/?q=rekt.news&ia=web)   
+Crosschain Transactions and Bridges: https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s   
+Example vulnerabilities: https://youtu.be/JMf5P2DXfkM   
 
 - Reetrancy    
-  Git: https://github.com/dappuniversity/Reentrancy-attack-Smart-Contract-Security
+  
 - Sandwhich https://www.youtube.com/watch?v=26lWg6UIrKw
+
+- Flash loans   
 
 -----   
 
 ## Audits
 `What is an audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee 
-
+Auditor Road Map from `Andy Li`: https://youtu.be/-469Gcye-ZE    
 `Tools`
   - Slither
   -
