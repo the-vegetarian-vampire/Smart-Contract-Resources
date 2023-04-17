@@ -11,15 +11,13 @@ Solidity `By example:` https://solidity-by-example.org/
 
 ## Tutorial Resources:
 
-`1. Patrick Collins 32 hour course`: [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
+`1. Patrick Collins 32 hour course:` [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
  
-`2. Dapp University`: [Youtube](https://www.youtube.com/watch?v=EhPeHeoKF88&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=5131s); [More Youtube](https://www.youtube.com/watch?v=eoQJ6nFZOcs) and [Github](https://github.com/dappuniversity/master_solidity)
+`2. Dapp University:` [Youtube](https://www.youtube.com/watch?v=EhPeHeoKF88&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=5131s); [More Youtube](https://www.youtube.com/watch?v=eoQJ6nFZOcs) and [Github](https://github.com/dappuniversity/master_solidity)
   
-`3. Tech With Tim`: [Youtube](https://www.youtube.com/watch?v=vwBxc8qfei8) and [Github](https://github.com/techwithtim)
+`3. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (One of the creators of Solidity by example)   
   
-`4. HashLips NFT`: [Youtub](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
-  
- `5. Smart Contract Programmer` [Youtube](https://www.youtube.com/@smartcontractprogrammer) one of the creators of Solidity by example  
+`4. HashLips NFT:` [Youtub](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
  
  -----
  
@@ -27,14 +25,14 @@ Solidity `By example:` https://solidity-by-example.org/
 - 10 Solidity Questions: https://www.youtube.com/watch?v=Vzjc-xffhJs
 - 100 Solidity Questions: https://youtu.be/FoCM07HlfhU?t=1644
 
-`Peter Robinson's channel` - Head of Blockchain Research at Immutable  [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)   
+`Peter Robinson's channel` - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
 `Solidity Recruitment Test` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s   
 
 `Andy Li's channel` - https://www.youtube.com/@andyli - interviews about smart contract auditing and cyber security
 
 -----
 ## People to connect with  
-
+- YAcademy: https://yacademy.dev/about/
 -----
 
 ## Dictionary of Key Terms   
@@ -50,9 +48,11 @@ Solidity `By example:` https://solidity-by-example.org/
   
 `enums` - useful to model choice and keep track of state/can be declared outside of a contract    
 `events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage   
-`fallback` - a special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send      
+`fallback` - a special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send     
+`fuzzing` -    
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
 `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable   
+`invariant` -    
 `Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3)/Secure Hash Algorithm; using it in a [contract](https://www.youtube.com/watch?v=wCD3fOlsGc4)   
 `modifier` - `_;` - the underscore proceeds with code; code that can be run before and/or after a function call
   1. Restrict access
@@ -108,5 +108,10 @@ News: [Rekt](https://duckduckgo.com/?q=rekt.news&ia=web)
   - Slither
   -
   
- Jackson K audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM
+ Jackson K audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM   
+ 
+ -----   
 
+## Bug Bounty
+ - `Code4rena:` https://code4rena.com/
+ - `Immunefi` - https://immunefi.com/   
