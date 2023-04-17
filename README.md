@@ -82,8 +82,7 @@ Mastering Ethereum - https://github.com/ethereumbook/ethereumbook
 ----- 
 
 ## Gas Optimization
-- Reading/Writing to a State Variable: To write/update a state variable transaction required; can read state variables for free, without a transaction    
-- Strings, arrays, and loops are `computationally expensive` 
+- Strings, arrays, and loops are `computationally expensive`    
 -`custom errors` - declared at top, more `gas efficient`   
 - `constant` - naming convention ALL_CAPS; more `gas efficient` 
 - `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable    
