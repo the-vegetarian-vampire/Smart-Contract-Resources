@@ -20,8 +20,9 @@ Solidity `By example:` https://solidity-by-example.org/
 `4. HashLips NFT:` [Youtub](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
 ## Books 
+Christoph Michel's book - https://learneos.dev/#packages     
+How to DeFi: Beginner - https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG   
 Mastering Ethereum - https://github.com/ethereumbook/ethereumbook   
-Christoph Michel's book - https://learneos.dev/#packages
  
  -----
  
@@ -35,7 +36,7 @@ Christoph Michel's book - https://learneos.dev/#packages
 `Andy Li's channel` - https://www.youtube.com/@andyli - interviews about smart contract auditing and cyber security
 
 -----
-## People to connect with  
+## People to Connect With  
 - Trail of Bits
 - Secureum https://www.secureum.xyz/   
 - Spearbit https://spearbit.com/    
@@ -80,7 +81,7 @@ Christoph Michel's book - https://learneos.dev/#packages
 
 ----- 
 
-## GAS OPTIMIZATION
+## Gas Optimization
 - Reading/Writing to a State Variable: To write/update a state variable transaction required; can read state variables for free, without a transaction    
 - Strings, arrays, and loops are `computationally expensive` 
 -`custom errors` - declared at top, more `gas efficient`   
