@@ -36,8 +36,10 @@ Christoph Michel's book - https://learneos.dev/#packages
 
 -----
 ## People to connect with  
+- Trail of Bits
+- Secureum https://www.secureum.xyz/   
+- Spearbit https://spearbit.com/    
 - YAcademy: https://yacademy.dev/about/   
-- Spearbit https://spearbit.com/   
 -----
 
 ## Dictionary of Key Terms   
@@ -111,16 +113,21 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
 -----   
 
 ## Audits
-`What is an audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee 
+`What is an audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee    
 Auditor Road Map from `Andy Li`: https://youtu.be/-469Gcye-ZE    
+
 `Tools`
   - Slither
-  -
+  - Foundry
   
  Jackson K audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM   
+ 5 Solidity Code Smells: https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde
  
  -----   
 
 ## Bug Bounty
  - `Code4rena:` https://code4rena.com/
  - `Immunefi` - https://immunefi.com/   
+
+Capture The Flag (CTF) games:
+- Ethernaut https://ethernaut.openzeppelin.com/   
