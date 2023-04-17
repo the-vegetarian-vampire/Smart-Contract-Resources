@@ -82,11 +82,16 @@ Mastering Ethereum - https://github.com/ethereumbook/ethereumbook
 ----- 
 
 ## Gas Optimization
-- Strings, arrays, and loops are `computationally expensive`    
--`custom errors` - declared at top, more `gas efficient`   
-- `constant` - naming convention ALL_CAPS; more `gas efficient` 
-- `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable    
+- A transaction costs a base of 21,000 gas.
+- each computational step cost ~2-10 gas (usually)
+- each byte of data costs 16 gas (4 if zero byte)
+- editing a storage slot costs 5,000 gas (20,000 if not yet filled)
 
+- Strings, arrays, and loops are `computationally expensive`   
+- `custom errors` - declared at top, more `gas efficient`   
+- `constant` - naming convention ALL_CAPS; more `gas efficient`    
+- `immutable` - can be set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
+- better to batch minting     
 ----- 
   
 ## Tokens
