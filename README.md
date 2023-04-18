@@ -24,8 +24,8 @@ Christoph Michel's book - https://learneos.dev/#packages
 How to DeFi: Beginner - https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG   
 Mastering Ethereum - https://github.com/ethereumbook/ethereumbook   
 
-Teachyourselfcrypto.com
-Class: Berkeley DeFi (mostly for the AMA’s)   
+Teachyourselfcrypto.com   
+Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)   
 Berkeley YouTube channel: https://youtube.com/@blockchain-web3moocs635   
  
  -----
@@ -132,20 +132,21 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
 `What is an Audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee    
 
 5 Solidity Code Smells: https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde   
-Auditor Road Map from `Andy Li:` https://youtu.be/-469Gcye-ZE    
+`Andy Li` Auditor Road Map - https://youtu.be/-469Gcye-ZE    
 
 `Tools`
   - Slither
   - Foundry
   - In-line bookmarks    
   
-Jackson Kelley's -- Audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM   
-Patrick Collins -- How to Audit a Smart Contract: https://www.youtube.com/watch?v=TmZ8gH-toX0   
+Jackson Kelley's - Audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM   
+Patrick Collins - How to Audit a Smart Contract: https://www.youtube.com/watch?v=TmZ8gH-toX0   
+Chainlink - https://www.youtube.com/watch?v=0aJfCug1zTM   
  
  -----   
 
 ## Bug Bounty
- - `Code4rena:` https://code4rena.com/
+ - `Code4rena` - https://code4rena.com/
  - `Immunefi` - https://immunefi.com/   
 
 Capture The Flag (CTF) games:
