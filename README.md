@@ -55,7 +55,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 `Address` - (Ethereum; other blockchains will be different) is a 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front   
 `assertEQ`   
 `bridges` - Crosschain Transactions and [Bridges](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s)    
-`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - 9:40 Andrew Miller from [Berkeley AMA](https://www.youtube.com/watch?v=IwRfEsX07MU)      
+`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - 9:40 [Andrew Miller AMA](https://www.youtube.com/watch?v=IwRfEsX07MU)      
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 `constructor` - called once when contract is deployed   
 `custom errors` - declared at top, more `gas efficient`    
@@ -86,6 +86,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 `require` -   
 `revert` - gives back gas but loses some   
 `Solc` - the solidity compiler to byte code    
+`slippage` - ??
 `struct` - useful for grouping together related data, can be declared outside of a contract and imported in another contract     
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools     
 `Unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
@@ -123,11 +124,13 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
 
 - Reetrancy    
   
-- Sandwhich https://www.youtube.com/watch?v=26lWg6UIrKw
+- Sandwich https://www.youtube.com/watch?v=26lWg6UIrKw - 
 
 - Flash loans   
 
-- Double spending: https://www.investopedia.com/terms/d/doublespending.asp - 51% is one of the most commonly cited attacks, while the unconfirmed transaction attack is most commonly seen   
+- [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks, while the unconfirmed transaction attack is most commonly seen  
+
+- Denial of service (DoS; DDoS attack) 
 
 -----   
 
