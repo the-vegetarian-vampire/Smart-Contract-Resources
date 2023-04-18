@@ -19,14 +19,15 @@ Solidity `By example:` https://solidity-by-example.org/
   
 `4. HashLips NFT:` [Youtub](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
+Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)   
+Berkeley YouTube channel: https://youtube.com/@blockchain-web3moocs635    
+
 ## Books 
 Christoph Michel's book - https://learneos.dev/#packages     
 How to DeFi: Beginner - https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG   
 Mastering Ethereum - https://github.com/ethereumbook/ethereumbook   
 
-Teachyourselfcrypto.com   
-Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)   
-Berkeley YouTube channel: https://youtube.com/@blockchain-web3moocs635   
+[Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)   
  
  -----
  
@@ -35,14 +36,13 @@ Berkeley YouTube channel: https://youtube.com/@blockchain-web3moocs635
 - 100 Solidity Questions: https://youtu.be/FoCM07HlfhU?t=1644
 
 `Peter Robinson's channel` - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
-`Solidity Recruitment Test` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s   
-`Bridges` - https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/
+`Solidity Recruitment Test` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s    
 
 `Andy Li's channel` - https://www.youtube.com/@andyli - interviews about smart contract auditing and cyber security
 
 -----
 ## Teams to Connect With  
-- Trail of Bits
+- Trail of Bits https://www.trailofbits.com/   
 - Secureum https://www.secureum.xyz/   
 - Spearbit https://spearbit.com/    
 - YAcademy: https://yacademy.dev/about/   
@@ -52,6 +52,7 @@ Berkeley YouTube channel: https://youtube.com/@blockchain-web3moocs635
 `ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON   
 `Address` - (Ethereum; other blockchains will be different) is a 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front   
 `assertEQ`   
+`bridges` - https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/   
 `dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - Andrew Miller from Berkeley AMA   
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 `constructor` - called once when contract is deployed   
@@ -76,7 +77,8 @@ Berkeley YouTube channel: https://youtube.com/@blockchain-web3moocs635
   
 `Nonce` - transaction code for this account starting with 0  
 `Oracle manipulation` -    
-`Proof of concept` a piece of code that concretely demonstrates that the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
+`proof of concept` a piece of code that concretely demonstrates that the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
+`private relay` - "flash bots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk)   
 `pure` - static, does not effect or modify state, more computational [free function]   
 `recieve` -   
 `require` -   
