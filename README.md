@@ -55,7 +55,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 `Address` - (Ethereum; other blockchains will be different) is a 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front   
 `assertEQ`   
 `bridges` - Crosschain Transactions and [Bridges](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s)    
-`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - Andrew Miller from Berkeley AMA   
+`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - 9:40 Andrew Miller from [Berkeley AMA](https://www.youtube.com/watch?v=IwRfEsX07MU)      
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 `constructor` - called once when contract is deployed   
 `custom errors` - declared at top, more `gas efficient`    
