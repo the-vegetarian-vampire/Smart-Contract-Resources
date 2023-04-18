@@ -6,7 +6,7 @@ Solidity `Documentation:` https://docs.soliditylang.org/en/latest/index.html
 Solidity `Best practices:` https://consensys.github.io/smart-contract-best-practices/   
 Solidity `By example:` https://solidity-by-example.org/
 
-[Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/)   
+[Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) and Berkeley [YouTube Channel](https://www.youtube.com/playlist?list=PLS01nW3Rtgor_yJmQsGBZAg5XM4TSGpPs)   
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/)
 
 ## Tutorial Resources:
@@ -18,9 +18,9 @@ Solidity `By example:` https://solidity-by-example.org/
 `3. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (One of the creators of Solidity by example)   
   
 `4. HashLips NFT:` [Youtub](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
-
-Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)   
-Berkeley YouTube channel: https://youtube.com/@blockchain-web3moocs635    
+ 
+Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635)    
+Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)  
 
 ## Books 
 Christoph Michel's book - https://learneos.dev/#packages     
