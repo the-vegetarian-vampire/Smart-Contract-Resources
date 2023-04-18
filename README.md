@@ -152,7 +152,7 @@ Jackson Kelley's - Audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM
 Patrick Collins - How to Audit a Smart Contract: https://www.youtube.com/watch?v=TmZ8gH-toX0   
 Chainlink - https://www.youtube.com/watch?v=0aJfCug1zTM   
  
- -----   
+-----   
 
 ## Bug Bounty
  - `Code4rena` - https://code4rena.com/
@@ -161,6 +161,8 @@ Chainlink - https://www.youtube.com/watch?v=0aJfCug1zTM
 Capture The Flag (CTF) games:
 - Ethernaut https://ethernaut.openzeppelin.com/  
 
+-----   
+ 
 ## Abstracts: In Depth Understanding
 Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf   
 Ethereum whitepaper: https://ethereum.org/en/whitepaper/   
