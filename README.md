@@ -24,7 +24,9 @@ Christoph Michel's book - https://learneos.dev/#packages
 How to DeFi: Beginner - https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG   
 Mastering Ethereum - https://github.com/ethereumbook/ethereumbook   
 
-Teachyourselfcrypto.com     
+Teachyourselfcrypto.com
+Class: Berkeley DeFi (mostly for the AMA’s)   
+Berkeley YouTube channel: https://youtube.com/@blockchain-web3moocs635   
  
  -----
  
@@ -34,11 +36,12 @@ Teachyourselfcrypto.com
 
 `Peter Robinson's channel` - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
 `Solidity Recruitment Test` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s   
+`Bridges` - https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/
 
 `Andy Li's channel` - https://www.youtube.com/@andyli - interviews about smart contract auditing and cyber security
 
 -----
-## People to Connect With  
+## Teams to Connect With  
 - Trail of Bits
 - Secureum https://www.secureum.xyz/   
 - Spearbit https://spearbit.com/    
@@ -49,6 +52,7 @@ Teachyourselfcrypto.com
 `ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON   
 `Address` - (Ethereum; other blockchains will be different) is a 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front   
 `assertEQ`   
+`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - Andrew Miller from Berkeley AMA   
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 `constructor` - called once when contract is deployed   
 `custom errors` - declared at top, more `gas efficient`    
@@ -87,10 +91,10 @@ Broader Crypto dictionary of terms: https://coinmarketcap.com/alexandria/glossar
 ----- 
 
 ## Gas Optimization
-- A transaction costs a base of 21,000 gas.
-- each computational step cost ~2-10 gas (usually)
-- each byte of data costs 16 gas (4 if zero byte)
-- editing a storage slot costs 5,000 gas (20,000 if not yet filled)
+A transaction costs a base of 21,000 gas   
+each computational step cost ~2-10 gas (usually)   
+each byte of data costs 16 gas (4 if zero byte)   
+editing a storage slot costs 5,000 gas (20,000 if not yet filled)   
 
 - Strings, arrays, and loops are `computationally expensive`   
 - `custom errors` - declared at top, more `gas efficient`   
@@ -128,7 +132,6 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
 `What is an Audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee    
 
 5 Solidity Code Smells: https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde   
-
 Auditor Road Map from `Andy Li:` https://youtu.be/-469Gcye-ZE    
 
 `Tools`
@@ -146,4 +149,16 @@ Patrick Collins -- How to Audit a Smart Contract: https://www.youtube.com/watch?
  - `Immunefi` - https://immunefi.com/   
 
 Capture The Flag (CTF) games:
-- Ethernaut https://ethernaut.openzeppelin.com/   
+- Ethernaut https://ethernaut.openzeppelin.com/  
+
+## Abstracts: In Depth Understanding
+Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf   
+Ethereum whitepaper: https://ethereum.org/en/whitepaper/   
+Uniswap V3 whitepaper: https://uniswap.org/whitepaper-v3.pdf   
+
+Merkle Trees: https://en.wikipedia.org/wiki/Merkle_tree   
+
+Improving the Efficiency and Reliability of Digital Time-Stamping: http://math.columbia.edu/~bayer/papers/Timestamp_BHS93.pdf   
+
+Secure Names for Bit-Strings: https://nakamotoinstitute.org/static/docs/secure-names-bit-strings.pdf   
+
