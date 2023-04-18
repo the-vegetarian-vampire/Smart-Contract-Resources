@@ -87,10 +87,11 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 `require` -   
 `revert` - gives back gas but loses some   
 `Solc` - the solidity compiler to byte code    
-`slippage` - ??
+`slippage` - ??   
 `struct` - useful for grouping together related data, can be declared outside of a contract and imported in another contract     
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools     
-`Unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
+`unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
+`Uniswap` - [wiki](https://en.wikipedia.org/wiki/Uniswap) decentralized cryptocurrency exchange that uses a set of smart contracts (liquidity pools) to execute trades on its exchange   
 
 Broader Crypto dictionary of terms: https://coinmarketcap.com/alexandria/glossary   
 
@@ -106,7 +107,7 @@ editing a storage slot costs 5,000 gas (20,000 if not yet filled)
 - `custom errors` - declared at top, more `gas efficient`   
 - `constant` - naming convention ALL_CAPS; more `gas efficient`    
 - `immutable` - can be set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
-- better to batch minting     
+- batch minting     
 ----- 
   
 ## Tokens
