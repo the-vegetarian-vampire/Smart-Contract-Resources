@@ -23,9 +23,10 @@ Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635)
 Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)  
 
 ## Books 
+[Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)   
+
 Christoph Michel's book - https://learneos.dev/#packages     
-How to DeFi: Beginner - https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG   
-Mastering Ethereum - https://github.com/ethereumbook/ethereumbook   
+How to DeFi: Beginner - https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG 
 
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)   
  
