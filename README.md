@@ -114,6 +114,8 @@ Ethernaut https://ethernaut.openzeppelin.com/
 
 `proof of concept` a piece of code that concretely demonstrates that the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
 
+`private functions` - with function parameters, it's convention to start private function names with an underscore (_): function _createZombie(string memory _name, uint _dna) private {}   
+
 `private relay` - "flash bots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk)   
 
 `pure` - static, does not effect or modify state, more computational [free function]   
