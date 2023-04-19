@@ -17,7 +17,7 @@ Solidity `By example:` https://solidity-by-example.org/
   
 `3. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (One of the creators of Solidity by example)   
   
-`4. HashLips NFT:` [Youtub](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
+`4. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
  
 Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635)    
 Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)  
