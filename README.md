@@ -80,7 +80,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
   3. Guard against reentrancy hack   
   
 `Nonce` - transaction code for this account starting with 0  
-`Oracle manipulation` -    
+`oracle` - entities that connect blockchains to external systems, thereby enabling smart contracts to execute based upon inputs and outputs from the real world; a way for the decentralized ecosystem to access existing data sources, legacy systems, and advanced computations (blockchain middleware); also `oracle manipulation` via flash loans etc...   
 `proof of concept` a piece of code that concretely demonstrates that the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
 `private relay` - "flash bots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk)   
 `pure` - static, does not effect or modify state, more computational [free function]   
@@ -89,9 +89,10 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 `revert` - gives back gas but loses some   
 `Solc` - the solidity compiler to byte code    
 `slippage` - ??   
+`smart contract` - programs stored on a blockchain that run when predetermined conditions are met; a transaction protocol intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement      
 `struct` - useful for grouping together related data, can be declared outside of a contract and imported in another contract     
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools     
-`unchecked` instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
+`unchecked` - instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 `Uniswap` - [wiki](https://en.wikipedia.org/wiki/Uniswap) decentralized cryptocurrency exchange that uses a set of smart contracts (liquidity pools) to execute trades on its exchange   
 
 Broader Crypto dictionary of terms: https://coinmarketcap.com/alexandria/glossary   
