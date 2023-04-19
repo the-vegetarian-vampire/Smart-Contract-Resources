@@ -126,7 +126,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `unchecked` - instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
-`Uniswap` - [wiki](https://en.wikipedia.org/wiki/Uniswap) decentralized cryptocurrency exchange that uses a set of smart contracts (liquidity pools) to execute trades on its exchange   
+`Uniswap` - [wiki](https://en.wikipedia.org/wiki/Uniswap) decentralized cryptocurrency exchange that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf) 
 
 Broader Crypto dictionary of terms: https://coinmarketcap.com/alexandria/glossary   
 
@@ -156,7 +156,7 @@ editing a storage slot costs 5,000 gas (20,000 if not yet filled)
 -----
 
 ## Hacks 
-News: [Rekt](https://duckduckgo.com/?q=rekt.news&ia=web)   
+News: [Rekt](https://rekt.news/)   
 Example vulnerabilities: https://youtu.be/JMf5P2DXfkM   
 
 - Reetrancy    
@@ -172,7 +172,7 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
 -----   
 
 ## Audits
-`What is an Audit?` - security focused code review; looking for reentrancy attacks, vulnerabilities, etc; it is a best effort endeavor, not a guarantee    
+`What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee    
 
 5 Solidity Code Smells: https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde   
 `Andy Li` Auditor Road Map - https://youtu.be/-469Gcye-ZE    
