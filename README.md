@@ -22,17 +22,19 @@ Solidity `By example:` https://solidity-by-example.org/
 Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635)    
 Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)  
 
-## Books 
+### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)   
 
 Christoph Michel's book - https://learneos.dev/#packages     
-How to DeFi: Beginner - https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG 
-
-[Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)   
- 
-Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist   
-
+How to DeFi: Beginner - https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG   
 [Blockchain Developer Roadmap](https://roadmap.sh/blockchain)   
+
+Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist 
+
+### Interactive
+[Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)      
+[Crypto Zombies](https://cryptozombies.io/)   
+Ethernaut https://ethernaut.openzeppelin.com/  
 
 -----
  
@@ -98,6 +100,8 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 `Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3)/Secure Hash Algorithm; using it in a [contract](https://www.youtube.com/watch?v=wCD3fOlsGc4)   
 
 `memepool` - or [memory pool](https://www.alchemy.com/overviews/what-is-a-mempool) is a dynamic staging area in front of the blockchain that enables transaction ordering, fee prioritization, and general block construction; a list of pending transactions waiting for validation from a node before it is committed to a block on the blockchain   
+
+`EV` - maximal (formerly miner) extractable value; referred to as an “invisible tax” that miners can collect from users – essentially, the maximum value a miner can extract from moving around transactions when producing a block on a blockchain network   
 
 `modifier` - `_;` - the underscore proceeds with code; code that can be run before and/or after a function call
   1. Restrict access
