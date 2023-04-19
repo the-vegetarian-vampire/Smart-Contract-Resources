@@ -54,11 +54,15 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 -----
 
 ## Dictionary of Key Terms (Solidity) 
+ `Aave` - decentralised non-custodial liquidity market protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion; Stani Kulechov [interview](https://www.youtube.com/watch?v=PA9QrrH-ze0) by Haseeb Qureshi   
+
 `ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON  
 
 `address` - (Ethereum; other blockchains will be different) a 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front   
 
 `AMM` - Automated Market Maker; underlying protocol that powers all decentralized exchanges (DEXs), DEXs help users exchange cryptocurrencies by connecting users directly, without an intermediary; autonomous trading mechanisms that eliminate the need for centralized exchanges   
+
+`arrays` - **fixed** [2] length of 2 elements and **dynamic** [] arrays with no fixed size; can also create an **array of structs**  
 
 `assertEQ`   
 
@@ -121,6 +125,8 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 `slippage` - ??   
 
 `smart contract` - programs stored on a blockchain that run when predetermined conditions are met; a transaction protocol intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement      
+
+`state variables` - variables stored permanently on the blockchain   
 
 `struct` - useful for grouping together related data, can be declared outside of a contract and imported in another contract    
 
