@@ -19,8 +19,7 @@ Solidity `By example:` https://solidity-by-example.org/
   
 `4. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
  
-Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635)    
-Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)  
+Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)    
 
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)   
@@ -34,7 +33,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 ### Interactive
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)      
 [Crypto Zombies](https://cryptozombies.io/)   
-Ethernaut https://ethernaut.openzeppelin.com/  
+[Ethernaut](https://ethernaut.openzeppelin.com/)     
 
 -----
  
@@ -143,7 +142,7 @@ function _createZombie(string memory _name, uint _dna) private {}
 
 `unchecked` - instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
-`Uniswap` - [wiki](https://en.wikipedia.org/wiki/Uniswap) decentralized cryptocurrency exchange that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf) 
+`Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
 
 Broader Crypto dictionary of terms: https://coinmarketcap.com/alexandria/glossary   
 
