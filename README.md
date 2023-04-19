@@ -32,6 +32,8 @@ How to DeFi: Beginner - https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B
  
 Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist   
 
+[Blockchain Developer Roadmap](https://roadmap.sh/blockchain)   
+
 -----
  
 ## Interviews and Questions   
@@ -153,6 +155,9 @@ editing a storage slot costs 5,000 gas (20,000 if not yet filled)
 * ERC-165 - Creates a standard method to publish and detect what interfaces a smart contract implements.
 * ERC-725 - A standard interface for a simple proxy account.
 * ERC-173 - A standard interface for ownership of contracts.  
+
+NFT's and Atomic NFT's [lecture](https://www.youtube.com/watch?v=tVyS3Ut_1eE&t=896s) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
+
 -----
 
 ## Hacks 
