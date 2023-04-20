@@ -33,7 +33,8 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 ### Interactive
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)      
 [Crypto Zombies](https://cryptozombies.io/)   
-[Ethernaut](https://ethernaut.openzeppelin.com/)     
+[Ethernaut](https://ethernaut.openzeppelin.com/)    
+[Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 
 -----
  
@@ -59,7 +60,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON  
 
-`address` - (Ethereum; other blockchains will be different) a 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front   
+`address` - (Ethereum; other blockchains will be different) a 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front `0x0cE446255506E92DF41614C46F1d6df9Cc969183`      
 
 `AMM` - Automated Market Maker; underlying protocol that powers all decentralized exchanges (DEXs), DEXs help users exchange cryptocurrencies by connecting users directly, without an intermediary; autonomous trading mechanisms that eliminate the need for centralized exchanges   
 
@@ -199,7 +200,9 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
 `Tools`
   - Slither
   - Foundry
-  - In-line bookmarks    
+  - In-line bookmarks   
+  - [Ethers](https://docs.ethers.org/v5/single-page/)   
+  - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
   
 Jackson Kelley's - Audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM   
 Patrick Collins - How to Audit a Smart Contract: https://www.youtube.com/watch?v=TmZ8gH-toX0   
