@@ -41,10 +41,10 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 - 10 Solidity Questions: https://www.youtube.com/watch?v=Vzjc-xffhJs
 - 100 Solidity Questions: https://youtu.be/FoCM07HlfhU?t=1644
 
-`Peter Robinson's channel` - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
-`Solidity Recruitment Test` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s    
+`Peter Robinson` - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
+`Solidity Recruitment` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s (possibly outdated)    
 
-`Andy Li's channel` - https://www.youtube.com/@andyli - interviews about smart contract auditing and cyber security
+`Andy Li` - https://www.youtube.com/@andyli (interviews about smart contract auditing and cyber security)  
 
 -----
 ## Teams to Connect With  
@@ -86,7 +86,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage   
 
-`fallback` - a special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
+`fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
 `fuzzing` -    
 
@@ -102,7 +102,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `EV` - maximal (formerly miner) extractable value; referred to as an “invisible tax” that miners can collect from users – essentially, the maximum value a miner can extract from moving around transactions when producing a block on a blockchain network   
 
-`modifier` - `_;` - the underscore proceeds with code; code that can be run before and/or after a function call
+`modifier` - `_;` underscore proceeds with code; code that can be run before and/or after a function call
   1. Restrict access
   2. Validate inputs
   3. Guard against reentrancy hack   
@@ -111,11 +111,11 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `oracle` - entities that connect blockchains to external systems, thereby enabling smart contracts to execute based upon inputs and outputs from the real world; a way for the decentralized ecosystem to access existing data sources, legacy systems, and advanced computations (blockchain middleware); also `oracle manipulation` via flash loans etc...   
 
-`proof of concept` a piece of code that concretely demonstrates that the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
+`proof of concept` - piece of code that demonstrates the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
 
-`private functions` - with function parameters, it's convention to start private function names with an underscore (_): 
+`private functions` - it's convention to start private function names with an underscore (_): 
 ```
-function _createZombie(string memory _name, uint _dna) private {}   
+function _functionname() private {}   
 ```
 
 `private relay` - "flash bots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk)   
@@ -136,7 +136,7 @@ function _createZombie(string memory _name, uint _dna) private {}
 
 `state variables` - variables stored permanently on the blockchain   
 
-`struct` - useful for grouping together related data, can be declared outside of a contract and imported in another contract    
+`struct` - useful for grouping related data, can be declared outside of a contract and imported in another contract    
 
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools   
 
