@@ -74,7 +74,9 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 
-`constructor` - called once when contract is deployed   
+`constructor` - called once when contract is deployed  
+
+`cryptocurrency tumbler` - a service that mixes potentially identifiable or "tainted" cryptocurrency funds with others, so as to obscure the trail back to the fund's original source: Tornado cash; Zcash and Zk-SNARK's?
 
 `custom errors` - declared at top, more `gas efficient`    
 
@@ -89,7 +91,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
-`fuzzing` -    
+`fuzzing` - or fuzz testing involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
 
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
 
@@ -203,6 +205,7 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
   - In-line bookmarks   
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
+  - Web3.js   
   
 Jackson Kelley's - Audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM   
 Patrick Collins - How to Audit a Smart Contract: https://www.youtube.com/watch?v=TmZ8gH-toX0   
@@ -229,4 +232,6 @@ Merkle Trees: https://en.wikipedia.org/wiki/Merkle_tree
 Improving the Efficiency and Reliability of Digital Time-Stamping: http://math.columbia.edu/~bayer/papers/Timestamp_BHS93.pdf   
 
 Secure Names for Bit-Strings: https://nakamotoinstitute.org/static/docs/secure-names-bit-strings.pdf   
+
+[Anonymous Payments Lecture](https://www.youtube.com/watch?v=Z0s4W3UBxM8)
 
