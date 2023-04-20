@@ -177,7 +177,7 @@ NFT's and Atomic NFT's [lecture](https://www.youtube.com/watch?v=tVyS3Ut_1eE&t=8
 
 -----
 
-## Hacks 
+## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
 News: [Rekt](https://rekt.news/)   
 Example vulnerabilities: https://youtu.be/JMf5P2DXfkM   
 
