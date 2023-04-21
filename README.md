@@ -25,7 +25,7 @@ Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Clas
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)   
 
 Christoph Michel's book - https://learneos.dev/#packages     
-[How to DeFi: Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG)   
+How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
 [DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018)   
 
 Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist 
