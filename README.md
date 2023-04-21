@@ -156,6 +156,7 @@ function _functionname() private {}
 `unchecked` - instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
 `Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
+
 `zkSNARK` - succinct non interactive argument of knowledge   
 
 Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms    
