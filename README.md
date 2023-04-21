@@ -39,13 +39,13 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 -----
  
 ## Interviews and Questions   
-- 10 Solidity Questions: https://www.youtube.com/watch?v=Vzjc-xffhJs
-- 100 Solidity Questions: https://youtu.be/FoCM07HlfhU?t=1644
+- [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
+- [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
 
 `Peter Robinson` - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
 `Solidity Recruitment` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s (possibly outdated)    
 
-`Andy Li` - https://www.youtube.com/@andyli (interviews about smart contract auditing and cyber security)  
+`Andy Li` - ([interviews](https://www.youtube.com/@andyli ) about smart contract auditing and cyber security)     
 
 -----
 ## Teams to Connect With  
@@ -69,6 +69,8 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 `assertEQ`   
 
 `bridges` - Crosschain Transactions and [Bridges](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s)    
+
+`DAI` - stablecoin on the Ethereum blockchain whose value is pegged to $US   
 
 `dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - 9:40 [Andrew Miller AMA](https://www.youtube.com/watch?v=IwRfEsX07MU) and later mentions [David Chaum](https://en.wikipedia.org/wiki/David_Chaum)      
 
@@ -97,6 +99,10 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable   
 
+`interface` -   
+
+`internal` - same as private, except it's accessible to contracts that inherit   
+
 `invariant` -    
 
 `Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3)/Secure Hash Algorithm; using it in a [contract](https://www.youtube.com/watch?v=wCD3fOlsGc4)   
@@ -105,14 +111,18 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `EV` - maximal (formerly miner) extractable value; referred to as an “invisible tax” that miners can collect from users – essentially, the maximum value a miner can extract from moving around transactions when producing a block on a blockchain network   
 
-`modifier` - `_;` underscore proceeds with code; code that can be run before and/or after a function call
+`modifier` - `_;` check requirements prior to execution code that can be run before and/or after a function call
   1. Restrict access
   2. Validate inputs
   3. Guard against reentrancy hack   
   
+`msg.sender` - there will always be a msg.sender; one who call contract   
+  
 `Nonce` - transaction code for this account starting with 0  
 
 `oracle` - entities that connect blockchains to external systems, thereby enabling smart contracts to execute based upon inputs and outputs from the real world; a way for the decentralized ecosystem to access existing data sources, legacy systems, and advanced computations (blockchain middleware); also `oracle manipulation` via flash loans etc...   
+
+`ownable` - an owner who has special privileges   
 
 `proof of concept` - piece of code that demonstrates the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
 
@@ -146,8 +156,9 @@ function _functionname() private {}
 `unchecked` - instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
 `Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
+`zkSNARK` - succinct non interactive argument of knowledge   
 
-Broader Crypto dictionary of terms: https://coinmarketcap.com/alexandria/glossary   
+Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms    
 
 ----- 
 
@@ -196,8 +207,8 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
 ## Audits
 `What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee    
 
-5 Solidity Code Smells: https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde   
-`Andy Li` Auditor Road Map - https://youtu.be/-469Gcye-ZE    
+5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)       
+`Andy Li` [Auditor Road Map](https://youtu.be/-469Gcye-ZE)       
 
 `Tools`
   - Slither
@@ -207,8 +218,8 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
   - Web3.js   
   
-Jackson Kelley's - Audit process: https://www.youtube.com/watch?v=xD0IZh9c8LM   
-Patrick Collins - How to Audit a Smart Contract: https://www.youtube.com/watch?v=TmZ8gH-toX0   
+Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
+Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
 Chainlink - https://www.youtube.com/watch?v=0aJfCug1zTM   
  
 -----   
