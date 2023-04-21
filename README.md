@@ -7,7 +7,7 @@ Solidity `Best practices:` https://consensys.github.io/smart-contract-best-pract
 Solidity `By example:` https://solidity-by-example.org/
 
 [Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) and Berkeley [YouTube Channel](https://www.youtube.com/playlist?list=PLS01nW3Rtgor_yJmQsGBZAg5XM4TSGpPs)   
-[ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/)
+[ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/) via [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) library   
 
 ## Tutorial Resources:
 
@@ -122,7 +122,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `oracle` - entities that connect blockchains to external systems, thereby enabling smart contracts to execute based upon inputs and outputs from the real world; a way for the decentralized ecosystem to access existing data sources, legacy systems, and advanced computations (blockchain middleware); also `oracle manipulation` via flash loans etc...   
 
-`ownable` - an owner who has special privileges   
+`ownable` - an [owner](https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable) who has special privileges   
 
 `proof of concept` - piece of code that demonstrates the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
 
