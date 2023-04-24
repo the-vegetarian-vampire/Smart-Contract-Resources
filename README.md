@@ -99,7 +99,8 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 
 `fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
-`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners.   
+`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners   
+
 `flooding` - [routing](https://en.wikipedia.org/wiki/Flooding_%28computer_networking%29)
 
 `fuzzing` - or `fuzz testing` involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
@@ -217,7 +218,7 @@ Infinite loops and gas limits attacks...
 
 - Reetrancy    
   
-- Sandwich https://www.youtube.com/watch?v=26lWg6UIrKw - 
+- [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw)   
 
 - Flash loans   
 
@@ -240,11 +241,11 @@ Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?
 -----   
 
 ## Bug Bounty
- - `Code4rena` - https://code4rena.com/
- - `Immunefi` - https://immunefi.com/   
+ - [Code4rena](https://code4rena.com/)   
+ - [Immunefi](https://immunefi.com/)      
 
 Capture The Flag (CTF) games:
-- Ethernaut https://ethernaut.openzeppelin.com/   
+- [Ethernaut](https://ethernaut.openzeppelin.com/)      
 
 -----   
    
