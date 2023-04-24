@@ -173,7 +173,7 @@ function _functionname() private {}
 
 `Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
 
-`Zcash` -   
+`Zcash` - cryptocurrency using zk-SNARKs to provide enhanced privacy; either in a transparent pool or a shielded pool       
 
 `zero address` - contract creation; sometimes sent in an intentional ether burn
 
