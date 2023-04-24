@@ -1,10 +1,10 @@
 # Solidity-Smart-Contracts
 
-Remix: https://remix.ethereum.org 
+[Remix](https://remix.ethereum.org)   
 
-Solidity `Documentation:` https://docs.soliditylang.org/en/latest/index.html   
-Solidity `Best practices:` https://consensys.github.io/smart-contract-best-practices/   
-Solidity `By example:` https://solidity-by-example.org/
+Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html)     
+Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
+Solidity [By example](https://solidity-by-example.org/)   
 
 [Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) and Berkeley [YouTube Channel](https://www.youtube.com/playlist?list=PLS01nW3Rtgor_yJmQsGBZAg5XM4TSGpPs)   
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/) via [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) library   
@@ -45,16 +45,16 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 - [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
 
 `Peter Robinson` - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
-`Solidity Recruitment` - https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s (possibly outdated)    
+Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)    
 
 `Andy Li` - ([interviews](https://www.youtube.com/@andyli ) about smart contract auditing and cyber security)     
 
 -----
 ## Teams to Connect With  
-- Trail of Bits https://www.trailofbits.com/   
-- Secureum https://www.secureum.xyz/   
-- Spearbit https://spearbit.com/    
-- YAcademy: https://yacademy.dev/about/   
+- [Trail of Bits](https://www.trailofbits.com/)      
+- [Secureum](https://www.secureum.xyz/)      
+- [Spearbit](https://spearbit.com/)       
+- [YAcademy](https://yacademy.dev/about/)      
 -----
 
 ## Dictionary of Key Terms (Solidity) 
@@ -87,7 +87,9 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 `data Locations` - Storage, Memory and Calldata
   1. storage - variable is a state variable (store on blockchain)
   2. memory - variable is in memory and it exists while a function is being called
-  3. calldata - special data location that contains function arguments    
+  3. calldata - special data location that contains function arguments 
+ 
+`dutch auction` - 
   
 `enums` - useful to model choice and keep track of state/can be declared outside of a contract    
 
@@ -95,15 +97,21 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
+`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners.
+
 `fuzzing` - or fuzz testing involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
 
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
 
 `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable   
 
+`impermanent loss` - 
+
 `interface` -   
 
-`internal` - same as private, except it's accessible to contracts that inherit   
+`internal` - same as private, except it's accessible to contracts that inherit  
+
+`interoperability` -
 
 `invariant` -    
 
@@ -111,7 +119,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 `memepool` - or [memory pool](https://www.alchemy.com/overviews/what-is-a-mempool) is a dynamic staging area in front of the blockchain that enables transaction ordering, fee prioritization, and general block construction; a list of pending transactions waiting for validation from a node before it is committed to a block on the blockchain   
 
-`EV` - maximal (formerly miner) extractable value; referred to as an “invisible tax” that miners can collect from users – essentially, the maximum value a miner can extract from moving around transactions when producing a block on a blockchain network   
+`MEV` - maximal (formerly miner) extractable value; referred to as an “invisible tax” that miners can collect from users – essentially, the maximum value a miner can extract from moving around transactions when producing a block on a blockchain network   
 
 `modifier` - `_;` check requirements prior to execution code that can be run before and/or after a function call
   1. Restrict access
@@ -120,7 +128,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
   
 `msg.sender` - there will always be a msg.sender; one who call contract   
   
-`Nonce` - transaction code for this account starting with 0  
+`Nonce` - transaction code for this account starting with 0; makes transactions unique; important regarding concurrency  
 
 `oracle` - entities that connect blockchains to external systems, thereby enabling smart contracts to execute based upon inputs and outputs from the real world; a way for the decentralized ecosystem to access existing data sources, legacy systems, and advanced computations (blockchain middleware); also `oracle manipulation` via flash loans etc...   
 
@@ -133,7 +141,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 function _functionname() private {}   
 ```
 
-`private relay` - "flash bots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk)   
+`private relay` - "flashbots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk)   
 
 `pure` - static, does not effect or modify state, more computational [free function]   
 
@@ -143,11 +151,13 @@ function _functionname() private {}
 
 `revert` - gives back gas but loses some   
 
+`self destruct` - leaves a blank account; costs negative gas, does not remove transaction history: only can be self destructed if contract has self destruct programmed in    
+
 `Solc` - the solidity compiler to byte code    
 
 `slippage` - ??   
 
-`smart contract` - programs stored on a blockchain that run when predetermined conditions are met; a transaction protocol intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement      
+`smart contract` - programs stored on a blockchain that run when predetermined conditions are met; a transaction protocol intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement; Ethereum contracts are essentially single threaded machine       
 
 `state variables` - variables stored permanently on the blockchain   
 
@@ -159,6 +169,10 @@ function _functionname() private {}
 
 `Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
 
+`Zcash` -   
+
+`zero address` - contract creation; sometimes sent in an intentional ether burn
+
 `zkSNARK` - succinct non interactive argument of knowledge   
 
 Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms    
@@ -166,6 +180,7 @@ Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of te
 ----- 
 
 ## Gas Optimization
+Not invented here: security risk is often greater than improvement value   
 A transaction costs a base of 21,000 gas   
 each computational step cost ~2-10 gas (usually)   
 each byte of data costs 16 gas (4 if zero byte)   
@@ -193,7 +208,9 @@ NFT's and Atomic NFT's [lecture](https://www.youtube.com/watch?v=tVyS3Ut_1eE&t=8
 
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
 News: [Rekt](https://rekt.news/)   
-Example vulnerabilities: https://youtu.be/JMf5P2DXfkM   
+Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)   
+
+Infinite loops and gas limits attacks...   
 
 - Reetrancy    
   
@@ -212,14 +229,6 @@ Example vulnerabilities: https://youtu.be/JMf5P2DXfkM
 
 5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)       
 `Andy Li` [Auditor Road Map](https://youtu.be/-469Gcye-ZE)       
-
-`Tools`
-  - Slither
-  - Foundry
-  - In-line bookmarks   
-  - [Ethers](https://docs.ethers.org/v5/single-page/)   
-  - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
-  - Web3.js   
   
 Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
 Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
@@ -232,20 +241,30 @@ Chainlink - https://www.youtube.com/watch?v=0aJfCug1zTM
  - `Immunefi` - https://immunefi.com/   
 
 Capture The Flag (CTF) games:
-- Ethernaut https://ethernaut.openzeppelin.com/  
+- Ethernaut https://ethernaut.openzeppelin.com/   
 
 -----   
+   
+## Tools 
+  - Slither
+  - Foundry
+  - In-line bookmarks   
+  - [Ethers](https://docs.ethers.org/v5/single-page/)   
+  - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
+  - Web3.js   
+  
+-----  
  
 ## Abstracts: In Depth Understanding
-Bitcoin whitepaper: https://bitcoin.org/bitcoin.pdf   
-Ethereum whitepaper: https://ethereum.org/en/whitepaper/   
-Uniswap V3 whitepaper: https://uniswap.org/whitepaper-v3.pdf   
+Bitcoin [whitepaper](https://bitcoin.org/bitcoin.pdf)     
+Ethereum [whitepaper](https://ethereum.org/en/whitepaper/) (periodically updated)   
+Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
 
-Merkle Trees: https://en.wikipedia.org/wiki/Merkle_tree   
+[Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree)      
 
-Improving the Efficiency and Reliability of Digital Time-Stamping: http://math.columbia.edu/~bayer/papers/Timestamp_BHS93.pdf   
+[Improving the Efficiency and Reliability of Digital Time-Stamping](http://math.columbia.edu/~bayer/papers/Timestamp_BHS93.pdf)       
 
-Secure Names for Bit-Strings: https://nakamotoinstitute.org/static/docs/secure-names-bit-strings.pdf   
+[Secure Names for Bit-Strings](https://nakamotoinstitute.org/static/docs/secure-names-bit-strings.pdf)      
 
 [Anonymous Payments Lecture](https://www.youtube.com/watch?v=Z0s4W3UBxM8)
 
