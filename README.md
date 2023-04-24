@@ -193,7 +193,8 @@ each computational step cost ~2-10 gas (usually)
 each byte of data costs 16 gas (4 if zero byte)   
 editing a storage slot costs 5,000 gas (20,000 if not yet filled)   
 
-- `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together  
+- `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together   
+- cluster identical data types together     
 - strings, arrays, and loops are `computationally expensive`   
 - `custom errors` - declared at top, more `gas efficient`   
 - `constant` - naming convention ALL_CAPS; more `gas efficient`    
