@@ -208,7 +208,7 @@ editing a storage slot costs 5,000 gas (20,000 if not yet filled)
 * ERC-725 - A standard interface for a simple proxy account.
 * ERC-173 - A standard interface for ownership of contracts.  
 
-NFT's and Atomic NFT's [lecture](https://www.youtube.com/watch?v=tVyS3Ut_1eE&t=896s) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
+NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
 
 -----
 
