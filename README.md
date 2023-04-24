@@ -62,13 +62,13 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 
 `ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON  
 
-`address` - (Ethereum; other blockchains will be different) a 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front `0x0cE446255506E92DF41614C46F1d6df9Cc969183`      
+`address` - (Ethereum; other blockchains will be different) 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front `0x0cE446255506E92DF41614C46F1d6df9Cc969183`      
 
 `AMM` - Automated Market Maker; underlying protocol that powers all decentralized exchanges (DEXs), DEXs help users exchange cryptocurrencies by connecting users directly, without an intermediary; autonomous trading mechanisms that eliminate the need for centralized exchanges   
 
 `arrays` - **fixed** [2] length of 2 elements and **dynamic** [] arrays with no fixed size; can also create an **array of structs**  
 
-`assertEQ`   
+`assertEQ` -    
 
 `bridges` - Crosschain Transactions and [Bridges](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s)    
 
@@ -91,15 +91,18 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
  
 `dutch auction` - 
   
-`enums` - useful to model choice and keep track of state/can be declared outside of a contract    
+`enums` - useful to model choice and keep track of state/can be declared outside of a contract   
+
+`EOA` - Externally Owned Account; in general, there are two types of accounts: externally owned accounts, controlled by private keys, and contract accounts, controlled by their contract code      
 
 `events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage   
 
 `fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
-`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners.
+`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners.   
+`flooding` - [routing](https://en.wikipedia.org/wiki/Flooding_%28computer_networking%29)
 
-`fuzzing` - or fuzz testing involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
+`fuzzing` - or `fuzz testing` involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
 
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
 
@@ -194,7 +197,7 @@ editing a storage slot costs 5,000 gas (20,000 if not yet filled)
 ----- 
   
 ## Tokens
-* ERC-20 - Token contract for fungible assets.
+* ERC-20 - Token contract for fungible assets. [Ethereum Request for Comment]   
 * ERC-721 - Token standard for non-fungible assets.
 * ERC-1155 - Multi Token Standard to take the best from previous standards to create a fungibility-agnostic and gas-efficient token contract.
 * ERC-918 - Mineable Token Standard.
@@ -232,7 +235,7 @@ Infinite loops and gas limits attacks...
   
 Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
 Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
-Chainlink - https://www.youtube.com/watch?v=0aJfCug1zTM   
+[Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
  
 -----   
 
