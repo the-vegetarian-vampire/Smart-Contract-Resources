@@ -70,6 +70,8 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 
 `assertEQ` -    
 
+`blob` - binary large object is a collection of data of an arbitrary size. Blobs do not have to follow a given format or have any metadata associated with them. They are a series of bytes, with each byte made up of 8 bits (a 1 or a 0, hence the "binary" descriptor). Any type of data can go in a blob; efficient and cheap transaction.   
+
 `block.timestamp ` - convert a uint of the number of seconds in that length of time. So 1 minutes is 60, 1 hours is 3600 (60 seconds x 60 minutes), 1 days is 86400 (24 hours x 60 minutes x 60 seconds), find on [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html)    
 
 `bridges` - Crosschain Transactions and [Bridges](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s)    
@@ -98,6 +100,8 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 `EOA` - Externally Owned Account; in general, there are two types of accounts: externally owned accounts, controlled by private keys, and contract accounts, controlled by their contract code      
 
 `events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage   
+
+`EVM` - Ethereum is a stack based architecture, single threaded.   
 
 `fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
