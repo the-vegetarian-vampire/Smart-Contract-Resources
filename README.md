@@ -250,7 +250,7 @@ Infinite loops and gas limits attacks...
 Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
 Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
 [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
-[Live Audit](https://www.youtube.com/watch?v=X9DTJJGDg7c)
+Owen Thurm - [Live Audit](https://www.youtube.com/watch?v=X9DTJJGDg7c)
  
 -----   
 
@@ -268,7 +268,7 @@ Capture The Flag (CTF) games:
   - [Etherscan](https://etherscan.io/)
   - Slither
   - Foundry
-  - In-line bookmarks   
+  - In-line bookmarks: // @audit this code seems vulnerable here   
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
   - Web3.js   
