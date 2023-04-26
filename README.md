@@ -181,7 +181,7 @@ function _functionname() private {}
 
 `unchecked` - instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
-`Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf) and [billion dollar algorithm](https://www.paradigm.xyz/2021/05/liquidity-mining-on-uniswap-v3)   
+`Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf) and [billion dollar algorithm](https://www.paradigm.xyz/2021/05/liquidity-mining-on-uniswap-v3) `ticklower` and `tickupper` via [Tick Uniswap](https://docs.uniswap.org/contracts/v3/reference/core/libraries/Tick)    
 
 `Zcash` - cryptocurrency using zk-SNARKs to provide enhanced privacy; either in a transparent pool or a shielded pool       
 
@@ -199,8 +199,9 @@ Not invented here: security risk is often greater than improvement value
 A transaction costs a base of 21,000 gas   
 each computational step cost ~2-10 gas (usually)   
 each byte of data costs 16 gas (4 if zero byte)   
-editing a storage slot costs 5,000 gas (20,000 if not yet filled)   
+editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
 
+- check != 0 rather than >    
 - `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together   
 - cluster identical data types together     
 - strings, arrays, and loops are `computationally expensive`   
