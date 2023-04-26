@@ -251,7 +251,7 @@ Infinite loops and gas limits attacks...
 Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
 Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
 [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
-Owen Thurm - [Live Audit](https://www.youtube.com/watch?v=X9DTJJGDg7c)
+Owen Thurm - Live Audit [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c), [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U), [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I)   
  
 -----   
 
