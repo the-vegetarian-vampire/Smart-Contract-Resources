@@ -24,7 +24,7 @@ Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Clas
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)   
 
-Christoph Michel's [book](https://learneos.dev/#packages) (He is all-time top ranked auditor on [Code4Arena](https://code4rena.com/leaderboard))               
+Christoph Michel's [book](https://learneos.dev/#packages) (He is all-time top ranked auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/)                  
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
 [DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018)   
 
@@ -34,7 +34,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)   
 [Blockchain Developer Roadmap](https://roadmap.sh/blockchain)    
 
-[Crypto Zombies](https://cryptozombies.io/)   
+[Crypto Zombies](https://cryptozombies.io/)(somewhat outdated; older version of Solidity)   
 [Ethernaut](https://ethernaut.openzeppelin.com/)    
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 
@@ -69,6 +69,8 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 `arrays` - **fixed** [2] length of 2 elements and **dynamic** [] arrays with no fixed size; can also create an **array of structs**  
 
 `assertEQ` -    
+
+`block.timestamp ` - convert a uint of the number of seconds in that length of time. So 1 minutes is 60, 1 hours is 3600 (60 seconds x 60 minutes), 1 days is 86400 (24 hours x 60 minutes x 60 seconds), find on [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html)    
 
 `bridges` - Crosschain Transactions and [Bridges](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s)    
 
@@ -149,6 +151,8 @@ function _functionname() private {}
 
 `private relay` - "flashbots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk)   
 
+`Proxies` - [abstract contract](https://docs.openzeppelin.com/contracts/4.x/api/proxy) abstract contract implementing the core delegation functionality   
+
 `pure` - static, does not effect or modify state, more computational [free function]   
 
 `recieve` -   
@@ -173,7 +177,7 @@ function _functionname() private {}
 
 `unchecked` - instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
-`Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
+`Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange  [whitepaper](https://uniswap.org/whitepaper-v3.pdf) and [billion dollar algorithm](https://www.paradigm.xyz/2021/05/liquidity-mining-on-uniswap-v3)   
 
 `Zcash` - cryptocurrency using zk-SNARKs to provide enhanced privacy; either in a transparent pool or a shielded pool       
 
@@ -242,6 +246,7 @@ Infinite loops and gas limits attacks...
 Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
 Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
 [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
+[Live Audit](https://www.youtube.com/watch?v=X9DTJJGDg7c)
  
 -----   
 
@@ -255,6 +260,8 @@ Capture The Flag (CTF) games:
 -----   
    
 ## Tools 
+  - [Alchemy](https://www.alchemy.com/)
+  - [ethrscan](https://etherscan.io/)
   - Slither
   - Foundry
   - In-line bookmarks   
