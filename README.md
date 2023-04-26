@@ -34,7 +34,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)   
 [Blockchain Developer Roadmap](https://roadmap.sh/blockchain)    
 
-[Crypto Zombies](https://cryptozombies.io/)(somewhat outdated; older version of Solidity)   
+[Crypto Zombies](https://cryptozombies.io/) (somewhat outdated; older version of Solidity)   
 [Ethernaut](https://ethernaut.openzeppelin.com/)    
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 
@@ -261,7 +261,7 @@ Capture The Flag (CTF) games:
    
 ## Tools 
   - [Alchemy](https://www.alchemy.com/)
-  - [ethrscan](https://etherscan.io/)
+  - [Etherscan](https://etherscan.io/)
   - Slither
   - Foundry
   - In-line bookmarks   
