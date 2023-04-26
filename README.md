@@ -138,7 +138,7 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
   
 `msg.sender` - there will always be a msg.sender; one who call contract   
 
-`NatSpec` - Ethereum Natural Language Specification [Format](https://docs.soliditylang.org/en/v0.8.19/natspec-format.html)    
+`NatSpec` - Ethereum Natural Language Specification [Format](https://docs.soliditylang.org/en/v0.8.19/natspec-format.html) @title and @author are straightforward; @notice explains the contract function does; @dev is for explaining extra details to developers; @param and @return are for describing what each parameter and return value of a function are for       
   
 `Nonce` - transaction code for this account starting with 0; makes transactions unique; important regarding concurrency  
 
