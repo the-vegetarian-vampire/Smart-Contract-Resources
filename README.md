@@ -40,7 +40,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 -----
  
-## Interviews and Questions   
+### Interviews and Questions   
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
 - [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
 - [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
@@ -51,7 +51,7 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 `Andy Li` - ([interviews](https://www.youtube.com/@andyli ) about smart contract auditing and cyber security)     
 
 -----
-## Teams to Connect With  
+### Teams to Connect With  
 - [Trail of Bits](https://www.trailofbits.com/)      
 - [Secureum](https://www.secureum.xyz/)      
 - [Spearbit](https://spearbit.com/)       
@@ -245,7 +245,7 @@ Infinite loops and gas limits attacks...
 
 -----   
 
-## Audits
+### Audits
 `What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee    
 
 5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)       
@@ -259,7 +259,7 @@ Blue Alder - Wallet Mining Walkthrough - Damn Vulnerable [DeFi ](https://www.you
  
 -----   
 
-## Bug Bounty
+### Bug Bounty
  - [Code4rena](https://code4rena.com/)   
  - [Immunefi](https://immunefi.com/)      
 
@@ -268,7 +268,7 @@ Capture The Flag (CTF) games:
 
 -----   
    
-## Tools 
+### Tools 
   - [Alchemy](https://www.alchemy.com/)
   - [Etherscan](https://etherscan.io/)
   - Slither
