@@ -42,6 +42,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
  
 ## Interviews and Questions   
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
+- [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
 - [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
 
 `Peter Robinson` - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
@@ -64,7 +65,7 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 
 `address` - (Ethereum; other blockchains will be different) 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front `0x0cE446255506E92DF41614C46F1d6df9Cc969183`      
 
-`AMM` - Automated Market Maker; underlying protocol that powers all decentralized exchanges (DEXs), DEXs help users exchange cryptocurrencies by connecting users directly, without an intermediary; autonomous trading mechanisms that eliminate the need for centralized exchanges   
+`AMM` - Automated Market Maker; underlying protocol that powers all decentralized exchanges (DEXs), DEXs help users exchange cryptocurrencies by connecting users directly, without an intermediary; autonomous trading mechanisms that eliminate the need for centralized exchanges; drawback: susceptible to front running because of publicity in mempool    
 
 `arrays` - **fixed** [2] length of 2 elements and **dynamic** [] arrays with no fixed size; can also create an **array of structs**  
 
@@ -99,13 +100,15 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 
 `EOA` - Externally Owned Account; in general, there are two types of accounts: externally owned accounts, controlled by private keys, and contract accounts, controlled by their contract code      
 
-`events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage   
+`events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage  
 
 `EVM` - Ethereum is a stack based architecture, single threaded.   
 
 `fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
 `flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners   
+
+`flash-swap` - all trades must occur during single transaction: opportunity for arbitragers   
 
 `flooding` - [routing](https://en.wikipedia.org/wiki/Flooding_%28computer_networking%29)
 
@@ -169,7 +172,7 @@ function _functionname() private {}
 
 `Solc` - the solidity compiler to byte code    
 
-`slippage` - ??   
+`slippage` - ??   (higher invariants lead to less slippage; Uniswap)    
 
 `smart contract` - programs stored on a blockchain that run when predetermined conditions are met; a transaction protocol intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement; Ethereum contracts are essentially single threaded machine       
 
@@ -251,7 +254,8 @@ Infinite loops and gas limits attacks...
 Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
 Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
 [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
-Owen Thurm - Live Audit [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c), [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U), [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I)   
+Owen Thurm - Live Audit [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I)   
+Blue Alder - Wallet Mining Walkthrough - Damn Vulnerable [DeFi ](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
  
 -----   
 
