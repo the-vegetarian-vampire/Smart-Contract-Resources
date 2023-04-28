@@ -70,7 +70,7 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 
 `arrays` - **fixed** [2] length of 2 elements and **dynamic** [] arrays with no fixed size; can also create an **array of structs**  
 
-`assertEQ` -    
+`assertEQ` - Assert a is [equal](https://book.getfoundry.sh/reference/forge-std/assertEq) to b    
 
 `Beacon Chain` - a [separate chain](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain) from the original Ethereum Mainnet, running side-by-side; [withdrawals](https://ethereum.org/en/staking/withdrawals/)   
 
@@ -97,7 +97,7 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
   2. memory - variable is in memory and it exists while a function is being called
   3. calldata - special data location that contains function arguments 
  
-`dutch auction` - 
+`dutch auction` - a descending price auction; an auctioneer starts with a very high price, incrementally lowering the price until someone places a bid    
   
 `enums` - useful to model choice and keep track of state/can be declared outside of a contract   
 
@@ -123,15 +123,15 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 
 `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable   
 
-`impermanent loss` - 
+`impermanent loss` - a temporary loss of funds occurring when providing liquidity; occurs when the mathematical formula adjusts the asset ratio in a pool to ensure they remain at 50:50 in terms of value and the liquidity provider loses out on gains from a deposited asset that outperforms    
 
 `interface` -   
 
 `internal` - same as private, except it's accessible to contracts that inherit  
 
-`interoperability` -
+`interoperability` -  the ability of independent distributed ledger networks to communicate with each other, exchange and make use of data; ability to move a digital asset between two or more blockchains while maintaining the state and uniqueness of the asset consistent throughout the process    
 
-`invariant` -    
+`invariant` - ??? unclear...     
 
 `Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3)/Secure Hash Algorithm; using it in a [contract](https://www.youtube.com/watch?v=wCD3fOlsGc4)   
 
@@ -265,6 +265,11 @@ Infinite loops and gas limits attacks...
 - [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
 - Owen Thurm - Live [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) - [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
+
+Audit Checklist
+- Logical issues: mathematics, floating point arithmetic
+- Changing market conditions: tokens; validators, bots…
+- Time: does latency allow exploit opportunity?   
  
 -----   
 
@@ -281,7 +286,7 @@ Capture The Flag (CTF) games:
   - [Alchemy](https://www.alchemy.com/)
   - [Etherscan](https://etherscan.io/)
   - Slither
-  - Foundry
+  - [Foundry](https://book.getfoundry.sh/)
   - In-line bookmarks: // @audit this code seems vulnerable here   
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
