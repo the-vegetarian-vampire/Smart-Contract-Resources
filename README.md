@@ -19,7 +19,7 @@ Solidity [By example](https://solidity-by-example.org/)
   
 `4. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
  
-Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (mostly for the AMA’s)    
+Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list    
 
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)   
@@ -71,6 +71,8 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 
 `assertEQ` -    
 
+`Beacon Chain` - a [separate chain](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain) from the original Ethereum Mainnet, running side-by-side; [withdrawals](https://ethereum.org/en/staking/withdrawals/)   
+
 `blob` - binary large object is a collection of data of an arbitrary size. Blobs do not have to follow a given format or have any metadata associated with them. They are a series of bytes, with each byte made up of 8 bits (a 1 or a 0, hence the "binary" descriptor). Any type of data can go in a blob; efficient and cheap transaction.   
 
 `block.timestamp ` - convert a uint of the number of seconds in that length of time. So 1 minutes is 60, 1 hours is 3600 (60 seconds x 60 minutes), 1 days is 86400 (24 hours x 60 minutes x 60 seconds), find on [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html)    
@@ -106,7 +108,7 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 
 `fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
-`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners   
+`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners; [video explanation](https://www.youtube.com/watch?v=Zt15wrSDVxc)    
 
 `flash-swap` - all trades must occur during single transaction: opportunity for arbitragers   
 
@@ -156,7 +158,7 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 function _functionname() private {}   
 ```
 
-`private relay` - "flashbots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk)   
+`private relayers` - "flashbots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk) (e.g., Flashbots, Bloxroute, Ethermine, Eden)    
 
 `Proxies` - [abstract contract](https://docs.openzeppelin.com/contracts/4.x/api/proxy) abstract contract implementing the core delegation functionality   
 
@@ -174,11 +176,15 @@ function _functionname() private {}
 
 `slippage` - ??   (higher invariants lead to less slippage; Uniswap)    
 
+`source lines of code (SLOC)` - software metric used to measure the size of a computer program by counting the number of lines    
+
 `smart contract` - programs stored on a blockchain that run when predetermined conditions are met; a transaction protocol intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement; Ethereum contracts are essentially single threaded machine       
 
 `state variables` - variables stored permanently on the blockchain   
 
-`struct` - useful for grouping related data, can be declared outside of a contract and imported in another contract    
+`struct` - useful for grouping related data, can be declared outside of a contract and imported in another contract   
+
+`timelock` -    
 
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools   
 
@@ -254,8 +260,8 @@ Infinite loops and gas limits attacks...
 Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
 Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
 [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
-Owen Thurm - Live Audit [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I)   
-Blue Alder - Wallet Mining Walkthrough - Damn Vulnerable [DeFi ](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
+Owen Thurm - Live [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I)   
+Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
  
 -----   
 
