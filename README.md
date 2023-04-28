@@ -177,7 +177,7 @@ function _functionname() private {}
 
 `Solc` - the solidity compiler to byte code    
 
-`slippage` - ??   (higher invariants lead to less slippage; Uniswap)    
+`slippage` - the difference between the value of an asset at order placement and the value at order fulfilment. It can be found when buying or selling assets, and can result in either a loss or a gain (higher invariants lead to less slippage; Uniswap)     
 
 `source lines of code (SLOC)` - software metric used to measure the size of a computer program by counting the number of lines    
 
@@ -242,11 +242,11 @@ Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)
 
 Infinite loops and gas limits attacks...   
 
-- Reetrancy    
+- `Reetrancy` - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”        
   
-- [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw)   
+- [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction is sandwiched in between    
 
-- Flash loans   
+- `Flash loans`   
 
 - [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks, while the unconfirmed transaction attack is most commonly seen  
 
@@ -263,7 +263,7 @@ Infinite loops and gas limits attacks...
 - Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
 - Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
 - [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
-- Owen Thurm - Live [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
+- Owen Thurm - Live [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) - [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
  
 -----   
