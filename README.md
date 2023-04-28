@@ -24,9 +24,10 @@ Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Clas
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)   
 
-Christoph Michel's [book](https://learneos.dev/#packages) (He is all-time top ranked auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/)                  
+Christoph Michel's [book](https://learneos.dev/#packages) (#1 all-time auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) where he mentions Khan Acad. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities)    
+)                 
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
-[DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018)   
+[DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018) (particularly Chapter 6: deep dive)    
 
 Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist 
 
@@ -117,6 +118,8 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 `fuzzing` - or `fuzz testing` involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
 
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
+
+`hard fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software   
 
 `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable   
 
@@ -257,11 +260,11 @@ Infinite loops and gas limits attacks...
 5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)       
 `Andy Li` [Auditor Road Map](https://youtu.be/-469Gcye-ZE)       
   
-Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
-Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
-[Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
-Owen Thurm - Live [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I)   
-Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
+- Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
+- Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
+- [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
+- Owen Thurm - Live [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
+- Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
  
 -----   
 
