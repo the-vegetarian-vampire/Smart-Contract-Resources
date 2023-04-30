@@ -18,23 +18,19 @@ Solidity [By example](https://solidity-by-example.org/)
 `3. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (One of the creators of Solidity by example)   
   
 `4. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
- 
-Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list    
 
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook)   
 
-Christoph Michel's [book](https://learneos.dev/#packages) (#1 all-time auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) where he mentions Khan Acad. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities)    
-)                 
+Christoph Michel's [book](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
 [DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018) (particularly Chapter 6: deep dive)    
 
-Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist 
+Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)    
 
 ### Interactive
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)   
 [Blockchain Developer Roadmap](https://roadmap.sh/blockchain)    
-
 [Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)   
 [Ethernaut](https://ethernaut.openzeppelin.com/)    
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
@@ -46,10 +42,12 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 - [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
 - [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
 
-`Peter Robinson` - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
-Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)    
+Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list    
 
-`Andy Li` - ([interviews](https://www.youtube.com/@andyli ) about smart contract auditing and cyber security)     
+Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
+Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)       
+
+Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) and cyber security        
 
 -----
 ### Teams to Connect With  
@@ -119,7 +117,7 @@ Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7
 
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
 
-`hard fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software   
+`hard fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software; twitter [status](https://twitter.com/christine_dkim/status/1651999278997417998?s=20)    
 
 `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable   
 
@@ -177,17 +175,21 @@ function _functionname() private {}
 
 `Solc` - the solidity compiler to byte code    
 
-`slippage` - the difference between the value of an asset at order placement and the value at order fulfilment. It can be found when buying or selling assets, and can result in either a loss or a gain (higher invariants lead to less slippage; Uniswap)     
-
-`source lines of code (SLOC)` - software metric used to measure the size of a computer program by counting the number of lines    
+`slippage` - the difference between the value of an asset at order placement and the value at order fulfilment. It can be found when buying or selling assets, and can result in either a loss or a gain (higher invariants lead to less slippage; Uniswap)      
 
 `smart contract` - programs stored on a blockchain that run when predetermined conditions are met; a transaction protocol intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement; Ethereum contracts are essentially single threaded machine       
+
+`source lines of code (SLOC)` - software metric used to measure the size of a computer program by counting the number of lines   
+
+`staking` - the act of [depositing](https://ethereum.org/en/staking/) 32 ETH to activate validator software. As a validator you’ll be responsible for storing data, processing transactions, and adding new blocks to the blockchain.   
 
 `state variables` - variables stored permanently on the blockchain   
 
 `struct` - useful for grouping related data, can be declared outside of a contract and imported in another contract   
 
-`timelock` -    
+`timelock` -   
+
+`TPS` - transactions per second [find data for different blockchains]   
 
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools   
 
@@ -206,7 +208,7 @@ Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of te
 ----- 
 
 ## Gas Optimization
-Not invented here: security risk is often greater than improvement value   
+Not invented here: meaning the security risk is often greater than improvement value   
 
 A transaction costs a base of 21,000 gas   
 each computational step cost ~2-10 gas (usually)   
@@ -219,13 +221,15 @@ editing a storage slot costs 5,000 gas (20,000 if not yet filled)
 - strings, arrays, and loops are `computationally expensive`   
 - `custom errors` - declared at top, more `gas efficient`   
 - `constant` - naming convention ALL_CAPS; more `gas efficient`    
-- `immutable` - can be set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
-- batch minting     
+- `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
+- batch minting   
+- Hardhat gas reporter   
+
 ----- 
   
 ## Tokens
 * ERC-20 - Token contract for fungible assets. [Ethereum Request for Comment]   
-* ERC-721 - Token standard for non-fungible assets.
+* [ERC-721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) - Token standard for non-fungible assets.
 * ERC-1155 - Multi Token Standard to take the best from previous standards to create a fungibility-agnostic and gas-efficient token contract.
 * ERC-918 - Mineable Token Standard.
 * ERC-165 - Creates a standard method to publish and detect what interfaces a smart contract implements.
@@ -258,8 +262,9 @@ Infinite loops and gas limits attacks...
 `What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee    
 
 5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)       
-`Andy Li` [Auditor Road Map](https://youtu.be/-469Gcye-ZE)       
+Andy Li's [Auditor Road Map](https://youtu.be/-469Gcye-ZE)       
   
+- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)
 - Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
 - Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
 - [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
@@ -267,6 +272,8 @@ Infinite loops and gas limits attacks...
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 
 Audit Checklist
+- Read documentation ReadMe, whitepaper if one.  
+- check tests, create a notes.MD
 - Logical issues: mathematics, floating point arithmetic
 - Changing market conditions: tokens; validators, bots…
 - Time: does latency allow exploit opportunity?   
