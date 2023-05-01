@@ -47,7 +47,9 @@ Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Clas
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
 
 Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
-Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)       
+Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)  
+
+Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)
 
 Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) and cyber security        
 
