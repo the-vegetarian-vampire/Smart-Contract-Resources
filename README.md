@@ -60,7 +60,7 @@ Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) 
 -----
 
 ## Dictionary of Key Terms (Solidity) 
-Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms or [General(https://medium.datadriveninvestor.com/crypto-vocabulary-expanded-76131d26537b)
+Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms or [General](https://medium.datadriveninvestor.com/crypto-vocabulary-expanded-76131d26537b)
 
  `Aave` - decentralised non-custodial liquidity market protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion; Stani Kulechov [interview](https://www.youtube.com/watch?v=PA9QrrH-ze0) by Haseeb Qureshi   
 
