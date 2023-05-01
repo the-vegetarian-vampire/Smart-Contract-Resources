@@ -44,6 +44,8 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list    
 
+Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
+
 Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
 Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)       
 
@@ -58,6 +60,8 @@ Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) 
 -----
 
 ## Dictionary of Key Terms (Solidity) 
+Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms or [General(https://medium.datadriveninvestor.com/crypto-vocabulary-expanded-76131d26537b)
+
  `Aave` - decentralised non-custodial liquidity market protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion; Stani Kulechov [interview](https://www.youtube.com/watch?v=PA9QrrH-ze0) by Haseeb Qureshi   
 
 `ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON  
@@ -156,7 +160,7 @@ Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) 
 
 `NatSpec` - Ethereum Natural Language Specification [Format](https://docs.soliditylang.org/en/v0.8.19/natspec-format.html) @title and @author are straightforward; @notice explains the contract function does; @dev is for explaining extra details to developers; @param and @return are for describing what each parameter and return value of a function are for       
   
-`Nonce` - transaction code for this account starting with 0; makes transactions unique; important regarding concurrency  
+`Nonce` - transaction code for this account starting with 0; makes transactions unique; important regarding concurrency; If the account is an externally owned account, this number represents the number of transactions sent from the account’s address. If the account is a contract account, the nonce is the number of contracts created by the account    
 
 `oracle` - entities that connect blockchains to external systems, thereby enabling smart contracts to execute based upon inputs and outputs from the real world; a way for the decentralized ecosystem to access existing data sources, legacy systems, and advanced computations (blockchain middleware); also `oracle manipulation` via flash loans etc...   
 
@@ -192,6 +196,8 @@ Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) 
 
 `state variables` - variables stored permanently on the blockchain   
 
+`storageroot` - a hash of the root node of a Merkle Patricia tree which encodes the hash of the storage contents of this account, and is empty by default.   
+
 `struct` - useful for grouping related data, can be declared outside of a contract and imported in another contract   
 
 `timelock` - locks functionality on an application until a certain amount of time has passed; [video](https://www.youtube.com/watch?v=P1f2a5Ckjpg)    
@@ -209,8 +215,6 @@ Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) 
 `zero address` - contract creation; sometimes sent in an intentional ether burn
 
 `zkSNARK` - succinct non interactive argument of knowledge   
-
-Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms    
 
 ----- 
 
