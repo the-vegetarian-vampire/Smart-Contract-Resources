@@ -265,7 +265,7 @@ Infinite loops and gas limits attacks...
 
 - `Flash loans`   
 
-- [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks, while the unconfirmed transaction attack is most commonly seen  
+- [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks
 
 - Denial of service (DoS; DDoS attack) 
 
@@ -277,11 +277,11 @@ Infinite loops and gas limits attacks...
 5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)       
 Andy Li's [Auditor Road Map](https://youtu.be/-469Gcye-ZE)       
   
-- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)
-- Jackson Kelley's - [Audit process](https://www.youtube.com/watch?v=xD0IZh9c8LM)        
+- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5) Audit process   
+- [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM) Audit process           
 - Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0)      
 - [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
-- Owen Thurm - Live [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) - [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
+- Owen Thurm - [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) - [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 
 Audit Checklist
@@ -322,8 +322,6 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 [Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree)      
 
 [Improving the Efficiency and Reliability of Digital Time-Stamping](http://math.columbia.edu/~bayer/papers/Timestamp_BHS93.pdf)       
-
 [Secure Names for Bit-Strings](https://nakamotoinstitute.org/static/docs/secure-names-bit-strings.pdf)      
-
 [Anonymous Payments Lecture](https://www.youtube.com/watch?v=Z0s4W3UBxM8)
 
