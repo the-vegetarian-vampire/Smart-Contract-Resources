@@ -78,9 +78,13 @@ Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) 
 
 `bridges` - Crosschain Transactions and [Bridges](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s)    
 
+`Compound` - a DeFi lending protocol that allows users to earn interest on their cryptocurrencies by depositing them into one of several pools    
+
 `DAI` - stablecoin on the Ethereum blockchain whose value is pegged to $US   
 
-`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - 9:40 [Andrew Miller AMA](https://www.youtube.com/watch?v=IwRfEsX07MU) and later mentions [David Chaum](https://en.wikipedia.org/wiki/David_Chaum)      
+`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - 9:40 [Andrew Miller AMA](https://www.youtube.com/watch?v=IwRfEsX07MU) and later mentions [David Chaum](https://en.wikipedia.org/wiki/David_Chaum)   
+
+`CFMM` - Constant Function Market Makers: [article](https://medium.com/bollinger-investment-group/constant-function-market-makers-defis-zero-to-one-innovation-968f77022159)  
 
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 
@@ -98,6 +102,8 @@ Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) 
 `dutch auction` - a descending price auction; an auctioneer starts with a very high price, incrementally lowering the price until someone places a bid    
   
 `enums` - useful to model choice and keep track of state/can be declared outside of a contract   
+
+`EIP` - (Ethereum Improvement Proposal) a formal proposal to alter some element of the Ethereum network   
 
 `EOA` - Externally Owned Account; in general, there are two types of accounts: externally owned accounts, controlled by private keys, and contract accounts, controlled by their contract code      
 
@@ -123,15 +129,19 @@ Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) 
 
 `impermanent loss` - a temporary loss of funds occurring when providing liquidity; occurs when the mathematical formula adjusts the asset ratio in a pool to ensure they remain at 50:50 in terms of value and the liquidity provider loses out on gains from a deposited asset that outperforms    
 
-`interface` -   
+`interface` - a list of function definitions without implementation. In other words, an interface is a description of all functions that an object must have for it to operate; convention preface `I` as in IERC721; [video](https://www.youtube.com/watch?v=tbjyc-VQaQo)   
 
 `internal` - same as private, except it's accessible to contracts that inherit  
 
 `interoperability` -  the ability of independent distributed ledger networks to communicate with each other, exchange and make use of data; ability to move a digital asset between two or more blockchains while maintaining the state and uniqueness of the asset consistent throughout the process    
 
-`invariant` - ??? unclear...     
+`invariant` - ??? unclear...   
 
-`Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3)/Secure Hash Algorithm; using it in a [contract](https://www.youtube.com/watch?v=wCD3fOlsGc4)   
+`IPFS` - InterPlanetary File System [(IPFS)](https://docs.ipfs.tech/) a set of composable, peer-to-peer protocols for addressing, routing, and transferring content-addressed data in a decentralized file system      
+
+`Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3)/Secure Hash Algorithm; using it in a [contract](https://www.youtube.com/watch?v=wCD3fOlsGc4)  
+
+`linting` - the process of running a program that will analyze code for potential errors (verifying code quality)   
 
 `memepool` - or [memory pool](https://www.alchemy.com/overviews/what-is-a-mempool) is a dynamic staging area in front of the blockchain that enables transaction ordering, fee prioritization, and general block construction; a list of pending transactions waiting for validation from a node before it is committed to a block on the blockchain   
 
@@ -154,10 +164,7 @@ Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) 
 
 `proof of concept` - piece of code that demonstrates the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
 
-`private functions` - it's convention to start private function names with an underscore (_): 
-```
-function _functionname() private {}   
-```
+`private functions` - it's convention to start private function names with an underscore (_): function `_functionname()` private {}    
 
 `private relayers` - "flashbots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk) (e.g., Flashbots, Bloxroute, Ethermine, Eden)    
 
@@ -187,7 +194,7 @@ function _functionname() private {}
 
 `struct` - useful for grouping related data, can be declared outside of a contract and imported in another contract   
 
-`timelock` -   
+`timelock` - locks functionality on an application until a certain amount of time has passed; [video](https://www.youtube.com/watch?v=P1f2a5Ckjpg)    
 
 `TPS` - transactions per second [find data for different blockchains]   
 
@@ -272,7 +279,7 @@ Andy Li's [Auditor Road Map](https://youtu.be/-469Gcye-ZE)
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 
 Audit Checklist
-- Read documentation ReadMe, whitepaper if one.  
+- Read documentation ReadMe, whitepaper (if avail)  
 - check tests, create a notes.MD
 - Logical issues: mathematics, floating point arithmetic
 - Changing market conditions: tokens; validators, bots…
