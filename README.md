@@ -1,5 +1,7 @@
 # Solidity-Smart-Contracts
 
+A general guide to learning Solidity, Defi, and blockchain technologies. 
+
 [Remix](https://remix.ethereum.org)   
 
 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html)     
