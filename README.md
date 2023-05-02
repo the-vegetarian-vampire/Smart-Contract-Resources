@@ -6,14 +6,14 @@ Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html)
 Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
 Solidity [By example](https://solidity-by-example.org/)   
 
-[Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) and Berkeley [YouTube Channel](https://www.youtube.com/playlist?list=PLS01nW3Rtgor_yJmQsGBZAg5XM4TSGpPs)   
+[Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) and Berkeley [YouTube Channel](https://www.youtube.com/@blockchain-web3moocs635)   
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/) via [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) library   
 
 ## Tutorial Resources:
 
 `1. Patrick Collins 32 hour course:` [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
  
-`2. Dapp University:` [Youtube](https://www.youtube.com/watch?v=EhPeHeoKF88&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=5131s); [More Youtube](https://www.youtube.com/watch?v=eoQJ6nFZOcs) and [Github](https://github.com/dappuniversity/master_solidity)
+`2. Dapp University:` [Youtube](https://www.youtube.com/@DappUniversity); [Video](https://www.youtube.com/watch?v=eoQJ6nFZOcs); and [Github](https://github.com/dappuniversity/master_solidity)
   
 `3. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (One of the creators of Solidity by example)   
   
@@ -29,8 +29,7 @@ How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B
 Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)    
 
 ### Interactive
-[Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)   
-[Blockchain Developer Roadmap](https://roadmap.sh/blockchain)    
+[Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)     
 [Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)   
 [Ethernaut](https://ethernaut.openzeppelin.com/)    
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
@@ -38,6 +37,8 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 -----
  
 ### Interviews and Questions   
+[Blockchain Developer Roadmap](https://roadmap.sh/blockchain)   
+
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
 - [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
 - [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
@@ -62,7 +63,7 @@ Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) 
 -----
 
 ## Dictionary of Key Terms (Solidity) 
-Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms or [General](https://medium.datadriveninvestor.com/crypto-vocabulary-expanded-76131d26537b)
+###### Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms or [General](https://medium.datadriveninvestor.com/crypto-vocabulary-expanded-76131d26537b)
 
  `Aave` - decentralised non-custodial liquidity market protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion; Stani Kulechov [interview](https://www.youtube.com/watch?v=PA9QrrH-ze0) by Haseeb Qureshi   
 
