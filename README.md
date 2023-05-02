@@ -39,7 +39,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 -----
  
 ### Interviews and Questions   
-[Blockchain Developer Roadmap](https://roadmap.sh/blockchain) 
+[Blockchain Developer Roadmap](https://roadmap.sh/blockchain)    
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8) 
 
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
