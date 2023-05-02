@@ -2,14 +2,14 @@
 
 A general guide to learning Solidity, Defi, and blockchain technologies. 
 
-[Remix](https://remix.ethereum.org)   
+[Remix](https://remix.ethereum.org) - best tool for testing smart contracts, `bookmark` this; I use it ALL the time.  
 
 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html)     
 Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
 Solidity [By example](https://solidity-by-example.org/)   
-
-[Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) and Berkeley [YouTube Channel](https://www.youtube.com/@blockchain-web3moocs635)   
+   
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/) via [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) library   
+[Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/)  
 
 ## Tutorial Resources:
 
@@ -39,22 +39,21 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 -----
  
 ### Interviews and Questions   
-[Blockchain Developer Roadmap](https://roadmap.sh/blockchain)   
+[Blockchain Developer Roadmap](https://roadmap.sh/blockchain) 
+Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8) 
 
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
 - [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
 - [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
 
-Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list    
-
-Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
+Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list      
 
 Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
 Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)  
 
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)
 
-Andy Li - smart contract auditing [interviews](https://www.youtube.com/@andyli) and cyber security        
+Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) and cyber security        
 
 -----
 ### Teams to Connect With  
