@@ -121,7 +121,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
-`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners; [video explanation](https://www.youtube.com/watch?v=Zt15wrSDVxc)    
+`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners; [video](https://www.youtube.com/watch?v=Zt15wrSDVxc)    
 
 `flash-swap` - all trades must occur during single transaction: opportunity for arbitragers   
 
@@ -149,7 +149,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3)/Secure Hash Algorithm; using it in a [contract](https://www.youtube.com/watch?v=wCD3fOlsGc4)  
 
-`linting` - the process of running a program that will analyze code for potential errors (verifying code quality)   
+`linting` - the process of running a program that will analyze code for potential errors (verifying code quality) [eslint(https://eslint.org/) 
 
 `memepool` - or [memory pool](https://www.alchemy.com/overviews/what-is-a-mempool) is a dynamic staging area in front of the blockchain that enables transaction ordering, fee prioritization, and general block construction; a list of pending transactions waiting for validation from a node before it is committed to a block on the blockchain   
 
