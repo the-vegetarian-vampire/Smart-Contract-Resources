@@ -160,6 +160,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `MEV` - maximal (formerly miner) extractable value; referred to as an “invisible tax” that miners can collect from users – essentially, the maximum value a miner can extract from moving around transactions when producing a block on a blockchain network   
 
+`mocking`- creating objects that simulate the behaviour of real objects; primarily used in unit testing   
+
 `modifier` - `_;` check requirements prior to execution code that can be run before and/or after a function call
   1. Restrict access
   2. Validate inputs
