@@ -230,16 +230,13 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 ## Gas Optimization
 Not invented here: meaning the security risk is often greater than improvement value   
 
-A transaction costs a base of 21,000 gas   
-each computational step cost ~2-10 gas (usually)   
-each byte of data costs 16 gas (4 if zero byte)   
-editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
+A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
 
 - check != 0 rather than >    
 - `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together   
 - cluster identical data types together     
 - strings, arrays, and loops are `computationally expensive`   
-- `custom errors` - declared at top, more `gas efficient`   
+- `custom errors` - declared at top, more gas efficient, denoted with `__` two underscores: error FundMe__NotOwner();     
 - `constant` - naming convention ALL_CAPS; more `gas efficient`    
 - `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
 - batch minting   
