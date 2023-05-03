@@ -2,7 +2,7 @@
 
 A general guide to learning Solidity, Defi, and blockchain technologies. 
 
-[Remix](https://remix.ethereum.org) - best tool for testing smart contracts, `bookmark` this; I use it ALL the time.  
+[Remix](https://remix.ethereum.org) - best tool for testing smart contracts, `bookmark` this; use it ALL the time.  
 
 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html)     
 Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
@@ -40,7 +40,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 -----
  
 ### Interviews and Questions   
-[Blockchain Developer Roadmap](https://roadmap.sh/blockchain)    
+Blockchain [Developer Roadmap](https://roadmap.sh/blockchain)    
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8) 
 
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
@@ -231,7 +231,9 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 ----- 
 
-## Gas Optimization
+## Gas Optimization and Storage
+How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough   
+
 Not invented here: meaning the security risk is often greater than improvement value   
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
