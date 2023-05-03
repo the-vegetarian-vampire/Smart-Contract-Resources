@@ -209,7 +209,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `state variables` - variables stored permanently on the blockchain   
 
-`storageroot` - a hash of the root node of a Merkle Patricia tree which encodes the hash of the storage contents of this account, and is empty by default.   
+`storageroot` - a hash of the root node of a Merkle Patricia tree which encodes the hash of the storage contents of this account, and is empty by default   
 
 `struct` - useful for grouping related data, can be declared outside of a contract and imported in another contract   
 
@@ -232,7 +232,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 ----- 
 
 ## Gas Optimization and Storage
-How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough   
+How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough and [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
@@ -322,6 +322,7 @@ Capture The Flag (CTF) games:
   - In-line bookmarks: // @audit this code seems vulnerable here   
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
+      - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
   - Web3.js   
   
 -----  
