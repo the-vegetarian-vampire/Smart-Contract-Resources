@@ -24,6 +24,9 @@ Solidity [By example](https://solidity-by-example.org/)
 -----
 
 ### General Blockchain Knowledge
+Blockchain [Developer Roadmap](https://roadmap.sh/blockchain)    
+Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
+[White Crypto](https://www.youtube.com/@WhiteboardCrypto)   
 
 -----
 
@@ -47,9 +50,6 @@ Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/m
 -----
  
 ### Interviews and Questions   
-Blockchain [Developer Roadmap](https://roadmap.sh/blockchain)    
-Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)  
-
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
 - [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
 - [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
@@ -247,7 +247,7 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 ## Gas Optimization and Storage
 How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough and [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
-[VM Opcodes](https://github.com/crytic/evm-opcodes)   
+[Ethereum Opcodes](https://github.com/crytic/evm-opcodes)   
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
