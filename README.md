@@ -95,7 +95,7 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `block.timestamp ` - convert a uint of the number of seconds in that length of time. So 1 minutes is 60, 1 hours is 3600 (60 seconds x 60 minutes), 1 days is 86400 (24 hours x 60 minutes x 60 seconds), find on [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html)    
 
-`bridges` - a blockchain [bridge](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s) connects two blockchain ecosystems. Bridges facilitate communication between blockchains through the transfer of information and assets.   
+`bridges` - a blockchain [bridge](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube]([https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s](https://youtu.be/DJyEJVaXMNo?t=3)) connects two blockchain ecosystems. Bridges facilitate communication between blockchains through the transfer of information and assets.   
 
 `Compound` - a DeFi lending protocol that allows users to earn interest on their cryptocurrencies by depositing them into one of several pools    
 
