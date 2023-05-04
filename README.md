@@ -21,6 +21,8 @@ Solidity [By example](https://solidity-by-example.org/)
   
 `4. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
+### General Blockchain Knowledge
+
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)   
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley
