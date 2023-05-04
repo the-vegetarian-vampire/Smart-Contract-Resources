@@ -2,7 +2,7 @@
 
 A general guide to learning Solidity, Defi, and blockchain technologies. 
 
-[Remix](https://remix.ethereum.org) - best tool for testing smart contracts, `bookmark` this; use it ALL the time.  
+[Remix](https://remix.ethereum.org) - best tool for testing smart contracts, `Bookmark` this 
 
 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html)     
 Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
@@ -41,7 +41,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
  
 ### Interviews and Questions   
 Blockchain [Developer Roadmap](https://roadmap.sh/blockchain)    
-Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8) 
+Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)  
 
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
 - [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
@@ -58,9 +58,12 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 -----
 ### Teams to Connect With  
-- [Trail of Bits](https://www.trailofbits.com/)      
+- [Chainlink](https://chain.link/)   
+- [Consensys](https://consensys.net/about/)   
+- [Cyfrin](https://www.cyfrin.io/)   
 - [Secureum](https://www.secureum.xyz/)      
-- [Spearbit](https://spearbit.com/)       
+- [Spearbit](https://spearbit.com/)  
+- [Trail of Bits](https://www.trailofbits.com/) 
 - [YAcademy](https://yacademy.dev/about/)      
 -----
 
@@ -132,7 +135,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
 
-`hard fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software; twitter [status](https://twitter.com/christine_dkim/status/1651999278997417998?s=20)    
+`hard fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) - "To fork or not to fork? - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software; twitter [status](https://twitter.com/christine_dkim/status/1651999278997417998?s=20)   
 
 `The Howey Test` - refers to the U.S. Supreme Court [case](https://www.investopedia.com/terms/h/howey-test.asp) for determining whether a transaction qualifies as an "investment contract," and therefore would be considered a security; (per Infinite Machine Chp. White-Shoe Lawyers) Ether presale was classified as a utility, a function of ethereum and therefore not a security; manner distribution of a product and not as a speculative investment; essentially a utility token   
 
@@ -146,7 +149,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `interoperability` -  the ability of independent distributed ledger networks to communicate with each other, exchange and make use of data; ability to move a digital asset between two or more blockchains while maintaining the state and uniqueness of the asset consistent throughout the process    
 
-`invariant` - ??? unclear...   
+`invariant` - [invariant](https://en.wikipedia.org/wiki/Class_invariant) a computer programming construct consisting of a set of invariant properties that remain uncompromised regardless of the state of the object   
 
 `IPFS` - InterPlanetary File System [(IPFS)](https://docs.ipfs.tech/) a set of composable, peer-to-peer protocols for addressing, routing, and transferring content-addressed data in a decentralized file system      
 
@@ -173,7 +176,9 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
   
 `nonce` - transaction code for this account starting with 0; makes transactions unique; important regarding concurrency; If the account is an externally owned account, this number represents the number of transactions sent from the account’s address. If the account is a contract account, the nonce is the number of contracts created by the account   
 
-`Omner blocks` - previously Uncle, it's possible for two blocks to be created simultaneously by a network. When this happens, one block will be left out. This leftover block is called an ommer block. In the past, they were called uncle blocks, referring to the familial relationships used to describe block positions within a blockchain    
+`Omner blocks` - previously Uncle, it's possible for two blocks to be created simultaneously by a network. When this happens, one block will be left out. This leftover block is called an ommer block. In the past, they were called uncle blocks, referring to the familial relationships used to describe block positions within a blockchain  
+
+`Opcode` - operation code; the portion of a machine language instruction that specifies the operation to be performed; see gas [Opcode](https://github.com/crytic/evm-opcodes)   
 
 `oracle` - entities that connect blockchains to external systems, thereby enabling smart contracts to execute based upon inputs and outputs from the real world; a way for the decentralized ecosystem to access existing data sources, legacy systems, and advanced computations (blockchain middleware); also `oracle manipulation` via flash loans etc...   
 
@@ -233,11 +238,12 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 ## Gas Optimization and Storage
 How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough and [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
+[VM Opcodes](https://github.com/crytic/evm-opcodes)   
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
-
+- prepend storage variables with `s_`
 - check != 0 rather than >    
 - `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together   
 - cluster identical data types together     
