@@ -72,7 +72,7 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 - [Spearbit](https://spearbit.com/)  
 - [Trail of Bits](https://www.trailofbits.com/) 
 - [YAcademy](https://yacademy.dev/about/)      
------
+----- 
 
 ## Dictionary of Key Terms (Solidity) 
 ###### Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms or [General](https://medium.datadriveninvestor.com/crypto-vocabulary-expanded-76131d26537b)
