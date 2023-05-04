@@ -21,7 +21,11 @@ Solidity [By example](https://solidity-by-example.org/)
   
 `4. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
+-----
+
 ### General Blockchain Knowledge
+
+-----
 
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)   
@@ -33,11 +37,12 @@ How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B
 
 Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)    
 
-### Interactive
-[Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)     
+### Interactive 
 [Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)   
 [Ethernaut](https://ethernaut.openzeppelin.com/)    
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
+[Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)  
+Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)   
 
 -----
  
@@ -52,11 +57,11 @@ Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)
 Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list      
 
 Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
-Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)  
+Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)   
 
-Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)
+Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
 
-Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) and cyber security        
+Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) author of DeFi and the Future of Finance   
 
 -----
 ### Teams to Connect With  
@@ -90,7 +95,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `block.timestamp ` - convert a uint of the number of seconds in that length of time. So 1 minutes is 60, 1 hours is 3600 (60 seconds x 60 minutes), 1 days is 86400 (24 hours x 60 minutes x 60 seconds), find on [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html)    
 
-`bridges` - Crosschain Transactions and [Bridges](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s)    
+`bridges` - a blockchain [bridge](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=DJyEJVaXMNo&t=4979s) connects two blockchain ecosystems. Bridges facilitate communication between blockchains through the transfer of information and assets.   
 
 `Compound` - a DeFi lending protocol that allows users to earn interest on their cryptocurrencies by depositing them into one of several pools    
 
@@ -112,6 +117,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
   1. storage - variable is a state variable (store on blockchain)
   2. memory - variable is in memory and it exists while a function is being called
   3. calldata - special data location that contains function arguments 
+
+`describe ()` - function in [Jasmine](https://stackoverflow.com/questions/12209582/the-describe-keyword-in-javascript) framework used for testing   
  
 `dutch auction` - a descending price auction; an auctioneer starts with a very high price, incrementally lowering the price until someone places a bid    
   
@@ -131,13 +138,13 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `flash-swap` - all trades must occur during single transaction: opportunity for arbitragers   
 
-`flooding` - [routing](https://en.wikipedia.org/wiki/Flooding_%28computer_networking%29)
+`flooding` - [routing](https://en.wikipedia.org/wiki/Flooding_%28computer_networking%29)   
+
+`fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) - "To fork or not to fork? - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software; twitter [status](https://twitter.com/christine_dkim/status/1651999278997417998?s=20)    
 
 `fuzzing` - or `fuzz testing` involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
 
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
-
-`hard fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) - "To fork or not to fork? - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software; twitter [status](https://twitter.com/christine_dkim/status/1651999278997417998?s=20)   
 
 `The Howey Test` - refers to the U.S. Supreme Court [case](https://www.investopedia.com/terms/h/howey-test.asp) for determining whether a transaction qualifies as an "investment contract," and therefore would be considered a security; (per Infinite Machine Chp. White-Shoe Lawyers) Ether presale was classified as a utility, a function of ethereum and therefore not a security; manner distribution of a product and not as a speculative investment; essentially a utility token   
 
@@ -346,3 +353,4 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 [Secure Names for Bit-Strings](https://nakamotoinstitute.org/static/docs/secure-names-bit-strings.pdf)      
 [Anonymous Payments Lecture](https://www.youtube.com/watch?v=Z0s4W3UBxM8)
 
+[Academic_Smart_Contract_Papers](https://github.com/hzysvilla/Academic_Smart_Contract_Papers).  
