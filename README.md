@@ -26,7 +26,7 @@ Solidity [By example](https://solidity-by-example.org/)
 ### General Blockchain Knowledge
 Blockchain [Developer Roadmap](https://roadmap.sh/blockchain)    
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
-[White Crypto](https://www.youtube.com/@WhiteboardCrypto)   
+[Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)   
 
 -----
 
