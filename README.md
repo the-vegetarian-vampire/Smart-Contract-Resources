@@ -38,8 +38,9 @@ Christoph Michel's [book](https://learneos.dev/#packages) (#1 auditor on [Code4A
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
 [DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018) - particularly Chapter 6: deep dive      
 
-Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)    
+Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)   
 
+-----   
 ### Interactive 
 [Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)   
 [Ethernaut](https://ethernaut.openzeppelin.com/)    
@@ -48,7 +49,6 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)   
 
 -----
- 
 ### Interviews and Questions   
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
 - [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
