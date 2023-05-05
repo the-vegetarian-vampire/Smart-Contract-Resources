@@ -229,7 +229,7 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `timelock` - locks functionality on an application until a certain amount of time has passed; [video](https://www.youtube.com/watch?v=P1f2a5Ckjpg)    
 
-`TPS` - transactions per second [find data for different blockchains]   
+`TPS` - transactions per second [chart](https://coincodex.com/article/14198/layer-1-performance-comparing-6-leading-blockchains/)      
 
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools   
 
