@@ -156,7 +156,7 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `internal` - same as private, except it's accessible to contracts that inherit  
 
-`interoperability` -  the ability of independent distributed ledger networks to communicate with each other, exchange and make use of data; ability to move a digital asset between two or more blockchains while maintaining the state and uniqueness of the asset consistent throughout the process    
+`interoperability` - the ability of independent distributed ledger networks to communicate with each other, exchange and make use of data; ability to move a digital asset between two or more blockchains while maintaining the state and uniqueness of the asset consistent throughout the process    
 
 `invariant` - [invariant](https://en.wikipedia.org/wiki/Class_invariant) a computer programming construct consisting of a set of invariant properties that remain uncompromised regardless of the state of the object   
 
