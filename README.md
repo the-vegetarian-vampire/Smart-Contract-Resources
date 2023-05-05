@@ -11,7 +11,7 @@ Solidity [By example](https://solidity-by-example.org/)
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/) via [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) library   
 [Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/)  
 
-## Tutorial Resources:
+## Tutorial Resources
 
 `1. Patrick Collins 32 hour course:` [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
  
@@ -284,11 +284,11 @@ Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)
 
 Infinite loops and gas limits attacks...   
 
-- `Reetrancy` - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”        
+- Reetrancy - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”        
   
 - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between    
 
-- `Flash loans`   
+- Flash loans  
 
 - [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks
 
@@ -324,7 +324,7 @@ Audit Checklist
  - [Code4rena](https://code4rena.com/)   
  - [Immunefi](https://immunefi.com/)      
 
-Capture The Flag (CTF) games:
+Capture The Flag (CTF) Games:
 - [Ethernaut](https://ethernaut.openzeppelin.com/)      
 
 -----   
@@ -332,13 +332,14 @@ Capture The Flag (CTF) games:
 ### Tools 
   - [Alchemy](https://www.alchemy.com/)
   - [Etherscan](https://etherscan.io/)
-  - Slither
+  - [Slither](https://github.com/crytic/slither)
+      - [Static Analyzer](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/)
   - [Foundry](https://book.getfoundry.sh/)
   - In-line bookmarks: // @audit this code seems vulnerable here   
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
       - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
-  - Web3.js   
+  - [Web3.js](https://web3js.org/#/)  
   
 -----  
  
