@@ -101,7 +101,7 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `DAI` - stablecoin on the Ethereum blockchain whose value is pegged to $US   
 
-`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - 9:40 [Andrew Miller AMA](https://www.youtube.com/watch?v=IwRfEsX07MU) and later mentions [David Chaum](https://en.wikipedia.org/wiki/David_Chaum)   
+`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - 9:40 [Andrew Miller AMA](https://www.youtube.com/watch?v=IwRfEsX07MU) and later mentions [David Chaum](https://en.wikipedia.org/wiki/David_Chaum) Dan Robinson’s [blog post](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest)      
 
 `CFMM` - Constant Function Market Makers: [article](https://medium.com/bollinger-investment-group/constant-function-market-makers-defis-zero-to-one-innovation-968f77022159)  
 
@@ -140,9 +140,9 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `flooding` - [routing](https://en.wikipedia.org/wiki/Flooding_%28computer_networking%29)   
 
-`fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) - "To fork or not to fork? - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software; twitter [status](https://twitter.com/christine_dkim/status/1651999278997417998?s=20)    
+`fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) "To fork or not to fork? - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software; twitter [status](https://twitter.com/christine_dkim/status/1651999278997417998?s=20)    
 
-`fuzzing` - or `fuzz testing` involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
+`fuzzing` - or fuzz testing involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
 
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
 
@@ -170,7 +170,7 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `memepool` - or [memory pool](https://www.alchemy.com/overviews/what-is-a-mempool) is a dynamic staging area in front of the blockchain that enables transaction ordering, fee prioritization, and general block construction; a list of pending transactions waiting for validation from a node before it is committed to a block on the blockchain   
 
-`MEV` - maximal (formerly miner) extractable value; referred to as an “invisible tax” that miners can collect from users – essentially, the maximum value a miner can extract from moving around transactions when producing a block on a blockchain network   
+`MEV` - maximal (formerly miner) extractable value; referred to as an “invisible tax” that miners can collect from users – essentially, the maximum value a miner can extract from moving around transactions when producing a block on a blockchain network; [video](https://youtu.be/u4sV-Btg1Ag)   
 
 `mocking`- creating objects that simulate the behaviour of real objects; primarily used in unit testing   
 
@@ -247,12 +247,11 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 ## Gas Optimization and Storage
 How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough and [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
-[Ethereum Opcodes](https://github.com/crytic/evm-opcodes)   
+[Opcodes](https://github.com/crytic/evm-opcodes)   
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
-- prepend storage variables with `s_`
 - check != 0 rather than >    
 - `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together   
 - cluster identical data types together     
@@ -261,6 +260,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - `constant` - naming convention ALL_CAPS; more `gas efficient`    
 - `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
 - batch minting   
+- in testing it's common to prepend storage variables with `s_`
 - Hardhat gas reporter   
 
 ----- 
