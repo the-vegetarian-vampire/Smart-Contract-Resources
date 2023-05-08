@@ -32,7 +32,7 @@ How Bitcoin [Works](https://youtu.be/Lx9zgZCMqXE)
 -----
 
 ### Reading
-[Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*) 
+[Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)    
 [Mastering Bitocin](https://github.com/bitcoinbook/bitcoinbook) (*FREE*)   
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
 
