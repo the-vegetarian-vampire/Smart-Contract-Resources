@@ -2,7 +2,7 @@
 
 A general guide to learning Solidity, Defi, and blockchain technologies. 
 
-[Remix](https://remix.ethereum.org) - best tool for testing smart contracts, `Bookmark` this 
+[Remix](https://remix.ethereum.org) - tool for testing smart contracts, `Bookmark` this 
 
 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html)     
 Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
@@ -24,15 +24,17 @@ Solidity [By example](https://solidity-by-example.org/)
 -----
 
 ### General Blockchain Knowledge
-Blockchain [Developer Roadmap](https://roadmap.sh/blockchain)    
+Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) and a more detailed [roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map)   
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
+How Bitcoin [Works](https://youtu.be/Lx9zgZCMqXE)   
 [Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)   
 
 -----
 
 ### Reading
-[Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)   
-[The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley
+[Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*) 
+[Mastering Bitocin](https://github.com/bitcoinbook/bitcoinbook) (*FREE*)   
+[The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
 
 Christoph Michel's [book](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
@@ -246,8 +248,8 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 ----- 
 
 ## Gas Optimization and Storage
-How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough and [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
-[Opcodes](https://github.com/crytic/evm-opcodes)   
+How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough and sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
+Opcodes [Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)   
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
@@ -339,6 +341,7 @@ Capture The Flag (CTF) Games:
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
       - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
+  - [Wagmi](https://wagmi.sh/)   
   - [Web3.js](https://web3js.org/#/)  
   
 -----  
