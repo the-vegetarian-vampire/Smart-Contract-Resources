@@ -122,7 +122,9 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `describe ()` - function in [Jasmine](https://stackoverflow.com/questions/12209582/the-describe-keyword-in-javascript) framework used for testing   
  
-`dutch auction` - a descending price auction; an auctioneer starts with a very high price, incrementally lowering the price until someone places a bid    
+`dutch auction` - a descending price auction; an auctioneer starts with a very high price, incrementally lowering the price until someone places a bid   
+
+`elliptic curve` - [elliptic curve cryptography](https://medium.com/coinmonks/learn-how-to-code-elliptic-curve-cryptography-a952dfdc20ab) with fastecdsa library   
   
 `enums` - useful to model choice and keep track of state/can be declared outside of a contract   
 
@@ -162,7 +164,7 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `invariant` - [invariant](https://en.wikipedia.org/wiki/Class_invariant) a computer programming construct consisting of a set of invariant properties that remain uncompromised regardless of the state of the object   
 
-`IPFS` - InterPlanetary File System [(IPFS)](https://docs.ipfs.tech/) a set of composable, peer-to-peer protocols for addressing, routing, and transferring content-addressed data in a decentralized file system      
+`IPFS` - InterPlanetary File System [(IPFS)](https://docs.ipfs.tech/) a set of composable, peer-to-peer protocols for addressing, routing, and transferring content-addressed data in a decentralized file system; see also [Swarm](https://www.ethswarm.org/)      
 
 `it()` - defined by the jasmine [testing framework](https://stackoverflow.com/questions/28353232/what-is-the-it-function-here-doing), to declare the expected output and have a fair check if it matches the coded conditions     
 
@@ -234,6 +236,8 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 `TPS` - transactions per second [chart](https://coincodex.com/article/14198/layer-1-performance-comparing-6-leading-blockchains/)      
 
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools   
+
+`txn` -  "transaction": txn.origin, txn.gasprice
 
 `unchecked` - instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
@@ -357,4 +361,6 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 [Secure Names for Bit-Strings](https://nakamotoinstitute.org/static/docs/secure-names-bit-strings.pdf)      
 [Anonymous Payments Lecture](https://www.youtube.com/watch?v=Z0s4W3UBxM8)
 
-[Academic_Smart_Contract_Papers](https://github.com/hzysvilla/Academic_Smart_Contract_Papers).  
+[Academic Smart_Contract_Papers](https://github.com/hzysvilla/Academic_Smart_Contract_Papers)   
+
+[More Resources](https://github.com/PatrickAlphaC/Blockchain-Development-Resources#youtube-channels)   
