@@ -27,7 +27,8 @@ Solidity [By example](https://solidity-by-example.org/)
 Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) and a more detailed [roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map)   
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
 How Bitcoin [Works](https://youtu.be/Lx9zgZCMqXE)   
-[Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)   
+[Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)    
+Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s)   
 
 -----
 
@@ -138,7 +139,8 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
-`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners; [video](https://www.youtube.com/watch?v=Zt15wrSDVxc)    
+`flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners; [video](https://www.youtube.com/watch?v=Zt15wrSDVxc)  
+   - How to build [flashbots](https://www.youtube.com/watch?v=gme0uNyIIsE)   
 
 `flash-swap` - all trades must occur during single transaction: opportunity for arbitragers   
 
@@ -317,7 +319,7 @@ Andy Li's [Auditor Road Map](https://youtu.be/-469Gcye-ZE)
 - Owen Thurm - [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) - [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 
-Audit Checklist
+[Audit Checklist](https://github.com/transmissions11/solcurity)   
 - Read documentation ReadMe, whitepaper (if avail)  
 - check tests, create a notes.MD
 - Logical issues: mathematics, floating point arithmetic
