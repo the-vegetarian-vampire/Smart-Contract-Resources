@@ -88,6 +88,8 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `AMM` - Automated Market Maker; underlying protocol that powers all decentralized exchanges (DEXs), DEXs help users exchange cryptocurrencies by connecting users directly, without an intermediary; autonomous trading mechanisms that eliminate the need for centralized exchanges; drawback: susceptible to front running because of publicity in mempool    
 
+`Application-specific integrated circuit` or [ASIC](https://www.businessinsider.com/personal-finance/asic-mining?op=1) - The most powerful computer has the greatest chance of solving the puzzle, and so ASIC mining was created to maximize the possibility of mining; see also [GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit)    
+
 `arrays` - **fixed** [2] length of 2 elements and **dynamic** [] arrays with no fixed size; can also create an **array of structs**  
 
 `assertEQ` - Assert a is [equal](https://book.getfoundry.sh/reference/forge-std/assertEq) to b    
@@ -99,6 +101,8 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 `block.timestamp ` - convert a uint of the number of seconds in that length of time. So 1 minutes is 60, 1 hours is 3600 (60 seconds x 60 minutes), 1 days is 86400 (24 hours x 60 minutes x 60 seconds), find on [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html)    
 
 `bridges` - a blockchain [bridge](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=xS0PyYpt6bA) connects two blockchain ecosystems. Bridges facilitate communication between blockchains through the transfer of information and assets.   
+
+`Byzantine fault` or [Byzantine generals problem](https://en.wikipedia.org/wiki/Byzantine_fault) - a condition of a computer system, particularly distributed computing systems, where components may fail and there is imperfect information on whether a component has failed; thus the reason for Proof of Work     
 
 `Compound` - a DeFi lending protocol that allows users to earn interest on their cryptocurrencies by depositing them into one of several pools    
 
@@ -172,6 +176,8 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3)/Secure Hash Algorithm; using it in a [contract](https://www.youtube.com/watch?v=wCD3fOlsGc4)  
 
+`Know Your Customer` or KYC - guidelines and regulations in financial services that require professionals to verify the identity, suitability, and risks involved with maintaining a business relationship with a customer; providing documents AML (anti money laundering)    
+   
 `linting` - the process of running a program that will analyze code for potential errors (verifying code quality) [eslint(https://eslint.org/) 
 
 `memepool` - or [memory pool](https://www.alchemy.com/overviews/what-is-a-mempool) is a dynamic staging area in front of the blockchain that enables transaction ordering, fee prioritization, and general block construction; a list of pending transactions waiting for validation from a node before it is committed to a block on the blockchain   
@@ -213,7 +219,9 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `require` -   
 
-`revert` - gives back gas but loses some   
+`revert` - gives back gas but loses some in process  
+
+`remote procedure call` or [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) - when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is written as if it were a normal (local) procedure call, without the programmer explicitly writing the details for the remote interaction   
 
 `self destruct` - leaves a blank account; costs negative gas, does not remove transaction history: only can be self destructed if contract has self destruct programmed in    
 
