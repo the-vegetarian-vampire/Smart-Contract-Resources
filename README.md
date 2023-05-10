@@ -90,7 +90,7 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `Application-specific integrated circuit` or [ASIC](https://www.businessinsider.com/personal-finance/asic-mining?op=1) - The most powerful computer has the greatest chance of solving the puzzle, and so ASIC mining was created to maximize the possibility of mining; see also [GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit)    
 
-`arrays` - **fixed** [2] length of 2 elements and **dynamic** [] arrays with no fixed size; can also create an **array of structs**  
+`arrays` - fixed [2] length of 2 elements and dynamic [] arrays with no fixed size; can also create an array of structs or 2D array     
 
 `assertEQ` - Assert a is [equal](https://book.getfoundry.sh/reference/forge-std/assertEq) to b    
 
@@ -239,7 +239,9 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `storageroot` - a hash of the root node of a Merkle Patricia tree which encodes the hash of the storage contents of this account, and is empty by default   
 
-`struct` - useful for grouping related data, can be declared outside of a contract and imported in another contract   
+`struct` - useful for grouping related data, can be declared outside of a contract and imported in another contract  
+
+`topics` - indexed parameters for ‘logged’ events allow you to search for these events using the indexed parameters as filters; at most 3 parameters can receive the property indexed   
 
 `timelock` - locks functionality on an application until a certain amount of time has passed; [video](https://www.youtube.com/watch?v=P1f2a5Ckjpg)    
 
