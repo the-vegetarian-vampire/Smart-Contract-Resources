@@ -329,7 +329,7 @@ Andy Li's [Auditor Road Map](https://youtu.be/-469Gcye-ZE)
 - Owen Thurm - [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) - [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 
-[Audit Checklist](https://github.com/transmissions11/solcurity)   
+Audit Checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
 - Read documentation ReadMe, whitepaper (if avail)  
 - check tests, create a notes.MD
 - Logical issues: mathematics, floating point arithmetic
