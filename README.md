@@ -34,7 +34,7 @@ Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s)
 
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)    
-[Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) (*FREE*)   
+[Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  a bit more technical (and perhaps duller) than Mastering Ethereum? (*FREE*)   
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
 
 Christoph Michel's [book](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
@@ -112,6 +112,8 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `CFMM` - Constant Function Market Makers: [article](https://medium.com/bollinger-investment-group/constant-function-market-makers-defis-zero-to-one-innovation-968f77022159)  
 
+`coinbase transaction` - the first transaction in a block. Miners use it to collect the block reward, and any additional transaction fees.   
+
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 
 `constructor` - called once when contract is deployed  
@@ -126,6 +128,8 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
   3. calldata - special data location that contains function arguments 
 
 `describe ()` - function in [Jasmine](https://stackoverflow.com/questions/12209582/the-describe-keyword-in-javascript) framework used for testing   
+
+`deterministic algorithm` - an [algorithm](https://en.wikipedia.org/wiki/Deterministic_algorithm) that, given a particular input, will always produce the same output, with the underlying machine always passing through the same sequence of states    
  
 `dutch auction` - a descending price auction; an auctioneer starts with a very high price, incrementally lowering the price until someone places a bid   
 
@@ -255,6 +259,8 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 
 `Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange; [whitepaper](https://uniswap.org/whitepaper-v3.pdf) and [billion dollar algorithm](https://www.paradigm.xyz/2021/05/liquidity-mining-on-uniswap-v3) `ticklower` and `tickupper` via [Tick Uniswap](https://docs.uniswap.org/contracts/v3/reference/core/libraries/Tick)    
 
+`UTXO` -  an unspent transaction output (UTXO) represents some amount of digital currency which has been authorized by one account to be spent by another. UTXOs use public key cryptography to identify and transfer ownership between holders of public/private key pairs   
+
 `Zcash` - cryptocurrency using zk-SNARKs to provide enhanced privacy; either in a transparent pool or a shielded pool       
 
 `zero address` - contract creation; sometimes sent in an intentional ether burn
@@ -302,7 +308,7 @@ Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)
 
 Infinite loops and gas limits attacks...   
 
-- Reetrancy - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”        
+- Reetrancy - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”; A Historical Collection of [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks)          
   
 - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between    
 
