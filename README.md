@@ -330,7 +330,8 @@ Infinite loops and gas limits attacks...
 ### Audits
 `What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee    
 
-5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)       
+Blog - [The Auditooor Grindset](https://www.zellic.io/blog/the-auditooor-grindset)   
+5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
 Andy Li's [Auditor Road Map](https://youtu.be/-469Gcye-ZE)       
   
 - [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5) Audit process   
