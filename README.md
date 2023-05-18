@@ -36,7 +36,7 @@ Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s)
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)    
 [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  a bit more technical (and perhaps duller) than Mastering Ethereum? (*FREE*)   
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
-[The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity despite it being from 2019   
+[The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity (despite being from 2019)      
 
 Christoph Michel's [book](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
@@ -60,7 +60,7 @@ Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/m
 
 Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list      
 
-Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain Research at Immutable)   
+Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain at Immutable)   
 Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)   
 
 Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
@@ -198,7 +198,9 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
   
 `msg.sender` - there will always be a msg.sender; one who call contract   
 
-`NatSpec` - Ethereum Natural Language Specification [Format](https://docs.soliditylang.org/en/v0.8.19/natspec-format.html) @title and @author are straightforward; @notice explains the contract function does; @dev is for explaining extra details to developers; @param and @return are for describing what each parameter and return value of a function are for       
+`NatSpec` - Ethereum Natural Language Specification [Format](https://docs.soliditylang.org/en/v0.8.19/natspec-format.html) @title and @author are straightforward; @notice explains the contract function does; @dev is for explaining extra details to developers; @param and @return are for describing what each parameter and return value of a function are for  
+
+`node` - blockchains are decentralized, immutable, digital ledgers shared across a peer-to-peer network. Acting as a database, transaction data is permanently recorded, stored and encrypted onto the “blocks” that are then “chained” together. The physical, electronic devices (a computer, typically) that maintain copies of the chains webbing a network together, keeping the blockchain operational, are called [nodes](https://builtin.com/blockchain/blockchain-node)   
   
 `nonce` - transaction code for this account starting with 0; makes transactions unique; important regarding concurrency; If the account is an externally owned account, this number represents the number of transactions sent from the account’s address. If the account is a contract account, the nonce is the number of contracts created by the account   
 
