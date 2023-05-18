@@ -76,6 +76,7 @@ Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) 
 - [Spearbit](https://spearbit.com/)  
 - [Trail of Bits](https://www.trailofbits.com/) 
 - [YAcademy](https://yacademy.dev/about/)      
+- [Zellic](https://www.zellic.io/)   
 ----- 
 
 ## Dictionary of Key Terms (Solidity) 
