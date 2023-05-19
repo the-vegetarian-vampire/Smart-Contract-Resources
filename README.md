@@ -303,6 +303,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 * ERC-165 - Creates a standard method to publish and detect what interfaces a smart contract implements.
 * ERC-725 - A standard interface for a simple proxy account.
 * ERC-173 - A standard interface for ownership of contracts.  
+* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - standardized way to retrieve royalty payment information across all NFT marketplaces and ecosystem participants   
 
 NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
 
