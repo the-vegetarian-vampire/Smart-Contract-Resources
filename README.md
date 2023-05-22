@@ -29,6 +29,7 @@ Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)
 How Bitcoin [Works](https://youtu.be/Lx9zgZCMqXE)   
 [Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)    
 Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s)   
+Blockchain and Money, Fall 2018 from [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (Despite being from 2018, still relevant) ...taught by Gary Gensler...   
 
 -----
 
