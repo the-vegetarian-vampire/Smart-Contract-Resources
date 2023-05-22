@@ -225,6 +225,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `ownable` - an [owner](https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable) who has special privileges   
 
+`permission vs permissionless` - [comparison](https://permission.io/blog/permissioned-vs-permissionless-blockchain/) permissioned blockchains are distributed ledger technology (DLT) that sacrifice some degree of decentralization and anonymity to better suit business needs as well as achieve higher network speed and efficiency.   
+
 `proof of concept` - piece of code that demonstrates the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
 
 `private functions` - it's convention to start private function names with an underscore (_): function `_functionname()` private {}    
