@@ -186,6 +186,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 `Keccak256` - [SHA-3](https://en.wikipedia.org/wiki/SHA-3)/Secure Hash Algorithm; using it in a [contract](https://www.youtube.com/watch?v=wCD3fOlsGc4)  
 
 `Know Your Customer` or KYC - guidelines and regulations in financial services that require professionals to verify the identity, suitability, and risks involved with maintaining a business relationship with a customer; providing documents AML (anti money laundering)    
+
+`layer 0` - the underlying infrastructure upon which multiple Layer 1 blockchains can be built; a network framework running beneath the blockchain. It is made up of protocols, connections, hardware, miners, and more that forms the foundation of the blockchain ecosystem. Layer: 0, 1, 2, 3 etc.   
    
 `linting` - the process of running a program that will analyze code for potential errors (verifying code quality) [eslint(https://eslint.org/) 
 
@@ -204,7 +206,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `NatSpec` - Ethereum Natural Language Specification [Format](https://docs.soliditylang.org/en/v0.8.19/natspec-format.html) @title and @author are straightforward; @notice explains the contract function does; @dev is for explaining extra details to developers; @param and @return are for describing what each parameter and return value of a function are for  
 
-`node` - blockchains are decentralized, immutable, digital ledgers shared across a peer-to-peer network. Acting as a database, transaction data is permanently recorded, stored and encrypted onto the “blocks” that are then “chained” together. The physical, electronic devices (a computer, typically) that maintain copies of the chains webbing a network together, keeping the blockchain operational, are called [nodes](https://builtin.com/blockchain/blockchain-node)   
+`node` - blockchains are decentralized, immutable, digital ledgers shared across a peer-to-peer network. Acting as a database, transaction data is permanently recorded, stored and encrypted onto the “blocks” that are then “chained” together. The physical, electronic devices (a computer, typically) that maintain copies of the chains webbing a network together, keeping the blockchain operational, are called [nodes](https://builtin.com/blockchain/blockchain-node) 
+- lightweight nodes - are downloaded wallets connected to full nodes for validating the data stored on the blockchain. Simple Payment Verification (SPV) node or lightweight node is used in day-to-day crypto operations.   
   
 `nonce` - transaction code for this account starting with 0; makes transactions unique; important regarding concurrency; If the account is an externally owned account, this number represents the number of transactions sent from the account’s address. If the account is a contract account, the nonce is the number of contracts created by the account   
 
