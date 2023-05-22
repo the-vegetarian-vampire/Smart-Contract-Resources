@@ -405,4 +405,4 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 
 [Academic Smart_Contract_Papers](https://github.com/hzysvilla/Academic_Smart_Contract_Papers)   
 
-[More Resources](https://github.com/PatrickAlphaC/Blockchain-Development-Resources#youtube-channels)   
+[More Resources](https://github.com/PatrickAlphaC/Blockchain-Development-Resources#youtube-channels) from Patrick Collins   
