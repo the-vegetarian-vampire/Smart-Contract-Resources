@@ -33,6 +33,8 @@ Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s)
 -----    
 ### Youtube Resources
 Blockchain and Money, Fall 2018 from [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (Despite being from 2018, still relevant) ...taught by Gary Gensler...     
+   - Conceptual idea of contracts with Harvard Prof. [Lawrence Lessig](https://youtu.be/JPkgJwJHYSc)  
+   
 Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) author of DeFi and the Future of Finance    
 Berkeley [YouTube Channel](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list      
 Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain at Immutable)    
