@@ -125,8 +125,6 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `constructor` - called once when contract is deployed  
 
-`cryptocurrency tumbler` - a service that mixes potentially identifiable or "tainted" cryptocurrency funds with others, so as to obscure the trail back to the fund's original source: Tornado cash; Zcash and Zk-SNARK's?
-
 `custom errors` - declared at top, more `gas efficient`    
 
 `data Locations` - Storage, Memory and Calldata
@@ -264,6 +262,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 `timelock` - locks functionality on an application until a certain amount of time has passed; [video](https://www.youtube.com/watch?v=P1f2a5Ckjpg)    
 
 `TPS` - transactions per second [chart](https://coincodex.com/article/14198/layer-1-performance-comparing-6-leading-blockchains/)      
+
+`tumbler` - a service that mixes potentially identifiable or "tainted" cryptocurrency funds with others, so as to obscure the trail back to the fund's original source: Tornado cash; Zcash and Zk-SNARK's?   
 
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools   
 
