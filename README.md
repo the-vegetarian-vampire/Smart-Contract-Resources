@@ -55,7 +55,8 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 -----   
 ### Interactive 
-[Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)   
+[Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)  
+[Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
 [Ethernaut](https://ethernaut.openzeppelin.com/)    
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)  
@@ -85,7 +86,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 ## Dictionary of Key Terms (Solidity) 
 ###### Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms or [General](https://medium.datadriveninvestor.com/crypto-vocabulary-expanded-76131d26537b)
 
- `Aave` - decentralised non-custodial liquidity market protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion; Stani Kulechov [interview](https://www.youtube.com/watch?v=PA9QrrH-ze0) by Haseeb Qureshi   
+ `Aave` - decentralised non-custodial liquidity market protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion; Stani Kulechov [interview](https://www.youtube.com/watch?v=PA9QrrH-ze0) by Haseeb Qureshi -- [Aave website](https://app.aave.com/)    
 
 `ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON  
 
@@ -350,7 +351,8 @@ Infinite loops and gas limits attacks...
 
 Blog - [The Auditooor Grindset](https://www.zellic.io/blog/the-auditooor-grindset)   
 5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
-Andy Li's [Auditor Road Map](https://youtu.be/-469Gcye-ZE)       
+Andy Li's [Auditor road map](https://youtu.be/-469Gcye-ZE)      
+Another audit [road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
   
 - [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5) Audit process   
 - [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM) Audit process           
@@ -390,6 +392,7 @@ Capture The Flag (CTF) Games:
   - [Wagmi](https://wagmi.sh/)   
   - [Web3.js](https://web3js.org/#/)  
   
+  - [Defi Llama](https://defillama.com/)   
 -----  
  
 ## Abstracts: In Depth Understanding
