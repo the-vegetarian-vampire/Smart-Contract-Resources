@@ -1,4 +1,4 @@
-# Solidity-Smart-Contracts
+# Solidity | DeFi | and Blockchain Resources
 
 A general guide to learning Solidity, Defi, and blockchain technologies. 
 
