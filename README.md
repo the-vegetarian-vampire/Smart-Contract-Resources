@@ -166,6 +166,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `gas` - transactions with higher gas price have higher priority to be included in a block;   
 
+ `genesis block`- the first block mined on a [blockchain](https://www.investopedia.com/terms/g/genesis-block.asp)     
+
 `hashcash` - a proof-of-work system invented by Adam Back in 1997 as a way to prevent email spam [precursor to Bitcoin](https://nakamoto.com/hashcash/)   
 
 `Hashed Timelock Contract` or (HTLC) reduces counterparty risk by creating a time-based escrow that requires a cryptographic passphrase for unlocking via [investopedia](https://www.investopedia.com/terms/h/hashed-timelock-contract.asp)    
@@ -216,7 +218,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 `node` - blockchains are decentralized, immutable, digital ledgers shared across a peer-to-peer network. Acting as a database, transaction data is permanently recorded, stored and encrypted onto the “blocks” that are then “chained” together. The physical, electronic devices (a computer, typically) that maintain copies of the chains webbing a network together, keeping the blockchain operational, are called [nodes](https://builtin.com/blockchain/blockchain-node) 
 - lightweight nodes - are downloaded wallets connected to full nodes for validating the data stored on the blockchain. Simple Payment Verification (SPV) node or lightweight node is used in day-to-day crypto operations.   
   
-`nonce` - transaction code for this account starting with 0; makes transactions unique; important regarding concurrency; If the account is an externally owned account, this number represents the number of transactions sent from the account’s address. If the account is a contract account, the nonce is the number of contracts created by the account   
+`nonce` - transaction code for this account starting with 0; makes transactions unique; important regarding concurrency; If the account is an externally owned account, this number represents the number of transactions sent from the account’s address. If the account is a contract account, the nonce is the number of contracts created by the account; [short video](https://youtu.be/EOgpr73-pgc)    
 
 `Omner blocks` - previously Uncle, it's possible for two blocks to be created simultaneously by a network. When this happens, one block will be left out. This leftover block is called an ommer block. In the past, they were called uncle blocks, referring to the familial relationships used to describe block positions within a blockchain  
 
@@ -227,6 +229,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 `ownable` - an [owner](https://docs.openzeppelin.com/contracts/4.x/api/access#Ownable) who has special privileges   
 
 `permission vs permissionless` - [comparison](https://permission.io/blog/permissioned-vs-permissionless-blockchain/) permissioned blockchains are distributed ledger technology (DLT) that sacrifice some degree of decentralization and anonymity to better suit business needs as well as achieve higher network speed and efficiency.   
+
+`PII` - personal Identifying information.   
 
 `proof of concept` - piece of code that demonstrates the vulnerability is exploitable; 100Proof's [sample](https://github.com/one-hundred-proof/notional-flash-attack)  
 
