@@ -32,7 +32,7 @@ Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s)
 
 -----    
 ### Youtube Resources
-Blockchain and Money - [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (Despite being from Fall 2018, still relevant) ...taught by Gary Gensler...     
+Blockchain and Money - [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (from Fall 2018, still relevant) ...taught by Gary Gensler...     
    - Conceptual idea of contracts with Harvard Prof. [Lawrence Lessig](https://youtu.be/JPkgJwJHYSc)  
    
 Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) author of DeFi and the Future of Finance    
@@ -353,6 +353,7 @@ Infinite loops and gas limits attacks...
 ### Audits
 `What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee    
 
+Most auditor discussions are on Twitter.   
 Blog - [The Auditooor Grindset](https://www.zellic.io/blog/the-auditooor-grindset)   
 5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
 Andy Li's [Auditor road map](https://youtu.be/-469Gcye-ZE)      
