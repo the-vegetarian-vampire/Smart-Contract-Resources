@@ -380,7 +380,21 @@ Audit Checklist via [The Solcurity Standard](https://github.com/transmissions11/
  - [Immunefi](https://immunefi.com/)      
 
 Capture The Flag (CTF) Games:
-- [Ethernaut](https://ethernaut.openzeppelin.com/)      
+- [Ethernaut](https://ethernaut.openzeppelin.com/)    
+
+-----   
+
+### Defi
+Uniswap - exchange    
+Curve - exchange 
+ 
+Compound - lending 
+Aave - lending (Finnish for ghost, alludes to anonymity of transactions)   
+
+Lido
+
+Collateral swaps 
+Concentrated liquidity 
 
 -----   
    
