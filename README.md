@@ -14,6 +14,7 @@ Solidity [By example](https://solidity-by-example.org/)
 ## Tutorial Resources
 
 `1. Patrick Collins 32 hour course:` [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
+   -  New [Course on Foundry](https://github.com/Cyfrin/foundry-full-course-f23)!     
  
 `2. Dapp University:` [Youtube](https://www.youtube.com/@DappUniversity); [Video](https://www.youtube.com/watch?v=eoQJ6nFZOcs); and [Github](https://github.com/dappuniversity/master_solidity)
   
@@ -176,7 +177,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `immutable` - can be set inside the constructor but cannot be modified afterwards, more `gas efficient`: `i_owner` - i meaning immutable   
 
-`impermanent loss` - a temporary loss of funds occurring when providing liquidity; occurs when the mathematical formula adjusts the asset ratio in a pool to ensure they remain at 50:50 in terms of value and the liquidity provider loses out on gains from a deposited asset that outperforms    
+`impermanent loss` - a temporary loss of funds occurring when providing liquidity; occurs when the mathematical formula adjusts the asset ratio in a pool to ensure they remain at 50:50 in terms of value and the liquidity provider loses out on gains from a deposited asset that outperforms; [whiteboard crypto video](https://www.youtube.com/watch?v=_m6Mowq3Ptk)   
 
 `interface` - a list of function definitions without implementation. In other words, an interface is a description of all functions that an object must have for it to operate; convention preface `I` as in IERC721; [video](https://www.youtube.com/watch?v=tbjyc-VQaQo)   
 
