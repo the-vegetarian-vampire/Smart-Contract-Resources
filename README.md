@@ -258,6 +258,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 `slippage` - the difference between the value of an asset at order placement and the value at order fulfilment. It can be found when buying or selling assets, and can result in either a loss or a gain (higher invariants lead to less slippage; Uniswap)      
 
 `smart contract` - programs stored on a blockchain that run when predetermined conditions are met; a transaction protocol intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement; Ethereum contracts are essentially single threaded machine       
+- `hybrid smart contracts` - combine code running on the blockchain (on-chain) with data and computation from outside the blockchain (off-chain) provided by decentralized oracle networks. [chainlink](https://chain.link/education-hub/hybrid-smart-contracts)   
 
 `source lines of code (SLOC)` - software metric used to measure the size of a computer program by counting the number of lines   
 
