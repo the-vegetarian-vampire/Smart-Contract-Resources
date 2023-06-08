@@ -387,7 +387,7 @@ Capture The Flag (CTF) Games:
 
 ## Defi
 Uniswap - exchange    
-- [every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)
+- [every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
 Curve - exchange 
  
 Compound - lending    
