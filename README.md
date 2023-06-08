@@ -385,17 +385,22 @@ Capture The Flag (CTF) Games:
 
 -----   
 
-### Defi
+## Defi
 Uniswap - exchange    
+- [every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)
 Curve - exchange 
  
-Compound - lending 
+Compound - lending    
 Aave - lending (Finnish for ghost, alludes to anonymity of transactions)   
+- [CoinGcko](https://www.youtube.com/watch?v=VXlI-uzhBX4) 
 
-Lido
+Lido Staking
+- [Coin B](https://www.youtube.com/watch?v=VQ_uvak1JPw) 
 
 Collateral swaps 
 Concentrated liquidity 
+
+[Defi Llama](https://defillama.com/)    
 
 -----   
    
@@ -412,7 +417,6 @@ Concentrated liquidity
   - [Wagmi](https://wagmi.sh/)   
   - [Web3.js](https://web3js.org/#/)  
   
-  - [Defi Llama](https://defillama.com/)   
 -----  
  
 ## Abstracts: In Depth Understanding
