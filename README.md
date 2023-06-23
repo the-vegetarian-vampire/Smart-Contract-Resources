@@ -393,7 +393,7 @@ Capture The Flag (CTF) Games:
 -----   
 
 ## Defi
-Uniswap - exchange [Every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)
+Uniswap - exchange [Every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
 Curve - exchange   
 Compound - lending     
 Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko](https://www.youtube.com/watch?v=VXlI-uzhBX4)    
