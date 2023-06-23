@@ -75,6 +75,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 -----
 ### Teams to Connect With  
+- [Chainalysis](https://www.chainalysis.com/)
 - [Chainlink](https://chain.link/)   
 - [Consensys](https://consensys.net/about/)   
 - [Cyfrin](https://www.cyfrin.io/)   
@@ -392,20 +393,15 @@ Capture The Flag (CTF) Games:
 -----   
 
 ## Defi
-Uniswap - exchange    
-- [every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
-Curve - exchange 
- 
-Compound - lending    
-Aave - lending (Finnish for ghost, alludes to anonymity of transactions)   
-- [CoinGcko](https://www.youtube.com/watch?v=VXlI-uzhBX4) 
+Uniswap - exchange [Every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)
+Curve - exchange   
+Compound - lending     
+Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko](https://www.youtube.com/watch?v=VXlI-uzhBX4)    
 
-Lido Staking
-- [Coin B](https://www.youtube.com/watch?v=VQ_uvak1JPw) 
+Lido Staking [Coin B](https://www.youtube.com/watch?v=VQ_uvak1JPw) 
 
-Collateral swaps 
-Concentrated liquidity 
-
+Collateral swaps  
+Concentrated liquidity   
 [Defi Llama](https://defillama.com/)    
 
 -----   
