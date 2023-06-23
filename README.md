@@ -47,6 +47,7 @@ Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumE
 [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  a bit more technical (and perhaps duller) than Mastering Ethereum? (*FREE*)   
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
 [The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity (despite being from 2019)      
+[Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - one of my favorite authors; covers the transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend!
 
 Christoph Michel's [book](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
@@ -111,7 +112,9 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `bridges` - a blockchain [bridge](https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/): and [Youtube](https://www.youtube.com/watch?v=xS0PyYpt6bA) connects two blockchain ecosystems. Bridges facilitate communication between blockchains through the transfer of information and assets.   
 
-`Byzantine fault` or [Byzantine generals problem](https://en.wikipedia.org/wiki/Byzantine_fault) - a condition of a computer system, particularly distributed computing systems, where components may fail and there is imperfect information on whether a component has failed; thus the reason for Proof of Work     
+`Byzantine fault` or [Byzantine generals problem](https://en.wikipedia.org/wiki/Byzantine_fault) - a condition of a computer system, particularly distributed computing systems, where components may fail and there is imperfect information on whether a component has failed; thus the reason for Proof of Work  
+
+`clustering` - tracing bitcoin via blockchain analysis; tracing Bitcoin user wallets by tracking wallet “change” creation; using tags; peel chains [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) Sarah Meiklejohn and team; also [A Fistful of Bitcoins: Characterizing Payments Among Men with No Names](https://cseweb.ucsd.edu/~smeiklejohn/files/imc13.pdf)   
 
 `Compound` - a DeFi lending protocol that allows users to earn interest on their cryptocurrencies by depositing them into one of several pools    
 
@@ -426,6 +429,9 @@ Concentrated liquidity
 Bitcoin [whitepaper](https://bitcoin.org/bitcoin.pdf)     
 Ethereum [whitepaper](https://ethereum.org/en/whitepaper/) (periodically updated)   
 Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
+
+[How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) - Sarah
+Meiklejohn and team   
 
 [Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree)      
 
