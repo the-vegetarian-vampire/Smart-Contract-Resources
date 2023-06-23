@@ -33,7 +33,7 @@ Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s)
 
 -----    
 ### Youtube Resources
-Blockchain and Money - [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (from Fall 2018, still relevant) ...taught by Gary Gensler...     
+Blockchain and Money - [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (Fall 2018, still relevant) ...taught by Gary Gensler...     
    - Conceptual idea of contracts with Harvard Prof. [Lawrence Lessig](https://youtu.be/JPkgJwJHYSc)  
    
 Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) author of DeFi and the Future of Finance    
@@ -150,7 +150,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `EIP` - (Ethereum Improvement Proposal) a formal proposal to alter some element of the Ethereum network   
 
-`EOA` - Externally Owned Account; in general, there are two types of accounts: externally owned accounts, controlled by private keys, and contract accounts, controlled by their contract code      
+`EOA` - Externally Owned Account; in general, there are two types of accounts: externally owned accounts, controlled by private keys, and contract accounts, controlled by their contract code   
 
 `events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage  
 
@@ -402,7 +402,14 @@ Lido Staking [Coin B](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 
 Collateral swaps  
 Concentrated liquidity   
+[Layer2 Beat](https://l2beat.com/scaling/tvl)   
 [Defi Llama](https://defillama.com/)    
+
+#### Reading
+Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
+Bankless - [Podcast](http://podcast.banklesshq.com/)   
+Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
+Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and The Big Short   
 
 -----   
    
