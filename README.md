@@ -409,6 +409,8 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
 Bankless - [Podcast](http://podcast.banklesshq.com/)   
 Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
 Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and The Big Short   
+   - [quote stuffing](https://en.wikipedia.org/wiki/Quote_stuffing)
+   - [spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))
 
 -----   
    
