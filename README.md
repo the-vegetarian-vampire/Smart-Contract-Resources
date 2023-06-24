@@ -253,14 +253,13 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `remote procedure call` or [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) - when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is written as if it were a normal (local) procedure call, without the programmer explicitly writing the details for the remote interaction   
 
-`self destruct` - leaves a blank account; costs negative gas, does not remove transaction history: only can be self destructed if contract has self destruct programmed in    
-
-`Solc` - the solidity compiler to byte code    
-
+`self destruct` - leaves a blank account; costs negative gas, does not remove transaction history: only can be self destructed if contract has self destruct programmed in      
 `slippage` - the difference between the value of an asset at order placement and the value at order fulfilment. It can be found when buying or selling assets, and can result in either a loss or a gain (higher invariants lead to less slippage; Uniswap)      
 
 `smart contract` - programs stored on a blockchain that run when predetermined conditions are met; a transaction protocol intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement; Ethereum contracts are essentially single threaded machine       
 - `hybrid smart contracts` - combine code running on the blockchain (on-chain) with data and computation from outside the blockchain (off-chain) provided by decentralized oracle networks. [chainlink](https://chain.link/education-hub/hybrid-smart-contracts)   
+
+`Solc` - the solidity compiler to byte code   
 
 `source lines of code (SLOC)` - software metric used to measure the size of a computer program by counting the number of lines   
 
@@ -271,6 +270,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 `storageroot` - a hash of the root node of a Merkle Patricia tree which encodes the hash of the storage contents of this account, and is empty by default   
 
 `struct` - useful for grouping related data, can be declared outside of a contract and imported in another contract  
+
+`sybil attack` a [type of attack](https://en.wikipedia.org/wiki/Sybil_attack) on a computer network service in which an attacker subverts the service's reputation system by creating a large number of pseudonymous identities and uses them to gain a disproportionately large influence. It is named after the subject of the book Sybil, a case study of a woman diagnosed with dissociative identity disorder; also [sybil resistance](https://www.finder.com.au/blockchain-sybil-resistance-searching-for-the-perfect-waste-of-resources)   
 
 `topics` - indexed parameters for ‘logged’ events allow you to search for these events using the indexed parameters as filters; at most 3 parameters can receive the property indexed   
 
