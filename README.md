@@ -44,7 +44,7 @@ Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumE
 
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)    
-[Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  a bit more technical (and perhaps duller) than Mastering Ethereum? (*FREE*)   
+[Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  a bit more technical (and perhaps duller) than Mastering Ethereum (*FREE*)   
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
 [The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity (despite being from 2019)      
 [Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - one of my favorite authors; covers the transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend!
@@ -59,7 +59,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 ### Interactive 
 [Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)  
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
-[Ethernaut](https://ethernaut.openzeppelin.com/)    
+[Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)  
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)   
@@ -249,10 +249,6 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `pure` - static, does not effect or modify state, more computational [free function]   
 
-`recieve` -   
-
-`require` -   
-
 `revert` - gives back gas but loses some in process  
 
 `remote procedure call` or [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) - when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is written as if it were a normal (local) procedure call, without the programmer explicitly writing the details for the remote interaction   
@@ -356,6 +352,8 @@ Infinite loops and gas limits attacks...
 
 - Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)
 
+- [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions   
+
 -----   
 
 ### Audits
@@ -393,12 +391,12 @@ Capture The Flag (CTF) Games:
 -----   
 
 ## Defi
-Uniswap - exchange [Every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
+Uniswap - exchange - [Every bit helps video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
 Curve - exchange   
 Compound - lending     
-Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko](https://www.youtube.com/watch?v=VXlI-uzhBX4)    
+Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko video](https://www.youtube.com/watch?v=VXlI-uzhBX4)    
 
-Lido Staking [Coin B](https://www.youtube.com/watch?v=VQ_uvak1JPw) 
+Lido - Staking [Coin B video](https://www.youtube.com/watch?v=VQ_uvak1JPw) 
 
 Collateral swaps  
 Concentrated liquidity   
