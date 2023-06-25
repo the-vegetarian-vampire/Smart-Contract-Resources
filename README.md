@@ -29,7 +29,7 @@ Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) and a more detaile
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
 How Bitcoin [Works](https://youtu.be/Lx9zgZCMqXE)   
 [Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)    
-Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s)      
+Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s) and [256 Bit Computing](https://en.wikipedia.org/wiki/256-bit_computing)   
 
 -----    
 ### Youtube Resources
@@ -45,9 +45,10 @@ Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumE
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)    
 [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  a bit more technical (and perhaps duller) than Mastering Ethereum (*FREE*)   
+
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
 [The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity (despite being from 2019)      
-[Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - one of my favorite authors; covers the transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend!
+[Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - one of my favorite authors; covers the transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend! See [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf)   
 
 Christoph Michel's [book](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
@@ -283,7 +284,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools   
 
-`txn` -  "transaction": txn.origin, txn.gasprice
+`tx` -  "transaction": tx.origin, txn.gasprice; don't use [tx.origin](https://www.youtube.com/watch?v=n9PAya8GhgE)   
 
 `unchecked` - instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
 
@@ -297,7 +298,14 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `zero address` - contract creation; sometimes sent in an intentional ether burn
 
-`zkSNARK` - succinct non interactive argument of knowledge   
+`zkSNARK` - succinct non interactive argument of knowledge    
+
+----- 
+Favorite shortcuts (Mac):
+   - `fn + f12` - open console on a webpage
+   - `control + ~` - new terminal window
+   - `⌘ + D` - find next match
+   - `⌘ + K` - clear terminal
 
 ----- 
 
@@ -409,8 +417,10 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
 Bankless - [Podcast](http://podcast.banklesshq.com/)   
 Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
 Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and The Big Short   
-   - [quote stuffing](https://en.wikipedia.org/wiki/Quote_stuffing)
-   - [spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))
+   - [quote stuffing](https://en.wikipedia.org/wiki/Quote_stuffing)   
+   - [spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))   
+   - [Glass Steagall](https://en.wikipedia.org/wiki/Glass%E2%80%93Steagall_legislation)   
+   - [RegSho](https://en.wikipedia.org/wiki/Naked_short_selling#Regulation_SHO)   
 
 -----   
    
