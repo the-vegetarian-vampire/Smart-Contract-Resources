@@ -264,6 +264,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `source lines of code (SLOC)` - software metric used to measure the size of a computer program by counting the number of lines   
 
+`` - before 0.8.0. there were overflow and underflow issues; prior to that version, solidity's "+" operator wouldn't check for overflows, leading to type(uint256).max + 1 = 0, and the safeMath library would avoid it. Now, type(uint256).max + 1 reverts with Panic(0x11), and safeMath isnt needed.
+
 `staking` - the act of [depositing](https://ethereum.org/en/staking/) 32 ETH to activate validator software. As a validator you’ll be responsible for storing data, processing transactions, and adding new blocks to the blockchain.   
 
 `state variables` - variables stored permanently on the blockchain   
