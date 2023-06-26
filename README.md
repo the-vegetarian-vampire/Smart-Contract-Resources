@@ -355,7 +355,9 @@ Infinite loops and gas limits attacks...
   
 - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between    
 
-- Flash loans  
+- Flash loans
+
+- [Front Running](https://www.youtube.com/watch?v=wBCqLlJAi1A&t=123s)   
 
 - [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks
 
