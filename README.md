@@ -407,7 +407,13 @@ Capture The Flag (CTF) Games:
 Uniswap - exchange - [Every bit helps video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
 Curve - exchange   
 Compound - lending     
-Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko video](https://www.youtube.com/watch?v=VXlI-uzhBX4)    
+Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko video](https://www.youtube.com/watch?v=VXlI-uzhBX4)   
+   - [Aave Tesnet](https://staging.aave.com/)
+   - `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
+   - `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
+   - Build a [liquidation](https://docs.aave.com/faq/liquidations) - [bot](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
+- Since Aave uses Chainlink price feeds, what if Chainlink goes down? What are the back-ups?
+
 
 Lido - Staking [Coin B video](https://www.youtube.com/watch?v=VQ_uvak1JPw) 
 
