@@ -416,7 +416,7 @@ Concentrated liquidity
 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
 [Defi Llama](https://defillama.com/)    
 
-#### Reading
+#### Cntral Banking Reading
 Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
 Bankless - [Podcast](http://podcast.banklesshq.com/)   
 Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
@@ -436,7 +436,8 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
   - [Foundry](https://book.getfoundry.sh/)
   - In-line bookmarks: // @audit this code seems vulnerable here   
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
-  - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)   
+  - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
+      - [Forking mainnet](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)
       - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
   - [Wagmi](https://wagmi.sh/)   
   - [Web3.js](https://web3js.org/#/)  
