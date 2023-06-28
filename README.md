@@ -294,7 +294,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 `Uniswap` - decentralized cryptocurrency [exchange](https://en.wikipedia.org/wiki/Uniswap) that uses a set of smart contracts (liquidity pools) to execute trades on its exchange; [whitepaper](https://uniswap.org/whitepaper-v3.pdf) and [billion dollar algorithm](https://www.paradigm.xyz/2021/05/liquidity-mining-on-uniswap-v3) `ticklower` and `tickupper` via [Tick Uniswap](https://docs.uniswap.org/contracts/v3/reference/core/libraries/Tick)    
 
 `UTXO` -  an unspent transaction output (UTXO) represents some amount of digital currency which has been authorized by one account to be spent by another. UTXOs use public key cryptography to identify and transfer ownership between holders of public/private key pairs   
-URI(https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) - unique sequence of characters that identifies a logical or physical resource used by web technologies.   
+[URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) - unique sequence of characters that identifies a logical or physical resource used by web technologies.   
 
 `witness` - [cryptography](https://crypto.stackexchange.com/questions/43462/what-is-a-witness-in-zero-knowledge-proof) solution to puzzle; unspent transaction output, any solution to unlock UTXO; see also [Segregated Witness](https://www.investopedia.com/terms/s/segwit-segregated-witness.asp)   
 
