@@ -308,8 +308,11 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 Favorite shortcuts (Mac):
    - `fn + f12` - open console on a webpage
    - `control + ~` - new terminal window
-   - `⌘ + D` - find next match
-   - `⌘ + K` - clear terminal
+   - `⌘ + d` - find next match
+   - `⌘ + k` - clear terminal
+   - `control + k` — kill line forward from spot
+   - `control + u` - kill line back from spot
+   - `option + arrow` — back/forward one word
 
 ----- 
 
