@@ -16,12 +16,10 @@ Solidity [By example](https://solidity-by-example.org/)
 
 `1. Patrick Collins 32 hour course:` [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
    -  New [Course on Foundry](https://github.com/Cyfrin/foundry-full-course-f23)!     
- 
-`2. Dapp University:` [Youtube](https://www.youtube.com/@DappUniversity); [Video](https://www.youtube.com/watch?v=eoQJ6nFZOcs); and [Github](https://github.com/dappuniversity/master_solidity)
   
-`3. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (One of the creators of Solidity by example)   
+`2. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (One of the creators of Solidity by example)   
   
-`4. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
+`3. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
 -----
 
@@ -93,7 +91,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
  `Aave` - decentralised non-custodial liquidity market protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion; Stani Kulechov [interview](https://www.youtube.com/watch?v=PA9QrrH-ze0) by Haseeb Qureshi -- [Aave website](https://app.aave.com/)    
 
-`ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON  
+`ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON; Abi.encodePacked - breaks down, via [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html); [Abi.decode](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=81282)   
 
 `address` - (Ethereum; other blockchains will be different) 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front `0x0cE446255506E92DF41614C46F1d6df9Cc969183`      
 
@@ -168,6 +166,9 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 `flooding` - [routing](https://en.wikipedia.org/wiki/Flooding_%28computer_networking%29)   
 
 `fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) "To fork or not to fork? - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software; twitter [status](https://twitter.com/christine_dkim/status/1651999278997417998?s=20)    
+
+`function selector` - first 4 bytes of the function signature: ex: 0xa9059cbb   
+`function signature` - string that defines function name & parameters: ex: “transfer(address, uint256)”   
 
 `fuzzing` - or fuzz testing involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
 
@@ -319,6 +320,7 @@ Favorite shortcuts (Mac):
 ## Gas Optimization and Storage
 How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough and sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
 Opcodes [Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)   
+[Deconstructing solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)   
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
