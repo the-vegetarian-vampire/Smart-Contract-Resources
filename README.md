@@ -24,7 +24,7 @@ Solidity [By example](https://solidity-by-example.org/)
 -----
 
 ### General Blockchain Knowledge
-Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) and a more detailed [roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map)   
+Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) and a more detailed [roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (There are a ton of roadmaps people post on Twitter)
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
 How Bitcoin [Works](https://youtu.be/Lx9zgZCMqXE)   
 [Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)    
@@ -44,6 +44,7 @@ Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumE
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)    
 [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  a bit more technical (and perhaps duller) than Mastering Ethereum (*FREE*)   
+[Deconstructing Solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)   
 
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
 [The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity (despite being from 2019)      
@@ -54,6 +55,7 @@ How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B
 [DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018) - particularly Chapter 6: deep dive      
 
 Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)   
+[Blockchain Threat Intelligence](https://newsletter.blockthreat.io/)   
 
 -----   
 ### Interactive 
@@ -429,16 +431,17 @@ Concentrated liquidity
 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
 [Defi Llama](https://defillama.com/)    
 
-#### Cntral Banking Reading
-Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
+#### Central Banking Reading
 Bankless - [Podcast](http://podcast.banklesshq.com/)   
+Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
 Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
 Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and The Big Short   
    - [quote stuffing](https://en.wikipedia.org/wiki/Quote_stuffing)   
    - [spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))   
    - [Glass Steagall](https://en.wikipedia.org/wiki/Glass%E2%80%93Steagall_legislation)   
    - [RegSho](https://en.wikipedia.org/wiki/Naked_short_selling#Regulation_SHO)   
-
+   - [Regulatory capture](https://en.wikipedia.org/wiki/Regulatory_capture)
+     
 -----   
    
 ### Tools 
@@ -453,7 +456,11 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
       - [Forking mainnet](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)
       - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
   - [Wagmi](https://wagmi.sh/)   
-  - [Web3.js](https://web3js.org/#/)  
+  - [Web3.js](https://web3js.org/#/)
+
+### Wallets
+[Rabby Wallet](https://rabby.io/)   
+[Metamask](https://metamask.io/)   
   
 -----  
  
