@@ -393,6 +393,8 @@ Another audit [road map](https://twitter.com/0kage_eth/status/164079598010174259
 - [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
 - Owen Thurm - [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) - [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
+- [Dacian](https://dacian.me/smart-contract-auditor-portfolio)
+- Kadenzipfel - https://github.com/kadenzipfel/smart-contract-vulnerabilities 
 
 Audit Checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
 - Read documentation ReadMe, whitepaper (if avail)  
