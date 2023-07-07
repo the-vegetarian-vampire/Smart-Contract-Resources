@@ -401,6 +401,13 @@ Most auditor discussions are on Twitter.
   
 [Simple-security-toolkit](https://github.com/nascentxyz/simple-security-toolkit)   
 
+
+• `High` - leads to a loss of a significant portion (>10%) of assets in the protocol, or significant harm to a majority
+of users.   
+• `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
+• `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
+or even gas inefficiencies.   
+
 -----   
 
 ### Bug Bounty
