@@ -310,10 +310,12 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 ----- 
 
-## Opcodes Gas Optimization and Storage
+## Opcodes | Gas Optimization | Storage
 How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough and sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
 Opcodes [Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)   
 [Deconstructing solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)   
+
+Play around with opcodes: https://www.evm.codes/playground   
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
