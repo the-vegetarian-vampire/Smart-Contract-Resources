@@ -58,6 +58,7 @@ How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B
 Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)   
 Blog -- [Blockchain Threat Intelligence](https://newsletter.blockthreat.io/)   
 
+[Bankless Podcast](http://podcast.banklesshq.com/)   
 -----   
 ### Interactive 
 [Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)  
@@ -382,13 +383,13 @@ Infinite loops and gas limits attacks...
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
    
 Read audit reports - [Solodit](https://solodit.xyz/)   
+Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)    
 
 Most auditor discussions are on Twitter.   
-Blog - [The Auditooor Grindset](https://www.zellic.io/blog/the-auditooor-grindset)   
-5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
-Andy Li's [Auditor road map](https://youtu.be/-469Gcye-ZE)      
-0kage.eth[road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
-  
+- [The Auditooor Grindset blog](https://www.zellic.io/blog/the-auditooor-grindset)   
+- [5 Solidity Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
+- [Andy Li's auditor road map](https://youtu.be/-469Gcye-ZE)      
+- [0kage.eth road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
 - [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5) Audit process   
 - [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM) Audit process           
 - Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0) and Lesson 13: Aave liquidationCall()    
@@ -397,8 +398,7 @@ Andy Li's [Auditor road map](https://youtu.be/-469Gcye-ZE)
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 - [Dacian's blog](https://dacian.me/smart-contract-auditor-portfolio)
 - [Volodya's Blog](https://0xvolodya.hashnode.dev/how-i-earned-25000-auditing-and-ranked-1-on-60-day-leaderboard)
-
-Audit Checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
+ 
 - Read documentation ReadMe, whitepaper (if avail)  
 - check tests, create a notes.MD
 - Logical issues: mathematics, floating point arithmetic
@@ -418,18 +418,17 @@ Capture The Flag (CTF) Games:
 -----   
 
 ## Defi
-Uniswap - exchange - [Every bit helps video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
+Uniswap - exchange - [Every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
 Curve - exchange   
 Compound - lending     
-Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko video](https://www.youtube.com/watch?v=VXlI-uzhBX4)   
+Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko](https://www.youtube.com/watch?v=VXlI-uzhBX4)   
    - [Aave Tesnet](https://staging.aave.com/)
    - `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
    - `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
    - Build a [liquidation](https://docs.aave.com/faq/liquidations) - [bot](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
 - Since Aave uses Chainlink price feeds, what if Chainlink goes down? What are the back-ups?
 
-
-Lido - Staking [Coin B video](https://www.youtube.com/watch?v=VQ_uvak1JPw) 
+Lido - Staking [Coin B](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
 
 Collateral swaps  
 Concentrated liquidity   
@@ -437,7 +436,6 @@ Concentrated liquidity
 [Defi Llama](https://defillama.com/)    
 
 #### Central Banking Reading
-Bankless - [Podcast](http://podcast.banklesshq.com/)   
 Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
 Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
 Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and The Big Short   
