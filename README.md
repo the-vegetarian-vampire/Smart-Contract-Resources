@@ -24,7 +24,7 @@ Solidity [By example](https://solidity-by-example.org/)
 -----
 
 ### General Blockchain Knowledge
-Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) and a more detailed [roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (There are a ton of roadmaps people post on Twitter)
+Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) and a more detailed [roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (there are a ton of roadmaps on Twitter)   
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
 How Bitcoin [Works](https://youtu.be/Lx9zgZCMqXE)   
 [Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)    
@@ -44,6 +44,7 @@ Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumE
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)    
 [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  a bit more technical (and perhaps duller) than Mastering Ethereum (*FREE*)   
+
 [Deconstructing Solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)   
 
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
@@ -55,7 +56,7 @@ How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B
 [DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018) - particularly Chapter 6: deep dive      
 
 Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)   
-[Blockchain Threat Intelligence](https://newsletter.blockthreat.io/)   
+Blog -- [Blockchain Threat Intelligence](https://newsletter.blockthreat.io/)   
 
 -----   
 ### Interactive 
@@ -308,18 +309,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 `zkSNARK` - succinct non interactive argument of knowledge    
 
 ----- 
-Favorite shortcuts (Mac):
-   - `fn + f12` - open console on a webpage
-   - `control + ~` - new terminal window
-   - `⌘ + d` - find next match
-   - `⌘ + k` - clear terminal
-   - `control + k` — kill line forward from spot
-   - `control + u` - kill line back from spot
-   - `option + arrow` — back/forward one word
 
------ 
-
-## Gas Optimization and Storage
+## Opcodes Gas Optimization and Storage
 How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough and sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
 Opcodes [Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)   
 [Deconstructing solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)   
@@ -379,7 +370,8 @@ Infinite loops and gas limits attacks...
 -----   
 
 ### Audits
-`What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee    
+`What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee   
+Audit reports -- [Solodit](https://solodit.xyz/)   
 
 Most auditor discussions are on Twitter.   
 Blog - [The Auditooor Grindset](https://www.zellic.io/blog/the-auditooor-grindset)   
@@ -394,7 +386,8 @@ Another audit [road map](https://twitter.com/0kage_eth/status/164079598010174259
 - Owen Thurm - [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) - [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 - [Dacian](https://dacian.me/smart-contract-auditor-portfolio)
-- Kadenzipfel - https://github.com/kadenzipfel/smart-contract-vulnerabilities 
+- Kadenzipfel - https://github.com/kadenzipfel/smart-contract-vulnerabilities
+- [Volodya's Blog](https://0xvolodya.hashnode.dev/how-i-earned-25000-auditing-and-ranked-1-on-60-day-leaderboard)
 
 Audit Checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
 - Read documentation ReadMe, whitepaper (if avail)  
