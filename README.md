@@ -132,7 +132,9 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 
-`constructor` - called once when contract is deployed  
+`constructor` - called once when contract is deployed    
+
+`creation code` - only executed by the EVM once during the transaction that creates the contract.  gets executed in a transaction, which returns a copy of the runtime code, which is the actual code of the contract. The contract’s constructor is part of the creation code; it will not be present in the contract’s code once it is deployed.   
 
 `custom errors` - declared at top, more `gas efficient`    
 
@@ -259,6 +261,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `remote procedure call` or [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) - when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is written as if it were a normal (local) procedure call, without the programmer explicitly writing the details for the remote interaction   
 
+`safeMath` - before 0.8.0. there were overflow and underflow issues; prior to that version, solidity's "+" operator wouldn't check for overflows, leading to type(uint256).max + 1 = 0, and the safeMath library would avoid it. Now, type(uint256).max + 1 reverts with Panic(0x11), and safeMath isnt needed.   
+
 `self destruct` - leaves a blank account; costs negative gas, does not remove transaction history: only can be self destructed if contract has self destruct programmed in      
 `slippage` - the difference between the value of an asset at order placement and the value at order fulfilment. It can be found when buying or selling assets, and can result in either a loss or a gain (higher invariants lead to less slippage; Uniswap)      
 
@@ -267,9 +271,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `Solc` - the solidity compiler to byte code   
 
-`source lines of code (SLOC)` - software metric used to measure the size of a computer program by counting the number of lines   
-
-`` - before 0.8.0. there were overflow and underflow issues; prior to that version, solidity's "+" operator wouldn't check for overflows, leading to type(uint256).max + 1 = 0, and the safeMath library would avoid it. Now, type(uint256).max + 1 reverts with Panic(0x11), and safeMath isnt needed.
+`source lines of code (SLOC)` - software metric used to measure the size of a computer program by counting the number of lines  
 
 `staking` - the act of [depositing](https://ethereum.org/en/staking/) 32 ETH to activate validator software. As a validator you’ll be responsible for storing data, processing transactions, and adding new blocks to the blockchain.   
 
@@ -302,6 +304,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `witness` - [cryptography](https://crypto.stackexchange.com/questions/43462/what-is-a-witness-in-zero-knowledge-proof) solution to puzzle; unspent transaction output, any solution to unlock UTXO; see also [Segregated Witness](https://www.investopedia.com/terms/s/segwit-segregated-witness.asp)   
 
+`Yul` - [yul](https://docs.soliditylang.org/en/latest/yul.html) an intermediate language between Solidity and EVM bytecode.   
+
 `Zcash` - cryptocurrency using zk-SNARKs to provide enhanced privacy; either in a transparent pool or a shielded pool       
 
 `zero address` - contract creation; sometimes sent in an intentional ether burn
@@ -330,7 +334,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - batch minting   
 - in testing it's common to prepend storage variables with `s_`
 - Hardhat gas reporter   
-
+- [yul](https://docs.soliditylang.org/en/latest/yul.html) and [huff](https://docs.huff.sh/) (lower level bytecode]   
 ----- 
   
 ## Tokens
@@ -341,7 +345,8 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 * ERC-165 - Creates a standard method to publish and detect what interfaces a smart contract implements.
 * ERC-725 - A standard interface for a simple proxy account.
 * ERC-173 - A standard interface for ownership of contracts.  
-* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - standardized way to retrieve royalty payment information across all NFT marketplaces and ecosystem participants   
+* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - standardized way to retrieve royalty payment information across all NFT marketplaces and ecosystem participants
+* [ERC-1155]([https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/]) - multi coin staking; [Video](https://www.youtube.com/watch?v=Ai7A-_umm08)     
 
 NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
 
@@ -350,6 +355,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
 News: [Rekt](https://rekt.news/)   
 Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)   
+[Kadenzipfel Github](https://github.com/kadenzipfel/smart-contract-vulnerabilities)   
 
 Infinite loops and gas limits attacks...   
 
@@ -372,7 +378,8 @@ Infinite loops and gas limits attacks...
 -----   
 
 ### Audits
-`What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee   
+`What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee  
+   
 Audit reports -- [Solodit](https://solodit.xyz/)   
 
 Most auditor discussions are on Twitter.   
@@ -387,8 +394,7 @@ Another audit [road map](https://twitter.com/0kage_eth/status/164079598010174259
 - [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
 - Owen Thurm - [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) - [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
-- [Dacian](https://dacian.me/smart-contract-auditor-portfolio)
-- Kadenzipfel - https://github.com/kadenzipfel/smart-contract-vulnerabilities
+- [Dacian's blog](https://dacian.me/smart-contract-auditor-portfolio)
 - [Volodya's Blog](https://0xvolodya.hashnode.dev/how-i-earned-25000-auditing-and-ranked-1-on-60-day-leaderboard)
 
 Audit Checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
