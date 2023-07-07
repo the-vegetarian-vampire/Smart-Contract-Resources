@@ -398,13 +398,9 @@ Most auditor discussions are on Twitter.
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 - [Dacian's blog](https://dacian.me/smart-contract-auditor-portfolio)
 - [Volodya's Blog](https://0xvolodya.hashnode.dev/how-i-earned-25000-auditing-and-ranked-1-on-60-day-leaderboard)
- 
-- Read documentation ReadMe, whitepaper (if avail)  
-- check tests, create a notes.MD
-- Logical issues: mathematics, floating point arithmetic
-- Changing market conditions: tokens; validators, bots…
-- Time: does latency allow exploit opportunity?   
- 
+  
+[Simple-security-toolkit](https://github.com/nascentxyz/simple-security-toolkit)   
+
 -----   
 
 ### Bug Bounty
