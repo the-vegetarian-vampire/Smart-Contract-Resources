@@ -49,7 +49,7 @@ Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumE
 
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
 [The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity (despite being from 2019)      
-[Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - one of my favorite authors; covers the transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend! See [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf)   
+[Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - favorite authors; covers transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend! See [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf)   
 
 Christoph Michel's [book](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
@@ -315,7 +315,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 ----- 
 
 ## Opcodes | Gas Optimization | Storage
-How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works and Patrick Collin's [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough and sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
+How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works; Patrick Collins [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough; sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
 Opcodes [Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)   
 [Deconstructing solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)   
 
@@ -334,7 +334,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - batch minting   
 - in testing it's common to prepend storage variables with `s_`
 - Hardhat gas reporter   
-- [yul](https://docs.soliditylang.org/en/latest/yul.html) and [huff](https://docs.huff.sh/) (lower level bytecode]   
+- [yul](https://docs.soliditylang.org/en/latest/yul.html) and [huff](https://docs.huff.sh/) (lower level bytecode languages]   
 ----- 
   
 ## Tokens
@@ -353,9 +353,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 -----
 
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
-News: [Rekt](https://rekt.news/)   
-Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)   
-[Kadenzipfel Github](https://github.com/kadenzipfel/smart-contract-vulnerabilities)   
+[Rekt News](https://rekt.news/)   
+[Kadenzipfel List on Github](https://github.com/kadenzipfel/smart-contract-vulnerabilities)   
 
 Infinite loops and gas limits attacks...   
 
@@ -373,26 +372,28 @@ Infinite loops and gas limits attacks...
 
 - Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)
 
-- [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions   
+- [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions
+  
+- Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)   
 
 -----   
 
 ### Audits
-`What is an audit?` - security focused code review; looking for vulnerabilities; it is a best effort endeavor, not a guarantee  
+`What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
    
-Audit reports -- [Solodit](https://solodit.xyz/)   
+Read audit reports - [Solodit](https://solodit.xyz/)   
 
 Most auditor discussions are on Twitter.   
 Blog - [The Auditooor Grindset](https://www.zellic.io/blog/the-auditooor-grindset)   
 5 Solidity [Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
 Andy Li's [Auditor road map](https://youtu.be/-469Gcye-ZE)      
-Another audit [road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
+0kage.eth[road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
   
 - [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5) Audit process   
 - [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM) Audit process           
 - Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0) and Lesson 13: Aave liquidationCall()    
 - [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
-- Owen Thurm - [Part 1](https://www.youtube.com/watch?v=X9DTJJGDg7c) - [Part 2](https://www.youtube.com/watch?v=Sil4HE73H8U) - [Part 3](https://www.youtube.com/watch?v=s82zql_kn2I) - [Part 4](https://www.youtube.com/watch?v=HDmGw2a5SmY&t=31s)    
+- [Owen Thurm's Channel](https://www.youtube.com/@0xOwenThurm)   
 - Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 - [Dacian's blog](https://dacian.me/smart-contract-auditor-portfolio)
 - [Volodya's Blog](https://0xvolodya.hashnode.dev/how-i-earned-25000-auditing-and-ranked-1-on-60-day-leaderboard)
@@ -408,7 +409,8 @@ Audit Checklist via [The Solcurity Standard](https://github.com/transmissions11/
 
 ### Bug Bounty
  - [Code4rena](https://code4rena.com/)   
- - [Immunefi](https://immunefi.com/)      
+ - [Immunefi](https://immunefi.com/)
+ - [Sherlock](https://www.sherlock.xyz/)   
 
 Capture The Flag (CTF) Games:
 - [Ethernaut](https://ethernaut.openzeppelin.com/)    
