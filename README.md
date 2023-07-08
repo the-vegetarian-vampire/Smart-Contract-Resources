@@ -355,7 +355,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
 [Rekt News](https://rekt.news/)   
-[List on Github](https://github.com/kadenzipfel/smart-contract-vulnerabilities) via Kadenzipfel   
+[List types on Github](https://github.com/kadenzipfel/smart-contract-vulnerabilities) via Kadenzipfel   
 
 Infinite loops and gas limits attacks...   
 
@@ -384,7 +384,8 @@ Infinite loops and gas limits attacks...
    
 Audit reports 
    - [Solodit](https://solodit.xyz/)
-   - [Code4rena](https://code4rena.com/reports)   
+   - [Code4rena](https://code4rena.com/reports)
+      
 Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)    
 
 Most auditor discussions are on Twitter.   
