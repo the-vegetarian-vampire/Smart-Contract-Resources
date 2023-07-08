@@ -59,6 +59,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 Blog -- [Blockchain Threat Intelligence](https://newsletter.blockthreat.io/)   
 
 [Bankless Podcast](http://podcast.banklesshq.com/)   
+
 -----   
 ### Interactive 
 [Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)  
