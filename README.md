@@ -254,7 +254,7 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `private relayers` - "flashbots protect; no one sees transaction and can't front run it" per 32:50 of [Dan Robinson AMA](https://www.youtube.com/watch?v=Lz7g0ny99jk) (e.g., Flashbots, Bloxroute, Ethermine, Eden)    
 
-`Proxies` - [abstract contract](https://docs.openzeppelin.com/contracts/4.x/api/proxy) implementing the core delegation functionality (upgrading a smart contract with a new one via delegatecall)   
+`Proxies` - [abstract contract](https://docs.openzeppelin.com/contracts/4.x/api/proxy) implementing the core delegation functionality (upgrading a smart contract with a new one via delegatecall) dangers include: storage clashes and function selector clashes
    - implementation contract
    - proxy contract --> points to correct implementation
    - the user makes calls to proxy
