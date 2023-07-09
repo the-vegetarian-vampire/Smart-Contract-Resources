@@ -120,15 +120,11 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `Byzantine fault` or [Byzantine generals problem](https://en.wikipedia.org/wiki/Byzantine_fault) - a condition of a computer system, particularly distributed computing systems, where components may fail and there is imperfect information on whether a component has failed; thus the reason for Proof of Work  
 
+`CFMM` - Constant Function Market Makers: [article](https://medium.com/bollinger-investment-group/constant-function-market-makers-defis-zero-to-one-innovation-968f77022159)   
+
 `clustering` - tracing bitcoin via blockchain analysis; tracing Bitcoin user wallets by tracking wallet “change” creation; using tags; peel chains [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) Sarah Meiklejohn and team; also [A Fistful of Bitcoins: Characterizing Payments Among Men with No Names](https://cseweb.ucsd.edu/~smeiklejohn/files/imc13.pdf)   
 
-`Compound` - a DeFi lending protocol that allows users to earn interest on their cryptocurrencies by depositing them into one of several pools    
-
-`DAI` - stablecoin on the Ethereum blockchain whose value is pegged to $US   
-
-`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - 9:40 [Andrew Miller AMA](https://www.youtube.com/watch?v=IwRfEsX07MU) and later mentions [David Chaum](https://en.wikipedia.org/wiki/David_Chaum) Dan Robinson’s [blog post](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest)      
-
-`CFMM` - Constant Function Market Makers: [article](https://medium.com/bollinger-investment-group/constant-function-market-makers-defis-zero-to-one-innovation-968f77022159)  
+`Compound` - a DeFi lending protocol that allows users to earn interest on their cryptocurrencies by depositing them into one of several pools      
 
 `coinbase transaction` - the first transaction in a block. Miners use it to collect the block reward, and any additional transaction fees.   
 
@@ -140,12 +136,16 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `custom errors` - declared at top, more `gas efficient`    
 
-`delegatcall` - identical to a message call apart from the fact that the code at the target address is executed in the context; a contract can dynamically load code from a different address at runtime. Storage, current address and balance still refer to the calling contract, only the code is taken from the called address. Pattick Collins explanation [1:05:07:37](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=104857)   
+`DAI` - stablecoin on the Ethereum blockchain whose value is pegged to $US   
+
+`dark forest` - “all people with nodes on major blockchains grinding on mempool transactions” - 9:40 [Andrew Miller AMA](https://www.youtube.com/watch?v=IwRfEsX07MU) and later mentions [David Chaum](https://en.wikipedia.org/wiki/David_Chaum) Dan Robinson’s [blog post](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest)    
 
 `data Locations` - Storage, Memory and Calldata
   1. storage - variable is a state variable (store on blockchain)
   2. memory - variable is in memory and it exists while a function is being called
-  3. calldata - special data location that contains function arguments 
+  3. calldata - special data location that contains function arguments  
+
+`delegatcall` - identical to a message call apart from the fact that the code at the target address is executed in the context; a contract can dynamically load code from a different address at runtime. Storage, current address and balance still refer to the calling contract, only the code is taken from the called address. Pattick Collins explanation [1:05:07:37](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=104857)    
 
 `describe ()` - function in [Jasmine](https://stackoverflow.com/questions/12209582/the-describe-keyword-in-javascript) framework used for testing   
 
