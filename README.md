@@ -140,6 +140,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `custom errors` - declared at top, more `gas efficient`    
 
+`delegatcall` - identical to a message call apart from the fact that the code at the target address is executed in the context; a contract can dynamically load code from a different address at runtime. Storage, current address and balance still refer to the calling contract, only the code is taken from the called address. Pattick Collins explanation [1:05:07:37](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=104857)   
+
 `data Locations` - Storage, Memory and Calldata
   1. storage - variable is a state variable (store on blockchain)
   2. memory - variable is in memory and it exists while a function is being called
