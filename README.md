@@ -217,6 +217,8 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
    
 `linting` - the process of running a program that will analyze code for potential errors (verifying code quality) [eslint(https://eslint.org/) 
 
+`magic number` [wiki](https://en.wikipedia.org/wiki/Magic_number_(programming)) unique value with unexplained meaning or multiple occurrences which could (preferably) be replaced with a named constant   
+
 `memepool` - or [memory pool](https://www.alchemy.com/overviews/what-is-a-mempool) is a dynamic staging area in front of the blockchain that enables transaction ordering, fee prioritization, and general block construction; a list of pending transactions waiting for validation from a node before it is committed to a block on the blockchain   
 
 `MEV` - maximal (formerly miner) extractable value; referred to as an “invisible tax” that miners can collect from users – essentially, the maximum value a miner can extract from moving around transactions when producing a block on a blockchain network; [video](https://youtu.be/u4sV-Btg1Ag)   
