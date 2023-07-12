@@ -384,7 +384,7 @@ Infinite loops and gas limits attacks...
 - [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions
   
 - Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)   
--- Storing your private keys: [7:45:29](https://youtu.be/umepbfKp5rI?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=27930)   
+
 -----   
 
 ### Audits
@@ -418,6 +418,8 @@ of users.
 • `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
 • `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
 or even gas inefficiencies.   
+
+Testing [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723)   
 
 -----   
 
