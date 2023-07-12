@@ -347,8 +347,10 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
 - batch minting   
 - in testing it's common to prepend storage variables with `s_`
-- Hardhat gas reporter   
-- [yul](https://docs.soliditylang.org/en/latest/yul.html) and [huff](https://docs.huff.sh/) (lower level bytecode languages]   
+- Hardhat gas reporter
+  
+- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages]
+- [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)   
 ----- 
   
 ## Tokens
@@ -369,8 +371,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
 [Rekt News](https://rekt.news/)   
 [List types on Github](https://github.com/kadenzipfel/smart-contract-vulnerabilities) via Kadenzipfel   
-
-Infinite loops and gas limits attacks...   
+[Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)
 
 - Reetrancy - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”; A Historical Collection of [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks)          
   
@@ -473,7 +474,9 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
   - [Etherscan](https://etherscan.io/)
   - [Slither](https://github.com/crytic/slither)
       - [Static Analyzer](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/)
+      - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d)   
   - [Foundry](https://book.getfoundry.sh/)
+      - [Cheat Codes](https://book.getfoundry.sh/cheatcodes/)
   - In-line bookmarks: // @audit this code seems vulnerable here   
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
