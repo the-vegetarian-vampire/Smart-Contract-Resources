@@ -400,15 +400,19 @@ Audit reports
    - [Solodit](https://solodit.xyz/)
    - [Code4rena](https://code4rena.com/reports)
       
-Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)    
+Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
+1. solidity/evm oriented bugs, this include bugs based on compiler version or certain evm specific bugs
+2. Logical bugs, this is arguably the biggest surface for attacks as it can be very project-specific
+3. Ecosystem oriented bugs, this includes the projects explicit and implicit interaction with the whole blockchain e.g. frontrunning/sandwiching, oracle manipulations, incorrect integrations, flashloan attacks etc all goes here
+
 
 Most auditor discussions are on Twitter.   
 - [The Auditooor Grindset blog](https://www.zellic.io/blog/the-auditooor-grindset)   
 - [5 Solidity Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
-- [Andy Li's auditor road map](https://youtu.be/-469Gcye-ZE)      
+- [Andy Li's road map](https://youtu.be/-469Gcye-ZE)      
 - [0kage.eth road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
-- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5) Audit process   
-- [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM) Audit process           
+- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)     
+- [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM)            
 - Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0) and Lesson 13: Aave liquidationCall()    
 - [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
 - [Owen Thurm's Channel](https://www.youtube.com/@0xOwenThurm)   
@@ -418,12 +422,13 @@ Most auditor discussions are on Twitter.
   
 [Simple-security-toolkit](https://github.com/nascentxyz/simple-security-toolkit)   
 
-
 • `High` - leads to a loss of a significant portion (>10%) of assets in the protocol, or significant harm to a majority
 of users.   
 • `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
 • `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
 or even gas inefficiencies.   
+
+
 
 #### Testing 
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
