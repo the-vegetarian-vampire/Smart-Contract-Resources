@@ -427,8 +427,14 @@ or even gas inefficiencies.
 
 #### Testing 
 
-[28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723)     
-Using modifiers to test [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
+Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723)    
+   - Unit
+   - Integration
+   - Forked
+   - Staging
+
+Unit Tests
+ - Using modifiers [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
 
 -----   
 
