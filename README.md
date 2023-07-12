@@ -425,7 +425,10 @@ of users.
 • `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
 or even gas inefficiencies.   
 
-Testing [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723)   
+####Testing 
+
+[28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723)     
+Using modifiers to test [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
 
 -----   
 
