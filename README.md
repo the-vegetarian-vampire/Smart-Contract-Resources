@@ -428,7 +428,7 @@ of users.
 • `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
 or even gas inefficiencies.   
 
-
+[Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)   
 
 #### Testing 
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
