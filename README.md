@@ -96,6 +96,7 @@ Andy Li - [auditing interviews](https://www.youtube.com/@andyli) and cyber secur
 ## Opcodes | Gas Optimization | Storage
 How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works; Patrick Collins [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough; sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
 [Deconstructing solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)    
+Foundry Debugger[7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)   
 
 🔖 [Opcodes Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)    
 🔖 [Ethereum Signature Database](https://www.4byte.directory/)   
