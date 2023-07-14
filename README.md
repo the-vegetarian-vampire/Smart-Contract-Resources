@@ -1,13 +1,14 @@
 # Solidity | DeFi | and Blockchain Resources
 
 A general guide to learning Solidity, Defi, and blockchain technologies. 
+🔖 = You should bookmark
 
-[Remix](https://remix.ethereum.org) - tool for testing smart contracts, `Bookmark` this    
+🔖 [Remix](https://remix.ethereum.org) - tool for testing smart contracts   
 [Ethereum unit converter](https://eth-converter.com/)   
 
-Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html)     
-Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
-Solidity [By example](https://solidity-by-example.org/)   
+🔖 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html)     
+🔖 Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
+🔖 Solidity [By example](https://solidity-by-example.org/)   
    
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/) via [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) library   
 [Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/)  
@@ -76,7 +77,7 @@ Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/m
 - [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
 
 Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)   
-Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
+Andy Li - [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
 
 -----
 ### Teams to Connect With  
@@ -88,8 +89,213 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 - [Spearbit](https://spearbit.com/)  
 - [Trail of Bits](https://www.trailofbits.com/) 
 - [YAcademy](https://yacademy.dev/about/)      
-- [Zellic](https://www.zellic.io/)   
+- [Zellic](https://www.zellic.io/)
+- 
 ----- 
+
+## Opcodes | Gas Optimization | Storage
+How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works; Patrick Collins [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough; sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
+Opcodes [Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)   
+
+[Deconstructing solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)   
+🔖 [Ethereum Signature Database](https://www.4byte.directory/)   
+🔖 [EVM Storage](https://evm.storage/)    
+
+Play around with opcodes: https://www.evm.codes/playground   
+
+Not invented here: meaning the security risk is often greater than improvement value   
+
+A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
+- check != 0 rather than >    
+- `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together   
+- cluster identical data types together     
+- strings, arrays, and loops are `computationally expensive`   
+- `custom errors` - declared at top, more gas efficient, denoted with `__` two underscores: error FundMe__NotOwner();     
+- `constant` - naming convention ALL_CAPS; more `gas efficient`    
+- `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
+- batch minting   
+- in testing it's common to prepend storage variables with `s_`
+- Hardhat gas reporter
+  
+- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages]
+- [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)   
+----- 
+  
+## Tokens
+* ERC-20 - Token contract for fungible assets. [Ethereum Request for Comment]   
+* [ERC-721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) - Token standard for non-fungible assets.
+* ERC-1155 - Multi Token Standard to take the best from previous standards to create a fungibility-agnostic and gas-efficient token contract.
+* ERC-918 - Mineable Token Standard.
+* ERC-165 - Creates a standard method to publish and detect what interfaces a smart contract implements.
+* ERC-725 - A standard interface for a simple proxy account.
+* ERC-173 - A standard interface for ownership of contracts.  
+* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - standardized way to retrieve royalty payment information across all NFT marketplaces and ecosystem participants
+* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - multi coin staking; [Video](https://www.youtube.com/watch?v=Ai7A-_umm08)     
+
+NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
+
+-----
+
+## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
+🔖 [Rekt News](https://rekt.news/)   
+🔖 [List types on Github](https://github.com/kadenzipfel/smart-contract-vulnerabilities) via Kadenzipfel   
+[Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)
+
+- Reetrancy - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”; A Historical Collection of [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks)          
+  
+- [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between    
+
+- Flash loans
+
+- [Front Running](https://www.youtube.com/watch?v=wBCqLlJAi1A&t=123s)   
+
+- [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks
+
+- Denial of service (DoS; DDoS attack) 
+
+- Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)
+
+- [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions
+  
+- Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)   
+- [Mango Markets exploit](https://blog.chainalysis.com/reports/oracle-manipulation-attacks-rising/)   
+-----   
+
+### Audits
+`What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
+   
+Audit reports 
+   - 🔖 [Solodit](https://solodit.xyz/)
+   - 🔖 [Code4rena](https://code4rena.com/reports)
+      
+Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
+1. solidity/evm oriented bugs, this include bugs based on compiler version or certain evm specific bugs
+2. Logical bugs, this is arguably the biggest surface for attacks as it can be very project-specific
+3. Ecosystem oriented bugs, this includes the projects explicit and implicit interaction with the whole blockchain e.g. frontrunning/sandwiching, oracle manipulations, incorrect integrations, flashloan attacks etc all goes here
+
+
+Most auditor discussions are on Twitter.   
+- [The Auditooor Grindset blog](https://www.zellic.io/blog/the-auditooor-grindset)   
+- [5 Solidity Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
+- [Andy Li's road map](https://youtu.be/-469Gcye-ZE)      
+- [0kage.eth road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
+- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)     
+- [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM)            
+- Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0) and Lesson 13: Aave liquidationCall()    
+- [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
+- [Owen Thurm's Channel](https://www.youtube.com/@0xOwenThurm)   
+- Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
+- [Dacian's blog](https://dacian.me/smart-contract-auditor-portfolio)
+- [Volodya's Blog](https://0xvolodya.hashnode.dev/how-i-earned-25000-auditing-and-ranked-1-on-60-day-leaderboard)
+  
+[Simple-security-toolkit](https://github.com/nascentxyz/simple-security-toolkit)   
+
+• `High` - leads to a loss of a significant portion (>10%) of assets in the protocol, or significant harm to a majority
+of users.   
+• `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
+• `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
+or even gas inefficiencies.   
+
+[Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)   
+
+#### Testing 
+[Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
+`CEI` - checks, effects, (external) interactions
+`Arrange` - set up, `Act` - action, `Assert` 
+
+Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723)    
+   - Unit
+     - Using modifiers [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
+   - Integration
+   - Forked
+   - Staging
+
+[Decoding calldata](https://youtu.be/sas02qSFZ74?t=38028)
+
+-----   
+
+### Bug Bounty
+ - [Code4rena](https://code4rena.com/)   
+ - [Immunefi](https://immunefi.com/)
+ - [Sherlock](https://www.sherlock.xyz/)   
+
+Capture The Flag (CTF) Games:
+- [Ethernaut](https://ethernaut.openzeppelin.com/)    
+
+-----   
+
+## Defi
+Uniswap - exchange - [Every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
+Curve - exchange   
+Compound - lending     
+Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko](https://www.youtube.com/watch?v=VXlI-uzhBX4)   
+   - [Aave Tesnet](https://staging.aave.com/)
+   - `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
+   - `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
+   - Build a [liquidation](https://docs.aave.com/faq/liquidations) - [bot](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
+- Since Aave uses Chainlink price feeds, what if Chainlink goes down? What are the back-ups?
+
+Lido - Staking [Coin B](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
+
+Collateral swaps  
+Concentrated liquidity  
+
+🔖 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
+🔖 [Defi Llama](https://defillama.com/)    
+
+#### Central Banking Reading
+Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
+Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
+Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and The Big Short   
+   - [quote stuffing](https://en.wikipedia.org/wiki/Quote_stuffing)   
+   - [spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))   
+   - [Glass Steagall](https://en.wikipedia.org/wiki/Glass%E2%80%93Steagall_legislation)   
+   - [RegSho](https://en.wikipedia.org/wiki/Naked_short_selling#Regulation_SHO)   
+   - [Regulatory capture](https://en.wikipedia.org/wiki/Regulatory_capture)
+     
+-----   
+   
+### 🔖 Tools 
+  - [Alchemy](https://www.alchemy.com/)
+  - [Etherscan](https://etherscan.io/)
+  - [Slither](https://github.com/crytic/slither)
+      - [Static Analyzer](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/)
+      - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d)   
+  - [Foundry](https://book.getfoundry.sh/)
+      - [Cheat Codes](https://book.getfoundry.sh/cheatcodes/)
+  - In-line bookmarks: // @audit this code seems vulnerable here   
+  - [Ethers](https://docs.ethers.org/v5/single-page/)   
+  - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
+      - [Forking mainnet](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)
+      - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
+  - [Wagmi](https://wagmi.sh/)   
+  - [Web3.js](https://web3js.org/#/)
+
+### Wallets
+[Rabby Wallet](https://rabby.io/)   
+[Metamask](https://metamask.io/)   
+  
+-----  
+ 
+## Abstracts: In Depth Understanding
+Bitcoin [whitepaper](https://bitcoin.org/bitcoin.pdf)     
+Ethereum [whitepaper](https://ethereum.org/en/whitepaper/) (periodically updated)   
+Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
+
+[How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) - Sarah
+Meiklejohn and team   
+
+[Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree)      
+
+[Improving the Efficiency and Reliability of Digital Time-Stamping](http://math.columbia.edu/~bayer/papers/Timestamp_BHS93.pdf)       
+[Secure Names for Bit-Strings](https://nakamotoinstitute.org/static/docs/secure-names-bit-strings.pdf)      
+[Anonymous Payments Lecture](https://www.youtube.com/watch?v=Z0s4W3UBxM8)
+
+[Academic Smart_Contract_Papers](https://github.com/hzysvilla/Academic_Smart_Contract_Papers)   
+
+[More Resources](https://github.com/PatrickAlphaC/Blockchain-Development-Resources#youtube-channels) from Patrick Collins   
+
+-----  
 
 ## Dictionary of Key Terms (Solidity) 
 ###### Broader [Crypto dictionary](https://coinmarketcap.com/alexandria/glossary) of terms or [General](https://medium.datadriveninvestor.com/crypto-vocabulary-expanded-76131d26537b)
@@ -323,201 +529,3 @@ Andy Li - smart contract [auditing interviews](https://www.youtube.com/@andyli) 
 
 `zkSNARK` - succinct non interactive argument of knowledge    
 
------ 
-
-## Opcodes | Gas Optimization | Storage
-How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works; Patrick Collins [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough; sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
-Opcodes [Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)   
-
-[Deconstructing solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)   
-[Ethereum Signature Database](https://www.4byte.directory/)   
-[EVM Storage](https://evm.storage/)    
-
-Play around with opcodes: https://www.evm.codes/playground   
-
-Not invented here: meaning the security risk is often greater than improvement value   
-
-A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
-- check != 0 rather than >    
-- `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together   
-- cluster identical data types together     
-- strings, arrays, and loops are `computationally expensive`   
-- `custom errors` - declared at top, more gas efficient, denoted with `__` two underscores: error FundMe__NotOwner();     
-- `constant` - naming convention ALL_CAPS; more `gas efficient`    
-- `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
-- batch minting   
-- in testing it's common to prepend storage variables with `s_`
-- Hardhat gas reporter
-  
-- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages]
-- [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)   
------ 
-  
-## Tokens
-* ERC-20 - Token contract for fungible assets. [Ethereum Request for Comment]   
-* [ERC-721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) - Token standard for non-fungible assets.
-* ERC-1155 - Multi Token Standard to take the best from previous standards to create a fungibility-agnostic and gas-efficient token contract.
-* ERC-918 - Mineable Token Standard.
-* ERC-165 - Creates a standard method to publish and detect what interfaces a smart contract implements.
-* ERC-725 - A standard interface for a simple proxy account.
-* ERC-173 - A standard interface for ownership of contracts.  
-* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - standardized way to retrieve royalty payment information across all NFT marketplaces and ecosystem participants
-* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - multi coin staking; [Video](https://www.youtube.com/watch?v=Ai7A-_umm08)     
-
-NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
-
------
-
-## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
-[Rekt News](https://rekt.news/)   
-[List types on Github](https://github.com/kadenzipfel/smart-contract-vulnerabilities) via Kadenzipfel   
-[Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)
-
-- Reetrancy - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”; A Historical Collection of [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks)          
-  
-- [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between    
-
-- Flash loans
-
-- [Front Running](https://www.youtube.com/watch?v=wBCqLlJAi1A&t=123s)   
-
-- [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks
-
-- Denial of service (DoS; DDoS attack) 
-
-- Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)
-
-- [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions
-  
-- Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)   
-
------   
-
-### Audits
-`What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
-   
-Audit reports 
-   - [Solodit](https://solodit.xyz/)
-   - [Code4rena](https://code4rena.com/reports)
-      
-Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
-1. solidity/evm oriented bugs, this include bugs based on compiler version or certain evm specific bugs
-2. Logical bugs, this is arguably the biggest surface for attacks as it can be very project-specific
-3. Ecosystem oriented bugs, this includes the projects explicit and implicit interaction with the whole blockchain e.g. frontrunning/sandwiching, oracle manipulations, incorrect integrations, flashloan attacks etc all goes here
-
-
-Most auditor discussions are on Twitter.   
-- [The Auditooor Grindset blog](https://www.zellic.io/blog/the-auditooor-grindset)   
-- [5 Solidity Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
-- [Andy Li's road map](https://youtu.be/-469Gcye-ZE)      
-- [0kage.eth road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
-- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)     
-- [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM)            
-- Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0) and Lesson 13: Aave liquidationCall()    
-- [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
-- [Owen Thurm's Channel](https://www.youtube.com/@0xOwenThurm)   
-- Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
-- [Dacian's blog](https://dacian.me/smart-contract-auditor-portfolio)
-- [Volodya's Blog](https://0xvolodya.hashnode.dev/how-i-earned-25000-auditing-and-ranked-1-on-60-day-leaderboard)
-  
-[Simple-security-toolkit](https://github.com/nascentxyz/simple-security-toolkit)   
-
-• `High` - leads to a loss of a significant portion (>10%) of assets in the protocol, or significant harm to a majority
-of users.   
-• `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
-• `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
-or even gas inefficiencies.   
-
-[Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)   
-
-#### Testing 
-[Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
-
-Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723)    
-   - Unit
-     - Using modifiers [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
-   - Integration
-   - Forked
-   - Staging
-
------   
-
-### Bug Bounty
- - [Code4rena](https://code4rena.com/)   
- - [Immunefi](https://immunefi.com/)
- - [Sherlock](https://www.sherlock.xyz/)   
-
-Capture The Flag (CTF) Games:
-- [Ethernaut](https://ethernaut.openzeppelin.com/)    
-
------   
-
-## Defi
-Uniswap - exchange - [Every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
-Curve - exchange   
-Compound - lending     
-Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko](https://www.youtube.com/watch?v=VXlI-uzhBX4)   
-   - [Aave Tesnet](https://staging.aave.com/)
-   - `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
-   - `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
-   - Build a [liquidation](https://docs.aave.com/faq/liquidations) - [bot](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
-- Since Aave uses Chainlink price feeds, what if Chainlink goes down? What are the back-ups?
-
-Lido - Staking [Coin B](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
-
-Collateral swaps  
-Concentrated liquidity   
-[Layer2 Beat](https://l2beat.com/scaling/tvl)   
-[Defi Llama](https://defillama.com/)    
-
-#### Central Banking Reading
-Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
-Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
-Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and The Big Short   
-   - [quote stuffing](https://en.wikipedia.org/wiki/Quote_stuffing)   
-   - [spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))   
-   - [Glass Steagall](https://en.wikipedia.org/wiki/Glass%E2%80%93Steagall_legislation)   
-   - [RegSho](https://en.wikipedia.org/wiki/Naked_short_selling#Regulation_SHO)   
-   - [Regulatory capture](https://en.wikipedia.org/wiki/Regulatory_capture)
-     
------   
-   
-### Tools 
-  - [Alchemy](https://www.alchemy.com/)
-  - [Etherscan](https://etherscan.io/)
-  - [Slither](https://github.com/crytic/slither)
-      - [Static Analyzer](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/)
-      - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d)   
-  - [Foundry](https://book.getfoundry.sh/)
-      - [Cheat Codes](https://book.getfoundry.sh/cheatcodes/)
-  - In-line bookmarks: // @audit this code seems vulnerable here   
-  - [Ethers](https://docs.ethers.org/v5/single-page/)   
-  - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
-      - [Forking mainnet](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)
-      - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
-  - [Wagmi](https://wagmi.sh/)   
-  - [Web3.js](https://web3js.org/#/)
-
-### Wallets
-[Rabby Wallet](https://rabby.io/)   
-[Metamask](https://metamask.io/)   
-  
------  
- 
-## Abstracts: In Depth Understanding
-Bitcoin [whitepaper](https://bitcoin.org/bitcoin.pdf)     
-Ethereum [whitepaper](https://ethereum.org/en/whitepaper/) (periodically updated)   
-Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
-
-[How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) - Sarah
-Meiklejohn and team   
-
-[Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree)      
-
-[Improving the Efficiency and Reliability of Digital Time-Stamping](http://math.columbia.edu/~bayer/papers/Timestamp_BHS93.pdf)       
-[Secure Names for Bit-Strings](https://nakamotoinstitute.org/static/docs/secure-names-bit-strings.pdf)      
-[Anonymous Payments Lecture](https://www.youtube.com/watch?v=Z0s4W3UBxM8)
-
-[Academic Smart_Contract_Papers](https://github.com/hzysvilla/Academic_Smart_Contract_Papers)   
-
-[More Resources](https://github.com/PatrickAlphaC/Blockchain-Development-Resources#youtube-channels) from Patrick Collins   
