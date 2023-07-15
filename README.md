@@ -62,6 +62,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 [Blockchain Threat Intelligence](https://newsletter.blockthreat.io/) - blog
 
 [Bankless Podcast](http://podcast.banklesshq.com/)   
+[Unchained podcast](https://unchainedcrypto.com/podcasts/)   
 
 -----   
 ### Interactive 
@@ -167,7 +168,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 ### Audits
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
    
-Audit reports 
+Reports 
    - 🔖 [Solodit](https://solodit.xyz/)
    - 🔖 [Code4rena](https://code4rena.com/reports)
       
@@ -203,7 +204,7 @@ or even gas inefficiencies.
 
 #### Testing 
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
-`CEI` - checks, effects, (external) interactions
+`CEI` - checks, effects, (external) interactions   
 `Arrange` - set up, `Act` - action, `Assert` 
 
 Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723)    
@@ -213,7 +214,8 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
    - Forked
    - Staging
 
-[Decoding calldata](https://youtu.be/sas02qSFZ74?t=38028)
+[Decoding calldata](https://youtu.be/sas02qSFZ74?t=38028)   
+[Named imports](https://youtu.be/umepbfKp5rI?t=13460)   
 
 -----   
 
@@ -499,11 +501,13 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 
 `sybil attack` a [type of attack](https://en.wikipedia.org/wiki/Sybil_attack) on a computer network service in which an attacker subverts the service's reputation system by creating a large number of pseudonymous identities and uses them to gain a disproportionately large influence. It is named after the subject of the book Sybil, a case study of a woman diagnosed with dissociative identity disorder; also [sybil resistance](https://www.finder.com.au/blockchain-sybil-resistance-searching-for-the-perfect-waste-of-resources)   
 
-`topics` - indexed parameters for ‘logged’ events allow you to search for these events using the indexed parameters as filters; at most 3 parameters can receive the property indexed   
-
 `timelock` - locks functionality on an application until a certain amount of time has passed; [video](https://www.youtube.com/watch?v=P1f2a5Ckjpg)    
 
-`TPS` - transactions per second [chart](https://coincodex.com/article/14198/layer-1-performance-comparing-6-leading-blockchains/)      
+`topics` - indexed parameters for ‘logged’ events allow you to search for these events using the indexed parameters as filters; at most 3 parameters can receive the property indexed   
+
+`TPS` - transactions per second [chart](https://coincodex.com/article/14198/layer-1-performance-comparing-6-leading-blockchains/)     
+
+`transfer vs. transferFrom (aka delegatedTransfer)` - 
 
 `tumbler` - a service that mixes potentially identifiable or "tainted" cryptocurrency funds with others, so as to obscure the trail back to the fund's original source: Tornado cash; Zcash and Zk-SNARK's?   
 
@@ -518,6 +522,7 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 `UTXO` -  an unspent transaction output (UTXO) represents some amount of digital currency which has been authorized by one account to be spent by another. UTXOs use public key cryptography to identify and transfer ownership between holders of public/private key pairs  
     
 [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) - unique sequence of characters that identifies a logical or physical resource used by web technologies.   
+   - https://ethereum.stackexchange.com/questions/147899/why-is-it-called-tokenuri-instead-of-tokenurl   
 
 `witness` - [cryptography](https://crypto.stackexchange.com/questions/43462/what-is-a-witness-in-zero-knowledge-proof) solution to puzzle; unspent transaction output, any solution to unlock UTXO; see also [Segregated Witness](https://www.investopedia.com/terms/s/segwit-segregated-witness.asp)   
 
