@@ -11,7 +11,9 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 🔖 Solidity [By example](https://solidity-by-example.org/)   
    
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/) via [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) library   
-[Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/)  
+[Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) 
+
+[Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)   
 
 ## Tutorial Resources
 
@@ -45,19 +47,19 @@ Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumE
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)    
 [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  a bit more technical (and perhaps duller) than Mastering Ethereum (*FREE*)   
-
-[Deconstructing Solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)   
+[Deconstructing Solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737) - breaks down Solidity to its byte code
 
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
 [The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity (despite being from 2019)      
-[Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - favorite authors; covers transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend! See [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf)   
+[Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - covers transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend! 
+   - [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) - Sarah Meiklejohn and team   
 
-Christoph Michel's [book](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
+[Christoph Michel](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
 [DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018) - particularly Chapter 6: deep dive      
 
-Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)   
-Blog -- [Blockchain Threat Intelligence](https://newsletter.blockthreat.io/)   
+Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)    
+[Blockchain Threat Intelligence](https://newsletter.blockthreat.io/) - blog
 
 [Bankless Podcast](http://podcast.banklesshq.com/)   
 
@@ -78,6 +80,7 @@ Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/m
 
 Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)   
 Andy Li - [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
+Johnny Time - [interviews](https://www.youtube.com/@JohnnyTime)   
 
 -----
 ### Teams to Connect With  
@@ -90,19 +93,18 @@ Andy Li - [auditing interviews](https://www.youtube.com/@andyli) and cyber secur
 - [Trail of Bits](https://www.trailofbits.com/) 
 - [YAcademy](https://yacademy.dev/about/)      
 - [Zellic](https://www.zellic.io/)
-- 
+  
 ----- 
 
 ## Opcodes | Gas Optimization | Storage
-How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works; Patrick Collins [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough; sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)   
-[Deconstructing solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737)    
+How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works; Patrick Collins [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough; sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)      
 Foundry Debugger[7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)   
 
 🔖 [Opcodes Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)    
 🔖 [Ethereum Signature Database](https://www.4byte.directory/)   
 🔖 [EVM Storage](https://evm.storage/)    
 
-Play around with opcodes: https://www.evm.codes/playground   
+[Play with opcodes](https://www.evm.codes/playground)      
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
@@ -172,32 +174,32 @@ Audit reports
 Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
 1. solidity/evm oriented bugs, this include bugs based on compiler version or certain evm specific bugs
 2. Logical bugs, this is arguably the biggest surface for attacks as it can be very project-specific
-3. Ecosystem oriented bugs, this includes the projects explicit and implicit interaction with the whole blockchain e.g. frontrunning/sandwiching, oracle manipulations, incorrect integrations, flashloan attacks etc all goes here
+3. Ecosystem oriented bugs, includes projects explicit and implicit interaction with whole blockchain: frontrunning/sandwiching, oracle manipulations, incorrect integrations, flashloan attacks, all go here
 
 
 Most auditor discussions are on Twitter.   
-- [The Auditooor Grindset blog](https://www.zellic.io/blog/the-auditooor-grindset)   
-- [5 Solidity Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
+- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)     
+- [Pashov](https://twitter.com/pashovkrum)
 - [Andy Li's road map](https://youtu.be/-469Gcye-ZE)      
 - [0kage.eth road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
-- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)     
 - [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM)            
 - Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0) and Lesson 13: Aave liquidationCall()    
 - [Chainlink Auditing 101](https://www.youtube.com/watch?v=0aJfCug1zTM)      
 - [Owen Thurm's Channel](https://www.youtube.com/@0xOwenThurm)   
-- Blue Alder - Wallet Mining [Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
+- Blue Alder - [Wallet Mining Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 - [Dacian's blog](https://dacian.me/smart-contract-auditor-portfolio)
 - [Volodya's Blog](https://0xvolodya.hashnode.dev/how-i-earned-25000-auditing-and-ranked-1-on-60-day-leaderboard)
+
+- [The Auditooor Grindset blog](https://www.zellic.io/blog/the-auditooor-grindset)   
+- [5 Solidity Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
   
 [Simple-security-toolkit](https://github.com/nascentxyz/simple-security-toolkit)   
 
-• `High` - leads to a loss of a significant portion (>10%) of assets in the protocol, or significant harm to a majority
+• `High` - leads to a loss of a significant portion (>10%) of assets in protocol, or significant harm to a majority
 of users.   
 • `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
 • `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
 or even gas inefficiencies.   
-
-[Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)   
 
 #### Testing 
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
@@ -282,9 +284,6 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
 Bitcoin [whitepaper](https://bitcoin.org/bitcoin.pdf)     
 Ethereum [whitepaper](https://ethereum.org/en/whitepaper/) (periodically updated)   
 Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)   
-
-[How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) - Sarah
-Meiklejohn and team   
 
 [Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree)      
 
