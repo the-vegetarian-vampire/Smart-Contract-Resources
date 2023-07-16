@@ -69,7 +69,8 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 [Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)  
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
 [Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
-   - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)   
+   - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
+
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)  
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)   
