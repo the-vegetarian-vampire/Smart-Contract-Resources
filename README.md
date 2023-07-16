@@ -170,6 +170,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 Reports 
    - 🔖 [Solodit](https://solodit.xyz/)
    - 🔖 [Code4rena](https://code4rena.com/reports)
+   - Audit Report [Blog](https://www.dylandavis.net/2022/06/the-ideal-audit-report/)   
       
 Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
 1. solidity/evm oriented bugs, this include bugs based on compiler version or certain evm specific bugs
