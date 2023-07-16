@@ -201,7 +201,7 @@ of users.
 • `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
 or even gas inefficiencies.   
 
-#### Testing 
+### Testing 
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
 `CEI` - checks, effects, (external) interactions   
 `Arrange` - set up, `Act` - action, `Assert` 
@@ -222,6 +222,7 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
  - [Code4rena](https://code4rena.com/)   
  - [Immunefi](https://immunefi.com/)
  - [Sherlock](https://www.sherlock.xyz/)   
+ - [Code Hawks](https://www.codehawks.com/)
 
 Capture The Flag (CTF) Games:
 - [Ethernaut](https://ethernaut.openzeppelin.com/)    
