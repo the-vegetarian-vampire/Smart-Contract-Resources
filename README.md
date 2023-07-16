@@ -69,6 +69,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 [Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)  
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
 [Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
+   - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)   
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)  
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)   
@@ -99,7 +100,10 @@ Johnny Time - [interviews](https://www.youtube.com/@JohnnyTime)
 
 ## Opcodes | Gas Optimization | Storage
 How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works; Patrick Collins [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough; sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)      
-Foundry Debugger[7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)   
+[How Storag Works](https://youtu.be/_YkulBTqIcQ?t=522)    
+[Storage vs Memory](https://soliditytips.com/articles/solidity-data-location-storage-memory/)
+Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)  
+[Ethernaut Lvl 19 MagicNumber](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)   
 
 🔖 [Opcodes Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)    
 🔖 [Ethereum Signature Database](https://www.4byte.directory/)   
@@ -150,19 +154,13 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between    
 
 - Flash loans
-
-- [Front Running](https://www.youtube.com/watch?v=wBCqLlJAi1A&t=123s)   
-
-- [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks
-
-- Denial of service (DoS; DDoS attack) 
-
-- Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)
-
-- [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions
-  
-- Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)   
-- [Mango Markets exploit](https://blog.chainalysis.com/reports/oracle-manipulation-attacks-rising/)   
+- [Front Running](https://www.youtube.com/watch?v=wBCqLlJAi1A&t=123s)    
+- [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks   
+- Denial of service (DoS; DDoS attack)   
+- Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)    
+- [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions   
+- Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)    
+- [Mango Markets exploit](https://blog.chainalysis.com/reports/oracle-manipulation-attacks-rising/)    
 -----   
 
 ### Audits
@@ -179,9 +177,9 @@ Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/
 
 
 Most auditor discussions are on Twitter.   
-- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)     
+- [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)
 - [Pashov](https://twitter.com/pashovkrum)
-- [Andy Li's road map](https://youtu.be/-469Gcye-ZE)      
+- [Andy Li's road map](https://youtu.be/-469Gcye-ZE)
 - [0kage.eth road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
 - [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM)            
 - Patrick Collins - [How to Audit a Smart Contract](https://www.youtube.com/watch?v=TmZ8gH-toX0) and Lesson 13: Aave liquidationCall()    
@@ -304,7 +302,7 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 
  `Aave` - decentralised non-custodial liquidity market protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion; Stani Kulechov [interview](https://www.youtube.com/watch?v=PA9QrrH-ze0) by Haseeb Qureshi -- [Aave website](https://app.aave.com/)    
 
-`ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON; Abi.encodePacked - breaks down, via [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html); [Abi.decode](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=81282); Great Patrick Collins section [22:16:31](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=80191)   
+`ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON; Abi.encodePacked - breaks down, via [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html); [Abi.decode](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=81282); Great Patrick Collins section [22:16:31](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=80191) and [ABI encoding](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=30003)    
 
 `address` - (Ethereum; other blockchains will be different) 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front `0x0cE446255506E92DF41614C46F1d6df9Cc969183`      
 
