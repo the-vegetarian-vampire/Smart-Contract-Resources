@@ -26,7 +26,7 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 
 -----
 
-### General Blockchain Knowledge
+## General Blockchain Knowledge
 Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) and a more detailed [roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (there are a ton of roadmaps on Twitter)   
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
 How Bitcoin [Works](https://youtu.be/Lx9zgZCMqXE)   
@@ -260,7 +260,7 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
      
 -----   
    
-### 🔖 Tools 
+## 🔖 Tools 
   - [Alchemy](https://www.alchemy.com/)
   - [Etherscan](https://etherscan.io/)
   - [Slither](https://github.com/crytic/slither)
