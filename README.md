@@ -101,11 +101,11 @@ Johnny Time - [interviews](https://www.youtube.com/@JohnnyTime)
 ## Opcodes | Gas Optimization | Storage
 How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works; Patrick Collins [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough; sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)      
 [How Storag Works](https://youtu.be/_YkulBTqIcQ?t=522)    
-[Storage vs Memory](https://soliditytips.com/articles/solidity-data-location-storage-memory/)
-Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)  
+[Storage vs Memory](https://soliditytips.com/articles/solidity-data-location-storage-memory/)   
+Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)     
 [Ethernaut Lvl 19 MagicNumber](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)   
 
-🔖 [Opcodes Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)    
+🔖 [Opcodes Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)      
 🔖 [Ethereum Signature Database](https://www.4byte.directory/)   
 🔖 [EVM Storage](https://evm.storage/)    
 
