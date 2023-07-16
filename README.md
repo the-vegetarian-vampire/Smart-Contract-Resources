@@ -332,6 +332,9 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 
 `clustering` - tracing bitcoin via blockchain analysis; tracing Bitcoin user wallets by tracking wallet “change” creation; using tags; peel chains [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) Sarah Meiklejohn and team; also [A Fistful of Bitcoins: Characterizing Payments Among Men with No Names](https://cseweb.ucsd.edu/~smeiklejohn/files/imc13.pdf)   
 
+`codecopy` - copying code from one place to another is handled by the `opcode` codecopy, which takes in 3 arguments:
+    - `t:` the destination position of the code, in memory. Let’s arbitrarily save the code to the 0x00 position ;f: the current position of the runtime opcodes, in reference to the entire bytecode. Remember that f starts after initialization opcodes end. What a chicken and egg problem! This value is currently unknown to you; `s:` size of the code, in bytes. Recall that 604260805260206080f3 is 10 bytes long (or 0x0a in hex).   
+
 `Compound` - a DeFi lending protocol that allows users to earn interest on their cryptocurrencies by depositing them into one of several pools      
 
 `coinbase transaction` - the first transaction in a block. Miners use it to collect the block reward, and any additional transaction fees.   
