@@ -106,7 +106,7 @@ How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storag
 Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)     
 [Ethernaut Lvl 19 MagicNumber](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)   
 
-🔖 [Opcodes Updated](https://ethereum.org/en/developers/docs/evm/opcodes/) [Old Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)      
+🔖 [Opcodes Updated](https://ethereum.org/en/developers/docs/evm/opcodes/) vs. - [Old Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)      
 🔖 [Ethereum Signature Database](https://www.4byte.directory/)   
 🔖 [EVM Storage](https://evm.storage/)    
 
