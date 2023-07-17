@@ -107,7 +107,7 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 [Ethernaut Lvl 19 MagicNumber](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)   
 
 🔖 [Opcodes Updated](https://ethereum.org/en/developers/docs/evm/opcodes/) vs. - [Old Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)      
-🔖 [Ethereum Signature Database](https://www.4byte.directory/)   
+🔖 [Ethereum Signature Database](https://www.4byte.directory/) or [Open Chain](https://openchain.xyz/signatures)
 🔖 [EVM Storage](https://evm.storage/)    
 
 [Play with opcodes](https://www.evm.codes/playground)      
@@ -535,6 +535,8 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 `Zcash` - cryptocurrency using zk-SNARKs to provide enhanced privacy; either in a transparent pool or a shielded pool       
 
 `zero address` - contract creation; sometimes sent in an intentional ether burn
+
+`zero padding` — (big-endian) for taking up entire memory; if your data type is uint8 or uint32 it is still managed as uint256 values (occupies 32bytes)   
 
 `zkSNARK` - succinct non interactive argument of knowledge    
 
