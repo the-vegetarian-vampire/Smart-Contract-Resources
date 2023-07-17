@@ -6,7 +6,7 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 🔖 [Remix](https://remix.ethereum.org) - tool for testing smart contracts   
 [Ethereum unit converter](https://eth-converter.com/)   
 
-🔖 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html) and [Cheattsheet](https://docs.soliditylang.org/en/v0.8.13/cheatsheet.html?highlight=encodewithsignature)   
+🔖 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html) and [Cheatsheet](https://docs.soliditylang.org/en/v0.8.13/cheatsheet.html?highlight=encodewithsignature)   
 🔖 Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
 🔖 Solidity [By example](https://solidity-by-example.org/)   
    
