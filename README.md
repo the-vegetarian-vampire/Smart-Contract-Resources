@@ -232,23 +232,23 @@ Capture The Flag (CTF) Games:
 -----   
 
 ## Defi
-Uniswap - exchange - [Every bit helps](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
+🔖 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
+🔖 [Defi Llama](https://defillama.com/)      
+
+Uniswap - [exchange](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
 Curve - exchange   
 Compound - lending     
-Aave - lending (Finnish for ghost, alludes to anonymity of transactions) [CoinGcko](https://www.youtube.com/watch?v=VXlI-uzhBX4)   
+Aave - [lending](https://www.youtube.com/watch?v=VXlI-uzhBX4) (Finnish for ghost, alludes to anonymity of transactions)
    - [Aave Tesnet](https://staging.aave.com/)
    - `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
    - `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
    - Build a [liquidation](https://docs.aave.com/faq/liquidations) - [bot](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
-- Since Aave uses Chainlink price feeds, what if Chainlink goes down? What are the back-ups?
+- Since Aave uses Chainlink price feeds, what if Chainlink goes down? What are the back-ups? Oracle-manipulation attacks.   
 
-Lido - Staking [Coin B](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
+Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
 
 Collateral swaps  
 Concentrated liquidity  
-
-🔖 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
-🔖 [Defi Llama](https://defillama.com/)    
 
 #### Central Banking Reading
 Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
