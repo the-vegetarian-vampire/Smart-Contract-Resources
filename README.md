@@ -256,13 +256,13 @@ Concentrated liquidity
 
 [Stablecoin Trilemma](https://www.youtube.com/live/x-3PWe5dAQY?feature=share): scalable, decentralized, stable.
 
-Rebase — adding tokens 
-Debase — removing tokens 
+Rebase — adding tokens   
+Debase — removing tokens    
 
 `seigniorage` - Revenue or a profit taken from the minting of coins; the difference between the face value of money, such as a $10 bill or a quarter coin, and the cost to produce it. In other words, the cost of producing a currency within a given economy or country is lower than the actual exchange value, which generally accrues to governments that mint the money.   
 
 
-#### Central Banking Reading
+### Central Banking Reading
 Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
 Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
 Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and The Big Short   
