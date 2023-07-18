@@ -250,9 +250,17 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 Collateral swaps  
 Concentrated liquidity  
 
-[Flashbots.net](https://docs.flashbots.net/)   
+[MEV](https://ethereum.org/en/developers/docs/mev/) - MAXIMAL EXTRACTABLE VALUE     
+
+[Flashbots.net](https://docs.flashbots.net/)    
 
 ### Stablecoins
+
+Types
+   1.
+   2.
+
+Dai - [MakerDAO](https://makerdao.com/en/)   
 
 [Stablecoin Trilemma](https://www.youtube.com/live/x-3PWe5dAQY?feature=share): scalable, decentralized, stable.
 
