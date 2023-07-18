@@ -250,6 +250,18 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 Collateral swaps  
 Concentrated liquidity  
 
+[Flashbots.net](https://docs.flashbots.net/)   
+
+### Stablecoins
+
+[Stablecoin Trilemma](https://www.youtube.com/live/x-3PWe5dAQY?feature=share): scalable, decentralized, stable.
+
+Rebase — adding tokens 
+Debase — removing tokens 
+
+`seigniorage` - Revenue or a profit taken from the minting of coins; the difference between the face value of money, such as a $10 bill or a quarter coin, and the cost to produce it. In other words, the cost of producing a currency within a given economy or country is lower than the actual exchange value, which generally accrues to governments that mint the money.   
+
+
 #### Central Banking Reading
 Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
 Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
