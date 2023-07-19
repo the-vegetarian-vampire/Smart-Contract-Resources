@@ -409,7 +409,7 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 
 `fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) "To fork or not to fork? - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software; twitter [status](https://twitter.com/christine_dkim/status/1651999278997417998?s=20)    
 
-`function selector` - first 4 bytes of the function signature: ex: 0xa9059cbb; excellent Patrick Collins section [22:46:43](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=82003); there can be function selector clashes   
+`function selector` - first 4 bytes of the function signature: ex: 0xa9059cbb; excellent Patrick Collins section [22:46:43](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=82003); [shorter video](https://www.youtube.com/watch?v=Mn4e4w8h6n8); there can be function selector clashes   
 `function signature` - string that defines function name & parameters: ex: “transfer(address, uint256)”   
 
 `fuzzing` - or fuzz testing involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
