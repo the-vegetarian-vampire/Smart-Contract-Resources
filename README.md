@@ -17,17 +17,18 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 
 ## Tutorial Resources
 
-`1. Patrick Collins 32 hour course:` [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
-   -  New [Course on Foundry](https://github.com/Cyfrin/foundry-full-course-f23)!     
+`1. Patrick Collins 32 Courses:` 
+   - Harhat Course - [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)   
+   -  Foundry Course [Youtube](https://github.com/Cyfrin/foundry-full-course-f23) and [Github](https://github.com/Cyfrin/foundry-full-course-f23)   
   
-`2. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (One of the creators of Solidity by example)   
+`2. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (one of the creators of Solidity by example)   
   
 `3. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
 -----
 
 ## General Blockchain Knowledge
-Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) and a more detailed [roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (there are a ton of roadmaps on Twitter)   
+Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) - more detailed [roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (there are a ton on Twitter)   
 Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
 How Bitcoin [Works](https://youtu.be/Lx9zgZCMqXE)   
 [Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)    
@@ -35,22 +36,22 @@ Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s) and [256 B
 
 -----    
 ### Youtube Resources
-Blockchain and Money - [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (Fall 2018, still relevant) ...taught by Gary Gensler...     
+Blockchain and Money - [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (Fall 2018, still relevant) ...taught by Gary Gensler...   
    - Conceptual idea of contracts with Harvard Prof. [Lawrence Lessig](https://youtu.be/JPkgJwJHYSc)  
    
 Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) author of DeFi and the Future of Finance    
-Berkeley [YouTube](https://youtube.com/@blockchain-web3moocs635) -- Class: [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list      
+Berkeley [YouTube](https://youtube.com/@blockchain-web3moocs635) -- [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list      
 Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain at Immutable)    
 
 -----
 
 ### Reading
 [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) - essential guide both general and technical (*FREE*)    
-[Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  a bit more technical (and perhaps duller) than Mastering Ethereum (*FREE*)   
+[Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook) -  bit more technical (and perhaps duller) than Mastering Ethereum (*FREE*)   
 [Deconstructing Solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737) - breaks down Solidity to its byte code
 
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
-[The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity (despite being from 2019)      
+[The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity   
 [Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - covers transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend! 
    - [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) - Sarah Meiklejohn and team   
 
@@ -70,7 +71,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
 [Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
    - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
-
+   - Great walkthrough [Channel 1](https://www.youtube.com/@d-squared70/videos) and [Channel 2](https://www.youtube.com/@DeFiDeveloperAcademy)   
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)  
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)   
@@ -166,7 +167,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 ### Audits
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
-   
+Secureum: [Audit Techniques & Tools 101](https://secureum.substack.com/p/audit-techniques-and-tools-101?utm_campaign=post&utm_medium=web)   
+
 Reports 
    - 🔖 [Solodit](https://solodit.xyz/)
    - 🔖 [Code4rena](https://code4rena.com/reports)
@@ -235,23 +237,22 @@ Capture The Flag (CTF) Games:
 🔖 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
 🔖 [Defi Llama](https://defillama.com/)      
 
-Uniswap - [exchange](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
+[Uniswap](https://uniswap.org/) - exchange [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
+   - Auto router 
+   - Client side router 
 Curve - exchange   
 Compound - lending     
-Aave - [lending](https://www.youtube.com/watch?v=VXlI-uzhBX4) (Finnish for ghost, alludes to anonymity of transactions)
+Aave - lending [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) (Finnish for ghost, alludes to anonymity of transactions)
    - [Aave Tesnet](https://staging.aave.com/)
    - `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
    - `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
    - Build a [liquidation](https://docs.aave.com/faq/liquidations) - [bot](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
-- Since Aave uses Chainlink price feeds, what if Chainlink goes down? What are the back-ups? Oracle-manipulation attacks.   
 
 Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
 
 Collateral swaps  
 Concentrated liquidity  
-
 [MEV](https://ethereum.org/en/developers/docs/mev/) - MAXIMAL EXTRACTABLE VALUE     
-
 [Flashbots.net](https://docs.flashbots.net/)    
 
 ### Stablecoins
