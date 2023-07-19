@@ -156,13 +156,13 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 ### Audits
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
 Secureum: [Audit Techniques & Tools 101](https://secureum.substack.com/p/audit-techniques-and-tools-101?utm_campaign=post&utm_medium=web)   
+[What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1)    
+
 
 Reports 
    - 🔖 [Solodit](https://solodit.xyz/)
    - 🔖 [Code4rena](https://code4rena.com/reports)
-   - [Report Blog](https://www.dylandavis.net/2022/06/the-ideal-audit-report/) and [Bowtie blog](https://bowtiedisland.com/how-to-read-a-smart-contract-audit-report/)
-   - [What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1)   
-      
+   - [Report Blog](https://www.dylandavis.net/2022/06/the-ideal-audit-report/) and [Bowtie blog](https://bowtiedisland.com/how-to-read-a-smart-contract-audit-report/)         
 Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
 1. solidity/evm oriented bugs, this include bugs based on compiler version or certain evm specific bugs
 2. Logical bugs, this is arguably the biggest surface for attacks as it can be very project-specific
@@ -227,7 +227,7 @@ Capture The Flag (CTF) Games:
 
 [Uniswap](https://uniswap.org/) - exchange [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
    - Auto router 
-   - Client side router 
+   - Client side router       
 Curve - exchange   
 Compound - lending     
 Aave - lending [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) (Finnish for ghost, alludes to anonymity of transactions)
