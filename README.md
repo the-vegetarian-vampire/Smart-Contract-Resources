@@ -85,18 +85,6 @@ Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/m
 Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)   
 Andy Li - [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
 Johnny Time - [interviews](https://www.youtube.com/@JohnnyTime)   
-
------
-### Teams to Connect With  
-- [Chainalysis](https://www.chainalysis.com/)
-- [Chainlink](https://chain.link/)   
-- [Consensys](https://consensys.net/about/)   
-- [Cyfrin](https://www.cyfrin.io/)   
-- [Secureum](https://www.secureum.xyz/)      
-- [Spearbit](https://spearbit.com/)  
-- [Trail of Bits](https://www.trailofbits.com/) 
-- [YAcademy](https://yacademy.dev/about/)      
-- [Zellic](https://www.zellic.io/)
   
 ----- 
 
@@ -302,6 +290,18 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
 ### Wallets
 [Rabby Wallet](https://rabby.io/)   
 [Metamask](https://metamask.io/)   
+
+-----
+### Teams to Connect With  
+- [Chainalysis](https://www.chainalysis.com/)
+- [Chainlink](https://chain.link/)   
+- [Consensys](https://consensys.net/about/)   
+- [Cyfrin](https://www.cyfrin.io/)   
+- [Secureum](https://www.secureum.xyz/)      
+- [Spearbit](https://spearbit.com/)  
+- [Trail of Bits](https://www.trailofbits.com/) 
+- [YAcademy](https://yacademy.dev/about/)      
+- [Zellic](https://www.zellic.io/)
   
 -----  
  
@@ -409,7 +409,7 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 
 `fork` - [investopedia](https://www.investopedia.com/terms/h/hard-fork.asp) "To fork or not to fork? - a radical change to a network's protocol that makes previously invalid blocks and transactions valid, or vice-versa. A hard fork requires all nodes or users to upgrade to the latest version of the protocol software; twitter [status](https://twitter.com/christine_dkim/status/1651999278997417998?s=20)    
 
-`function selector` - first 4 bytes of the function signature: ex: 0xa9059cbb; excellent Patrick Collins section [22:46:43](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=82003)   
+`function selector` - first 4 bytes of the function signature: ex: 0xa9059cbb; excellent Patrick Collins section [22:46:43](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=82003); there can be function selector clashes   
 `function signature` - string that defines function name & parameters: ex: “transfer(address, uint256)”   
 
 `fuzzing` - or fuzz testing involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
