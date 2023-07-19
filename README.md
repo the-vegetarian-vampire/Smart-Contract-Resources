@@ -17,9 +17,9 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 
 ## Tutorial Resources
 
-`1. Patrick Collins 32 Courses:` 
+`1. Patrick Collins Courses:` 
    - Harhat Course - [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)   
-   -  Foundry Course [Youtube](https://github.com/Cyfrin/foundry-full-course-f23) and [Github](https://github.com/Cyfrin/foundry-full-course-f23)   
+   -  Foundry Course - [Youtube](https://github.com/Cyfrin/foundry-full-course-f23) and [Github](https://github.com/Cyfrin/foundry-full-course-f23)   
   
 `2. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (one of the creators of Solidity by example)   
   
