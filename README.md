@@ -150,7 +150,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 - Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)    
 - [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions   
 - Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)    
-- [Mango Markets exploit](https://blog.chainalysis.com/reports/oracle-manipulation-attacks-rising/)    
+- [Ethernaut Denial](https://www.youtube.com/watch?v=JJX2oWlKjC4&t=1131s) `while true` fallback gas attack   
 -----   
 
 ### Audits
@@ -193,6 +193,8 @@ of users.
 • `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
 or even gas inefficiencies.   
 
+Mapping the contract with [Surya](https://github.com/ConsenSys/surya) and [video](https://www.youtube.com/watch?v=v3QexBRxPJA)
+
 ### Testing 
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
 `CEI` - checks, effects, (external) interactions   
@@ -227,7 +229,8 @@ Capture The Flag (CTF) Games:
 
 [Uniswap](https://uniswap.org/) - exchange [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
    - Auto router 
-   - Client side router       
+   - Client side router
+     
 Curve - exchange   
 Compound - lending     
 Aave - lending [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) (Finnish for ghost, alludes to anonymity of transactions)
@@ -289,6 +292,7 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
       - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
   - [Wagmi](https://wagmi.sh/)   
   - [Web3.js](https://web3js.org/#/)
+  - [Surya](https://github.com/ConsenSys/surya)   
 
 ### Wallets
 [Rabby Wallet](https://rabby.io/)   
