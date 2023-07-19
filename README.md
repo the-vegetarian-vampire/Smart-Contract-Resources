@@ -378,7 +378,7 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
   2. memory - variable is in memory and it exists while a function is being called
   3. calldata - special data location that contains function arguments  
 
-`delegatcall` - identical to a message call apart from the fact that the code at the target address is executed in the context; a contract can dynamically load code from a different address at runtime. Storage, current address and balance still refer to the calling contract, only the code is taken from the called address. Pattick Collins explanation [1:05:07:37](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=104857)    
+`delegatcall` - identical to a message call apart from the fact that the code at the target address is executed in the context; a contract can dynamically load code from a different address at runtime. Storage, current address and balance still refer to the calling contract, only the code is taken from the called address. Pattick Collins explanation [1:05:07:37](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=104857); [shorter video](https://www.youtube.com/watch?v=uawCDnxFJ-0)      
 
 `describe ()` - function in [Jasmine](https://stackoverflow.com/questions/12209582/the-describe-keyword-in-javascript) framework used for testing   
 
