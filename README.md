@@ -442,7 +442,9 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `interoperability` - the ability of independent distributed ledger networks to communicate with each other, exchange and make use of data; ability to move a digital asset between two or more blockchains while maintaining the state and uniqueness of the asset consistent throughout the process    
 
-`invariant` - [invariant](https://en.wikipedia.org/wiki/Class_invariant) a computer programming construct consisting of a set of invariant properties that remain uncompromised regardless of the state of the object   
+`invariant` - [invariant](https://en.wikipedia.org/wiki/Class_invariant) a computer programming construct consisting of a set of invariant properties that remain uncompromised regardless of the state of the object; a property of a system that should always hold   
+   - Stateless fuzzing: where the state of the previous run is discarded for every new run   
+   - Stateful fuzzing: fuzzing where final state of previous run is the starting state of the next run   
 
 `IPFS` - InterPlanetary File System [(IPFS)](https://docs.ipfs.tech/) a set of composable, peer-to-peer protocols for addressing, routing, and transferring content-addressed data in a decentralized file system; see also [Swarm](https://www.ethswarm.org/)      
 
@@ -526,7 +528,10 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `staking` - the act of [depositing](https://ethereum.org/en/staking/) 32 ETH to activate validator software. As a validator you’ll be responsible for storing data, processing transactions, and adding new blocks to the blockchain.   
 
-`state variables` - variables stored permanently on the blockchain   
+`state variables` - variables stored permanently on the blockchain 
+
+`stateless fuzzing` - where the state of the previous run is discarded for every new run   
+`stateful fuzzing` - fuzzing where final state of previous run is the starting state of the next run   
 
 `storageroot` - a hash of the root node of a Merkle Patricia tree which encodes the hash of the storage contents of this account, and is empty by default   
 
