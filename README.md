@@ -124,7 +124,9 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
 🔖 [Rekt News](https://rekt.news/)   
 🔖 [List types on Github](https://github.com/kadenzipfel/smart-contract-vulnerabilities) via Kadenzipfel   
-[Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)
+
+[Top 10 Most Common Vulnerabilities In Web3](https://medium.com/immunefi/the-top-10-most-common-vulnerabilities-in-web3-bf7a921d489f)   
+[Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)   
 
 - Reetrancy - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”; A Historical Collection of [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks)          
   
@@ -185,6 +187,10 @@ Mapping the contract with [Surya](https://github.com/ConsenSys/surya) and [video
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
 `CEI` - checks, effects, (external) interactions   
 `Arrange` - set up, `Act` - action, `Assert` 
+
+Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)    
+Foundry Testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)   
+   - depth — number of calls in a run
 
 Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723)    
    - Unit
