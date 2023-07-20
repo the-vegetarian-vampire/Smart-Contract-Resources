@@ -64,6 +64,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 [Bankless Podcast](http://podcast.banklesshq.com/)   
 [Unchained podcast](https://unchainedcrypto.com/podcasts/)   
+[Scraping Bits Podcast](https://rss.com/podcasts/scrapingbits/)   
 
 -----   
 ### Interactive 
@@ -72,6 +73,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 [Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
    - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
    - Great walkthrough [Channel 1](https://www.youtube.com/@d-squared70/videos) and [Channel 2](https://www.youtube.com/@DeFiDeveloperAcademy)   
+ 
 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)  
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)   
@@ -117,21 +119,6 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
   
 - [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages]
 - [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)   
------ 
-  
-## Tokens
-* ERC-20 - Token contract for fungible assets. [Ethereum Request for Comment]   
-* [ERC-721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) - Token standard for non-fungible assets.
-* ERC-1155 - Multi Token Standard to take the best from previous standards to create a fungibility-agnostic and gas-efficient token contract.
-* ERC-918 - Mineable Token Standard.
-* ERC-165 - Creates a standard method to publish and detect what interfaces a smart contract implements.
-* ERC-725 - A standard interface for a simple proxy account.
-* ERC-173 - A standard interface for ownership of contracts.  
-* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - standardized way to retrieve royalty payment information across all NFT marketplaces and ecosystem participants
-* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - multi coin staking; [Video](https://www.youtube.com/watch?v=Ai7A-_umm08)     
-
-NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
-
 -----
 
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
@@ -157,7 +144,6 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
 Secureum: [Audit Techniques & Tools 101](https://secureum.substack.com/p/audit-techniques-and-tools-101?utm_campaign=post&utm_medium=web)   
 [What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1)    
-
 
 Reports 
    - 🔖 [Solodit](https://solodit.xyz/)
@@ -326,6 +312,21 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 [Academic Smart_Contract_Papers](https://github.com/hzysvilla/Academic_Smart_Contract_Papers)   
 
 [More Resources](https://github.com/PatrickAlphaC/Blockchain-Development-Resources#youtube-channels) from Patrick Collins   
+
+----- 
+  
+## Tokens
+* ERC-20 - Token contract for fungible assets. [Ethereum Request for Comment]   
+* [ERC-721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) - Token standard for non-fungible assets.
+* ERC-1155 - Multi Token Standard to take the best from previous standards to create a fungibility-agnostic and gas-efficient token contract.
+* ERC-918 - Mineable Token Standard.
+* ERC-165 - Creates a standard method to publish and detect what interfaces a smart contract implements.
+* ERC-725 - A standard interface for a simple proxy account.
+* ERC-173 - A standard interface for ownership of contracts.  
+* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - standardized way to retrieve royalty payment information across all NFT marketplaces and ecosystem participants
+* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - multi coin staking; [Video](https://www.youtube.com/watch?v=Ai7A-_umm08)     
+
+NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
 
 -----  
 
