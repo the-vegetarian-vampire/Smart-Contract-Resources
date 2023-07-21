@@ -55,7 +55,6 @@ Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumE
 [Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - covers transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend! 
    - [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) - Sarah Meiklejohn and team   
 
-[Christoph Michel](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
 [DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018) - particularly Chapter 6: deep dive      
 
@@ -158,6 +157,7 @@ Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/
 
 
 Most auditor discussions are on Twitter.   
+- [Christoph Michel](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
 - [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)
 - [Pashov](https://twitter.com/pashovkrum)
 - [Andy Li's road map](https://youtu.be/-469Gcye-ZE)
@@ -175,11 +175,13 @@ Most auditor discussions are on Twitter.
   
 [Simple-security-toolkit](https://github.com/nascentxyz/simple-security-toolkit)   
 
-• `High` - leads to a loss of a significant portion (>10%) of assets in protocol, or significant harm to a majority
+`High` - leads to a loss of a significant portion (>10%) of assets in protocol, or significant harm to a majority
 of users.   
-• `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
-• `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
+`Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
+`Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
 or even gas inefficiencies.   
+`informational` - findings to improve efficiency   
+`gas efficiencies` - findings to improve efficiency   
 
 Mapping the contract with [Surya](https://github.com/ConsenSys/surya) and [video](https://www.youtube.com/watch?v=v3QexBRxPJA)
 
