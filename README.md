@@ -44,7 +44,7 @@ Blockchain and Money - [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4
 
 [Campbell Harvey](https://www.youtube.com/@campbellharvey) (Prof. Duke) author of DeFi and the Future of Finance    
 [Berkeley](https://youtube.com/@blockchain-web3moocs635) -- [Berkeley DeFi class](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/)     
-Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain at Immutable)    
+[Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Peter Robinson - Head of Blockchain at Immutable X)    
 
 -----
 
@@ -54,8 +54,8 @@ Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumE
 [Deconstructing Solidity](https://blog.openzeppelin.com/deconstructing-a-solidity-contract-part-i-introduction-832efd2d7737) - breaks down Solidity to its byte code
 
 [The Infinite Machine](https://www.barnesandnoble.com/w/the-infinite-machine-camila-russo/1133319507) - historical context how Ethereum started, think The Social Network meets Silicon Valley   
-[The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - exciting book about online anonymity   
-[Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - covers transparency of Bitcoin, tracking crytocurrencies and cybercrime - 10/10 recommend! 
+[The Art of Invisibility](https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380520/ref=pd_bxgy_vft_none_img_sccl_1/143-3045608-6084059?pd_rd_w=egSFy&content-id=amzn1.sym.26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_p=26a5c67f-1a30-486b-bb90-b523ad38d5a0&pf_rd_r=BCV539P93WX905Q01N2H&pd_rd_wg=DwfOg&pd_rd_r=ffede342-f9c3-4674-bae2-6e14f69a9fb4&pd_rd_i=0316380520&psc=1) - (David M) about online anonymity   
+[Tracers in the Dark](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095) by [Andy Greenberg](https://www.wired.com/author/andy-greenberg/) - covers transparency of Bitcoin and cybercrime - 10/10 recommend! 
    - [How to Peel a Million: Validating and Expanding Bitcoin Clusters](https://arxiv.org/pdf/2205.13882.pdf) - Sarah Meiklejohn and team   
 
 How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG) and/or [Advanced](https://www.amazon.com/dp/B098H215P3?tag=uuid10-20)   
@@ -74,11 +74,11 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 ### Interactive 
 🔖 [Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
    - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
-   - Great walkthrough [Channel 1](https://www.youtube.com/@d-squared70/videos) and [Channel 2](https://www.youtube.com/@DeFiDeveloperAcademy)   
+   - [D-Squared's Channel 1](https://www.youtube.com/@d-squared70/videos) and [DeFiDeveloperAcademy's Channel](https://www.youtube.com/@DeFiDeveloperAcademy)   
  
 🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)      
-[Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)     
+[Crypto Zombies](https://cryptozombies.io/) (old)     
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)    
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)    
@@ -111,7 +111,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together   
 - cluster identical data types together     
 - strings, arrays, and loops are `computationally expensive`   
-- `custom errors` - declared at top, more gas efficient, denoted with `__` two underscores: error FundMe__NotOwner();     
+- `custom errors` - more gas efficient, denoted with `__` two underscores: error FundMe__NotOwner();     
 - `constant` - naming convention ALL_CAPS; more `gas efficient`    
 - `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
 - batch minting   
