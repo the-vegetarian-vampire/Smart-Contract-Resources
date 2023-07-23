@@ -36,11 +36,14 @@ Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s) and [256 B
 
 -----    
 ### Youtube Resources
-Blockchain and Money - [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (Fall 2018, still relevant) ...taught by Gary Gensler...   
+
+🔖 Andy Li - [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
+Johnny Time - [interviews](https://www.youtube.com/@JohnnyTime)  
+Blockchain and Money - [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (Fall 2018) ...taught by Gary Gensler...   
    - Conceptual idea of contracts with Harvard Prof. [Lawrence Lessig](https://youtu.be/JPkgJwJHYSc)  
-   
-Campbell Harvey (Prof. Duke) [Youtube](https://www.youtube.com/@campbellharvey) author of DeFi and the Future of Finance    
-Berkeley [YouTube](https://youtube.com/@blockchain-web3moocs635) -- [Berkeley DeFi](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/) email list      
+
+[Campbell Harvey](https://www.youtube.com/@campbellharvey) (Prof. Duke) author of DeFi and the Future of Finance    
+[Berkeley](https://youtube.com/@blockchain-web3moocs635) -- [Berkeley DeFi class](https://rdi.berkeley.edu/berkeley-defi/f22) (for the AMA’s) and subscribe to [RDI](https://rdi.berkeley.edu/)     
 Peter Robinson - [Ethereum Engineering Group](https://www.youtube.com/@EthereumEngineeringGroup)  (Head of Blockchain at Immutable)    
 
 -----
@@ -69,26 +72,22 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 -----   
 ### Interactive 
-[Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)  
-[Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
 🔖 [Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
    - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
    - Great walkthrough [Channel 1](https://www.youtube.com/@d-squared70/videos) and [Channel 2](https://www.youtube.com/@DeFiDeveloperAcademy)   
  
 🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
-[Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)  
-🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)
-Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)   
+🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)      
+[Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)     
+[Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
+[Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)    
+Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)    
 
 -----
 ### Interviews and Questions   
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
 - [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
 - [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
-
-Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)   
-🔖 Andy Li - [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
-Johnny Time - [interviews](https://www.youtube.com/@JohnnyTime)   
   
 ----- 
 
