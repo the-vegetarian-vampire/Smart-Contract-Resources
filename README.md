@@ -1,7 +1,7 @@
 # Solidity | DeFi | and Blockchain Resources
 
 A general guide to learning Solidity, Defi, and blockchain technologies.    
-🔖 = You should bookmark
+🔖 = bookmark
 
 🔖 [Remix](https://remix.ethereum.org) - tool for testing smart contracts   
 [Ethereum unit converter](https://eth-converter.com/)   
@@ -13,7 +13,7 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/) via [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) library   
 [Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) 
 
-[Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)   
+🔖 [Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)   
 
 ## Tutorial Resources
 
@@ -61,6 +61,8 @@ How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B
 Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)    
 [Blockchain Threat Intelligence](https://newsletter.blockthreat.io/) - blog
 
+-----  
+### Podcasts 
 [Bankless Podcast](http://podcast.banklesshq.com/)   
 [Unchained podcast](https://unchainedcrypto.com/podcasts/)   
 [Scraping Bits Podcast](https://rss.com/podcasts/scrapingbits/)   
@@ -69,12 +71,13 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 ### Interactive 
 [Crypto Zombies](https://cryptozombies.io/) (outdated; older version of Solidity)  
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
-[Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
+🔖 [Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
    - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
    - Great walkthrough [Channel 1](https://www.youtube.com/@d-squared70/videos) and [Channel 2](https://www.youtube.com/@DeFiDeveloperAcademy)   
  
-[Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
+🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)  
+🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)   
 
 -----
@@ -84,7 +87,7 @@ Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/m
 - [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
 
 Solidity Recruitment [Interview Test](https://www.youtube.com/watch?v=80fA7foSi7c&t=1431s) (possibly outdated now)   
-Andy Li - [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
+🔖 Andy Li - [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
 Johnny Time - [interviews](https://www.youtube.com/@JohnnyTime)   
   
 ----- 
@@ -128,9 +131,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 [Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)   
 
 - Reetrancy - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”; A Historical Collection of [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks)          
-  
 - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between    
-
 - Flash loans
 - [Front Running](https://www.youtube.com/watch?v=wBCqLlJAi1A&t=123s)    
 - [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks   
@@ -138,7 +139,8 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)    
 - [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions   
 - Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)    
-- [Ethernaut Denial](https://www.youtube.com/watch?v=JJX2oWlKjC4&t=1131s) `while true` fallback gas attack   
+- [Ethernaut Denial](https://www.youtube.com/watch?v=JJX2oWlKjC4&t=1131s) `while true` fallback gas attack
+    
 -----   
 
 ### Audits
@@ -183,7 +185,7 @@ or even gas inefficiencies.
 `informational` - findings to improve efficiency   
 `gas efficiencies` - findings to improve efficiency   
 
-Mapping the contract with [Surya](https://github.com/ConsenSys/surya) and [video](https://www.youtube.com/watch?v=v3QexBRxPJA)
+Mapping contracts with [Surya](https://github.com/ConsenSys/surya) and [video](https://www.youtube.com/watch?v=v3QexBRxPJA)
 
 ### Testing 
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
@@ -243,8 +245,8 @@ Concentrated liquidity
 ### Stablecoins
 
 Types
-   1.
-   2.
+   1.   
+   2.   
 
 Dai - [MakerDAO](https://makerdao.com/en/)   
 
@@ -293,7 +295,7 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
 [Metamask](https://metamask.io/)   
 
 -----
-### Teams to Connect With  
+## Teams to Connect With  
 - [Chainalysis](https://www.chainalysis.com/)
 - [Chainlink](https://chain.link/)   
 - [Consensys](https://consensys.net/about/)   
