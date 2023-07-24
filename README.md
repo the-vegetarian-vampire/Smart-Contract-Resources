@@ -28,18 +28,18 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 -----
 
 ## General Blockchain Knowledge
-Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) - more detailed [roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (there are a ton on Twitter)   
-Blockchain 101 [Visual Demo](https://www.youtube.com/watch?v=_160oMzblY8)   
-How Bitcoin [Works](https://youtu.be/Lx9zgZCMqXE)   
-[Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)    
+Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) - [more detailed](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (tons on Twitter)   
+[Blockchain 101](https://www.youtube.com/watch?v=_160oMzblY8) (video)    
+[How Bitcoin Works](https://youtu.be/Lx9zgZCMqXE) (video)   
+[Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto) Youtube Channel   
 Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s) and [256 Bit Computing](https://en.wikipedia.org/wiki/256-bit_computing)   
 
 -----    
 ### Youtube Resources
 
-🔖 Andy Li - [auditing interviews](https://www.youtube.com/@andyli) and cyber security    
+🔖 Andy Li - [interviews](https://www.youtube.com/@andyli)      
 Johnny Time - [interviews](https://www.youtube.com/@JohnnyTime)  
-Blockchain and Money - [MIT Youtube](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (Fall 2018) ...taught by Gary Gensler...   
+[Blockchain and Money](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (MIT Fall 2018) ...taught by Gary Gensler...   
    - Conceptual idea of contracts with Harvard Prof. [Lawrence Lessig](https://youtu.be/JPkgJwJHYSc)  
 
 [Campbell Harvey](https://www.youtube.com/@campbellharvey) (Prof. Duke) author of DeFi and the Future of Finance    
@@ -74,7 +74,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 ### Interactive 
 🔖 [Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
    - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
-   - [D-Squared's Channel 1](https://www.youtube.com/@d-squared70/videos) and [DeFiDeveloperAcademy's Channel](https://www.youtube.com/@DeFiDeveloperAcademy)   
+   - [D-Squared's Channel](https://www.youtube.com/@d-squared70/videos) and [DeFiDeveloperAcademy's Channel](https://www.youtube.com/@DeFiDeveloperAcademy)   
  
 🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
 🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)      
@@ -99,7 +99,7 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 [Ethernaut Lvl 19 MagicNumber](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)   
 
 🔖 [Opcodes Updated](https://ethereum.org/en/developers/docs/evm/opcodes/) vs. - [Old Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)      
-🔖 [Ethereum Signature Database](https://www.4byte.directory/) or [Open Chain](https://openchain.xyz/signatures)
+🔖 [Ethereum Signature Database](https://www.4byte.directory/) or [Open Chain](https://openchain.xyz/signatures)   
 🔖 [EVM Storage](https://evm.storage/)    
 
 [Play with opcodes](https://www.evm.codes/playground)      
@@ -124,10 +124,10 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
 🔖 [Rekt News](https://rekt.news/)   
-🔖 [List types on Github](https://github.com/kadenzipfel/smart-contract-vulnerabilities) via Kadenzipfel   
+🔖 [Vulnerabilities types](https://github.com/kadenzipfel/smart-contract-vulnerabilities) via Kadenzipfel   
 
-[Top 10 Most Common Vulnerabilities In Web3](https://medium.com/immunefi/the-top-10-most-common-vulnerabilities-in-web3-bf7a921d489f)   
-[Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)   
+[Top 10 Vulnerabilities In Web3](https://medium.com/immunefi/the-top-10-most-common-vulnerabilities-in-web3-bf7a921d489f)   
+[Attacks via Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)   
 
 - Reetrancy - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”; A Historical Collection of [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks)          
 - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between    
@@ -144,14 +144,15 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 
 ### Audits
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
-Secureum: [Audit Techniques & Tools 101](https://secureum.substack.com/p/audit-techniques-and-tools-101?utm_campaign=post&utm_medium=web)   
+[Audit Techniques & Tools 101](https://secureum.substack.com/p/audit-techniques-and-tools-101?utm_campaign=post&utm_medium=web) by Secureum   
 [What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1)    
 
+🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist   
 Reports 
    - 🔖 [Solodit](https://solodit.xyz/)
    - 🔖 [Code4rena](https://code4rena.com/reports)
-   - [Report Blog](https://www.dylandavis.net/2022/06/the-ideal-audit-report/) and [Bowtie blog](https://bowtiedisland.com/how-to-read-a-smart-contract-audit-report/)         
-Audit checklist via [The Solcurity Standard](https://github.com/transmissions11/solcurity)   
+   - [Report Blog](https://www.dylandavis.net/2022/06/the-ideal-audit-report/) and [Bowtie's blog](https://bowtiedisland.com/how-to-read-a-smart-contract-audit-report/)   
+     
 1. solidity/evm oriented bugs, this include bugs based on compiler version or certain evm specific bugs
 2. Logical bugs, this is arguably the biggest surface for attacks as it can be very project-specific
 3. Ecosystem oriented bugs, includes projects explicit and implicit interaction with whole blockchain: frontrunning/sandwiching, oracle manipulations, incorrect integrations, flashloan attacks, all go here
@@ -187,7 +188,7 @@ or even gas inefficiencies.
 Mapping contracts with [Surya](https://github.com/ConsenSys/surya) and [video](https://www.youtube.com/watch?v=v3QexBRxPJA)
 
 ### Testing 
-[Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)   
+[Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile) for Foundry   
 `CEI` - checks, effects, (external) interactions   
 `Arrange` - set up, `Act` - action, `Assert` 
 
@@ -243,7 +244,7 @@ Concentrated liquidity
 
 ### Stablecoins
 
-Types
+Types   
    1.   
    2.   
 
@@ -264,8 +265,8 @@ Debase — removing tokens
 Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
 Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
 Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and The Big Short   
-   - [quote stuffing](https://en.wikipedia.org/wiki/Quote_stuffing)   
-   - [spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))   
+   - [Quote stuffing](https://en.wikipedia.org/wiki/Quote_stuffing)   
+   - [Spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))   
    - [Glass Steagall](https://en.wikipedia.org/wiki/Glass%E2%80%93Steagall_legislation)   
    - [RegSho](https://en.wikipedia.org/wiki/Naked_short_selling#Regulation_SHO)   
    - [Regulatory capture](https://en.wikipedia.org/wiki/Regulatory_capture)
@@ -275,6 +276,7 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
 ## 🔖 Tools 
   - [Alchemy](https://www.alchemy.com/)
   - [Etherscan](https://etherscan.io/)
+  - [echidna](https://github.com/crytic/echidna)   
   - [Slither](https://github.com/crytic/slither)
       - [Static Analyzer](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/)
       - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d)   
