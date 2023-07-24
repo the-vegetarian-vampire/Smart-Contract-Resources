@@ -25,6 +25,8 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
   
 `3. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
+🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)    
+
 -----
 
 ## General Blockchain Knowledge
@@ -76,8 +78,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
    - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
    - [D-Squared's Channel](https://www.youtube.com/@d-squared70/videos) and [DeFiDeveloperAcademy's Channel](https://www.youtube.com/@DeFiDeveloperAcademy)   
  
-🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)   
-🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)      
+🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)      
 [Crypto Zombies](https://cryptozombies.io/) (old)     
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)    
