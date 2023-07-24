@@ -186,7 +186,7 @@ or even gas inefficiencies.
 `informational` - findings to improve efficiency   
 `gas efficiencies` - findings to improve efficiency   
 
-Mapping contracts with [Surya](https://github.com/ConsenSys/surya) and [video](https://www.youtube.com/watch?v=v3QexBRxPJA)
+Mapping contracts with [Surya](https://github.com/ConsenSys/surya) and [video](https://www.youtube.com/watch?v=v3QexBRxPJA) (old/deprecated/)   
 
 ### Testing 
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile) for Foundry   
