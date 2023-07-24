@@ -286,7 +286,7 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
       - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d)   
   - [Foundry](https://book.getfoundry.sh/)
       - [Cheat Codes](https://book.getfoundry.sh/cheatcodes/)
-  - In-line bookmarks: // @audit this code seems vulnerable here   
+  - [Inline bookmarks](https://marketplace.visualstudio.com/items?itemName=tintinweb.vscode-inline-bookmarks) // @audit this code seems vulnerable here     
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
       - [Forking mainnet](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)
