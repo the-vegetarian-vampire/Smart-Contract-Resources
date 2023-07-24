@@ -107,6 +107,8 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
+`address` - holds a 20 byte value (size of an Ethereum address)
+
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
 - check != 0 rather than >    
 - `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together   
@@ -118,6 +120,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - batch minting   
 - in testing it's common to prepend storage variables with `s_`
 - Hardhat gas reporter
+- [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
   
 - [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages]
 - [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)   
