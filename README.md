@@ -252,7 +252,7 @@ Concentrated liquidity
 
 ### Stablecoins
 
-[Stablecoin investopdia](https://www.investopedia.com/terms/s/stablecoin.asp) and [Whiteboard Crypto](https://www.youtube.com/watch?v=S7-rfvpEpJs)   
+[Stablecoin investopedia](https://www.investopedia.com/terms/s/stablecoin.asp) and [Whiteboard Crypto](https://www.youtube.com/watch?v=S7-rfvpEpJs)   
 Types   
    1. Fiat based 
    2. Crypto based
