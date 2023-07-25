@@ -119,6 +119,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
 - batch minting   
 - in testing it's common to prepend storage variables with `s_`
+- ++i vs i++ [Stack exchange](https://ethereum.stackexchange.com/questions/133161/why-does-i-cost-less-gas-than-i)    
 - Hardhat gas reporter
 - [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
   
