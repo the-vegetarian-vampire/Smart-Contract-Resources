@@ -227,6 +227,8 @@ Capture The Flag (CTF) Games:
 🔖 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
 🔖 [Defi Llama](https://defillama.com/)      
 
+[Teach Yourself Crypto](https://teachyourselfcrypto.com/#ftoc-module-4-decentralized-finance-defi) has good links; also [Khan Acad.](https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-1)   
+
 [Uniswap](https://uniswap.org/) - exchange [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
    - Auto router 
    - Client side router
