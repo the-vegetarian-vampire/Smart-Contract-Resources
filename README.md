@@ -461,7 +461,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `interface` - a list of function definitions without implementation. In other words, an interface is a description of all functions that an object must have for it to operate; convention preface `I` as in IERC721; [video](https://www.youtube.com/watch?v=tbjyc-VQaQo)   
 
-`internal` - same as private, except it's accessible to contracts that inherit  
+`internal` - can't be called directly from outside the contract; same as private, except it's accessible to contracts that inherit  
 
 `interoperability` - the ability of independent distributed ledger networks to communicate with each other, exchange and make use of data; ability to move a digital asset between two or more blockchains while maintaining the state and uniqueness of the asset consistent throughout the process    
 
