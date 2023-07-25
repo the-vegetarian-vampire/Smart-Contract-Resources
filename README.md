@@ -248,9 +248,11 @@ Concentrated liquidity
 
 ### Stablecoins
 
+[Stablecoin investopdia](https://www.investopedia.com/terms/s/stablecoin.asp)   
 Types   
-   1.   
-   2.   
+   1. Fiat based 
+   2. Crypto based
+   3. Algorithmic
 
 Dai - [MakerDAO](https://makerdao.com/en/)   
 
@@ -260,6 +262,7 @@ Rebase — adding tokens
 Debase — removing tokens    
 
 `seigniorage` - Revenue or a profit taken from the minting of coins; the difference between the face value of money, such as a $10 bill or a quarter coin, and the cost to produce it. In other words, the cost of producing a currency within a given economy or country is lower than the actual exchange value, which generally accrues to governments that mint the money.   
+[evergreen](https://www.investopedia.com/terms/e/evergreenfunding.asp) - incremental addition of money into a business by investors; the company receives capital on an established schedule or as the need for funds arises.   
 
 [Spot price](https://www.investopedia.com/terms/s/spotprice.asp) - the current price in the marketplace at which a given asset—such as a security, commodity, or currency—can be bought or sold for immediate delivery   
 [Spot Price Manipulation](https://consensys.github.io/smart-contract-best-practices/attacks/oracle-manipulation/) - A smart contract needs to determine the price of an asset, e.g., when a user deposits ETH into its system. To achieve this price discovery, the protocol consults its respective Uniswap pool as a source. Exploiting this behavior, an attacker can take out a flash loan to drain one side of the Uniswap pool. Due to the lack of data source diversity, the protocol's internal price is directly manipulated, e.g., to 100 times the original value. The attacker can now perform an action to capture this additional value. For example, an arbitrage trade on top of the newly created price difference or an advantageous position in the system can be gained.   
