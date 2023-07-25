@@ -566,7 +566,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `TPS` - transactions per second [chart](https://coincodex.com/article/14198/layer-1-performance-comparing-6-leading-blockchains/)     
 
-`transfer vs. transferFrom (aka delegatedTransfer)` - 
+`transfer vs. transferFrom (aka delegatedTransfer)` - `transfer` - simply transfer the tokens from one address to another; `transferFrom` -you give permission for someone else to transfer from your account; someone else can be either an externally-owned account or a smart-contract account   
 
 `tumbler` - a service that mixes potentially identifiable or "tainted" cryptocurrency funds with others, so as to obscure the trail back to the fund's original source: Tornado cash; Zcash and Zk-SNARK's?   
 
