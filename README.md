@@ -161,6 +161,7 @@ Reports
 2. Logical bugs, this is arguably the biggest surface for attacks as it can be very project-specific
 3. Ecosystem oriented bugs, includes projects explicit and implicit interaction with whole blockchain: frontrunning/sandwiching, oracle manipulations, incorrect integrations, flashloan attacks, all go here
 
+Build a [racing bot](https://github.com/Picodes/4naly3er) - open source static analyzer to build on top of   
 
 Most auditor discussions are on Twitter.   
 - [Christoph Michel](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
