@@ -574,6 +574,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `TVL` - total value locked: includes all coins deposited in all functions that protocol offers: Staking, Lending, Liquidity pools   
 
+`time-weighted average prices (TWAPs)` - often used by traders to execute larger orders without causing a significant impact on the market price
+
 `tx` -  "transaction": tx.origin, txn.gasprice; don't use [tx.origin](https://www.youtube.com/watch?v=n9PAya8GhgE)   
 
 `unchecked` - instead of `SafeMath` can be more `gas efficient` if you know your math won’t reach top or bottom limits   
