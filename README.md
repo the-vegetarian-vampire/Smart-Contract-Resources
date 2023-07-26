@@ -138,7 +138,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks) - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”        
 - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between    
 - Flash loans - [pump and arbitrage attack](https://www.youtube.com/watch?v=NifGKCiiX3E&t=779s)
-- [Front Running](https://www.youtube.com/watch?v=wBCqLlJAi1A&t=123s): `batch overfow` - `gas price pumping` - `prioritized mining` [short video](https://www.youtube.com/watch?v=uElOqz-Htos)
+- [Front Running](https://www.youtube.com/watch?v=uElOqz-Htos): `batch overfow` - `gas price pumping` - `prioritized mining`
 - [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks   
 - Denial of service (DoS; DDoS attack)   
 - Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)    
