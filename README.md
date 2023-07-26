@@ -374,6 +374,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `Beacon Chain` - a [separate chain](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain) from the original Ethereum Mainnet, running side-by-side; [withdrawals](https://ethereum.org/en/staking/withdrawals/)   
 
+`Black Thursday` [article](https://decrypt.co/61200/bitcoin-black-thursday-one-year-later) - Thursday March 12th, 2020: cryptocurrency markets suddenly collapsed (in tandem with traditional markets), with bitcoin prices getting halved in less than a day.   
+
 `blob` - binary large object is a collection of data of an arbitrary size. Blobs do not have to follow a given format or have any metadata associated with them. They are a series of bytes, with each byte made up of 8 bits (a 1 or a 0, hence the "binary" descriptor). Any type of data can go in a blob; efficient and cheap transaction.   
 
 `block.timestamp` - convert a uint of the number of seconds in that length of time. So 1 minutes is 60, 1 hours is 3600 (60 seconds x 60 minutes), 1 days is 86400 (24 hours x 60 minutes x 60 seconds), find on [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html)    
@@ -481,7 +483,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `layer 0` - the underlying infrastructure upon which multiple Layer 1 blockchains can be built; a network framework running beneath the blockchain. It is made up of protocols, connections, hardware, miners, and more that forms the foundation of the blockchain ecosystem. Layer: 0, 1, 2, 3 etc.   
    
-`linting` - the process of running a program that will analyze code for potential errors (verifying code quality) [eslint(https://eslint.org/) 
+`linting` - the process of running a program that will analyze code for potential errors (verifying code quality) [eslint](https://eslint.org/)   
 
 `magic number` [wiki](https://en.wikipedia.org/wiki/Magic_number_(programming)) unique value with unexplained meaning or multiple occurrences which could (preferably) be replaced with a named constant   
 
