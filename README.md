@@ -423,6 +423,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
   
 `enums` - useful to model choice and keep track of state/can be declared outside of a contract   
 
+`ENS - Ethereum Name Service` -  distributed, open, and extensible naming system based on the Ethereum blockchain; [documents](https://docs.ens.domains/) and [video](https://www.youtube.com/watch?v=P8RlPsjGaR8)   
+
 `EIP` - (Ethereum Improvement Proposal) a formal proposal to alter some element of the Ethereum network   
 
 `EOA` - Externally Owned Account; in general, there are two types of accounts: externally owned accounts, controlled by private keys, and contract accounts, controlled by their contract code   
