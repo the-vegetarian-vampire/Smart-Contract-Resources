@@ -34,7 +34,8 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) - [more detailed](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (tons on Twitter)   
 [Blockchain 101](https://www.youtube.com/watch?v=_160oMzblY8) (video)    
 [How Bitcoin Works](https://youtu.be/Lx9zgZCMqXE) (video)   
-[Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto) Youtube Channel   
+[Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)   
+[Finematics](https://www.youtube.com/@Finematics)   
 Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s) and [256 Bit Computing](https://en.wikipedia.org/wiki/256-bit_computing)   
 
 -----    
@@ -107,7 +108,7 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
-`address` - holds a 20 byte value (size of an Ethereum address)
+`address` - 20 byte value (size of an Ethereum address)
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
 - check != 0 rather than >    
