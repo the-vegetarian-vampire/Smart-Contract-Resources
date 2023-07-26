@@ -108,7 +108,7 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 
 Not invented here: meaning the security risk is often greater than improvement value   
 
-`address` - 20 byte value (size of an Ethereum address)
+`Ethereum address` - 20 byte value   
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
 - check != 0 rather than >    
@@ -196,7 +196,9 @@ or even gas inefficiencies.
 Mapping contracts with [Surya](https://github.com/ConsenSys/surya) and [video](https://www.youtube.com/watch?v=v3QexBRxPJA) (old/deprecated/)   
 
 ### Testing 
-[Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile) for Foundry   
+[Trail of Bits Automated Testing](https://appsec.guide/)   
+[Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile) for Foundry  
+
 `CEI` - checks, effects, (external) interactions   
 `Arrange` - set up, `Act` - action, `Assert` 
 
