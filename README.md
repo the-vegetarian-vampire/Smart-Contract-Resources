@@ -137,7 +137,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 
 - Reetrancy - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”; A Historical Collection of [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks)          
 - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between    
-- Flash loans
+- Flash loans [pump and arbitrage attack](https://www.youtube.com/watch?v=NifGKCiiX3E&t=779s)
 - [Front Running](https://www.youtube.com/watch?v=wBCqLlJAi1A&t=123s)    
 - [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks   
 - Denial of service (DoS; DDoS attack)   
@@ -270,7 +270,8 @@ Debase — removing tokens
 
 [evergreen](https://www.investopedia.com/terms/e/evergreenfunding.asp) - incremental addition of money into a business by investors; the company receives capital on an established schedule or as the need for funds arises. [video](https://www.youtube.com/watch?v=b_-FrtAfqbw)   
 
-[Spot price](https://www.investopedia.com/terms/s/spotprice.asp) - the current price in the marketplace at which a given asset—such as a security, commodity, or currency—can be bought or sold for immediate delivery   
+[Spot price](https://www.investopedia.com/terms/s/spotprice.asp) - the current price in the marketplace at which a given asset—such as a security, commodity, or currency—can be bought or sold for immediate delivery    
+
 [Spot Price Manipulation](https://consensys.github.io/smart-contract-best-practices/attacks/oracle-manipulation/) - A smart contract needs to determine the price of an asset, e.g., when a user deposits ETH into its system. To achieve this price discovery, the protocol consults its respective Uniswap pool as a source. Exploiting this behavior, an attacker can take out a flash loan to drain one side of the Uniswap pool. Due to the lack of data source diversity, the protocol's internal price is directly manipulated, e.g., to 100 times the original value. The attacker can now perform an action to capture this additional value. For example, an arbitrage trade on top of the newly created price difference or an advantageous position in the system can be gained.   
 
 
@@ -454,6 +455,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
  `genesis block`- the first block mined on a [blockchain](https://www.investopedia.com/terms/g/genesis-block.asp)     
 
+ [Graph, The](https://www.youtube.com/watch?v=7gC7xJ_98r8) - Google for the blockchain; querying and indexing the blockchain   
+
 `hashcash` - a proof-of-work system invented by Adam Back in 1997 as a way to prevent email spam [precursor to Bitcoin](https://nakamoto.com/hashcash/)   
 
 `Hashed Timelock Contract` or (HTLC) reduces counterparty risk by creating a time-based escrow that requires a cryptographic passphrase for unlocking via [investopedia](https://www.investopedia.com/terms/h/hashed-timelock-contract.asp)    
@@ -542,6 +545,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `remote procedure call` or [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) - when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is written as if it were a normal (local) procedure call, without the programmer explicitly writing the details for the remote interaction   
 
+[ring signature](https://www.youtube.com/watch?v=zHN_B_H_fCs) -  type of digital signature that can be performed by any member of a set of users that each have keys. Therefore, a message signed with a ring signature is endorsed by someone in a particular set of people   
+
 `safeMath` - before 0.8.0. there were overflow and underflow issues; prior to that version, solidity's "+" operator wouldn't check for overflows, leading to type(uint256).max + 1 = 0, and the safeMath library would avoid it. Now, type(uint256).max + 1 reverts with Panic(0x11), and safeMath isnt needed.   
 
 `self destruct` - leaves a blank account; costs negative gas, does not remove transaction history: only can be self destructed if contract has self destruct programmed in      
@@ -602,5 +607,6 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `zero padding` — (big-endian) for taking up entire memory; if your data type is uint8 or uint32 it is still managed as uint256 values (occupies 32bytes)   
 
-`zkSNARK` - succinct non interactive argument of knowledge    
+[zkproof](https://www.youtube.com/watch?v=e_Im2g2xsAg&t=81s) - method by which one party (the prover) can prove to another party (the verifier) that a given statement is true, while avoiding conveying to the verifier any information beyond the mere fact of the statement's truth   
+   - `zkSNARK` - succinct non interactive argument of knowledge    
 
