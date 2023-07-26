@@ -26,6 +26,7 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 `3. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
 🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)    
+🔖 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/) (great links to DeFi)   
 
 -----
 
@@ -81,7 +82,6 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)      
 [Crypto Zombies](https://cryptozombies.io/) (old)     
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
-[Teachyourselfcrypto.com](https://teachyourselfcrypto.com/)    
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)    
 
 -----
@@ -94,7 +94,7 @@ Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/m
 
 ## Opcodes | Gas Optimization | Storage
 How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works; Patrick Collins [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough; sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)      
-[How Storag Works](https://youtu.be/_YkulBTqIcQ?t=522)    
+[Brief Storage Video](https://youtu.be/_YkulBTqIcQ?t=522)    
 [Storage vs Memory](https://soliditytips.com/articles/solidity-data-location-storage-memory/)   
 Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)     
 [Ethernaut Lvl 19 MagicNumber](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)   
