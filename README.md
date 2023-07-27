@@ -14,6 +14,7 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 [Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) 
 
 🔖 [Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)   
+🔖 [Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)   
 
 ## Tutorial Resources
 
@@ -80,7 +81,9 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
    - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
    - [D-Squared's Channel](https://www.youtube.com/@d-squared70/videos) and [DeFiDeveloperAcademy's Channel](https://www.youtube.com/@DeFiDeveloperAcademy)   
  
-🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)      
+🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)    
+   - 2. [Foundry Damn Vulnerable DeFi](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry)   
+        
 [Crypto Zombies](https://cryptozombies.io/) (old)     
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
 Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)    
@@ -138,7 +141,8 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks) - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”
 - [Front Running](https://www.youtube.com/watch?v=uElOqz-Htos): `batch overfow` - `gas price pumping` - `prioritized mining`   
    - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between
-   - [Etherscan Pending Transactions](https://etherscan.io/txsPending)
+   - [Etherscan Pending Transactions](https://etherscan.io/txsPending)   
+   - Conic Finance Exploiter [address](https://etherscan.io/address/0x8d67db0b205e32a5dd96145f022fa18aae7dc8aa)   
 - Flash loans - [pump and arbitrage attack](https://www.youtube.com/watch?v=NifGKCiiX3E&t=779s)
 - [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks   
 - Denial of service (DoS; DDoS attack)   
@@ -153,6 +157,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
 [Audit Techniques & Tools 101](https://secureum.substack.com/p/audit-techniques-and-tools-101?utm_campaign=post&utm_medium=web) by Secureum   
 [What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1)    
+[Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)   
 
 🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist   
 Reports 
@@ -233,7 +238,8 @@ Capture The Flag (CTF) Games:
 🔖 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
 🔖 [Defi Llama](https://defillama.com/)      
 
-[Teach Yourself Crypto](https://teachyourselfcrypto.com/#ftoc-module-4-decentralized-finance-defi) has good links; also [Khan Acad.](https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-1)   
+[DeFi vs TradeFi](https://coinstove.com/learn/defi-vs-tradfi/)   
+[Teach Yourself Crypto](https://teachyourselfcrypto.com/#ftoc-module-4-decentralized-finance-defi) good links; also [Khan Acad.](https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-1)   
 
 [Uniswap](https://uniswap.org/) - exchange [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
    - Auto router 
