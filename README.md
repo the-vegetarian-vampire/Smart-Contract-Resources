@@ -124,7 +124,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - [++i vs i++](https://ethereum.stackexchange.com/questions/133161/why-does-i-cost-less-gas-than-i)    
 - Hardhat gas reporter and [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
   
-- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages] [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)   
+- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)   
   
 -----
 
@@ -204,6 +204,8 @@ Typical Risk classification:
 `informational` - findings to improve efficiency   
 `gas efficiencies` - findings to improve efficiency   
 
+----- 
+
 ### Testing 
 [Trail of Bits Automated Testing](https://appsec.guide/)   
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile) for Foundry  
@@ -260,12 +262,16 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 Collateral swaps  
 Concentrated liquidity  
 
-#### [MEV](https://ethereum.org/en/developers/docs/mev/) 
+----- 
+
+### [MEV](https://ethereum.org/en/developers/docs/mev/) 
 Maximal extractable value: as a pending transaction sits in a mempool, miners and validators have found ways to profit from them by including, excluding or reordering transactions in a block.
    1. [Simple MEV bot](https://www.youtube.com/watch?v=dXqp4JqKM_I)
    2. [Jared from Subway’s bot](https://www.youtube.com/watch?v=3YSpbIQ9hVk)
         
-[Flashbots.net](https://docs.flashbots.net/)    
+[Flashbots.net](https://docs.flashbots.net/)  
+
+----- 
 
 ### Stablecoins
 
@@ -290,10 +296,12 @@ Debase — removing tokens
 
 [Spot Price Manipulation](https://consensys.github.io/smart-contract-best-practices/attacks/oracle-manipulation/) - A smart contract needs to determine the price of an asset, e.g., when a user deposits ETH into its system. To achieve this price discovery, the protocol consults its respective Uniswap pool as a source. Exploiting this behavior, an attacker can take out a flash loan to drain one side of the Uniswap pool. Due to the lack of data source diversity, the protocol's internal price is directly manipulated, e.g., to 100 times the original value. The attacker can now perform an action to capture this additional value. For example, an arbitrage trade on top of the newly created price difference or an advantageous position in the system can be gained.   
 
+----- 
+
 ### Central Banking Reading
-Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
 Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
-Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and The Big Short   
+Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-audiobook/dp/B00ICRE1QC/ref=sr_1_1?keywords=flash+boys&qid=1687555418&s=books&sprefix=flash+boys%2Cstripbooks%2C84&sr=1-1) and [The Big Short](https://www.amazon.com/Big-Short-Inside-Doomsday-Machine-ebook/dp/B003LSTK8G)   
+Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)    
    - [Quote stuffing](https://en.wikipedia.org/wiki/Quote_stuffing)   
    - [Spoofing](https://en.wikipedia.org/wiki/Spoofing_(finance))   
    - [Glass Steagall](https://en.wikipedia.org/wiki/Glass%E2%80%93Steagall_legislation)   
@@ -354,16 +362,17 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 
 ----- 
   
-## Tokens
-* ERC-20 - Token contract for fungible assets. [Ethereum Request for Comment]   
-* [ERC-721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) - Token standard for non-fungible assets.
-* ERC-1155 - Multi Token Standard to take the best from previous standards to create a fungibility-agnostic and gas-efficient token contract.
+## Tokens [Ethereum Request for Comment (ERC)]  
+
+* [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) - for fungible assets. 
+* [ERC-721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) - for non-fungible assets.
+* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - Multi Token Standard to to create a fungibility-agnostic and gas-efficient token contract (gaming, batch minting) [video](https://www.youtube.com/watch?v=Ai7A-_umm08)   
+* [ERC-4626](https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/) - to optimize and unify the technical parameters of yield-bearing vaults   
 * ERC-918 - Mineable Token Standard.
 * ERC-165 - Creates a standard method to publish and detect what interfaces a smart contract implements.
 * ERC-725 - A standard interface for a simple proxy account.
 * ERC-173 - A standard interface for ownership of contracts.  
-* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - standardized way to retrieve royalty payment information across all NFT marketplaces and ecosystem participants
-* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - multi coin staking; [Video](https://www.youtube.com/watch?v=Ai7A-_umm08)     
+* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - to retrieve royalty payment information across all NFT marketplaces and ecosystem participants   
 
 NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
 
