@@ -76,13 +76,13 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 [Scraping Bits Podcast](https://rss.com/podcasts/scrapingbits/)   
 
 -----   
-### Interactive 
+### Interactive (CTF, Capture the Flags)
 🔖 [Ethernaut Challenges](https://ethernaut.openzeppelin.com/) via OpenZeppelin   
-   - Solved in [Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
+   - [In Foundry](https://github.com/ciaranmcveigh5/ethernaut-x-foundry)
    - [D-Squared's Channel](https://www.youtube.com/@d-squared70/videos) and [DeFiDeveloperAcademy's Channel](https://www.youtube.com/@DeFiDeveloperAcademy)   
  
 🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)    
-   - 2. [Foundry Damn Vulnerable DeFi](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry)   
+   - [Foundry Damn Vulnerable DeFi](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry)   
         
 [Crypto Zombies](https://cryptozombies.io/) (old)     
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
@@ -112,23 +112,20 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 Not invented here: meaning the security risk is often greater than improvement value   
 
 `Ethereum address` - 20 byte value   
+`0x40` - the free memory pointer.
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
 - check != 0 rather than >    
-- `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together   
-- cluster identical data types together     
-- strings, arrays, and loops are `computationally expensive`   
+- `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together     
 - `custom errors` - more gas efficient, denoted with `__` two underscores: error FundMe__NotOwner();     
 - `constant` - naming convention ALL_CAPS; more `gas efficient`    
-- `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable    
-- batch minting   
+- `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable     
 - in testing it's common to prepend storage variables with `s_`
-- ++i vs i++ [Stack exchange](https://ethereum.stackexchange.com/questions/133161/why-does-i-cost-less-gas-than-i)    
-- Hardhat gas reporter
-- [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
+- [++i vs i++](https://ethereum.stackexchange.com/questions/133161/why-does-i-cost-less-gas-than-i)    
+- Hardhat gas reporter and [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
   
-- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages]
-- [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)   
+- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages] [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)   
+  
 -----
 
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
@@ -142,15 +139,18 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - [Front Running](https://www.youtube.com/watch?v=uElOqz-Htos): `batch overfow` - `gas price pumping` - `prioritized mining`   
    - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between
    - [Etherscan Pending Transactions](https://etherscan.io/txsPending)   
-   - Conic Finance Exploiter [address](https://etherscan.io/address/0x8d67db0b205e32a5dd96145f022fa18aae7dc8aa)   
 - Flash loans - [pump and arbitrage attack](https://www.youtube.com/watch?v=NifGKCiiX3E&t=779s)
 - [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks   
 - Denial of service (DoS; DDoS attack)   
 - Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)    
 - [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions   
 - Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)    
-- [Ethernaut Denial](https://www.youtube.com/watch?v=JJX2oWlKjC4&t=1131s) `while true` fallback gas attack
-    
+- [Ethernaut Denial](https://www.youtube.com/watch?v=JJX2oWlKjC4&t=1131s) `while true` fallback gas attack   
+
+### Known Exploiter addresses: 
+   - Conic Finance Exploiter [address](https://etherscan.io/address/0x8d67db0b205e32a5dd96145f022fa18aae7dc8aa)
+   - Jared form Subway [address](https://etherscan.io/address/) MEV bot
+
 -----   
 
 ### Audits
@@ -159,7 +159,8 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 [What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1)    
 [Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)   
 
-🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist   
+🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist     
+
 Reports 
    - 🔖 [Solodit](https://solodit.xyz/)
    - 🔖 [Code4rena](https://code4rena.com/reports)
@@ -169,7 +170,7 @@ Reports
 2. Logical bugs, this is arguably the biggest surface for attacks as it can be very project-specific
 3. Ecosystem oriented bugs, includes projects explicit and implicit interaction with whole blockchain: frontrunning/sandwiching, oracle manipulations, incorrect integrations, flashloan attacks, all go here
 
-Build a [racing bot](https://github.com/Picodes/4naly3er) - open source static analyzer to build on top of   
+Build a racing bot via [4naly3er](https://github.com/Picodes/4naly3er) - open source static analyzer to build on top of   
 
 Most auditor discussions are on Twitter.   
 - [Christoph Michel](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
@@ -190,22 +191,24 @@ Most auditor discussions are on Twitter.
   
 [Simple-security-toolkit](https://github.com/nascentxyz/simple-security-toolkit)   
 
-`High` - leads to a loss of a significant portion (>10%) of assets in protocol, or significant harm to a majority
-of users.   
+Typical Risk classification:
+|Severity level | Impact: High | Impact: Medium | Impact: Low |
+| ------------- | ------------- | ------------- | ------------- |
+| Likelihood: high  | Critical  | High| Medium  |
+| Likelihood: medium | High | Medium  | Low |
+| Likelihood: low | Medium | Low | Low |
+
+`High` - leads to a loss of significant portion (>10%) of assets in protocol, harms a majority of users.   
 `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
-`Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired
-or even gas inefficiencies.   
+`Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired or even gas inefficiencies.   
 `informational` - findings to improve efficiency   
 `gas efficiencies` - findings to improve efficiency   
-
-Mapping contracts with [Surya](https://github.com/ConsenSys/surya) and [video](https://www.youtube.com/watch?v=v3QexBRxPJA) (old/deprecated/)   
 
 ### Testing 
 [Trail of Bits Automated Testing](https://appsec.guide/)   
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile) for Foundry  
 
-`CEI` - checks, effects, (external) interactions   
-`Arrange` - set up, `Act` - action, `Assert` 
+[CEI](https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html) - Checks Effects Interactions  
 
 Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)    
 Foundry Testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)   
@@ -228,15 +231,14 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
  - [Immunefi](https://immunefi.com/)
  - [Sherlock](https://www.sherlock.xyz/)   
  - [Code Hawks](https://www.codehawks.com/)
-
-Capture The Flag (CTF) Games:
-- [Ethernaut](https://ethernaut.openzeppelin.com/)    
+ - [Hats Finance](https://hats.finance/)   
 
 -----   
 
 ## Defi
 🔖 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
 🔖 [Defi Llama](https://defillama.com/)      
+[Eigenphi](https://eigenphi.io/) - tracking data
 
 [DeFi vs TradeFi](https://coinstove.com/learn/defi-vs-tradfi/)   
 [Teach Yourself Crypto](https://teachyourselfcrypto.com/#ftoc-module-4-decentralized-finance-defi) good links; also [Khan Acad.](https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-1)   
@@ -251,13 +253,18 @@ Aave - lending [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) (Finnish for
    - [Aave Tesnet](https://staging.aave.com/)
    - `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
    - `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
-   - Build a [liquidation](https://docs.aave.com/faq/liquidations) - [bot](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
+   - [Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
 
 Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
 
 Collateral swaps  
 Concentrated liquidity  
-[MEV](https://ethereum.org/en/developers/docs/mev/) - MAXIMAL EXTRACTABLE VALUE     
+
+#### [MEV](https://ethereum.org/en/developers/docs/mev/) 
+Maximal extractable value: as a pending transaction sits in a mempool, miners and validators have found ways to profit from them by including, excluding or reordering transactions in a block.
+   1. [Simple MEV bot](https://www.youtube.com/watch?v=dXqp4JqKM_I)
+   2. [Jared from Subway’s bot](https://www.youtube.com/watch?v=3YSpbIQ9hVk)
+        
 [Flashbots.net](https://docs.flashbots.net/)    
 
 ### Stablecoins
@@ -282,7 +289,6 @@ Debase — removing tokens
 [Spot price](https://www.investopedia.com/terms/s/spotprice.asp) - the current price in the marketplace at which a given asset—such as a security, commodity, or currency—can be bought or sold for immediate delivery    
 
 [Spot Price Manipulation](https://consensys.github.io/smart-contract-best-practices/attacks/oracle-manipulation/) - A smart contract needs to determine the price of an asset, e.g., when a user deposits ETH into its system. To achieve this price discovery, the protocol consults its respective Uniswap pool as a source. Exploiting this behavior, an attacker can take out a flash loan to drain one side of the Uniswap pool. Due to the lack of data source diversity, the protocol's internal price is directly manipulated, e.g., to 100 times the original value. The attacker can now perform an action to capture this additional value. For example, an arbitrage trade on top of the newly created price difference or an advantageous position in the system can be gained.   
-
 
 ### Central Banking Reading
 Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624)   
@@ -312,7 +318,6 @@ Michael Lewis - [Flash Boys](https://www.amazon.com/Flash-Boys-Michael-Lewis-aud
       - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
   - [Wagmi](https://wagmi.sh/)   
   - [Web3.js](https://web3js.org/#/)
-  - [Surya](https://github.com/ConsenSys/surya)   
 
 ### Wallets
 [Rabby Wallet](https://rabby.io/)   
