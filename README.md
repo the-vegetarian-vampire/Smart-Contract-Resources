@@ -9,9 +9,9 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 🔖 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html) and [Cheatsheet](https://docs.soliditylang.org/en/v0.8.13/cheatsheet.html?highlight=encodewithsignature)   
 🔖 Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
 🔖 Solidity [By example](https://solidity-by-example.org/)   
-   
+
+[Ethereum Documentation](https://ethereum.org/en/developers/docs/)    
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/) via [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) library   
-[Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) 
 
 🔖 [Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)   
 🔖 [Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)   
@@ -112,6 +112,7 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 Not invented here: meaning the security risk is often greater than improvement value   
 
 `Ethereum address` - 20 byte value   
+`Boolean` - 1 byte value
 `0x40` - the free memory pointer.
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
@@ -145,11 +146,13 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)    
 - [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions   
 - Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)    
-- [Ethernaut Denial](https://www.youtube.com/watch?v=JJX2oWlKjC4&t=1131s) `while true` fallback gas attack   
+- [Ethernaut Denial](https://www.youtube.com/watch?v=JJX2oWlKjC4&t=1131s) `while true` fallback gas attack
+
+  [DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs) - to produce DeFi hack incidents using Foundry.
 
 ### Known Exploiter addresses: 
    - Conic Finance Exploiter [address](https://etherscan.io/address/0x8d67db0b205e32a5dd96145f022fa18aae7dc8aa)
-   - Jared form Subway [address](https://etherscan.io/address/) MEV bot
+   - Jared from Subway's MEV bot [address](https://etherscan.io/address/0xae2fc483527b8ef99eb5d9b44875f005ba1fae13)   
 
 -----   
 
@@ -245,13 +248,16 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 [DeFi vs TradeFi](https://coinstove.com/learn/defi-vs-tradfi/)   
 [Teach Yourself Crypto](https://teachyourselfcrypto.com/#ftoc-module-4-decentralized-finance-defi) good links; also [Khan Acad.](https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-1)   
 
-[Uniswap](https://uniswap.org/) - exchange [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
+#### Exchanges
+[Uniswap](https://uniswap.org/) - [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
    - Auto router 
-   - Client side router
+   - Client side router   
      
-Curve - exchange   
+[Curve](https://resources.curve.fi/)      
+[Sushiswap](https://www.sushi.com/swap)   
+
 Compound - lending     
-Aave - lending [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) (Finnish for ghost, alludes to anonymity of transactions)
+[Aave](https://aave.com/) - lending [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) (Finnish for ghost, alludes to anonymity of transactions)
    - [Aave Tesnet](https://staging.aave.com/)
    - `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
    - `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
@@ -260,7 +266,8 @@ Aave - lending [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) (Finnish for
 Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
 
 Collateral swaps  
-Concentrated liquidity  
+Concentrated liquidity 
+[Block stuffing](https://www.youtube.com/watch?v=3aPYkx7G7e0) (video)   
 
 ----- 
 
@@ -328,8 +335,10 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
   - [Web3.js](https://web3js.org/#/)
 
 ### Wallets
-[Rabby Wallet](https://rabby.io/)   
+[Rabby](https://rabby.io/)   
 [Metamask](https://metamask.io/)   
+[Loopring](https://wallet.loopring.io/)   
+[Ledger](https://www.ledger.com/)   
 
 -----
 ## Teams to Connect With  
@@ -362,16 +371,18 @@ Uniswap V3 [whitepaper](https://uniswap.org/whitepaper-v3.pdf)
 
 ----- 
   
-## Tokens [Ethereum Request for Comment (ERC)]  
+## Tokens
+Ethereum Request for Comment (ERC)
 
 * [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) - for fungible assets. 
 * [ERC-721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) - for non-fungible assets.
 * [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - Multi Token Standard to to create a fungibility-agnostic and gas-efficient token contract (gaming, batch minting) [video](https://www.youtube.com/watch?v=Ai7A-_umm08)   
-* [ERC-4626](https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/) - to optimize and unify the technical parameters of yield-bearing vaults   
+* [ERC-4626](https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/) - to optimize and unify the technical parameters of yield-bearing vaults
+* [ERC-3156](https://eips.ethereum.org/EIPS/eip-3156) - flash Loans  
 * ERC-918 - Mineable Token Standard.
-* ERC-165 - Creates a standard method to publish and detect what interfaces a smart contract implements.
-* ERC-725 - A standard interface for a simple proxy account.
-* ERC-173 - A standard interface for ownership of contracts.  
+* ERC-165 - standard method to publish and detect what interfaces a smart contract implements.
+* ERC-725 - interface for a simple proxy account.
+* ERC-173 - interface for ownership of contracts.  
 * [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - to retrieve royalty payment information across all NFT marketplaces and ecosystem participants   
 
 NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
@@ -386,6 +397,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON; Abi.encodePacked - breaks down, via [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html); [Abi.decode](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=81282); Great Patrick Collins section [22:16:31](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=80191) and [ABI encoding](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=30003) and [difference between encoding](https://forum.openzeppelin.com/t/difference-between-abi-encodepacked-string-and-bytes-string/11837)    
 
 `address` - (Ethereum; other blockchains will be different) 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front `0x0cE446255506E92DF41614C46F1d6df9Cc969183`      
+
+[airdrop](https://www.coindesk.com/learn/what-is-a-crypto-airdrop/) - involve blockchain-based projects and developers sending out free tokens to members of their communities as part of a broader marketing initiative.   
 
 `AMM` - Automated Market Maker; underlying protocol that powers all decentralized exchanges (DEXs), DEXs help users exchange cryptocurrencies by connecting users directly, without an intermediary; autonomous trading mechanisms that eliminate the need for centralized exchanges; drawback: susceptible to front running because of publicity in mempool    
 
@@ -461,7 +474,9 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `fallback` - special function executed either when a function that does not exist is called or Ether is sent directly to a contract but receive() does not exist or msg.data is not empty; fallback has a 2300 gas limit when called by transfer or send   
 
 `flashbots` - [independent project](https://ethereum.org/en/developers/docs/mev/) which extends execution clients with a service allowing searchers to submit MEV transactions to validators without revealing them to the public mempool; prevents transactions from being frontrun by generalized frontrunners; [video](https://www.youtube.com/watch?v=Zt15wrSDVxc)  
-   - How to build [flashbots](https://www.youtube.com/watch?v=gme0uNyIIsE)   
+   - How to build [flashbots](https://www.youtube.com/watch?v=gme0uNyIIsE)
+
+`flash loan` - a smart contract transaction in which a lender smart contract lends assets to a borrower smart contract with the condition that the assets are returned, plus an optional fee, before the end of the transaction. This ERC specifies interfaces for lenders to accept flash loan requests, and for borrowers to take temporary control of the transaction within the lender execution. The process for the safe execution of flash loans is also specified.
 
 `flash-swap` - all trades must occur during single transaction: opportunity for arbitragers   
 
@@ -572,8 +587,9 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `safeMath` - before 0.8.0. there were overflow and underflow issues; prior to that version, solidity's "+" operator wouldn't check for overflows, leading to type(uint256).max + 1 = 0, and the safeMath library would avoid it. Now, type(uint256).max + 1 reverts with Panic(0x11), and safeMath isnt needed.   
 
-`self destruct` - leaves a blank account; costs negative gas, does not remove transaction history: only can be self destructed if contract has self destruct programmed in      
-`slippage` - the difference between the value of an asset at order placement and the value at order fulfilment. It can be found when buying or selling assets, and can result in either a loss or a gain (higher invariants lead to less slippage; Uniswap)      
+`self destruct` - leaves a blank account; costs negative gas, does not remove transaction history: only can be self destructed if contract has self destruct programmed in  
+
+[slippage](https://www.youtube.com/watch?v=BgR75biSjzU) - the difference between the value of an asset at order placement and the value at order fulfilment. It can be found when buying or selling assets, and can result in either a loss or a gain (higher invariants lead to less slippage; Uniswap)      
 
 `smart contract` - programs stored on a blockchain that run when predetermined conditions are met; a transaction protocol intended to automatically execute, control or document events and actions according to the terms of a contract or an agreement; Ethereum contracts are essentially single threaded machine       
 - `hybrid smart contracts` - combine code running on the blockchain (on-chain) with data and computation from outside the blockchain (off-chain) provided by decentralized oracle networks. [chainlink](https://chain.link/education-hub/hybrid-smart-contracts)   
@@ -631,5 +647,6 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `zero padding` — (big-endian) for taking up entire memory; if your data type is uint8 or uint32 it is still managed as uint256 values (occupies 32bytes)   
 
 [zkproof](https://www.youtube.com/watch?v=e_Im2g2xsAg&t=81s) - method by which one party (the prover) can prove to another party (the verifier) that a given statement is true, while avoiding conveying to the verifier any information beyond the mere fact of the statement's truth   
-   - `zkSNARK` - succinct non interactive argument of knowledge    
+   - `zkSNARK` - succinct non interactive argument of knowledge
+   - [Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) 
 
