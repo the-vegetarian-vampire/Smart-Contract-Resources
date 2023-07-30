@@ -67,7 +67,6 @@ How to DeFi: [Beginner](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B
 [DeFi and the Future of Finance](https://www.amazon.com/DeFi-Future-Finance-Campbell-Harvey/dp/1119836018) - particularly Chapter 6: deep dive      
 
 Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine) Opinion Columnist per [Dan Robinson](https://youtu.be/Lz7g0ny99jk?t=3183)    
-[Blockchain Threat Intelligence](https://newsletter.blockthreat.io/) - blog
 
 -----  
 ### Podcasts 
@@ -82,7 +81,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
    - [D-Squared's Channel](https://www.youtube.com/@d-squared70/videos) and [DeFiDeveloperAcademy's Channel](https://www.youtube.com/@DeFiDeveloperAcademy)   
  
 🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)    
-   - [Foundry Damn Vulnerable DeFi](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry)   
+   - [In Foundry](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry)   
         
 [Crypto Zombies](https://cryptozombies.io/) (old)     
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
@@ -112,8 +111,8 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 Not invented here: meaning the security risk is often greater than improvement value   
 
 `Ethereum address` - 20 byte value   
-`Boolean` - 1 byte value
-`0x40` - the free memory pointer.
+`Boolean` - 1 byte value   
+`0x40` - the free memory pointer
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
 - check != 0 rather than >    
@@ -188,6 +187,7 @@ Most auditor discussions are on Twitter.
 - Blue Alder - [Wallet Mining Walkthrough](https://www.youtube.com/watch?v=7PS-wuIsZ4A)
 - [Dacian's blog](https://dacian.me/smart-contract-auditor-portfolio)
 - [Volodya's Blog](https://0xvolodya.hashnode.dev/how-i-earned-25000-auditing-and-ranked-1-on-60-day-leaderboard)
+- [Blockchain Threat Intelligence Blog](https://newsletter.blockthreat.io/)
 
 - [The Auditooor Grindset blog](https://www.zellic.io/blog/the-auditooor-grindset)   
 - [5 Solidity Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
@@ -248,25 +248,26 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 [DeFi vs TradeFi](https://coinstove.com/learn/defi-vs-tradfi/)   
 [Teach Yourself Crypto](https://teachyourselfcrypto.com/#ftoc-module-4-decentralized-finance-defi) good links; also [Khan Acad.](https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-1)   
 
-#### Exchanges
-[Uniswap](https://uniswap.org/) - [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)   
-   - Auto router 
-   - Client side router   
-     
-[Curve](https://resources.curve.fi/)      
-[Sushiswap](https://www.sushi.com/swap)   
 
-Compound - lending     
-[Aave](https://aave.com/) - lending [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) (Finnish for ghost, alludes to anonymity of transactions)
-   - [Aave Tesnet](https://staging.aave.com/)
-   - `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
-   - `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
-   - [Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
+|Exchanges | Video| Documentaion | Details  |
+| ------------- | ------------- | ------------- | ------------- |
+| [Uniswap](https://uniswap.org/)  | [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)  | [docs](https://docs.uniswap.org/)| Auto router and client side router |
+| [Curve](https://resources.curve.fi/) | [video](https://www.youtube.com/watch?v=MqRfurKVM1A) | [docs](https://curve.readthedocs.io/index.html)  |  |
+| [Sushiswap](https://www.sushi.com/swap)  | [video](https://www.youtube.com/watch?v=NTYbVnENeVo) | [docs](https://github.com/sushiswap) |  |
+
+|Lenders | Video| Documentaion | Details  |
+| ------------- | ------------- | ------------- | ------------- |
+| Compound  | Video | Documentaion | Details |
+| [Aave](https://aave.com/) | [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) |  | Finnish for ghost, alludes to anonymity of transactions; [Aave Tesnet](https://staging.aave.com/) |
 
 Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
 
+`LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
+`APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
+[Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
+
 Collateral swaps  
-Concentrated liquidity 
+Concentrated liquidity   
 [Block stuffing](https://www.youtube.com/watch?v=3aPYkx7G7e0) (video)   
 
 ----- 
@@ -400,7 +401,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 [airdrop](https://www.coindesk.com/learn/what-is-a-crypto-airdrop/) - involve blockchain-based projects and developers sending out free tokens to members of their communities as part of a broader marketing initiative.   
 
-`AMM` - Automated Market Maker; underlying protocol that powers all decentralized exchanges (DEXs), DEXs help users exchange cryptocurrencies by connecting users directly, without an intermediary; autonomous trading mechanisms that eliminate the need for centralized exchanges; drawback: susceptible to front running because of publicity in mempool    
+[AMM](https://www.youtube.com/watch?v=1PbZMudPP5E) - Automated Market Maker; underlying protocol that powers all decentralized exchanges (DEXs), DEXs help users exchange cryptocurrencies by connecting users directly, without an intermediary; autonomous trading mechanisms that eliminate the need for centralized exchanges; drawback: susceptible to front running because of publicity in mempool    
 
 `Application-specific integrated circuit` or [ASIC](https://www.businessinsider.com/personal-finance/asic-mining?op=1) - The most powerful computer has the greatest chance of solving the puzzle, and so ASIC mining was created to maximize the possibility of mining; see also [GPU](https://en.wikipedia.org/wiki/Graphics_processing_unit)    
 
@@ -528,6 +529,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `layer 0` - the underlying infrastructure upon which multiple Layer 1 blockchains can be built; a network framework running beneath the blockchain. It is made up of protocols, connections, hardware, miners, and more that forms the foundation of the blockchain ecosystem. Layer: 0, 1, 2, 3 etc.   
    
 `linting` - the process of running a program that will analyze code for potential errors (verifying code quality) [eslint](https://eslint.org/)   
+
+[liquidity pool](https://www.youtube.com/watch?v=dVJzcFDo498) - a smart contract containing large portions of cryptocurrency, digital assets, tokens, or virtual coins locked up and ready to provide essential liquidity for networks that facilitate decentralized trading
 
 `magic number` [wiki](https://en.wikipedia.org/wiki/Magic_number_(programming)) unique value with unexplained meaning or multiple occurrences which could (preferably) be replaced with a named constant   
 
