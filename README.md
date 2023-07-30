@@ -254,20 +254,24 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 | [Uniswap](https://uniswap.org/)  | [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)  | [docs](https://docs.uniswap.org/)| Auto router and client side router |
 | [Curve](https://resources.curve.fi/) | [video](https://www.youtube.com/watch?v=MqRfurKVM1A) | [docs](https://curve.readthedocs.io/index.html)  |  |
 | [Sushiswap](https://www.sushi.com/swap)  | [video](https://www.youtube.com/watch?v=NTYbVnENeVo) | [docs](https://github.com/sushiswap) |  |
+| [Balancer](https://balancer.fi/) | [video](https://www.youtube.com/watch?v=IX6rUhNC8uA) | [docs](https://docs.balancer.fi/) | weighted math; 8 assets |
 
+----- 
 |Lenders | Video| Documentaion | Details  |
 | ------------- | ------------- | ------------- | ------------- |
-| Compound  | Video | Documentaion | Details |
-| [Aave](https://aave.com/) | [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) |  | Finnish for ghost, alludes to anonymity of transactions; [Aave Tesnet](https://staging.aave.com/) |
+| [Aave](https://aave.com/) | [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) | [docs](https://docs.aave.com/hub/)  | Finnish for ghost, alludes to anonymity of transactions; [Aave Tesnet](https://staging.aave.com/) |
+| [Compound](https://compound.finance/) | Video | [docs](https://docs.compound.finance/) | Details |
 
+----- 
 Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
 
-`LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)
-`APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)  
-[Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)   
+`APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)     
+`LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)  
+`LP` - liquidty providers   
 
 Collateral swaps  
 Concentrated liquidity   
+[Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)    
 [Block stuffing](https://www.youtube.com/watch?v=3aPYkx7G7e0) (video)   
 
 ----- 
@@ -283,7 +287,7 @@ Maximal extractable value: as a pending transaction sits in a mempool, miners an
 
 ### Stablecoins
 
-[Stablecoin investopedia](https://www.investopedia.com/terms/s/stablecoin.asp) and [Whiteboard Crypto](https://www.youtube.com/watch?v=S7-rfvpEpJs)   
+[Investopedia](https://www.investopedia.com/terms/s/stablecoin.asp) and [Whiteboard Crypto](https://www.youtube.com/watch?v=S7-rfvpEpJs)   
 Types   
    1. Fiat based 
    2. Crypto based
@@ -409,7 +413,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `assertEQ` - Assert a is [equal](https://book.getfoundry.sh/reference/forge-std/assertEq) to b    
 
-`atomic swap` - an exchange of cryptocurrencies from separate blockchains; the term "atomic state" in which a state has no substates; it either happens or it doesn't—there is no other alternative. [investopedia](https://www.investopedia.com/terms/a/atomic-swaps.asp)    
+[atomic swap](https://www.investopedia.com/terms/a/atomic-swaps.asp) - an exchange of cryptocurrencies from separate blockchains; the term "atomic state" in which a state has no substates; it either happens or it doesn't—there is no other alternative. 
 
 `Beacon Chain` - a [separate chain](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain) from the original Ethereum Mainnet, running side-by-side; [withdrawals](https://ethereum.org/en/staking/withdrawals/)   
 
