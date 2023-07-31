@@ -124,7 +124,8 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - [++i vs i++](https://ethereum.stackexchange.com/questions/133161/why-does-i-cost-less-gas-than-i)    
 - Hardhat gas reporter and [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
   
-- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)   
+- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)
+- Solidity vs Viper [gas comparison](https://github.com/PatrickAlphaC/sc-language-comparison)   
   
 -----
 
@@ -147,11 +148,13 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)    
 - [Ethernaut Denial](https://www.youtube.com/watch?v=JJX2oWlKjC4&t=1131s) `while true` fallback gas attack
 
-  [DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs) - to produce DeFi hack incidents using Foundry.
+  [DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs) - to produce DeFi hack incidents using Foundry.   
+  [DeFiVulnLabs](https://github.com/SunWeb3Sec/DeFiVulnLabs) -learn common smart contract vulnerabilities using Foundry.
 
 ### Known Exploiter addresses: 
    - Conic Finance Exploiter [address](https://etherscan.io/address/0x8d67db0b205e32a5dd96145f022fa18aae7dc8aa)
-   - Jared from Subway's MEV bot [address](https://etherscan.io/address/0xae2fc483527b8ef99eb5d9b44875f005ba1fae13)   
+   - Jared from Subway's MEV bot [address](https://etherscan.io/address/0xae2fc483527b8ef99eb5d9b44875f005ba1fae13)
+   - JPEG’D [address](https://etherscan.io/address/0x6ec21d1868743a44318c3c259a6d4953f9978538)    
 
 -----   
 
@@ -216,15 +219,10 @@ Typical Risk classification:
 [CEI](https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html) - Checks Effects Interactions  
 
 Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)    
-Foundry Testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)   
-   - depth — number of calls in a run
+Foundry Testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run
 
-Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723)    
-   - Unit
+Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723) - Unit//Integration//Forked//Staging
      - Using modifiers [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
-   - Integration
-   - Forked
-   - Staging
 
 [Decoding calldata](https://youtu.be/sas02qSFZ74?t=38028)   
 [Named imports](https://youtu.be/umepbfKp5rI?t=13460)   
@@ -243,7 +241,7 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 ## Defi
 🔖 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
 🔖 [Defi Llama](https://defillama.com/)      
-[Eigenphi](https://eigenphi.io/) - tracking data
+   [Eigenphi](https://eigenphi.io/) - tracking data
 
 [DeFi vs TradeFi](https://coinstove.com/learn/defi-vs-tradfi/)   
 [Teach Yourself Crypto](https://teachyourselfcrypto.com/#ftoc-module-4-decentralized-finance-defi) good links; also [Khan Acad.](https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-1)   
@@ -251,10 +249,11 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 
 |Exchanges | Video| Documentaion | Details  |
 | ------------- | ------------- | ------------- | ------------- |
-| [Uniswap](https://uniswap.org/)  | [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)  | [docs](https://docs.uniswap.org/)| Auto router and client side router |
+| [Uniswap](https://uniswap.org/)  | [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)  | [docs](https://docs.uniswap.org/)| Auto router or client side router |
 | [Curve](https://resources.curve.fi/) | [video](https://www.youtube.com/watch?v=MqRfurKVM1A) | [docs](https://curve.readthedocs.io/index.html)  |  |
 | [Sushiswap](https://www.sushi.com/swap)  | [video](https://www.youtube.com/watch?v=NTYbVnENeVo) | [docs](https://github.com/sushiswap) |  |
-| [Balancer](https://balancer.fi/) | [video](https://www.youtube.com/watch?v=IX6rUhNC8uA) | [docs](https://docs.balancer.fi/) | weighted math; 8 assets |
+| [Balancer](https://balancer.fi/) | [video](https://www.youtube.com/watch?v=IX6rUhNC8uA) | [docs](https://docs.balancer.fi/) | weighted math; allows own ratios: liquidity bootstrapping pool (LBP); up to 8 assets |
+| [PancakeSwap](https://pancakeswap.finance/) | [video](https://www.youtube.com/watch?v=sr9AKeMa5tU) | [docs](https://docs.pancakeswap.finance/) | offers limit orders|
 
 ----- 
 |Lenders | Video| Documentaion | Details  |
@@ -263,11 +262,23 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 | [Compound](https://compound.finance/) | Video | [docs](https://docs.compound.finance/) | Details |
 
 ----- 
-Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)   
+Dex Aggregators - a service that brings together liquidity from different decentralized exchanges and market makers, helping users find the best price for a given trade
+   - [1inch](https://1inch.io/) - [video](https://www.youtube.com/watch?v=BpcP0n44Tf8)
+   - [Paraswap](https://www.paraswap.io/)
+
+Derivatives exchange
+- [Synthetix](https://synthetix.io/)
+- [UMA](https://uma.xyz/)
+
+Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)     
+[Bancor](https://bancor.network/)
 
 `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)     
 `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)  
 `LP` - liquidty providers   
+`order book model` - an electronic list of buy and sell orders for a specific security or financial instrument organized by price level; lists the number of shares being bid on or offered at each price point, or market depth 
+ 
+[Constant product automated makes maker](https://www.youtube.com/watch?v=QNPyFs8Wybk) (CPMMs) are based on the function `x*y=k` which establishes a range of prices for two tokens according to the available quantities (liquidity) of each token. When the supply of token X increases, the token supply of Y must decrease, and vice-versa, to maintain the constant product K.
 
 Collateral swaps  
 Concentrated liquidity   
@@ -653,7 +664,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `zero padding` — (big-endian) for taking up entire memory; if your data type is uint8 or uint32 it is still managed as uint256 values (occupies 32bytes)   
 
-[zkproof](https://www.youtube.com/watch?v=e_Im2g2xsAg&t=81s) - method by which one party (the prover) can prove to another party (the verifier) that a given statement is true, while avoiding conveying to the verifier any information beyond the mere fact of the statement's truth   
+[zkproof](https://www.youtube.com/watch?v=e_Im2g2xsAg&t=81s) - method by which one party (the prover) can prove to another party (the verifier) that a given statement is true, while avoiding conveying to the verifier any information beyond the mere fact of the statement's truth [ethereum Zk docs](https://ethereum.org/en/zero-knowledge-proofs/)
+   - [zkRollup](https://ethereum.org/en/developers/docs/scaling/zk-rollups/) - bundling transactions off chain and submitting a single transaction onchain 
    - `zkSNARK` - succinct non interactive argument of knowledge
-   - [Zero-Knowledge Proofs](https://ethereum.org/en/zero-knowledge-proofs/) 
+
 
