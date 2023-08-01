@@ -112,7 +112,7 @@ Not invented here: meaning the security risk is often greater than improvement v
 
 `Ethereum address` - 20 byte value   
 `Boolean` - 1 byte value   
-`0x40` - the free memory pointer
+`0x40` - the free memory pointer; a "pointer" is an address within memory and the free memory pointer is the address pointing to the start of unallocated, free memory. 
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
 - check != 0 rather than >    
@@ -125,7 +125,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - Hardhat gas reporter and [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
   
 - [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)
-- Solidity vs Viper [gas comparison](https://github.com/PatrickAlphaC/sc-language-comparison)   
+- Solidity vs Vyper [gas comparison](https://github.com/PatrickAlphaC/sc-language-comparison)   
   
 -----
 
@@ -213,7 +213,7 @@ Typical Risk classification:
 ----- 
 
 ### Testing 
-[Trail of Bits Automated Testing](https://appsec.guide/)   
+Testing Introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile) for Foundry  
 
 [CEI](https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html) - Checks Effects Interactions  
@@ -224,7 +224,9 @@ Foundry Testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = numbe
 Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723) - Unit//Integration//Forked//Staging
      - Using modifiers [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
 
-[Decoding calldata](https://youtu.be/sas02qSFZ74?t=38028)   
+`--no-commit` flag tool will simulate the transaction without committing any changes to the blockchain. This can be useful for testing how a contract will behave when certain functions are called, without having to spend gas to actually perform the transaction on the network.    
+
+[Trail of Bits Automated Testing](https://appsec.guide/) 
 [Named imports](https://youtu.be/umepbfKp5rI?t=13460)   
 
 -----   
@@ -247,19 +249,19 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 [Teach Yourself Crypto](https://teachyourselfcrypto.com/#ftoc-module-4-decentralized-finance-defi) good links; also [Khan Acad.](https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-1)   
 
 
-|Exchanges | Video| Documentaion | Details  |
-| ------------- | ------------- | ------------- | ------------- |
-| [Uniswap](https://uniswap.org/)  | [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)  | [docs](https://docs.uniswap.org/)| Auto router or client side router |
+|Exchanges | Video| Documentaion | Supported Assets | LP Token |Details | 
+| ------------- | ------------- | ------------- | ------------- | ------------- |------------- |
+| [Uniswap](https://uniswap.org/)  | [video](https://www.youtube.com/watch?v=yiG82nHWpSc&t=15s)  | [docs](https://docs.uniswap.org/) | ETH & ERC20 |Yes (for bookeeping | Auto router or client side router//Trading fees 0.3% |
 | [Curve](https://resources.curve.fi/) | [video](https://www.youtube.com/watch?v=MqRfurKVM1A) | [docs](https://curve.readthedocs.io/index.html)  |  |
 | [Sushiswap](https://www.sushi.com/swap)  | [video](https://www.youtube.com/watch?v=NTYbVnENeVo) | [docs](https://github.com/sushiswap) |  |
-| [Balancer](https://balancer.fi/) | [video](https://www.youtube.com/watch?v=IX6rUhNC8uA) | [docs](https://docs.balancer.fi/) | weighted math; allows own ratios: liquidity bootstrapping pool (LBP); up to 8 assets |
-| [PancakeSwap](https://pancakeswap.finance/) | [video](https://www.youtube.com/watch?v=sr9AKeMa5tU) | [docs](https://docs.pancakeswap.finance/) | offers limit orders|
+| [Balancer](https://balancer.fi/) | [video](https://www.youtube.com/watch?v=IX6rUhNC8uA) | [docs](https://docs.balancer.fi/) ||Yes (functional ERC Token)| weighted math; allows own ratios: liquidity bootstrapping pool (LBP); up to 8 assets|
+| [PancakeSwap](https://pancakeswap.finance/) | [video](https://www.youtube.com/watch?v=sr9AKeMa5tU) | [docs](https://docs.pancakeswap.finance/) | ||offers limit orders|
 
 ----- 
 |Lenders | Video| Documentaion | Details  |
 | ------------- | ------------- | ------------- | ------------- |
 | [Aave](https://aave.com/) | [video](https://www.youtube.com/watch?v=VXlI-uzhBX4) | [docs](https://docs.aave.com/hub/)  | Finnish for ghost, alludes to anonymity of transactions; [Aave Tesnet](https://staging.aave.com/) |
-| [Compound](https://compound.finance/) | Video | [docs](https://docs.compound.finance/) | Details |
+| [Compound](https://compound.finance/) | [video](https://www.youtube.com/watch?v=sIIg2owOz3w) | [docs](https://docs.compound.finance/) |  |
 
 ----- 
 Dex Aggregators - a service that brings together liquidity from different decentralized exchanges and market makers, helping users find the best price for a given trade
@@ -339,7 +341,7 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
   - [echidna](https://github.com/crytic/echidna)   
   - [Slither](https://github.com/crytic/slither)
       - [Static Analyzer](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/)
-      - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d)   
+      - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d) and [video](https://www.youtube.com/watch?v=YNZ-3l4S4M0)   
   - [Foundry](https://book.getfoundry.sh/)
       - [Cheat Codes](https://book.getfoundry.sh/cheatcodes/)
   - [Inline bookmarks](https://marketplace.visualstudio.com/items?itemName=tintinweb.vscode-inline-bookmarks) // @audit this code seems vulnerable here     
@@ -349,7 +351,8 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
       - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
   - [Wagmi](https://wagmi.sh/)   
   - [Web3.js](https://web3js.org/#/)
-
+    
+-----
 ### Wallets
 [Rabby](https://rabby.io/)   
 [Metamask](https://metamask.io/)   
@@ -463,7 +466,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `data Locations` - Storage, Memory and Calldata
   1. storage - variable is a state variable (store on blockchain)
   2. memory - variable is in memory and it exists while a function is being called
-  3. calldata - special data location that contains function arguments  
+  3. calldata - special data location that contains function arguments: [decoding calldata](https://youtu.be/sas02qSFZ74?t=38028)       
 
 `delegatcall` - identical to a message call apart from the fact that the code at the target address is executed in the context; a contract can dynamically load code from a different address at runtime. Storage, current address and balance still refer to the calling contract, only the code is taken from the called address. Pattick Collins explanation [1:05:07:37](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=104857); [shorter video](https://www.youtube.com/watch?v=uawCDnxFJ-0)      
 
@@ -502,6 +505,16 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `function selector` - first 4 bytes of the function signature: ex: 0xa9059cbb; excellent Patrick Collins section [22:46:43](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=82003); [shorter video](https://www.youtube.com/watch?v=Mn4e4w8h6n8); there can be function selector clashes   
 `function signature` - string that defines function name & parameters: ex: “transfer(address, uint256)”   
+
+[function modifiers](https://docs.soliditylang.org/en/develop/contracts.html#function-modifiers) 
+ - `public` makes the function callable from any contract. If no visibility is specified for a function, it defaults to public.
+ - `external` makes the function callable only from other contracts. These functions are often used for interactions between contracts. Note that they cannot be called internally, i.e., from within the same contract.
+ - `private` makes the function callable only from within the contract where it is defined.
+ - `internal` makes the function callable only from within the contract where it is defined, or from contracts that derive from it (i.e., contracts that inherit from it).
+ - `view` used for functions that do  not alter the state of the contract (i.e., they don't change any state variables).
+ - `pure` used for functions that not only do not alter the state of the contract, but also do not access any data in the contract. These functions solely operate on their input parameters.
+ - `payable` allows a function to receive Ether together with a call. If a function is not marked payable, it will reject any Ether sent to it.
+ - Public `state variables` automatically generate getter functions.   
 
 `fuzzing` - or fuzz testing involves providing invalid, unexpected, or random data as inputs in an attempt to break/crash the system   
 
@@ -593,9 +606,13 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
    - implementation contract
    - proxy contract --> points to correct implementation
    - the user makes calls to proxy
-   - the admin decides which contract to upgrade etc   
+   - the admin decides which contract to upgrade etc
+   - small proxies, usually referred to as `clones` can be used to deploy code only once and re-use it over and over again.
+ 
 
 `pure` - static, does not effect or modify state, more computational [free function]   
+
+`Quality Assurance` (QA) - ensure the functionality, security, and efficiency of the smart contract code.   
 
 `revert` - gives back gas but loses some in process  
 
