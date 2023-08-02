@@ -19,8 +19,8 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 ## Tutorial Resources
 
 `1. Patrick Collins Courses:` 
-   - Harhat Course - [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)   
-   -  Foundry Course - [Youtube](https://github.com/Cyfrin/foundry-full-course-f23) and [Github](https://github.com/Cyfrin/foundry-full-course-f23)   
+   -  Harhat Course - [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)   
+   -  🔖 Foundry Course - [Youtube](https://github.com/Cyfrin/foundry-full-course-f23) and [Github](https://github.com/Cyfrin/foundry-full-course-f23)   
   
 `2. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (one of the creators of Solidity by example)   
   
@@ -85,7 +85,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
         
 [Crypto Zombies](https://cryptozombies.io/) (old)     
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
-Exercises via [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md)    
+[JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md) exercises   
 
 -----
 ### Interviews and Questions   
@@ -125,7 +125,8 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - Hardhat gas reporter and [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
   
 - [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)
-- Solidity vs Vyper [gas comparison](https://github.com/PatrickAlphaC/sc-language-comparison)   
+- Solidity vs Vyper [gas comparison](https://github.com/PatrickAlphaC/sc-language-comparison)
+- [Salted contract creations / create2](https://docs.soliditylang.org/en/latest/control-structures.html#salted-contract-creations-create2)    
   
 -----
 
@@ -208,20 +209,24 @@ Typical Risk classification:
 `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
 `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired or even gas inefficiencies.   
 `informational` - findings to improve efficiency   
-`gas efficiencies` - findings to improve efficiency   
+`gas efficiencies` - findings to improve efficiency 
+`quality assurance (QA)` - ensure the functionality, security, and efficiency of the smart contract code. 
+
+`Alpha` - evolving idiom: in finance, "alpha" refers to the excess return of an investment relative to the return of a benchmark index or another relevant measure.   
 
 ----- 
 
 ### Testing 
 Testing Introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
 [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile) for Foundry  
+Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)      
 
 [CEI](https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html) - Checks Effects Interactions  
 
 Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)    
 Foundry Testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run
 
-Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723) - Unit//Integration//Forked//Staging
+Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723) - Unit//Integration//Forked//Staging   
      - Using modifiers [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
 
 `--no-commit` flag tool will simulate the transaction without committing any changes to the blockchain. This can be useful for testing how a contract will behave when certain functions are called, without having to spend gas to actually perform the transaction on the network.    
@@ -614,7 +619,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `Quality Assurance` (QA) - ensure the functionality, security, and efficiency of the smart contract code.   
 
-`revert` - gives back gas but loses some in process  
+`revert` - gives back gas but loses some in process; 1. [revert reason strings](https://docs.goquorum.consensys.net/configure-and-manage/manage/revert-reason)   
 
 `remote procedure call` or [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) - when a computer program causes a procedure (subroutine) to execute in a different address space (commonly on another computer on a shared network), which is written as if it were a normal (local) procedure call, without the programmer explicitly writing the details for the remote interaction   
 
