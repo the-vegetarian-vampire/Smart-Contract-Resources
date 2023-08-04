@@ -209,7 +209,8 @@ Typical Risk classification:
 
 `High` - leads to a loss of significant portion (>10%) of assets in protocol, harms a majority of users.   
 `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
-   - `High and Medium` - severity issues ("HM issues”)   
+   - `High and Medium` - severity issues ("HM issues”)
+     
 `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired or even gas inefficiencies.   
 `informational` - findings to improve efficiency   
 `gas efficiencies` - findings to improve efficiency 
