@@ -23,6 +23,7 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
    -  🔖 Foundry Course - [Youtube](https://github.com/Cyfrin/foundry-full-course-f23) and [Github](https://github.com/Cyfrin/foundry-full-course-f23)   
   
 `2. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (one of the creators of Solidity by example)   
+   - [Foundry playlist](https://www.youtube.com/playlist?list=PLO5VPQH6OWdUrKEWPF07CSuVm3T99DQki)   
   
 `3. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
@@ -162,7 +163,8 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 ### Audits
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
 [Audit Techniques & Tools 101](https://secureum.substack.com/p/audit-techniques-and-tools-101?utm_campaign=post&utm_medium=web) by Secureum   
-[What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1)    
+[What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1) 
+[Smart contract weakness](https://swcregistry.io/)     
 [Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)   
 
 🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist     
@@ -207,24 +209,25 @@ Typical Risk classification:
 
 `High` - leads to a loss of significant portion (>10%) of assets in protocol, harms a majority of users.   
 `Medium` - global losses <10% or losses to only a subset of users, but still unacceptable.   
+   - `High and Medium` - severity issues ("HM issues”)   
 `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired or even gas inefficiencies.   
 `informational` - findings to improve efficiency   
 `gas efficiencies` - findings to improve efficiency 
 `quality assurance (QA)` - ensure the functionality, security, and efficiency of the smart contract code. 
 
-`Alpha` - evolving idiom: in finance, "alpha" refers to the excess return of an investment relative to the return of a benchmark index or another relevant measure.   
+`Alpha` - in finance, "alpha" refers to the excess return of an investment relative to the return of a benchmark index   
 
 ----- 
 
 ### Testing 
 Testing Introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
-[Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile) for Foundry  
-Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)      
+   - `Foundry`
+   - [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)
+   - Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)
+   - Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)
+   - Foundry testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run   
 
 [CEI](https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html) - Checks Effects Interactions  
-
-Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)    
-Foundry Testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run
 
 Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723) - Unit//Integration//Forked//Staging   
      - Using modifiers [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
@@ -232,12 +235,11 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 `--no-commit` flag tool will simulate the transaction without committing any changes to the blockchain. This can be useful for testing how a contract will behave when certain functions are called, without having to spend gas to actually perform the transaction on the network.    
 
 [Trail of Bits Automated Testing](https://appsec.guide/) 
-[Named imports](https://youtu.be/umepbfKp5rI?t=13460)   
 
 -----   
 
 ### Bug Bounty
- - [Code4rena](https://code4rena.com/)   
+ - [Code4rena](https://code4rena.com/) - [submission-policy](https://docs.code4rena.com/roles/wardens/submission-policy)   
  - [Immunefi](https://immunefi.com/)
  - [Sherlock](https://www.sherlock.xyz/)   
  - [Code Hawks](https://www.codehawks.com/)
@@ -343,9 +345,11 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
 ## 🔖 Tools 
   - [Alchemy](https://www.alchemy.com/)
   - [Etherscan](https://etherscan.io/)
-  - [echidna](https://github.com/crytic/echidna)   
+  - [Echidna](https://github.com/crytic/echidna)
+       - [Article](https://bushido-sec.com/index.php/2023/07/27/fuzzing-smart-contracts/)   
   - [Slither](https://github.com/crytic/slither)
       - [Static Analyzer](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/)
+      - [Printers](https://github.com/crytic/slither#printers) and human summary [slither file.sol --print human-summary](https://github.com/crytic/slither/wiki/Printer-documentation#human-summary)   
       - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d) and [video](https://www.youtube.com/watch?v=YNZ-3l4S4M0)   
   - [Foundry](https://book.getfoundry.sh/)
       - [Cheat Codes](https://book.getfoundry.sh/cheatcodes/)
@@ -579,6 +583,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
   3. Guard against reentrancy hack   
   
 `msg.sender` - there will always be a msg.sender; one who call contract   
+
+[Named imports](https://youtu.be/umepbfKp5rI?t=13460)    
 
 `NatSpec` - Ethereum Natural Language Specification [Format](https://docs.soliditylang.org/en/v0.8.19/natspec-format.html) @title and @author are straightforward; @notice explains the contract function does; @dev is for explaining extra details to developers; @param and @return are for describing what each parameter and return value of a function are for  
 
