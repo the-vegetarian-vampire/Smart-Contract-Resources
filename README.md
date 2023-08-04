@@ -102,14 +102,14 @@ How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storag
 [Storage vs Memory](https://soliditytips.com/articles/solidity-data-location-storage-memory/)   
 Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)     
 [Ethernaut Lvl 19 MagicNumber](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)   
+[Gas-optimization course](https://www.udemy.com/course/advanced-solidity-understanding-and-optimizing-gas-costs/?referralCode=C4684D6872713525E349) by Jeffrey Scholz on [Medium](https://medium.com/@jeffrey-scholz)   
+[Harrison on Twitter](https://twitter.com/PopPunkOnChain)   
 
 🔖 [Opcodes Updated](https://ethereum.org/en/developers/docs/evm/opcodes/) vs. - [Old Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)      
 🔖 [Ethereum Signature Database](https://www.4byte.directory/) or [Open Chain](https://openchain.xyz/signatures)   
 🔖 [EVM Storage](https://evm.storage/)    
 
 [Play with opcodes](https://www.evm.codes/playground)      
-
-Not invented here: meaning the security risk is often greater than improvement value   
 
 `Ethereum address` - 20 byte value   
 `Boolean` - 1 byte value   
@@ -123,7 +123,7 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable     
 - in testing it's common to prepend storage variables with `s_`
 - [++i vs i++](https://ethereum.stackexchange.com/questions/133161/why-does-i-cost-less-gas-than-i)    
-- Hardhat gas reporter and [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
+- [Hardhat gas reporter](https://www.npmjs.com/package/hardhat-gas-reporter) and [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
   
 - [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)
 - Solidity vs Vyper [gas comparison](https://github.com/PatrickAlphaC/sc-language-comparison)
