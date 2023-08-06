@@ -97,7 +97,9 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 ----- 
 
 ## Opcodes | Gas Optimization | Storage
-How [storage](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) works; Patrick Collins [visual](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) walkthrough; sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)      
+🔖 [Layout in memory](https://docs.soliditylang.org/en/latest/internals/layout_in_memory.html)   
+🔖 [Solidity Optimizer](https://docs.soliditylang.org/en/latest/internals/optimizer.html)   
+Patrick Collins [visual walkthrough](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469); sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)      
 [Brief Storage Video](https://youtu.be/_YkulBTqIcQ?t=522)    
 [Storage vs Memory](https://soliditytips.com/articles/solidity-data-location-storage-memory/)   
 Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)     
@@ -111,7 +113,9 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 
 [Play with opcodes](https://www.evm.codes/playground)      
 
-`Ethereum address` - 20 byte value   
+[Block](https://ethereum.org/en/developers/docs/blocks/) limit ~30 million gas. New block every 15 seconds; memory explosion due to quadratic growth  
+
+`Ethereum address` - 20 byte value (still takes up entire 256-bit storage slot. The remaining bits in that storage slot are left unused)   
 `Boolean` - 1 byte value   
 `0x40` - the free memory pointer; a "pointer" is an address within memory and the free memory pointer is the address pointing to the start of unallocated, free memory. 
 
@@ -123,9 +127,29 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable     
 - in testing it's common to prepend storage variables with `s_`
 - [++i vs i++](https://ethereum.stackexchange.com/questions/133161/why-does-i-cost-less-gas-than-i)    
-- [Hardhat gas reporter](https://www.npmjs.com/package/hardhat-gas-reporter) and [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)   
-  
-- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit)
+- [Hardhat gas reporter](https://www.npmjs.com/package/hardhat-gas-reporter) and [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)
+
+- 5 places to save gas
+   1. On deployment
+   2. During computation
+   3. Transaction data
+   4. Memory
+   5. Storage
+ 
+Can have arithmetic `unchecked` if you know overflowing uint256 is near impossible   
+`BaseFee` - is burned; determined by network; Solidity can access via `block.basefee`   
+`Max Fee` - most willing to pay; upper bound of gas price   
+`Max priority fee` - most you are willing to give to the miner   
+`Priority fee` - most willing to give to miner out of what’s left when max fee is subtracted from basefee, aka miner tip   
+`cold access` vs `warm access` - cold access the first time you read a variable, warm access when you read it again   
+Set optimizer as high as possible until improvement stops; [Uniswap optimizer](https://etherscan.io/address/0xe592427a0aece92de3edee1f18e0157c05861564#code)   
+ 
+`offset` - offset determines where within the 256-bit slot a particular piece of data begins; For example, if you have two uint128 variables (which are each 128 bits in size), the first will start at an offset of 0 and the second will start at an offset of 128.   
+Bit switching   
+`Short circuiting` — order matters, cheaper operation first   
+
+- [Gas puzzles](https://github.com/RareSkills/gas-puzzles)   
+- [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit) and [Huff basics](https://www.youtube.com/watch?v=UWY27vL1cw4)   
 - Solidity vs Vyper [gas comparison](https://github.com/PatrickAlphaC/sc-language-comparison)
 - [Salted contract creations / create2](https://docs.soliditylang.org/en/latest/control-structures.html#salted-contract-creations-create2)    
   
@@ -213,8 +237,8 @@ Typical Risk classification:
      
 `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired or even gas inefficiencies.   
 `informational` - findings to improve efficiency   
-`gas efficiencies` - findings to improve efficiency 
-`quality assurance (QA)` - ensure the functionality, security, and efficiency of the smart contract code. 
+`gas efficiencies` - findings to improve efficiency    
+`quality assurance (QA)` - ensure the functionality, security, and efficiency of the smart contract code.   
 
 `Alpha` - in finance, "alpha" refers to the excess return of an investment relative to the return of a benchmark index   
 
