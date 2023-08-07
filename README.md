@@ -257,7 +257,7 @@ Testing Introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=2
 
 [Formal Verifcation](https://www.youtube.com/watch?v=izpoxfTSaFs&t=691s) - proving or disproving the validity of a system using a mathematical model
 - symbolic execution - explore different execution paths
-- `solc —model-checker-engine chc —model-checker-targets overflow contract.sol`
+- `solc --model-checker-engine chc --model-checker-targets overflow contract.sol`
 - [Manitcore](https://github.com/trailofbits/manticore)(deprecated)
 - smtChecker - built into Solidity
 
