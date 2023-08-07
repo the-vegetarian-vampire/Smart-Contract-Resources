@@ -99,23 +99,28 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 ## Opcodes | Gas Optimization | Storage
 🔖 [Layout in memory](https://docs.soliditylang.org/en/latest/internals/layout_in_memory.html)   
 🔖 [Solidity Optimizer](https://docs.soliditylang.org/en/latest/internals/optimizer.html)   
-Patrick Collins [visual walkthrough](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469); sample contract [FunWithStorage](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)      
-[Brief Storage Video](https://youtu.be/_YkulBTqIcQ?t=522)    
-[Storage vs Memory](https://soliditytips.com/articles/solidity-data-location-storage-memory/)   
-Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)     
-[Ethernaut Lvl 19 MagicNumber](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)   
-[Gas-optimization course](https://www.udemy.com/course/advanced-solidity-understanding-and-optimizing-gas-costs/?referralCode=C4684D6872713525E349) by Jeffrey Scholz on [Medium](https://medium.com/@jeffrey-scholz)   
-[Harrison on Twitter](https://twitter.com/PopPunkOnChain)   
-
 🔖 [Opcodes Updated](https://ethereum.org/en/developers/docs/evm/opcodes/) vs. - [Old Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)      
 🔖 [Ethereum Signature Database](https://www.4byte.directory/) or [Open Chain](https://openchain.xyz/signatures)   
 🔖 [EVM Storage](https://evm.storage/)    
 
+Patrick Collins [walkthrough](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) - [FunWithStorage contract](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)      
+[Brief storage video](https://youtu.be/_YkulBTqIcQ?t=522)    
+[Storage vs Memory](https://soliditytips.com/articles/solidity-data-location-storage-memory/)   
+Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)     
+[Ethernaut Lvl 19 MagicNumber](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)   
+[Gas-optimization course](https://www.udemy.com/course/advanced-solidity-understanding-and-optimizing-gas-costs/?referralCode=C4684D6872713525E349) by Jeffrey Scholz [Medium](https://medium.com/@jeffrey-scholz)   
+[Harrison on Twitter](https://twitter.com/PopPunkOnChain)   
+
 [Play with opcodes](https://www.evm.codes/playground)      
 
-[Block](https://ethereum.org/en/developers/docs/blocks/) limit ~30 million gas. New block every 15 seconds; memory explosion due to quadratic growth  
+[Block](https://ethereum.org/en/developers/docs/blocks/) limit ~30 million gas. New block every 15 seconds; memory explosion due to quadratic growth   
+`BaseFee` - is burned; determined by network; Solidity can access via `block.basefee`   
+`Max Fee` - most willing to pay; upper bound of gas price   
+`Max priority fee` - most you are willing to give to the miner   
+`Priority fee` - most willing to give to miner out of what’s left when max fee is subtracted from basefee, aka miner tip   
+`cold access` vs `warm access` - cold access the first time you read a variable, warm access when you read it again  
 
-`Ethereum address` - 20 byte value (still takes up entire 256-bit storage slot. The remaining bits in that storage slot are left unused)   
+`address` - 20 byte value (still takes up entire 256-bit storage slot, remaining bits in storage slot are left unused)   
 `Boolean` - 1 byte value   
 `0x40` - the free memory pointer; a "pointer" is an address within memory and the free memory pointer is the address pointing to the start of unallocated, free memory. 
 
@@ -126,6 +131,8 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 - `constant` - naming convention ALL_CAPS; more `gas efficient`    
 - `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable     
 - in testing it's common to prepend storage variables with `s_`
+- `unchecked` arithmetic is ok if you know overflowing uint256 is near impossible   
+- [function names](https://blog.emn178.cc/en/post/solidity-gas-optimization-function-name/) and [optimized](https://gist.github.com/IllIllI000/a5d8b486a8259f9f77891a919febd1a9)   
 - [++i vs i++](https://ethereum.stackexchange.com/questions/133161/why-does-i-cost-less-gas-than-i)    
 - [Hardhat gas reporter](https://www.npmjs.com/package/hardhat-gas-reporter) and [Foundry Snapshot](https://book.getfoundry.sh/forge/gas-snapshots?highlight=snapshot#gas-snapshots)
 
@@ -135,18 +142,12 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
    3. Transaction data
    4. Memory
    5. Storage
- 
-Can have arithmetic `unchecked` if you know overflowing uint256 is near impossible   
-`BaseFee` - is burned; determined by network; Solidity can access via `block.basefee`   
-`Max Fee` - most willing to pay; upper bound of gas price   
-`Max priority fee` - most you are willing to give to the miner   
-`Priority fee` - most willing to give to miner out of what’s left when max fee is subtracted from basefee, aka miner tip   
-`cold access` vs `warm access` - cold access the first time you read a variable, warm access when you read it again   
+
 Set optimizer as high as possible until improvement stops; [Uniswap optimizer](https://etherscan.io/address/0xe592427a0aece92de3edee1f18e0157c05861564#code)   
  
-`offset` - offset determines where within the 256-bit slot a particular piece of data begins; For example, if you have two uint128 variables (which are each 128 bits in size), the first will start at an offset of 0 and the second will start at an offset of 128.   
-Bit switching   
-`Short circuiting` — order matters, cheaper operation first   
+`offset` - determines where within the 256-bit slot a particular piece of data begins; eg. if you have two uint128 variables (128 bits in size), the first will start at an offset of 0 and the second will start at an offset of 128.   
+`bit switching`    
+`short circuiting` — order matters, cheaper operation first   
 
 - [Gas puzzles](https://github.com/RareSkills/gas-puzzles)   
 - [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit) and [Huff basics](https://www.youtube.com/watch?v=UWY27vL1cw4)   
@@ -236,11 +237,11 @@ Typical Risk classification:
    - `High and Medium` - severity issues ("HM issues”)
      
 `Low` - losses will be annoying but bearable--applies to things like griefing attacks that can be easily repaired or even gas inefficiencies.   
-`informational` - findings to improve efficiency   
-`gas efficiencies` - findings to improve efficiency    
-`quality assurance (QA)` - ensure the functionality, security, and efficiency of the smart contract code.   
+`Informational` - findings to improve efficiency   
+`Gas efficiencies` - findings to improve efficiency    
+`Quality Assurance (QA)` - ensure the functionality, security, and efficiency of the smart contract code.   
 
-`Alpha` - in finance, "alpha" refers to the excess return of an investment relative to the return of a benchmark index   
+`Alpha` - in finance it refers to excess return of an investment relative to the return of a benchmark index   
 
 ----- 
 
@@ -248,9 +249,17 @@ Typical Risk classification:
 Testing Introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
    - `Foundry`
    - [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)
-   - Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)
+   - Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)
    - Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)
    - Foundry testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run   
+
+[Formal Verifcation](https://www.youtube.com/watch?v=izpoxfTSaFs&t=691s) - proving or disproving the validity of a system using a mathematical model
+- symbolic execution - explore different execution paths
+- `solc —model-checker-engine chc —model-checker-targets overflow contract.sol`
+- [Manitcore](https://github.com/trailofbits/manticore)(deprecated)
+- smtChecker - built into Solidity
+
+
 
 [CEI](https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html) - Checks Effects Interactions  
 
