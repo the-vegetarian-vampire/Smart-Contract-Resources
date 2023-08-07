@@ -101,7 +101,9 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 🔖 [Solidity Optimizer](https://docs.soliditylang.org/en/latest/internals/optimizer.html)   
 🔖 [Opcodes Updated](https://ethereum.org/en/developers/docs/evm/opcodes/) vs. - [Old Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)      
 🔖 [Ethereum Signature Database](https://www.4byte.directory/) or [Open Chain](https://openchain.xyz/signatures)   
-🔖 [EVM Storage](https://evm.storage/)    
+🔖 [EVM Storage](https://evm.storage/)   
+
+[Solady](https://github.com/Vectorized/solady) and [Solmate](https://github.com/transmissions11/solmate)   
 
 Patrick Collins [walkthrough](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42469) - [FunWithStorage contract](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=42690)      
 [Brief storage video](https://youtu.be/_YkulBTqIcQ?t=522)    
@@ -259,14 +261,14 @@ Testing Introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=2
 - [Manitcore](https://github.com/trailofbits/manticore)(deprecated)
 - smtChecker - built into Solidity
 
-
-
 [CEI](https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html) - Checks Effects Interactions  
 
 Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723) - Unit//Integration//Forked//Staging   
      - Using modifiers [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
 
-`--no-commit` flag tool will simulate the transaction without committing any changes to the blockchain. This can be useful for testing how a contract will behave when certain functions are called, without having to spend gas to actually perform the transaction on the network.    
+`--no-commit` flag tool will simulate the transaction without committing any changes to the blockchain. This can be useful for testing how a contract will behave when certain functions are called, without having to spend gas to actually perform the transaction on the network.   
+
+`mutation testing` is a type of software testing where small changes (mutations) are deliberately introduced into the source code at a single point in time. The purpose is to validate the quality of the existing test cases, ensuring that they are robust enough to detect the changes. Changes that result in test failures indicate adequate test coverage, while changes that do not result in test failures indicate gaps in test coverage. Although mutation testing is a slow process, it allows auditors to focus their review on areas of the codebase that are most likely to contain latent bugs, and it allows developers to identify and add missing tests. See [Necessist](https://github.com/trailofbits/necessist#overview)    
 
 [Trail of Bits Automated Testing](https://appsec.guide/) 
 
