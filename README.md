@@ -191,8 +191,9 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
 [Audit Techniques & Tools 101](https://secureum.substack.com/p/audit-techniques-and-tools-101?utm_campaign=post&utm_medium=web) by Secureum   
 [What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1) 
-[Smart contract weakness](https://swcregistry.io/)     
+[Smart contract weakness](https://swcregistry.io/)    
 [Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)   
+🔖 [Weird ERC20](https://github.com/d-xo/weird-erc20#revert-on-zero-value-transfers)  
 
 🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist     
 
@@ -210,7 +211,7 @@ Build a racing bot via [4naly3er](https://github.com/Picodes/4naly3er) - open so
 Most auditor discussions are on Twitter.   
 - [Christoph Michel](https://learneos.dev/#packages) (#1 auditor on [Code4Arena](https://code4rena.com/leaderboard)) and [blog](https://cmichel.io/how-to-become-a-smart-contract-auditor/) mentions Khan A. for [Finance](https://www.khanacademy.org/economics-finance-domain/core-finance/derivative-securities))                   
 - [Tincho](https://www.youtube.com/watch?v=A-T9F0anN1E&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&index=5)
-- [Pashov](https://twitter.com/pashovkrum)
+- [Pashov](https://twitter.com/pashovkrum) and [Pashov’s audits](https://github.com/pashov/audits/tree/master/solo)   
 - [Andy Li's road map](https://youtu.be/-469Gcye-ZE)
 - [0kage.eth road map](https://twitter.com/0kage_eth/status/1640795980101742592?s=46&t=ezf5V_RX8d4d4zdIpUUrWQ)   
 - [Jackson Kelley](https://www.youtube.com/watch?v=xD0IZh9c8LM)            
@@ -226,6 +227,11 @@ Most auditor discussions are on Twitter.
 - [5 Solidity Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
   
 [Simple-security-toolkit](https://github.com/nascentxyz/simple-security-toolkit)   
+
+1. Find a project, search for bugs
+2. Find a bug, search for projects
+3. Be fast with new updates
+4. Know tools
 
 Typical Risk classification:
 |Severity level | Impact: High | Impact: Medium | Impact: Low |
@@ -277,7 +283,7 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 ### Bug Bounty
  - [Code4rena](https://code4rena.com/) - [submission-policy](https://docs.code4rena.com/roles/wardens/submission-policy)   
  - [Immunefi](https://immunefi.com/)
- - [Sherlock](https://www.sherlock.xyz/)   
+ - [Sherlock](https://www.sherlock.xyz/) - [judging](https://docs.sherlock.xyz/audits/judging/guide-to-judging-contests) and [payout criteria](https://docs.sherlock.xyz/audits/watsons/meeting-the-payout-criteria)    
  - [Code Hawks](https://www.codehawks.com/)
  - [Hats Finance](https://hats.finance/)   
 
@@ -290,7 +296,6 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 
 [DeFi vs TradeFi](https://coinstove.com/learn/defi-vs-tradfi/)   
 [Teach Yourself Crypto](https://teachyourselfcrypto.com/#ftoc-module-4-decentralized-finance-defi) good links; also [Khan Acad.](https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-1)   
-
 
 |Exchanges | Video| Documentaion | Supported Assets | LP Token |Details | 
 | ------------- | ------------- | ------------- | ------------- | ------------- |------------- |
@@ -321,14 +326,17 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)     
 `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)  
 `LP` - liquidty providers   
-`order book model` - an electronic list of buy and sell orders for a specific security or financial instrument organized by price level; lists the number of shares being bid on or offered at each price point, or market depth 
+`order book model` - an electronic list of buy and sell orders for a specific security or financial instrument organized by price level; lists the number of shares being bid on or offered at each price point, or market depth    
+`relayer` - a participant or node that facilitates off-chain matching of orders and assists with on-chain settlement, play a crucial role in decentralized exchange (DEX) protocols and Layer 2 scaling solutions; off-chain order books where they collect and match buy and sell orders from users. By keeping the order book off-chain, relayers can reduce the amount of data that needs to be stored on the blockchain, thereby lowering costs and increasing efficiency; submitting the matched orders to a smart contract that completes the trade on the blockchain itself; `enhance liquidity` and maybe some `compliance` with regulatory requirements.   
  
 [Constant product automated makes maker](https://www.youtube.com/watch?v=QNPyFs8Wybk) (CPMMs) are based on the function `x*y=k` which establishes a range of prices for two tokens according to the available quantities (liquidity) of each token. When the supply of token X increases, the token supply of Y must decrease, and vice-versa, to maintain the constant product K.
 
+[Slippage Attacks](https://dacian.me/defi-slippage-attacks)   
 Collateral swaps  
 Concentrated liquidity   
 [Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)    
-[Block stuffing](https://www.youtube.com/watch?v=3aPYkx7G7e0) (video)   
+[Block stuffing](https://www.youtube.com/watch?v=3aPYkx7G7e0) (video)    
+Aave [decoupling logic from state](https://twitter.com/RareSkills_io/status/1687116196343406594)   
 
 ----- 
 
@@ -390,6 +398,7 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
       - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d) and [video](https://www.youtube.com/watch?v=YNZ-3l4S4M0)   
   - [Foundry](https://book.getfoundry.sh/)
       - [Cheat Codes](https://book.getfoundry.sh/cheatcodes/)
+  - [Rattle](https://github.com/crytic/rattle) - binary static analysis   
   - [Inline bookmarks](https://marketplace.visualstudio.com/items?itemName=tintinweb.vscode-inline-bookmarks) // @audit this code seems vulnerable here     
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
@@ -459,7 +468,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
  `Aave` - decentralised non-custodial liquidity market protocol where users can participate as suppliers or borrowers. Suppliers provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralised (perpetually) or undercollateralised (one-block liquidity) fashion; Stani Kulechov [interview](https://www.youtube.com/watch?v=PA9QrrH-ze0) by Haseeb Qureshi -- [Aave website](https://app.aave.com/)    
 
-`ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON; Abi.encodePacked - breaks down, via [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html); [Abi.decode](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=81282); Great Patrick Collins section [22:16:31](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=80191) and [ABI encoding](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=30003) and [difference between encoding](https://forum.openzeppelin.com/t/difference-between-abi-encodepacked-string-and-bytes-string/11837)    
+`ABI` - application binary interface specifies set of functions that can be accessed outside of smart contract; similar to a JSON; Abi.encodePacked - breaks down, via [cheatsheet](https://docs.soliditylang.org/en/latest/cheatsheet.html); [Abi.decode](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=81282); Great Patrick Collins section [22:16:31](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=80191) and [ABI encoding](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=30003) and [difference between encoding](https://forum.openzeppelin.com/t/difference-between-abi-encodepacked-string-and-bytes-string/11837)   
+ - [Xdeadbeefx blog: The Double-Edged Sword of abi.decode](https://medium.com/@0xdeadbeef0x/the-double-edged-sword-of-abi-decode-f81529e62bcc)  
 
 `address` - (Ethereum; other blockchains will be different) 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front `0x0cE446255506E92DF41614C46F1d6df9Cc969183`      
 
@@ -503,7 +513,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `creation code` - only executed by the EVM once during the transaction that creates the contract.  gets executed in a transaction, which returns a copy of the runtime code, which is the actual code of the contract. The contract’s constructor is part of the creation code; it will not be present in the contract’s code once it is deployed.   
 
-`custom errors` - declared at top, more `gas efficient`    
+[custom errors](https://soliditylang.org/blog/2021/04/21/custom-errors/) - declared at top, more `gas efficient`    
 
 `DAI` - stablecoin on the Ethereum blockchain whose value is pegged to $US   
 
@@ -660,7 +670,9 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `pure` - static, does not effect or modify state, more computational [free function]   
 
-`Quality Assurance` (QA) - ensure the functionality, security, and efficiency of the smart contract code.   
+`Quality Assurance` (QA) - ensure the functionality, security, and efficiency of the smart contract code.  
+
+[relayer](https://docs.openzeppelin.com/learn/sending-gasless-transactions) - `meta-transactions`, a third-party (called a relayer) can send another user’s transactions and pay themselves for the gas cost. In this scheme, users sign messages (not transactions) containing information about a transaction they would like to execute. Relayers are then responsible for signing valid Ethereum transactions with this information and sending them to the network, paying for the gas cost. A base contract preserves the identity of the user that originally requested the transaction. In this way, users can interact directly with smart contracts without needing to have a wallet or own Ether.   
 
 `revert` - gives back gas but loses some in process; 1. [revert reason strings](https://docs.goquorum.consensys.net/configure-and-manage/manage/revert-reason)   
 
