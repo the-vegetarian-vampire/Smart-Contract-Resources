@@ -22,10 +22,12 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
    -  Harhat Course - [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)   
    -  🔖 Foundry Course - [Youtube](https://github.com/Cyfrin/foundry-full-course-f23) and [Github](https://github.com/Cyfrin/foundry-full-course-f23)   
   
-`2. Smart Contract Programmer:` [Youtube](https://www.youtube.com/@smartcontractprogrammer) (one of the creators of Solidity by example)   
+`2. Smart Contract Programmer:` 
+   - [Youtube](https://www.youtube.com/@smartcontractprogrammer) (one of the creators of Solidity by example)   
    - [Foundry playlist](https://www.youtube.com/playlist?list=PLO5VPQH6OWdUrKEWPF07CSuVm3T99DQki)   
   
-`3. HashLips NFT:` [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
+`3. HashLips NFT:` 
+   - [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
 🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)    
 🔖 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/) (great links to DeFi)   
@@ -33,12 +35,12 @@ A general guide to learning Solidity, Defi, and blockchain technologies.
 -----
 
 ## General Blockchain Knowledge
-Blockchain [Developer Roadmap](https://roadmap.sh/blockchain) - [more detailed](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (tons on Twitter)   
+[Blockchain Developer Roadmap](https://roadmap.sh/blockchain) - [more detailed](https://github.com/OffcierCia/DeFi-Developer-Road-Map) (tons on Twitter)   
 [Blockchain 101](https://www.youtube.com/watch?v=_160oMzblY8) (video)    
 [How Bitcoin Works](https://youtu.be/Lx9zgZCMqXE) (video)   
 [Whiteboard Crypto](https://www.youtube.com/@WhiteboardCrypto)   
 [Finematics](https://www.youtube.com/@Finematics)   
-Why [Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s) and [256 Bit Computing](https://en.wikipedia.org/wiki/256-bit_computing)   
+[Why Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s) and [256 Bit Computing](https://en.wikipedia.org/wiki/256-bit_computing)   
 
 -----    
 ### Youtube Resources
@@ -96,7 +98,7 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
   
 ----- 
 
-## Opcodes | Gas Optimization | Storage
+## Opcodes | Gas Optimization | Storage and Memory
 🔖 [Layout in memory](https://docs.soliditylang.org/en/latest/internals/layout_in_memory.html)   
 🔖 [Solidity Optimizer](https://docs.soliditylang.org/en/latest/internals/optimizer.html)   
 🔖 [Opcodes Updated](https://ethereum.org/en/developers/docs/evm/opcodes/) vs. - [Old Git](https://github.com/crytic/evm-opcodes) and [video](https://youtu.be/M8_4THWJkHQ?t=265)      
@@ -110,7 +112,7 @@ Patrick Collins [walkthrough](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3
 [Storage vs Memory](https://soliditytips.com/articles/solidity-data-location-storage-memory/)   
 Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)     
 [Ethernaut Lvl 19 MagicNumber](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)   
-[Gas-optimization course](https://www.udemy.com/course/advanced-solidity-understanding-and-optimizing-gas-costs/?referralCode=C4684D6872713525E349) by Jeffrey Scholz [Medium](https://medium.com/@jeffrey-scholz)   
+[Gas-optimization course](https://www.udemy.com/course/advanced-solidity-understanding-and-optimizing-gas-costs/?referralCode=C4684D6872713525E349) by Jeffrey Scholz [Medium](https://medium.com/@jeffrey-scholz) and [RareSkills Git](https://github.com/RareSkills)   
 [Harrison on Twitter](https://twitter.com/PopPunkOnChain)   
 
 [Play with opcodes](https://www.evm.codes/playground)      
@@ -124,7 +126,9 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 
 `address` - 20 byte value (still takes up entire 256-bit storage slot, remaining bits in storage slot are left unused)   
 `Boolean` - 1 byte value   
-`0x40` - the free memory pointer; a "pointer" is an address within memory and the free memory pointer is the address pointing to the start of unallocated, free memory. 
+`0x40` - the free memory pointer; a "pointer" is an address within memory and the free memory pointer is the address pointing to the start of unallocated, free memory.    
+`0x80` - action begins   
+`scratch space slots` - [0x00-0x-20), [0x20-0x40)   
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
 - check != 0 rather than >    
@@ -147,9 +151,11 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
 
 Set optimizer as high as possible until improvement stops; [Uniswap optimizer](https://etherscan.io/address/0xe592427a0aece92de3edee1f18e0157c05861564#code)   
  
-`offset` - determines where within the 256-bit slot a particular piece of data begins; eg. if you have two uint128 variables (128 bits in size), the first will start at an offset of 0 and the second will start at an offset of 128.   
-`bit switching`    
-`short circuiting` — order matters, cheaper operation first   
+`offset` - determines where within the 256-bit slot a particular piece of data begins; eg. if you have two uint128 variables (128 bits in size), the first will start at an offset of 0 and the second will start at an offset of 128.    
+
+[bit masking](https://stackoverflow.com/questions/10493411/what-is-bit-masking) - defines which bits you want to keep, and which bits you want to clear   
+
+`short circuiting` — order matters, cheaper operation first for performance     
 
 - [Gas puzzles](https://github.com/RareSkills/gas-puzzles)   
 - [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit) and [Huff basics](https://www.youtube.com/watch?v=UWY27vL1cw4)   
@@ -249,13 +255,10 @@ Typical Risk classification:
 `Gas efficiencies` - findings to improve efficiency    
 `Quality Assurance (QA)` - ensure the functionality, security, and efficiency of the smart contract code.   
 
-`Alpha` - in finance it refers to excess return of an investment relative to the return of a benchmark index   
-
 ----- 
 
 ### Testing 
-Testing Introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
-   - `Foundry`
+Foundry Testing introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
    - [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)
    - Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)
    - Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)
@@ -398,6 +401,9 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
       - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d) and [video](https://www.youtube.com/watch?v=YNZ-3l4S4M0)   
   - [Foundry](https://book.getfoundry.sh/)
       - [Cheat Codes](https://book.getfoundry.sh/cheatcodes/)
+  - [Mythril](https://github.com/ConsenSys/mythril)
+       - uses symbolic execution, SMT solving and taint analysis to detect a variety of security vulnerabilities
+       - [MythX](https://github.com/muellerberndt/awesome-mythx-smart-contract-security-tools)   
   - [Rattle](https://github.com/crytic/rattle) - binary static analysis   
   - [Inline bookmarks](https://marketplace.visualstudio.com/items?itemName=tintinweb.vscode-inline-bookmarks) // @audit this code seems vulnerable here     
   - [Ethers](https://docs.ethers.org/v5/single-page/)   
@@ -450,14 +456,15 @@ Ethereum Request for Comment (ERC)
 
 * [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) - for fungible assets. 
 * [ERC-721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) - for non-fungible assets.
-* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - Multi Token Standard to to create a fungibility-agnostic and gas-efficient token contract (gaming, batch minting) [video](https://www.youtube.com/watch?v=Ai7A-_umm08)   
+* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - Multi Token Standard to to create fungibility-agnostic and gas-efficient token contract (gaming, batch minting) [video](https://www.youtube.com/watch?v=Ai7A-_umm08)   
 * [ERC-4626](https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/) - to optimize and unify the technical parameters of yield-bearing vaults
 * [ERC-3156](https://eips.ethereum.org/EIPS/eip-3156) - flash Loans  
 * ERC-918 - Mineable Token Standard.
 * ERC-165 - standard method to publish and detect what interfaces a smart contract implements.
 * ERC-725 - interface for a simple proxy account.
 * ERC-173 - interface for ownership of contracts.  
-* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - to retrieve royalty payment information across all NFT marketplaces and ecosystem participants   
+* [ERC-2981](https://eips.ethereum.org/EIPS/eip-2981) - to retrieve royalty payment information across all NFT marketplaces and ecosystem participants
+* [ERC-1167](https://eips.ethereum.org/EIPS/eip-1167) - Minimal Proxy Contract to simply and cheaply clone contract functionality in an immutable way   
 
 NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari Juels of whom with Sergey Nazarov co-authored a white paper introducing the [Chainlink](https://en.wikipedia.org/wiki/Chainlink_(blockchain)) protocol.   
 
@@ -473,7 +480,9 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `address` - (Ethereum; other blockchains will be different) 42-character hexadecimal address derived from the last 20 bytes of the public key controlling the account with 0x appended in front `0x0cE446255506E92DF41614C46F1d6df9Cc969183`      
 
-[airdrop](https://www.coindesk.com/learn/what-is-a-crypto-airdrop/) - involve blockchain-based projects and developers sending out free tokens to members of their communities as part of a broader marketing initiative.   
+[airdrop](https://www.coindesk.com/learn/what-is-a-crypto-airdrop/) - involve blockchain-based projects and developers sending out free tokens to members of their communities as part of a broader marketing initiative.    
+
+`Alpha` - in finance it refers to excess return of an investment relative to the return of a benchmark index   
 
 [AMM](https://www.youtube.com/watch?v=1PbZMudPP5E) - Automated Market Maker; underlying protocol that powers all decentralized exchanges (DEXs), DEXs help users exchange cryptocurrencies by connecting users directly, without an intermediary; autonomous trading mechanisms that eliminate the need for centralized exchanges; drawback: susceptible to front running because of publicity in mempool    
 
@@ -666,6 +675,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
    - the user makes calls to proxy
    - the admin decides which contract to upgrade etc
    - small proxies, usually referred to as `clones` can be used to deploy code only once and re-use it over and over again.
+   - 
  
 
 `pure` - static, does not effect or modify state, more computational [free function]   
@@ -729,11 +739,13 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `UTXO` -  an unspent transaction output (UTXO) represents some amount of digital currency which has been authorized by one account to be spent by another. UTXOs use public key cryptography to identify and transfer ownership between holders of public/private key pairs  
     
 [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) - unique sequence of characters that identifies a logical or physical resource used by web technologies.   
-   - https://ethereum.stackexchange.com/questions/147899/why-is-it-called-tokenuri-instead-of-tokenurl   
+   - https://ethereum.stackexchange.com/questions/147899/why-is-it-called-tokenuri-instead-of-tokenurl
+
+`whitelisting` - allows only pre-approved entities to interact with a particular service, contract, or system within the blockchain environment; only authorized participants can access specific functionalities    
 
 `witness` - [cryptography](https://crypto.stackexchange.com/questions/43462/what-is-a-witness-in-zero-knowledge-proof) solution to puzzle; unspent transaction output, any solution to unlock UTXO; see also [Segregated Witness](https://www.investopedia.com/terms/s/segwit-segregated-witness.asp)   
 
-`Yul` - [yul](https://docs.soliditylang.org/en/latest/yul.html) an intermediate language between Solidity and EVM bytecode.   
+[Yul](https://docs.soliditylang.org/en/latest/yul.html) - an intermediate language between Solidity and EVM bytecode.   
 
 `Zcash` - cryptocurrency using zk-SNARKs to provide enhanced privacy; either in a transparent pool or a shielded pool       
 
