@@ -233,6 +233,7 @@ Most auditor discussions are on Twitter.
 - [5 Solidity Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
   
 [Simple-security-toolkit](https://github.com/nascentxyz/simple-security-toolkit)   
+[Auditing heuristics](https://github.com/OpenCoreCH/smart-contract-auditing-heuristics)   
 
 1. Find a project, search for bugs
 2. Find a bug, search for projects
@@ -328,7 +329,8 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 
 `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)     
 `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)  
-`LP` - liquidty providers   
+`LP` - liquidty providers  
+`PnL` - profit and loss   
 `order book model` - an electronic list of buy and sell orders for a specific security or financial instrument organized by price level; lists the number of shares being bid on or offered at each price point, or market depth    
 `relayer` - a participant or node that facilitates off-chain matching of orders and assists with on-chain settlement, play a crucial role in decentralized exchange (DEX) protocols and Layer 2 scaling solutions; off-chain order books where they collect and match buy and sell orders from users. By keeping the order book off-chain, relayers can reduce the amount of data that needs to be stored on the blockchain, thereby lowering costs and increasing efficiency; submitting the matched orders to a smart contract that completes the trade on the blockchain itself; `enhance liquidity` and maybe some `compliance` with regulatory requirements.   
  
@@ -338,7 +340,7 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 Collateral swaps  
 Concentrated liquidity   
 [Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)    
-[Block stuffing](https://www.youtube.com/watch?v=3aPYkx7G7e0) (video)    
+[Block stuffing](https://www.youtube.com/watch?v=3aPYkx7G7e0) (video) and [finding](https://github.com/code-423n4/2023-05-venus-findings/issues/525)   
 Aave [decoupling logic from state](https://twitter.com/RareSkills_io/status/1687116196343406594)   
 
 ----- 
@@ -376,6 +378,10 @@ Debase — removing tokens
 [Spot Price Manipulation](https://consensys.github.io/smart-contract-best-practices/attacks/oracle-manipulation/) - A smart contract needs to determine the price of an asset, e.g., when a user deposits ETH into its system. To achieve this price discovery, the protocol consults its respective Uniswap pool as a source. Exploiting this behavior, an attacker can take out a flash loan to drain one side of the Uniswap pool. Due to the lack of data source diversity, the protocol's internal price is directly manipulated, e.g., to 100 times the original value. The attacker can now perform an action to capture this additional value. For example, an arbitrage trade on top of the newly created price difference or an advantageous position in the system can be gained.   
 
 ----- 
+DeFi Wallets to track 
+[Address](https://etherscan.io/address/0xbe23cbb62064b8b1550ae5ada59c39d45b1e2081)
+
+----- 
 
 ### Central Banking Reading
 Susanne Trimbath - [Naked, Short and Greedy: Wall Street's Failure to Deliver](https://www.amazon.com/Naked-Short-Greedy-Streets-Failure/dp/1910151343)   
@@ -391,25 +397,28 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
    
 ## 🔖 Tools 
   - [Alchemy](https://www.alchemy.com/)
-  - [Etherscan](https://etherscan.io/)
   - [Echidna](https://github.com/crytic/echidna)
        - [Article](https://bushido-sec.com/index.php/2023/07/27/fuzzing-smart-contracts/)   
-  - [Slither](https://github.com/crytic/slither)
-      - [Slither wiki](https://github.com/crytic/slither/wiki/Usage) // [Foundry Slither](https://book.getfoundry.sh/config/static-analyzers#slither) // [Issues](https://github.com/crytic/slither/issues/1121)   
-      - [Blog overview](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/)
-      - [Printers](https://github.com/crytic/slither#printers) and human summary [slither file.sol --print human-summary](https://github.com/crytic/slither/wiki/Printer-documentation#human-summary)   
-      - [JohnnyTime article](https://medium.com/@JohnnyTime/detecting-smart-contract-vulnerabilities-automatically-with-slither-c62cff0dfa8d) and [video](https://www.youtube.com/watch?v=YNZ-3l4S4M0)   
+  - [Ethers](https://docs.ethers.org/v5/single-page/)   
+  - [Etherscan](https://etherscan.io/)
   - [Foundry](https://book.getfoundry.sh/)
       - [Cheat Codes](https://book.getfoundry.sh/cheatcodes/)
-  - [Mythril](https://github.com/ConsenSys/mythril)
-       - uses symbolic execution, SMT solving and taint analysis to detect a variety of security vulnerabilities
-       - [MythX](https://github.com/muellerberndt/awesome-mythx-smart-contract-security-tools)   
-  - [Rattle](https://github.com/crytic/rattle) - binary static analysis   
-  - [Inline bookmarks](https://marketplace.visualstudio.com/items?itemName=tintinweb.vscode-inline-bookmarks) // @audit this code seems vulnerable here     
-  - [Ethers](https://docs.ethers.org/v5/single-page/)   
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
       - [Forking mainnet](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)
       - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
+  - [Inline bookmarks](https://marketplace.visualstudio.com/items?itemName=tintinweb.vscode-inline-bookmarks) // @audit this code seems vulnerable here     
+  - [Mythril](https://github.com/ConsenSys/mythril)
+       - uses symbolic execution, SMT solving and taint analysis to detect a variety of security vulnerabilities
+       - [MythX](https://github.com/muellerberndt/awesome-mythx-smart-contract-security-tools)   
+  - [Slither](https://github.com/crytic/slither)
+      - [Slither wiki](https://github.com/crytic/slither/wiki/Usage) // [Foundry Slither](https://book.getfoundry.sh/config/static-analyzers#slither) // [Issues](https://github.com/crytic/slither/issues/1121) [Blog overview](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/) // [Immunefi video](https://www.youtube.com/watch?v=gRJvvXOF_3c)   
+      - `slither path/contract.sol --solc-remaps "@=node_module@"` -  to fix
+      - [Printers](https://github.com/crytic/slither#printers)
+      -  `--print human-summary` `--triage-mode` `--print function-id` `slither . --print cfg` (control flow graph) 
+      -  `--print constructor-calls` `--print modifiers` `--print variable-order` (slots and offset)
+      -  `slither-check-erc path ContractName --solc-remaps @=node_modules/@`
+      -  `slither-find-paths file.sol [contract.function targets]` and [slither-read-storage](https://github.com/crytic/slither/blob/master/slither/tools/read_storage/README.md)   
+  - [Rattle](https://github.com/crytic/rattle) - binary static analysis   
   - [Wagmi](https://wagmi.sh/)   
   - [Web3.js](https://web3js.org/#/)
     
@@ -456,7 +465,7 @@ Ethereum Request for Comment (ERC)
 
 * [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) - for fungible assets. 
 * [ERC-721](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721) - for non-fungible assets.
-* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - Multi Token Standard to to create fungibility-agnostic and gas-efficient token contract (gaming, batch minting) [video](https://www.youtube.com/watch?v=Ai7A-_umm08)   
+* [ERC-1155](https://ethereum.org/en/developers/docs/standards/tokens/erc-1155/) - Multi Token Standard to to create fungibility-agnostic and gas-efficient token contract (gaming, batch minting, batch balance; batch transfer, batch approve) [video](https://www.youtube.com/watch?v=Ai7A-_umm08)   
 * [ERC-4626](https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/) - to optimize and unify the technical parameters of yield-bearing vaults
 * [ERC-3156](https://eips.ethereum.org/EIPS/eip-3156) - flash Loans  
 * ERC-918 - Mineable Token Standard.
