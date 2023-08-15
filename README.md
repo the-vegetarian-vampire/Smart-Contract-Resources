@@ -1,20 +1,20 @@
 # Solidity | DeFi | and Blockchain Resources
 
 A general guide to learning Solidity, Defi, and blockchain technologies.    
-🔖 = bookmark
+🔖 = bookmark   
 
-🔖 [Remix](https://remix.ethereum.org) - tool for testing smart contracts   
+🔖 [Remix](https://remix.ethereum.org) - for testing and deploying smart contracts   
 [Ethereum unit converter](https://eth-converter.com/)   
 
-🔖 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html) and [Cheatsheet](https://docs.soliditylang.org/en/v0.8.13/cheatsheet.html?highlight=encodewithsignature)   
+🔖 Solidity [Documentation](https://docs.soliditylang.org/en/latest/index.html) and [Cheatsheet](https://docs.soliditylang.org/en/v0.8.13/cheatsheet.html?highlight=encodewithsignature)      
 🔖 Solidity [Best practices](https://consensys.github.io/smart-contract-best-practices/)    
 🔖 Solidity [By example](https://solidity-by-example.org/)   
 
 [Ethereum Documentation](https://ethereum.org/en/developers/docs/)    
 [ERC20 Docs](https://docs.openzeppelin.com/contracts/4.x/) via [OpenZeppelin](https://docs.openzeppelin.com/contracts/4.x/) library   
 
-🔖 [Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)   
-🔖 [Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)   
+🔖 [Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)      
+🔖 [Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)    
 
 ## Tutorial Resources
 
@@ -172,6 +172,8 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 [Attacks via Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)   
 
 - [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks) - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”
+     - `cross-function` 
+     - `cross-contract:` swaps; creator of swap enters into manager contract getting both end of swaps      
 - [Front Running](https://www.youtube.com/watch?v=uElOqz-Htos): `batch overfow` - `gas price pumping` - `prioritized mining`   
    - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between
    - [Etherscan Pending Transactions](https://etherscan.io/txsPending)   
@@ -180,7 +182,7 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 - Denial of service (DoS; DDoS attack)   
 - Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)    
 - [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions   
-- Vulnerabilities [walkthrough](https://youtu.be/JMf5P2DXfkM)    
+- [Quick vulnerabilities walkthrough](https://youtu.be/JMf5P2DXfkM)    
 - [Ethernaut Denial](https://www.youtube.com/watch?v=JJX2oWlKjC4&t=1131s) `while true` fallback gas attack
 
   [DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs) - to produce DeFi hack incidents using Foundry.   
@@ -196,12 +198,12 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 ### Audits
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
 [Audit Techniques & Tools 101](https://secureum.substack.com/p/audit-techniques-and-tools-101?utm_campaign=post&utm_medium=web) by Secureum   
-[What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1) 
-[Smart contract weakness](https://swcregistry.io/)    
+[What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1)     
 [Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)   
-🔖 [Weird ERC20](https://github.com/d-xo/weird-erc20#revert-on-zero-value-transfers)  
 
-🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist     
+🔖 [Chainlink Oracle Security Considerations](https://medium.com/cyfrin/chainlink-oracle-defi-attacks-93b6cb6541bf#87fc)   
+🔖 [Weird ERC20](https://github.com/d-xo/weird-erc20#revert-on-zero-value-transfers)  
+🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist        
 
 Reports 
    - 🔖 [Solodit](https://solodit.xyz/)
@@ -259,11 +261,15 @@ Typical Risk classification:
 ----- 
 
 ### Testing 
+
+Fuzzing: to identify fuzzable functions to successfully fuzz a target, one must comprehend how it functions, establish at least a basic threat model, and decide how to test its security.   
 Foundry Testing introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
    - [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)
    - Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)
    - Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)
-   - Foundry testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run   
+   - Foundry testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run
+
+[Exploiting Precision Loss via Fuzz Testing](https://dacian.me/exploiting-precision-loss-via-fuzz-testing)    
 
 [Formal Verifcation](https://www.youtube.com/watch?v=izpoxfTSaFs&t=691s) - proving or disproving the validity of a system using a mathematical model
 - symbolic execution - explore different execution paths
@@ -280,7 +286,8 @@ Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkV
 
 `mutation testing` is a type of software testing where small changes (mutations) are deliberately introduced into the source code at a single point in time. The purpose is to validate the quality of the existing test cases, ensuring that they are robust enough to detect the changes. Changes that result in test failures indicate adequate test coverage, while changes that do not result in test failures indicate gaps in test coverage. Although mutation testing is a slow process, it allows auditors to focus their review on areas of the codebase that are most likely to contain latent bugs, and it allows developers to identify and add missing tests. See [Necessist](https://github.com/trailofbits/necessist#overview)    
 
-[Trail of Bits Automated Testing](https://appsec.guide/) 
+[Trail of Bits Automated Testing](https://appsec.guide/)    
+Echidna uses more advanced techniques like generating random transactions with random inputs and also keeps track of those transactions to achieve high coverage. On the other hand, Foundry focuses on generating random inputs for your test functions and has support for excluding certain values.   
 
 -----   
 
@@ -378,8 +385,8 @@ Debase — removing tokens
 [Spot Price Manipulation](https://consensys.github.io/smart-contract-best-practices/attacks/oracle-manipulation/) - A smart contract needs to determine the price of an asset, e.g., when a user deposits ETH into its system. To achieve this price discovery, the protocol consults its respective Uniswap pool as a source. Exploiting this behavior, an attacker can take out a flash loan to drain one side of the Uniswap pool. Due to the lack of data source diversity, the protocol's internal price is directly manipulated, e.g., to 100 times the original value. The attacker can now perform an action to capture this additional value. For example, an arbitrage trade on top of the newly created price difference or an advantageous position in the system can be gained.   
 
 ----- 
-DeFi Wallets to track 
-[Address](https://etherscan.io/address/0xbe23cbb62064b8b1550ae5ada59c39d45b1e2081)
+DeFi Wallets to track (to add more)       
+- [Address 1](https://etherscan.io/address/0xbe23cbb62064b8b1550ae5ada59c39d45b1e2081)
 
 ----- 
 
@@ -406,12 +413,13 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
   - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview)
       - [Forking mainnet](https://hardhat.org/hardhat-network/docs/guides/forking-other-networks)
       - Import “hardhat/console.sol”; allows for console.log in Solidity contracts
-  - [Inline bookmarks](https://marketplace.visualstudio.com/items?itemName=tintinweb.vscode-inline-bookmarks) // @audit this code seems vulnerable here     
+  - [Inline bookmarks](https://marketplace.visualstudio.com/items?itemName=tintinweb.vscode-inline-bookmarks) // @audit this code seems vulnerable here
+  - [Medusa](https://github.com/crytic/medusa) - still in Beta      
   - [Mythril](https://github.com/ConsenSys/mythril)
        - uses symbolic execution, SMT solving and taint analysis to detect a variety of security vulnerabilities
        - [MythX](https://github.com/muellerberndt/awesome-mythx-smart-contract-security-tools)   
   - [Slither](https://github.com/crytic/slither)
-      - [Slither wiki](https://github.com/crytic/slither/wiki/Usage) // [Foundry Slither](https://book.getfoundry.sh/config/static-analyzers#slither) // [Issues](https://github.com/crytic/slither/issues/1121) [Blog overview](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/) // [Immunefi video](https://www.youtube.com/watch?v=gRJvvXOF_3c)   
+      - [Slither wiki](https://github.com/crytic/slither/wiki/Usage) // [Foundry Slither](https://book.getfoundry.sh/config/static-analyzers#slither) // [Issues](https://github.com/crytic/slither/issues/1121) // [Blog overview](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/) // [Immunefi video](https://www.youtube.com/watch?v=gRJvvXOF_3c)   
       - `slither path/contract.sol --solc-remaps "@=node_module@"` -  to fix
       - [Printers](https://github.com/crytic/slither#printers)
       -  `--print human-summary` `--triage-mode` `--print function-id` `slither . --print cfg` (control flow graph) 
@@ -596,11 +604,15 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
  `genesis block`- the first block mined on a [blockchain](https://www.investopedia.com/terms/g/genesis-block.asp)     
 
- [Graph, The](https://www.youtube.com/watch?v=7gC7xJ_98r8) - Google for the blockchain; querying and indexing the blockchain   
+ [Graph, The](https://www.youtube.com/watch?v=7gC7xJ_98r8) - Google for the blockchain; querying and indexing the blockchain    
+
+ `griefing` - malicious/trollish behavior where an actor intentionally disrupts or harms the user experience without benefit to themselves   
 
 `hashcash` - a proof-of-work system invented by Adam Back in 1997 as a way to prevent email spam [precursor to Bitcoin](https://nakamoto.com/hashcash/)   
 
 `Hashed Timelock Contract` or (HTLC) reduces counterparty risk by creating a time-based escrow that requires a cryptographic passphrase for unlocking via [investopedia](https://www.investopedia.com/terms/h/hashed-timelock-contract.asp)    
+
+[heartbeat, oracle](https://docs.chain.link/data-feeds/price-feeds/addresses/?network=ethereum) click show more details - refers to an oracle providing regular updates at fixed intervals   
 
 `Howey Test` - refers to the U.S. Supreme Court [case](https://www.investopedia.com/terms/h/howey-test.asp) for determining whether a transaction qualifies as an "investment contract," and therefore would be considered a security; (per Infinite Machine Chp. White-Shoe Lawyers) Ether presale was classified as a utility, a function of ethereum and therefore not a security; manner distribution of a product and not as a speculative investment; essentially a utility token   
 
@@ -702,6 +714,11 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `safeMath` - before 0.8.0. there were overflow and underflow issues; prior to that version, solidity's "+" operator wouldn't check for overflows, leading to type(uint256).max + 1 = 0, and the safeMath library would avoid it. Now, type(uint256).max + 1 reverts with Panic(0x11), and safeMath isnt needed.   
 
 `self destruct` - leaves a blank account; costs negative gas, does not remove transaction history: only can be self destructed if contract has self destruct programmed in  
+
+[sequencer](https://blog.bingx.com/blockchain-en/what-are-sequencers-in-ethereum-network#:~:text=A%20sequencer%20refers%20to%20a,and%20integrity%20of%20the%20blockchain) - responsible for sorting transactions and it records the (batch) transactions on its local blockchain platform; Layer 2: Arbitrum, Optimism
+	 - `Schnorr` - introduces a commitment scheme for transaction ordering that enables transaction-level commitments instead of batching transactions together. 
+	 - `Espresso Sequencer` - a decentralized sequencing network for rollups. Its primary objective is to deliver secure, high throughput, and low latency transaction ordering and availability. 
+ 	-  Auditors should look out for missing L2 sequencer activity checks when they see price code callinglatestRoundData() in projects that are to be deployed on L2s.  
 
 [slippage](https://www.youtube.com/watch?v=BgR75biSjzU) - the difference between the value of an asset at order placement and the value at order fulfilment. It can be found when buying or selling assets, and can result in either a loss or a gain (higher invariants lead to less slippage; Uniswap)      
 
