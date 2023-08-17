@@ -73,9 +73,9 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 
 -----  
 ### Podcasts 
-[Bankless Podcast](http://podcast.banklesshq.com/)   
-[Unchained podcast](https://unchainedcrypto.com/podcasts/)   
-[Scraping Bits Podcast](https://rss.com/podcasts/scrapingbits/)   
+[Bankless](http://podcast.banklesshq.com/)   
+[Unchained](https://unchainedcrypto.com/podcasts/)   
+[Scraping Bits](https://rss.com/podcasts/scrapingbits/)   
 
 -----   
 ### Interactive (CTF, Capture the Flags)
@@ -182,11 +182,10 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 - Denial of service (DoS; DDoS attack)   
 - Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)    
 - [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions   
-- [Quick vulnerabilities walkthrough](https://youtu.be/JMf5P2DXfkM)    
-- [Ethernaut Denial](https://www.youtube.com/watch?v=JJX2oWlKjC4&t=1131s) `while true` fallback gas attack
-
-  [DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs) - to produce DeFi hack incidents using Foundry.   
-  [DeFiVulnLabs](https://github.com/SunWeb3Sec/DeFiVulnLabs) -learn common smart contract vulnerabilities using Foundry.
+  
+[Quick vulnerabilities walkthrough](https://youtu.be/JMf5P2DXfkM)    
+[DeFiHackLabs](https://github.com/SunWeb3Sec/DeFiHackLabs) - to produce DeFi hack incidents using Foundry.   
+[DeFiVulnLabs](https://github.com/SunWeb3Sec/DeFiVulnLabs) -learn common smart contract vulnerabilities using Foundry.   
 
 ### Known Exploiter addresses: 
    - Conic Finance Exploiter [address](https://etherscan.io/address/0x8d67db0b205e32a5dd96145f022fa18aae7dc8aa)
@@ -292,21 +291,27 @@ Echidna uses more advanced techniques like generating random transactions with r
 -----   
 
 ### Bug Bounty
- - [Code4rena](https://code4rena.com/) - [submission-policy](https://docs.code4rena.com/roles/wardens/submission-policy)   
- - [Immunefi](https://immunefi.com/)
- - [Sherlock](https://www.sherlock.xyz/) - [judging](https://docs.sherlock.xyz/audits/judging/guide-to-judging-contests) and [payout criteria](https://docs.sherlock.xyz/audits/watsons/meeting-the-payout-criteria)    
+ - [Code4rena](https://code4rena.com/) - [submission policy](https://docs.code4rena.com/roles/wardens/submission-policy)   
  - [Code Hawks](https://www.codehawks.com/)
  - [Hats Finance](https://hats.finance/)   
+ - [Immunefi](https://immunefi.com/)
+ - [Sherlock](https://www.sherlock.xyz/) - [judging](https://docs.sherlock.xyz/audits/judging/guide-to-judging-contests) and [payout criteria](https://docs.sherlock.xyz/audits/watsons/meeting-the-payout-criteria)    
 
 -----   
 
 ## Defi
 🔖 [Layer2 Beat](https://l2beat.com/scaling/tvl)   
-🔖 [Defi Llama](https://defillama.com/)      
-   [Eigenphi](https://eigenphi.io/) - tracking data
+🔖 [Defi Llama](https://defillama.com/)    
 
+[Eigenphi](https://eigenphi.io/) - tracking data   
 [DeFi vs TradeFi](https://coinstove.com/learn/defi-vs-tradfi/)   
+Three-part article on Medium:
+- [DeFi Lending Concepts Part 1: Lending and Borrowing](https://blog.smlxl.io/defi-lending-concepts-part-1-lending-and-borrowing-f646d6a08dd7)
+- [DeFi Lending Concepts Part 2: Liquidations](https://blog.smlxl.io/defi-lending-concepts-part-2-liquidations-7f0f0ffec96c)
+- [DeFi Lending Concepts Part 3: Rewards](https://medium.com/smlxl/defi-lending-concepts-part-3-rewards-2fc87e78e9c4)   
+
 [Teach Yourself Crypto](https://teachyourselfcrypto.com/#ftoc-module-4-decentralized-finance-defi) good links; also [Khan Acad.](https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/banking-1)   
+
 
 |Exchanges | Video| Documentaion | Supported Assets | LP Token |Details | 
 | ------------- | ------------- | ------------- | ------------- | ------------- |------------- |
@@ -338,17 +343,22 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)  
 `LP` - liquidty providers  
 `PnL` - profit and loss   
+
 `order book model` - an electronic list of buy and sell orders for a specific security or financial instrument organized by price level; lists the number of shares being bid on or offered at each price point, or market depth    
+
 `relayer` - a participant or node that facilitates off-chain matching of orders and assists with on-chain settlement, play a crucial role in decentralized exchange (DEX) protocols and Layer 2 scaling solutions; off-chain order books where they collect and match buy and sell orders from users. By keeping the order book off-chain, relayers can reduce the amount of data that needs to be stored on the blockchain, thereby lowering costs and increasing efficiency; submitting the matched orders to a smart contract that completes the trade on the blockchain itself; `enhance liquidity` and maybe some `compliance` with regulatory requirements.   
+
+`liquidity threshold` -  minimum amount of liquidity needed for market/protocol to function efficiently and avoid excessive price slippage 
+- All protocols define their thresholds as some function of collateral:debt (be it a ratio or a difference)
+- All protocols leave some room for governance to decide the value of per collateral risk parameter in response to changes in market conditions, as some assets are more volatile than others.
+- All protocols denominate their collateral and debt prices using an oracle, in a widely accepted currency (e.g., ETH, USD, DAI).
  
 [Constant product automated makes maker](https://www.youtube.com/watch?v=QNPyFs8Wybk) (CPMMs) are based on the function `x*y=k` which establishes a range of prices for two tokens according to the available quantities (liquidity) of each token. When the supply of token X increases, the token supply of Y must decrease, and vice-versa, to maintain the constant product K.
 
-[Slippage Attacks](https://dacian.me/defi-slippage-attacks)   
-Collateral swaps  
-Concentrated liquidity   
+[Slippage Attacks](https://dacian.me/defi-slippage-attacks)    
 [Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)    
 [Block stuffing](https://www.youtube.com/watch?v=3aPYkx7G7e0) (video) and [finding](https://github.com/code-423n4/2023-05-venus-findings/issues/525)   
-Aave [decoupling logic from state](https://twitter.com/RareSkills_io/status/1687116196343406594)   
+Aave [decoupling logic from state](https://twitter.com/RareSkills_io/status/1687116196343406594)    
 
 ----- 
 
@@ -385,7 +395,7 @@ Debase — removing tokens
 [Spot Price Manipulation](https://consensys.github.io/smart-contract-best-practices/attacks/oracle-manipulation/) - A smart contract needs to determine the price of an asset, e.g., when a user deposits ETH into its system. To achieve this price discovery, the protocol consults its respective Uniswap pool as a source. Exploiting this behavior, an attacker can take out a flash loan to drain one side of the Uniswap pool. Due to the lack of data source diversity, the protocol's internal price is directly manipulated, e.g., to 100 times the original value. The attacker can now perform an action to capture this additional value. For example, an arbitrage trade on top of the newly created price difference or an advantageous position in the system can be gained.   
 
 ----- 
-DeFi Wallets to track (to add more)       
+DeFi Wallets to track (TODO add more)       
 - [Address 1](https://etherscan.io/address/0xbe23cbb62064b8b1550ae5ada59c39d45b1e2081)
 
 ----- 
@@ -417,8 +427,9 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
   - [Medusa](https://github.com/crytic/medusa) - still in Beta      
   - [Mythril](https://github.com/ConsenSys/mythril)
        - uses symbolic execution, SMT solving and taint analysis to detect a variety of security vulnerabilities
-       - [MythX](https://github.com/muellerberndt/awesome-mythx-smart-contract-security-tools)   
-  - [Slither](https://github.com/crytic/slither)
+       - [MythX](https://github.com/muellerberndt/awesome-mythx-smart-contract-security-tools)
+- [Necessist](https://github.com/trailofbits/necessist) - iteratively removes statements and method calls from tests and then runs them. If a test passes with a statement or method call removed, it could indicate a problem in the test. Or worse, it could indicate a problem in the code being tested.        
+- [Slither](https://github.com/crytic/slither)
       - [Slither wiki](https://github.com/crytic/slither/wiki/Usage) // [Foundry Slither](https://book.getfoundry.sh/config/static-analyzers#slither) // [Issues](https://github.com/crytic/slither/issues/1121) // [Blog overview](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/) // [Immunefi video](https://www.youtube.com/watch?v=gRJvvXOF_3c)   
       - `slither path/contract.sol --solc-remaps "@=node_module@"` -  to fix
       - [Printers](https://github.com/crytic/slither#printers)
@@ -426,9 +437,9 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
       -  `--print constructor-calls` `--print modifiers` `--print variable-order` (slots and offset)
       -  `slither-check-erc path ContractName --solc-remaps @=node_modules/@`
       -  `slither-find-paths file.sol [contract.function targets]` and [slither-read-storage](https://github.com/crytic/slither/blob/master/slither/tools/read_storage/README.md)   
-  - [Rattle](https://github.com/crytic/rattle) - binary static analysis   
-  - [Wagmi](https://wagmi.sh/)   
-  - [Web3.js](https://web3js.org/#/)
+- [Rattle](https://github.com/crytic/rattle) - binary static analysis   
+- [Wagmi](https://wagmi.sh/)   
+- [Web3.js](https://web3js.org/#/)
     
 -----
 ### Wallets
@@ -652,8 +663,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `MEV` - maximal (formerly miner) extractable value; referred to as an “invisible tax” that miners can collect from users – essentially, the maximum value a miner can extract from moving around transactions when producing a block on a blockchain network; [video](https://youtu.be/u4sV-Btg1Ag)   
 
-`mocking`- creating objects that simulate the behaviour of real objects; primarily used in unit testing   
-
+`mocking`- creating objects that simulate the behaviour of real objects; primarily used in unit testing; [Patrick Collins mocks](https://youtu.be/sas02qSFZ74?t=2553)    
+ 
 `modifier` - `_;` check requirements prior to execution code that can be run before and/or after a function call
   1. Restrict access
   2. Validate inputs
