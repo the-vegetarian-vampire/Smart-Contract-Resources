@@ -374,7 +374,10 @@ Maximal extractable value: as a pending transaction sits in a mempool, miners an
    2. [Jared from Subway’s bot](https://www.youtube.com/watch?v=3YSpbIQ9hVk)
         
 [Flashbots.net](https://docs.flashbots.net/)    
-[Solid Quant Articles](https://medium.com/@solidquant)      
+[Solid Quant Articles](https://medium.com/@solidquant)    
+
+[Geth](https://geth.ethereum.org/) - official Go implementation of Ethereum protocol; one of many Ethereum clients available, popular and widely used    
+[Lighthouse](https://lighthouse.sigmaprime.io/) - one of several Ethereum 2.0 clients being developed to support the new Eth2 protocol. Other Eth2 clients include Nimbus, Teku, and Prysm.   
 
 ----- 
 
