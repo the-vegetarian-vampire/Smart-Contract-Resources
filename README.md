@@ -207,6 +207,7 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 Reports 
    - 🔖 [Solodit](https://solodit.xyz/)
    - 🔖 [Code4rena](https://code4rena.com/reports)
+     	- [Code4rena github issues](https://github.com/code-423n4)   
    - [Report Blog](https://www.dylandavis.net/2022/06/the-ideal-audit-report/) and [Bowtie's blog](https://bowtiedisland.com/how-to-read-a-smart-contract-audit-report/)   
      
 1. solidity/evm oriented bugs, this include bugs based on compiler version or certain evm specific bugs
@@ -261,12 +262,16 @@ Typical Risk classification:
 
 ### Testing 
 
-Fuzzing: to identify fuzzable functions to successfully fuzz a target, one must comprehend how it functions, establish at least a basic threat model, and decide how to test its security.   
+`Fuzzing` - to identify fuzzable functions to successfully fuzz a target, one must comprehend how it functions, establish a basic threat model and decide how to test its security.   
+
 Foundry Testing introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
+   - Arrange Act and Assert 
    - [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)
    - Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)
    - Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)
    - Foundry testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run
+   - [Hoax](https://youtu.be/sas02qSFZ74?t=5248))   
+   - [txGasPrice](https://youtu.be/sas02qSFZ74?t=5753)   
 
 [Exploiting Precision Loss via Fuzz Testing](https://dacian.me/exploiting-precision-loss-via-fuzz-testing)    
 
@@ -367,7 +372,8 @@ Maximal extractable value: as a pending transaction sits in a mempool, miners an
    1. [Simple MEV bot](https://www.youtube.com/watch?v=dXqp4JqKM_I)
    2. [Jared from Subway’s bot](https://www.youtube.com/watch?v=3YSpbIQ9hVk)
         
-[Flashbots.net](https://docs.flashbots.net/)  
+[Flashbots.net](https://docs.flashbots.net/) 
+[Solid Quant Articles](https://medium.com/@solidquant)   
 
 ----- 
 
@@ -440,6 +446,9 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
 - [Rattle](https://github.com/crytic/rattle) - binary static analysis   
 - [Wagmi](https://wagmi.sh/)   
 - [Web3.js](https://web3js.org/#/)
+
+[Metadock](https://chrome.google.com/webstore/detail/metadock/fkhgpeojcbhimodmppkbbliepkpcgcoo/related) - extends Etherscan; "Proxy Upgrade Log"   
+[Visualizer tool](https://github.com/naddison36/sol2uml)   
     
 -----
 ### Wallets
