@@ -264,18 +264,17 @@ Typical Risk classification:
 
 ### Testing 
 
-`Fuzzing` - to identify fuzzable functions to successfully fuzz a target, one must comprehend how it functions, establish a basic threat model and decide how to test its security.   
-
-Foundry Testing introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
-   - Arrange Act and Assert 
+`Fuzzing` - to identify fuzzable functions to successfully fuzz a target, one must comprehend how it functions, establish a basic threat model and decide how to test its security.  
+   - intro to fuzz tests [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
+   - Arrange Act and Assert  
    - [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)
    - Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)
    - Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)
-   - Foundry testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run
+   - Handler based testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run
    - [Hoax](https://youtu.be/sas02qSFZ74?t=5248)   
    - [txGasPrice](https://youtu.be/sas02qSFZ74?t=5753)   
 
-[Exploiting Precision Loss via Fuzz Testing](https://dacian.me/exploiting-precision-loss-via-fuzz-testing)    
+[Loss via Fuzz Testing Article](https://dacian.me/exploiting-precision-loss-via-fuzz-testing)    
 
 [Formal Verifcation](https://www.youtube.com/watch?v=izpoxfTSaFs&t=691s) - proving or disproving the validity of a system using a mathematical model
 - symbolic execution - explore different execution paths
