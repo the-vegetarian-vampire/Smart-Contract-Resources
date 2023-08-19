@@ -270,7 +270,7 @@ Foundry Testing introduction: Patrick Course [Lesson 7](https://youtu.be/sas02qS
    - Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)
    - Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)
    - Foundry testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run
-   - [Hoax](https://youtu.be/sas02qSFZ74?t=5248))   
+   - [Hoax](https://youtu.be/sas02qSFZ74?t=5248)   
    - [txGasPrice](https://youtu.be/sas02qSFZ74?t=5753)   
 
 [Exploiting Precision Loss via Fuzz Testing](https://dacian.me/exploiting-precision-loss-via-fuzz-testing)    
