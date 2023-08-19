@@ -372,8 +372,8 @@ Maximal extractable value: as a pending transaction sits in a mempool, miners an
    1. [Simple MEV bot](https://www.youtube.com/watch?v=dXqp4JqKM_I)
    2. [Jared from Subway’s bot](https://www.youtube.com/watch?v=3YSpbIQ9hVk)
         
-[Flashbots.net](https://docs.flashbots.net/) 
-[Solid Quant Articles](https://medium.com/@solidquant)   
+[Flashbots.net](https://docs.flashbots.net/)    
+[Solid Quant Articles](https://medium.com/@solidquant)      
 
 ----- 
 
