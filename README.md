@@ -202,7 +202,9 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 
 🔖 [Chainlink Oracle Security Considerations](https://medium.com/cyfrin/chainlink-oracle-defi-attacks-93b6cb6541bf#87fc)   
 🔖 [Weird ERC20](https://github.com/d-xo/weird-erc20#revert-on-zero-value-transfers)  
-🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist        
+🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist    
+
+🔖 [Daily Warden](https://www.dailywarden.com/) - active and upcoming security contests   
 
 Reports 
    - 🔖 [Solodit](https://solodit.xyz/)
