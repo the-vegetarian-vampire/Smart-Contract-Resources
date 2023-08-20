@@ -28,7 +28,7 @@ update:; forge update
 
 build:; forge build
 
-test :; forge tcst 
+test :; forge test 
 
 snapshot :; forge snapshot
 
