@@ -94,7 +94,8 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 ### Interviews and Questions   
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
 - [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
-- [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
+- [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)
+- [Rareskills 140 interview questions for Ethereum Developers](https://www.rareskills.io/post/solidity-interview-questions)   
   
 ----- 
 
