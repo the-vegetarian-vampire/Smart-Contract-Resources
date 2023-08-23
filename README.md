@@ -170,6 +170,9 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 [Top 10 Vulnerabilities In Web3](https://medium.com/immunefi/the-top-10-most-common-vulnerabilities-in-web3-bf7a921d489f)   
 [Attacks via Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)   
 
+
+- Access Control
+  
 - [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks) - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”
      - `single-function`
      - `cross-function` 
@@ -183,7 +186,8 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 - Flash loans - [pump and arbitrage attack](https://www.youtube.com/watch?v=NifGKCiiX3E&t=779s)
 - [Double spending](https://www.investopedia.com/terms/d/doublespending.asp) - 51% is one of the most commonly cited attacks   
 - Denial of service (DoS; DDoS attack)   
-- Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation)    
+- Oracle Manipulation - [Awesome-oracle-manipulation](https://github.com/0xcacti/awesome-oracle-manipulation) 
+  	- 🔖 [Chainlink Oracle Security Considerations](https://medium.com/cyfrin/chainlink-oracle-defi-attacks-93b6cb6541bf#87fc)   
 - [Replay attack](https://learn.bybit.com/blockchain/what-is-a-replay-attack/) - a replay of a transaction primarily taken place while a hard fork is being implemented; a delay or intercept data transmission that occurs over a network. This information can then be processed and repeated numerous times to effectively duplicate transactions   
   
 [Quick vulnerabilities walkthrough](https://youtu.be/JMf5P2DXfkM)    
@@ -203,7 +207,6 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 [What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1)     
 [Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)   
 
-🔖 [Chainlink Oracle Security Considerations](https://medium.com/cyfrin/chainlink-oracle-defi-attacks-93b6cb6541bf#87fc)   
 🔖 [Weird ERC20](https://github.com/d-xo/weird-erc20#revert-on-zero-value-transfers)  
 🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist    
 
