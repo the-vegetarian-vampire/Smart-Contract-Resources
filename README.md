@@ -129,6 +129,10 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 `0x40` - the free memory pointer; a "pointer" is an address within memory and the free memory pointer is the address pointing to the start of unallocated, free memory.    
 `0x80` - action begins   
 `scratch space slots` - [0x00-0x-20), [0x20-0x40)   
+`offset` - determines where within the 256-bit slot a particular piece of data begins; eg. if you have two uint128 variables (128 bits in size), the first will start at an offset of 0 and the second will start at an offset of 128.    
+
+[bit masking](https://stackoverflow.com/questions/10493411/what-is-bit-masking) - defines which bits you want to keep, and which bits you want to clear      
+`short circuiting` — order matters, cheaper operation first for performance     
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
 - check != 0 rather than >    
@@ -150,12 +154,6 @@ A transaction costs a base of 21,000 gas; each computational step costs ~2-10 ga
    5. Storage
 
 Set optimizer as high as possible until improvement stops; [Uniswap optimizer](https://etherscan.io/address/0xe592427a0aece92de3edee1f18e0157c05861564#code)   
- 
-`offset` - determines where within the 256-bit slot a particular piece of data begins; eg. if you have two uint128 variables (128 bits in size), the first will start at an offset of 0 and the second will start at an offset of 128.    
-
-[bit masking](https://stackoverflow.com/questions/10493411/what-is-bit-masking) - defines which bits you want to keep, and which bits you want to clear   
-
-`short circuiting` — order matters, cheaper operation first for performance     
 
 - [Gas puzzles](https://github.com/RareSkills/gas-puzzles)   
 - [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit) and [Huff basics](https://www.youtube.com/watch?v=UWY27vL1cw4)   
@@ -166,14 +164,19 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
 🔖 [Rekt News](https://rekt.news/)   
-🔖 [Vulnerabilities types](https://github.com/kadenzipfel/smart-contract-vulnerabilities) via Kadenzipfel   
+🔖 [Vulnerabilities types](https://github.com/kadenzipfel/smart-contract-vulnerabilities)   
 
+[2022 Auditor Rewind by Patrickd (Secureum)](https://ventral.digital/posts/2022/12/15/ethereum-smart-contract-auditors-2022-rewind)   
 [Top 10 Vulnerabilities In Web3](https://medium.com/immunefi/the-top-10-most-common-vulnerabilities-in-web3-bf7a921d489f)   
 [Attacks via Consensys Best Practices](https://consensys.github.io/smart-contract-best-practices/attacks/)   
 
 - [Reentrancy Attacks](https://github.com/pcaversaccio/reentrancy-attacks) - relies on a certain order of operations; a reentrant procedure can be interrupted in the middle of its execution. Following the interruption, the procedure can be called again (“reentered”) before its previous invocations complete execution; exploits “fallback”
+     - `single-function`
      - `cross-function` 
-     - `cross-contract:` swaps; creator of swap enters into manager contract getting both end of swaps      
+     - `cross-contract:` swaps; creator of swap enters into manager contract getting both end of swaps
+     - `cross-chain`
+     - `read-Only`
+    
 - [Front Running](https://www.youtube.com/watch?v=uElOqz-Htos): `batch overfow` - `gas price pumping` - `prioritized mining`   
    - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between
    - [Etherscan Pending Transactions](https://etherscan.io/txsPending)   
@@ -264,25 +267,39 @@ Typical Risk classification:
 
 ### Testing 
 
-`Fuzzing` - to identify fuzzable functions to successfully fuzz a target, one must comprehend how it functions, establish a basic threat model and decide how to test its security.  
-   - intro to fuzz tests [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)   
-   - Arrange Act and Assert  
-   - [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)
-   - Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)
-   - Invariant testing [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)
-   - Handler based testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run
-   - [Hoax](https://youtu.be/sas02qSFZ74?t=5248)   
-   - [txGasPrice](https://youtu.be/sas02qSFZ74?t=5753)   
+#### Fuzzing
 
-[Loss via Fuzz Testing Article](https://dacian.me/exploiting-precision-loss-via-fuzz-testing)    
+`Fuzzing` - to identify fuzzable functions to successfully fuzz a target, one must comprehend how it functions, establish a basic threat model and decide how to test its security.  
+	- `stateless fuzzing` where the state of the previous run is discarded for every new run   
+	- `stateful fuzzing` fuzzing where final state of previous run is the starting state of the next run   
+   - intro to fuzz tests [Lesson 7](https://youtu.be/sas02qSFZ74?t=281c)
+   - [Trail of bits Youtube Workshop](https://www.youtube.com/playlist?list=PLciHOL_J7Iwqdja9UH4ZzE8dP1IxtsBXIhttps://www.youtube.com/watch?v=83q14K-WNKM)  
+   - Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=25270)
+   - Handler based testing [3:27:25](https://youtu.be/wUjYK5gwNZs?t=12443)  - depth = number of calls in a run
+   - [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)
+   - [Hoax](https://youtu.be/sas02qSFZ74?t=5248)   
+   - [txGasPrice](https://youtu.be/sas02qSFZ74?t=5753)
+
+[Exploiting Precision Loss via Fuzz Testing Article](https://dacian.me/exploiting-precision-loss-via-fuzz-testing)    
+
+ #### Invariant Testing
+ 1. Function Level Invariant
+    - Doesn't rely on system OR could be stateless
+    - Can be tested in isolation: Associative property of addition OR depositing tokens in a contract
+ 2. Syetem Level Invariant
+    - Relies on deployment of a large part or entire system
+    - Usually stateful: User's balance < total supply OR yield is monotonically increasing
+
+ - Patrick Collins [3:23:40](https://youtu.be/wUjYK5gwNZs?t=12220)   
+ - [Rareskills walkthrough](https://www.rareskills.io/post/invariant-testing-solidity)   
 
 [Formal Verifcation](https://www.youtube.com/watch?v=izpoxfTSaFs&t=691s) - proving or disproving the validity of a system using a mathematical model
 - symbolic execution - explore different execution paths
 - `solc --model-checker-engine chc --model-checker-targets overflow contract.sol`
-- [Manitcore](https://github.com/trailofbits/manticore)(deprecated)
 - smtChecker - built into Solidity
 
-[CEI](https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html) - Checks Effects Interactions  
+[CEI](https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html) - Checks Effects Interactions 
+Arrange Act and Assert   
 
 Test types: [28:43](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=1723) - Unit//Integration//Forked//Staging   
      - Using modifiers [1:21:05](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7TxankiqkrkVKXIwOP42&t=4865)   
