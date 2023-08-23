@@ -455,7 +455,8 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
   - [Mythril](https://github.com/ConsenSys/mythril)
        - uses symbolic execution, SMT solving and taint analysis to detect a variety of security vulnerabilities
        - [MythX](https://github.com/muellerberndt/awesome-mythx-smart-contract-security-tools)
-- [Necessist](https://github.com/trailofbits/necessist) - iteratively removes statements and method calls from tests and then runs them. If a test passes with a statement or method call removed, it could indicate a problem in the test. Or worse, it could indicate a problem in the code being tested.        
+- [Necessist](https://github.com/trailofbits/necessist) - iteratively removes statements and method calls from tests and then runs them. If a test passes with a statement or method call removed, it could indicate a problem in the test. Or worse, it could indicate a problem in the code being tested.
+- [Semgrep smart-contracts - DeFi](https://github.com/Decurity/semgrep-smart-contracts) - *Need/Want more info on this
 - [Slither](https://github.com/crytic/slither)
       - [Slither wiki](https://github.com/crytic/slither/wiki/Usage) // [Foundry Slither](https://book.getfoundry.sh/config/static-analyzers#slither) // [Issues](https://github.com/crytic/slither/issues/1121) // [Blog overview](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/) // [Immunefi video](https://www.youtube.com/watch?v=gRJvvXOF_3c)   
       - `slither path/contract.sol --solc-remaps "@=node_module@"` -  to fix
