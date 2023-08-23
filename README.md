@@ -1,6 +1,6 @@
 # Solidity | DeFi | and Blockchain Resources
 
-A general guide to learning Solidity, Defi, and blockchain technologies.    
+Resources for Solidity, Defi, and blockchain technologies.    
 🔖 = bookmark   
 
 🔖 [Remix](https://remix.ethereum.org) - for testing and deploying smart contracts   
