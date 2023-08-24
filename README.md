@@ -123,7 +123,7 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 `Max Fee` - most willing to pay; upper bound of gas price   
 `Max priority fee` - most you are willing to give to the miner   
 `Priority fee` - most willing to give to miner out of what’s left when max fee is subtracted from basefee, aka miner tip   
-`cold access` vs `warm access` - cold access the first time you read a variable, warm access when you read it again  
+`cold access` vs `warm access` - cold access the first time you read a storage slot, warm access when you read it again  
 
 `address` - 20 byte value (still takes up entire 256-bit storage slot, remaining bits in storage slot are left unused)   
 `Boolean` - 1 byte value   
@@ -134,11 +134,13 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 
 [bit masking](https://stackoverflow.com/questions/10493411/what-is-bit-masking) - defines which bits you want to keep, and which bits you want to clear      
 `short circuiting` — order matters, cheaper operation first for performance     
+`bit shifting` - using << (left shift for multiplication) and >> (right shift for division)     
 
 A transaction costs a base of 21,000 gas; each computational step costs ~2-10 gas (usually); each byte of data costs 16 gas (4 if zero byte); editing a storage slot costs 5,000 gas (20,000 if not yet filled)    
-- check != 0 rather than >    
+- check != 0 rather than > because <= and >= compile to multiple opcodes (LT/GT followed by ISZERO for inversion), whereas strict inequalities (< and >) only need a single opcode (LT or GT). 
 - `struct packing` - using a smaller-sized uint when possible will allow Solidity to pack these variables together     
-- `custom errors` - more gas efficient, denoted with `__` two underscores: error FundMe__NotOwner();     
+- `custom errors` - more gas efficient, denoted with `__` two underscores: error FundMe__NotOwner();
+  	- Custom Error vs. Require Encoding: both logged but have different topic signatures at the EVM level. Custom errors use own error signature, while requires use a Keccak-256 hash of the error string.   
 - `constant` - naming convention ALL_CAPS; more `gas efficient`    
 - `immutable` - set inside the constructor but cannot be modified after, more `gas efficient`: `i_owner`, i meaning immutable     
 - in testing it's common to prepend storage variables with `s_`
@@ -159,7 +161,8 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 - [Gas puzzles](https://github.com/RareSkills/gas-puzzles)   
 - [Yul](https://docs.soliditylang.org/en/latest/yul.html) and [Huff](https://docs.huff.sh/) (lower level bytecode languages) [Huff starter Kit](https://github.com/smartcontractkit/huff-starter-kit) and [Huff basics](https://www.youtube.com/watch?v=UWY27vL1cw4)   
 - Solidity vs Vyper [gas comparison](https://github.com/PatrickAlphaC/sc-language-comparison)
-- [Salted contract creations / create2](https://docs.soliditylang.org/en/latest/control-structures.html#salted-contract-creations-create2)    
+- [Salted contract creations / create2](https://docs.soliditylang.org/en/latest/control-structures.html#salted-contract-creations-create2)
+- The EVM has a hard limit on the stack depth of 1024. This means that at any point in the execution of a transaction, there cannot be more than 1024 elements on the stack. If an operation tries to exceed this limit, it will fail; This will consume all the gas provided to the transaction.   
   
 -----
 
@@ -379,8 +382,11 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 - All protocols define their thresholds as some function of collateral:debt (be it a ratio or a difference)
 - All protocols leave some room for governance to decide the value of per collateral risk parameter in response to changes in market conditions, as some assets are more volatile than others.
 - All protocols denominate their collateral and debt prices using an oracle, in a widely accepted currency (e.g., ETH, USD, DAI).
- 
+
+`bonding curve` - a mathematical curve that defines the relationship between the price and the supply of tokens. Often used in automated market makers.    
 [Constant product automated makes maker](https://www.youtube.com/watch?v=QNPyFs8Wybk) (CPMMs) are based on the function `x*y=k` which establishes a range of prices for two tokens according to the available quantities (liquidity) of each token. When the supply of token X increases, the token supply of Y must decrease, and vice-versa, to maintain the constant product K.
+
+`kink parameter` - the point in the interest rate model of Compound Finance where the interest rate stops increasing linearly and starts increasing polynomially.   
 
 [Slippage Attacks](https://dacian.me/defi-slippage-attacks)    
 [Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)    
@@ -559,6 +565,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `Beacon Chain` - a [separate chain](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain) from the original Ethereum Mainnet, running side-by-side; [withdrawals](https://ethereum.org/en/staking/withdrawals/)   
 
+`Beacon in Proxies`  - a beacon is a contract that provides the implementation address for proxies, allowing multiple proxies to upgrade their logic by just updating the beacon.
+
 `Black Thursday` [article](https://decrypt.co/61200/bitcoin-black-thursday-one-year-later) - Thursday March 12th, 2020: cryptocurrency markets suddenly collapsed (in tandem with traditional markets), with bitcoin prices getting halved in less than a day.   
 
 `blob` - binary large object is a collection of data of an arbitrary size. Blobs do not have to follow a given format or have any metadata associated with them. They are a series of bytes, with each byte made up of 8 bits (a 1 or a 0, hence the "binary" descriptor). Any type of data can go in a blob; efficient and cheap transaction.   
@@ -579,6 +587,9 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `coinbase transaction` - the first transaction in a block. Miners use it to collect the block reward, and any additional transaction fees.   
 
+`commit-reveal scheme` - two-step process where users first commit to a choice without revealing it. Later, they reveal their choice. This prevents others from seeing the original choice until the reveal stage. Used for voting, random number generation, etc.   
+	- Rock-Paper-Scissors Game Design: Use a commit-reveal scheme. Players first commit (send hash of their choice + secret) and then reveal in the next step.   
+
 `constant` - naming convention ALL_CAPS; more `gas efficient`   
 
 `constructor` - called once when contract is deployed    
@@ -594,7 +605,9 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `data Locations` - Storage, Memory and Calldata
   1. storage - variable is a state variable (store on blockchain)
   2. memory - variable is in memory and it exists while a function is being called
-  3. calldata - special data location that contains function arguments: [decoding calldata](https://youtu.be/sas02qSFZ74?t=38028)       
+  3. calldata - special data location that contains function arguments: [decoding calldata](https://youtu.be/sas02qSFZ74?t=38028)
+  	- Cost for setting a storage slot from zero to non-zero (higher gas cost).  
+     	- Cost for modifying a storage slot that is already non-zero (medium gas cost).     
 
 `delegatcall` - identical to a message call apart from the fact that the code at the target address is executed in the context; a contract can dynamically load code from a different address at runtime. Storage, current address and balance still refer to the calling contract, only the code is taken from the called address. Pattick Collins explanation [1:05:07:37](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=104857); [shorter video](https://www.youtube.com/watch?v=uawCDnxFJ-0)      
 
@@ -614,7 +627,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `EOA` - Externally Owned Account; in general, there are two types of accounts: externally owned accounts, controlled by private keys, and contract accounts, controlled by their contract code   
 
-`events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage  
+`events` - allow logging to the Ethereum blockchain; Use cases for events are: Listening for events and updating user interface; cheap form of storage 
+	- Anonymous Solidity Event - does not store its signature in the topics list of the log. Instead, only the arguments are stored.
 
 `EVM` - Ethereum is a stack based architecture, single threaded.   
 
@@ -626,6 +640,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `flash loan` - a smart contract transaction in which a lender smart contract lends assets to a borrower smart contract with the condition that the assets are returned, plus an optional fee, before the end of the transaction. This ERC specifies interfaces for lenders to accept flash loan requests, and for borrowers to take temporary control of the transaction within the lender execution. The process for the safe execution of flash loans is also specified.
 
 `flash-swap` - all trades must occur during single transaction: opportunity for arbitragers   
+
+`floating point arithmetic` - Solidity doesn't support floating point arithmetic natively due to the deterministic nature of the Ethereum Virtual Machine (EVM). Floating point operations can lead to imprecise calculations, which are not suitable for financial operations on a blockchain where exactness is paramount. However, developers can use fixed-point arithmetic libraries to achieve decimal-like precision.   
 
 `flooding` - [routing](https://en.wikipedia.org/wiki/Flooding_%28computer_networking%29)   
 
@@ -741,9 +757,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
    - proxy contract --> points to correct implementation
    - the user makes calls to proxy
    - the admin decides which contract to upgrade etc
-   - small proxies, usually referred to as `clones` can be used to deploy code only once and re-use it over and over again.
-   - 
- 
+   - small proxies, usually referred to as `clones` can be used to deploy code only once and re-use it over and over again.   
 
 `pure` - static, does not effect or modify state, more computational [free function]   
 
@@ -795,6 +809,9 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 `TPS` - transactions per second [chart](https://coincodex.com/article/14198/layer-1-performance-comparing-6-leading-blockchains/)     
 
 `transfer vs. transferFrom (aka delegatedTransfer)` - `transfer` - simply transfer the tokens from one address to another; `transferFrom` -you give permission for someone else to transfer from your account; someone else can be either an externally-owned account or a smart-contract account   
+ 	- transferFrom vs. safeTransferFrom in ERC721:
+* transferFrom: Transfers ownership of a token.   
+* safeTransferFrom: Same as transferFrom but checks if the receiver is a smart contract and if so, checks to ensure it can handle ERC721 tokens.   
 
 `tumbler` - a service that mixes potentially identifiable or "tainted" cryptocurrency funds with others, so as to obscure the trail back to the fund's original source: Tornado cash; Zcash and Zk-SNARK's?   
 
@@ -813,6 +830,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) - unique sequence of characters that identifies a logical or physical resource used by web technologies.   
    - https://ethereum.stackexchange.com/questions/147899/why-is-it-called-tokenuri-instead-of-tokenurl
 
+`UUPS (Universal Upgradeable Proxy Standard)` - an upgradeable contract design pattern that separates a contract's logic from its data storage, allowing the logic to be replaced without affecting the stored data, thereby facilitating efficient and flexible smart contract upgrades; is more gas-efficient and flexible than the Transparent Upgradeable Proxy, but requires more care to ensure safety.   
+
 `whitelisting` - allows only pre-approved entities to interact with a particular service, contract, or system within the blockchain environment; only authorized participants can access specific functionalities    
 
 `witness` - [cryptography](https://crypto.stackexchange.com/questions/43462/what-is-a-witness-in-zero-knowledge-proof) solution to puzzle; unspent transaction output, any solution to unlock UTXO; see also [Segregated Witness](https://www.investopedia.com/terms/s/segwit-segregated-witness.asp)   
@@ -828,5 +847,5 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 [zkproof](https://www.youtube.com/watch?v=e_Im2g2xsAg&t=81s) - method by which one party (the prover) can prove to another party (the verifier) that a given statement is true, while avoiding conveying to the verifier any information beyond the mere fact of the statement's truth [ethereum Zk docs](https://ethereum.org/en/zero-knowledge-proofs/)
    - [zkRollup](https://ethereum.org/en/developers/docs/scaling/zk-rollups/) - bundling transactions off chain and submitting a single transaction onchain 
    - `zkSNARK` - succinct non interactive argument of knowledge
-
+   - `optimistic rollup` - assumes transactions are valid by default until proven otherwise. Incorrect transactions are challenged and rolled back.
 
