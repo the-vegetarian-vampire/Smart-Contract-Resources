@@ -182,7 +182,7 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
      - `cross-function` 
      - `cross-contract:` swaps; creator of swap enters into manager contract getting both end of swaps
      - `cross-chain`
-     - `read-Only`
+     - `read-Only` - a contract is re-entered during a call, but the reentrant call only reads data and doesn't modify state. Even if no state changes, it can still be a vulnerability depending on how the read data is used afterward.   
     
 - [Front Running](https://www.youtube.com/watch?v=uElOqz-Htos): `batch overfow` - `gas price pumping` - `prioritized mining`   
    - [Sandwich Attack](https://www.youtube.com/watch?v=26lWg6UIrKw) - a form of front-running and back-running simultaneously, with the original pending transaction sandwiched in between
@@ -402,6 +402,8 @@ Maximal extractable value: as a pending transaction sits in a mempool, miners an
         
 [Flashbots.net](https://docs.flashbots.net/)    
 [Solid Quant Articles](https://medium.com/@solidquant)    
+
+`Uncle-block Attack` - miners can deliberately exclude certain transactions to later include them in an uncle block, profiting from MEV without executing the transactions.
 
 [Geth](https://geth.ethereum.org/) - official Go implementation of Ethereum protocol; one of many Ethereum clients available, popular and widely used    
 [Lighthouse](https://lighthouse.sigmaprime.io/) - one of several Ethereum 2.0 clients being developed to support the new Eth2 protocol. Other Eth2 clients include Nimbus, Teku, and Prysm.   
@@ -832,6 +834,8 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 `UUPS (Universal Upgradeable Proxy Standard)` - an upgradeable contract design pattern that separates a contract's logic from its data storage, allowing the logic to be replaced without affecting the stored data, thereby facilitating efficient and flexible smart contract upgrades; is more gas-efficient and flexible than the Transparent Upgradeable Proxy, but requires more care to ensure safety.   
 
+`verbatim` - introduced in Solidity 0.8.4, it allows injecting precompiled bytecode into the contract, useful for specific cryptographic operations.   
+
 `whitelisting` - allows only pre-approved entities to interact with a particular service, contract, or system within the blockchain environment; only authorized participants can access specific functionalities    
 
 `witness` - [cryptography](https://crypto.stackexchange.com/questions/43462/what-is-a-witness-in-zero-knowledge-proof) solution to puzzle; unspent transaction output, any solution to unlock UTXO; see also [Segregated Witness](https://www.investopedia.com/terms/s/segwit-segregated-witness.asp)   
@@ -848,4 +852,6 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
    - [zkRollup](https://ethereum.org/en/developers/docs/scaling/zk-rollups/) - bundling transactions off chain and submitting a single transaction onchain 
    - `zkSNARK` - succinct non interactive argument of knowledge
    - `optimistic rollup` - assumes transactions are valid by default until proven otherwise. Incorrect transactions are challenged and rolled back.
+   - zk-friendly vs. non-zk-friendly hash Functions: zk-friendly hash functions can be efficiently computed inside a zk-SNARK circuit, whereas non-zk-friendly ones can't.
+   - Nullifier in Zero Knowledge: It's a unique value associated with a secret, used in zk-SNARKs protocols (like Zcash) to prevent double-spending without revealing the secret itself.   
 
