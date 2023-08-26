@@ -209,7 +209,7 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 `What is an audit?` - security focused code review; it is a best effort endeavor, not a guarantee  
 [Audit Techniques & Tools 101](https://secureum.substack.com/p/audit-techniques-and-tools-101?utm_campaign=post&utm_medium=web) by Secureum   
 [What are the Actual Flaws in Important Smart Contracts](https://arxiv.org/abs/1911.07567v1)     
-[Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)   
+[Cantina](https://cantina.xyz/welcome)   
 
 🔖 [Weird ERC20](https://github.com/d-xo/weird-erc20#revert-on-zero-value-transfers)  
 🔖 [The Solcurity Standard](https://github.com/transmissions11/solcurity) audit checklist    
@@ -383,7 +383,8 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 - All protocols leave some room for governance to decide the value of per collateral risk parameter in response to changes in market conditions, as some assets are more volatile than others.
 - All protocols denominate their collateral and debt prices using an oracle, in a widely accepted currency (e.g., ETH, USD, DAI).
 
-`bonding curve` - a mathematical curve that defines the relationship between the price and the supply of tokens. Often used in automated market makers.    
+`bonding curve` - a mathematical curve that defines the relationship between the price and the supply of tokens. Often used in automated market makers.   
+
 [Constant product automated makes maker](https://www.youtube.com/watch?v=QNPyFs8Wybk) (CPMMs) are based on the function `x*y=k` which establishes a range of prices for two tokens according to the available quantities (liquidity) of each token. When the supply of token X increases, the token supply of Y must decrease, and vice-versa, to maintain the constant product K.
 
 `kink parameter` - the point in the interest rate model of Compound Finance where the interest rate stops increasing linearly and starts increasing polynomially.   
@@ -392,6 +393,13 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 [Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)    
 [Block stuffing](https://www.youtube.com/watch?v=3aPYkx7G7e0) (video) and [finding](https://github.com/code-423n4/2023-05-venus-findings/issues/525)   
 Aave [decoupling logic from state](https://twitter.com/RareSkills_io/status/1687116196343406594)    
+
+#### DeFi Reports
+[Toxic Liquidation Spirals](https://arxiv.org/abs/2212.07306)   
+[Gauntlet’s Aave Market Risk Assessment](https://gauntlet.network/reports/aave)    
+[Uniswap V3 TWAP Oracle Risk](https://community.chaoslabs.xyz/uniswap/twap)     
+[yAudit Trade Review](https://reports.yaudit.dev/reports/12-2022-RageTrade/#1-high---incorrect-ratios-used-for-delta-neutral-rebalancing)   
+
 
 ----- 
 
