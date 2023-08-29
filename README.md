@@ -169,6 +169,7 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
 🔖 [Rekt News](https://rekt.news/)   
 🔖 [Vulnerabilities types](https://github.com/kadenzipfel/smart-contract-vulnerabilities)   
+[Defillama Hacks](https://defillama.com/hacks)   
 
 [2022 Auditor Rewind by Patrickd (Secureum)](https://ventral.digital/posts/2022/12/15/ethereum-smart-contract-auditors-2022-rewind)   
 [Top 10 Vulnerabilities In Web3](https://medium.com/immunefi/the-top-10-most-common-vulnerabilities-in-web3-bf7a921d489f)   
@@ -242,6 +243,8 @@ Most auditor discussions are on Twitter.
 - [Dacian's blog](https://dacian.me/smart-contract-auditor-portfolio)
 - [Volodya's Blog](https://0xvolodya.hashnode.dev/how-i-earned-25000-auditing-and-ranked-1-on-60-day-leaderboard)
 - [Blockchain Threat Intelligence Blog](https://newsletter.blockthreat.io/)
+- [Addison Spiegel](https://addison.is/posts/curve-whitehat) Curve Finance White Hat
+  - [Etherscan transaction](https://etherscan.io/tx/0x006763dff653ecddfd3681181a29e7e6d6c2aaa7bafb27fe1376f3f7ce367c1e)
 
 - [The Auditooor Grindset blog](https://www.zellic.io/blog/the-auditooor-grindset)   
 - [5 Solidity Code Smells](https://medium.com/coinmonks/5-solidity-code-smells-87bb2f259dde)   
@@ -371,7 +374,9 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 
 `APY` - [annual percentage yield](https://www.investopedia.com/terms/a/apy.asp)     
 `LTV` - [Loan To Value](https://www.investopedia.com/terms/l/loantovalue.asp)  
-`LP` - liquidty providers  
+`LP` - liquidty providers   
+`LSTs` - liquid staking tokens   
+`LSDs` - liquid staking derivatives   
 `PnL` - profit and loss   
 
 `order book model` - an electronic list of buy and sell orders for a specific security or financial instrument organized by price level; lists the number of shares being bid on or offered at each price point, or market depth    
@@ -388,6 +393,8 @@ Lido - [staking](https://www.youtube.com/watch?v=VQ_uvak1JPw)
 [Constant product automated makes maker](https://www.youtube.com/watch?v=QNPyFs8Wybk) (CPMMs) are based on the function `x*y=k` which establishes a range of prices for two tokens according to the available quantities (liquidity) of each token. When the supply of token X increases, the token supply of Y must decrease, and vice-versa, to maintain the constant product K.
 
 `kink parameter` - the point in the interest rate model of Compound Finance where the interest rate stops increasing linearly and starts increasing polynomially.   
+
+`Collateralized Debt Position` CDP - the unit of accounting used to track a specific borrowed debt amount, the respective collateral that backs it, as well as the ratio between the value of these two assets, known as the `Individual Collateral Ratio` (ICR).   
 
 [Slippage Attacks](https://dacian.me/defi-slippage-attacks)    
 [Build a liquidation bot](https://docs.aave.com/faq/liquidations) (docs)/[video](https://youtu.be/gyMwXuJrbJQ?list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=72020)    
@@ -410,6 +417,7 @@ Maximal extractable value: as a pending transaction sits in a mempool, miners an
         
 [Flashbots.net](https://docs.flashbots.net/)    
 [Solid Quant Articles](https://medium.com/@solidquant)    
+[Flashbots Searcher](https://github.com/flashbots/searcher-sponsored-tx)   
 
 `Uncle-block Attack` - miners can deliberately exclude certain transactions to later include them in an uncle block, profiting from MEV without executing the transactions.
 
@@ -426,7 +434,10 @@ Types
    2. Crypto based
    3. Algorithmic
 
+`soft peg` - value not strictly fixed but is instead kept within a certain range relative to another asset.
+
 Dai - [MakerDAO](https://makerdao.com/en/)   
+[Frax](https://frax.finance/)   
 
 [Stablecoin Trilemma](https://www.youtube.com/live/x-3PWe5dAQY?feature=share): scalable, decentralized, stable.
 
@@ -573,7 +584,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
 
 [atomic swap](https://www.investopedia.com/terms/a/atomic-swaps.asp) - an exchange of cryptocurrencies from separate blockchains; the term "atomic state" in which a state has no substates; it either happens or it doesn't—there is no other alternative. 
 
-`Beacon Chain` - a [separate chain](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain) from the original Ethereum Mainnet, running side-by-side; [withdrawals](https://ethereum.org/en/staking/withdrawals/)   
+[Beacon Chain](https://ethereum.org/en/roadmap/beacon-chain/) -  introduced proof-of-stake to the Ethereum ecosystem; was a [separate chain](https://www.alchemy.com/overviews/what-is-the-ethereum-beacon-chain) from the original Ethereum Mainnet, running side-by-side that merged with the original Ethereum proof-of-work chain in September 2022; [withdrawals](https://ethereum.org/en/staking/withdrawals/)   
 
 `Beacon in Proxies`  - a beacon is a contract that provides the implementation address for proxies, allowing multiple proxies to upgrade their logic by just updating the beacon.
 
@@ -627,7 +638,7 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
  
 `dutch auction` - a descending price auction; an auctioneer starts with a very high price, incrementally lowering the price until someone places a bid   
 
-`elliptic curve` - [elliptic curve cryptography](https://medium.com/coinmonks/learn-how-to-code-elliptic-curve-cryptography-a952dfdc20ab) with fastecdsa library   
+`elliptic curve` - [elliptic curve cryptography](https://medium.com/coinmonks/learn-how-to-code-elliptic-curve-cryptography-a952dfdc20ab) with fastecdsa library; also OZ's [ECDSA](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/cryptography/ECDSA.sol) - Elliptic Curve Digital Signature Algorithm (ECDSA) operations used to verify a message was signed by the holder of the private keys of a given address.   
   
 `enums` - useful to model choice and keep track of state/can be declared outside of a contract   
 
