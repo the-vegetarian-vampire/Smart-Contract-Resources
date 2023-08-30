@@ -417,6 +417,8 @@ Maximal extractable value: as a pending transaction sits in a mempool, miners an
         
 [Flashbots.net](https://docs.flashbots.net/)    
 [Solid Quant Articles](https://medium.com/@solidquant)    
+ - [MEV Bot Templates](https://github.com/solidquant/mev-templates?source=post_page-----72376a820291--------------------------------)
+
 [Flashbots Searcher](https://github.com/flashbots/searcher-sponsored-tx)  - repository contains a simple Flashbots "searcher" for submitting a transaction from an executor account, but paying for the transaction from a sponsor account.   
 
 `Uncle-block Attack` - miners can deliberately exclude certain transactions to later include them in an uncle block, profiting from MEV without executing the transactions.
