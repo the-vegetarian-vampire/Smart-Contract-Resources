@@ -492,12 +492,14 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
 - [Semgrep smart-contracts - DeFi](https://github.com/Decurity/semgrep-smart-contracts) - *Need/Want more info on this
 - [Slither](https://github.com/crytic/slither)
       - [Slither wiki](https://github.com/crytic/slither/wiki/Usage) // [Foundry Slither](https://book.getfoundry.sh/config/static-analyzers#slither) // [Issues](https://github.com/crytic/slither/issues/1121) // [Blog overview](https://blog.trailofbits.com/2019/05/27/slither-the-leading-static-analyzer-for-smart-contracts/) // [Immunefi video](https://www.youtube.com/watch?v=gRJvvXOF_3c)   
-      - `slither path/contract.sol --solc-remaps "@=node_module@"` -  to fix
-      - [Printers](https://github.com/crytic/slither#printers)
-      -  `--print human-summary` `--triage-mode` `--print function-id` `slither . --print cfg` (control flow graph) 
-      -  `--print constructor-calls` `--print modifiers` `--print variable-order` (slots and offset)
-      -  `slither-check-erc path ContractName --solc-remaps @=node_modules/@`
-      -  `slither-find-paths file.sol [contract.function targets]` and [slither-read-storage](https://github.com/crytic/slither/blob/master/slither/tools/read_storage/README.md)   
+      - `slither path/contract.sol --solc-remaps "@=node_module@"` -  to fix   
+      - [Printers](https://github.com/crytic/slither/wiki/Printer-Documentation)      
+      -  `--print human-summary` `--triage-mode` `--print function-id` `slither . --print cfg` (control flow graph)   
+      - `--print function-summary`   
+      -  `--print constructor-calls` `--print modifiers` `--print variable-order` (slots and offset)   
+      -  `slither-check-erc path ContractName --solc-remaps @=node_modules/@`   
+      -  `slither-find-paths file.sol [contract.function targets]`   
+      - [slither-read-storage](https://github.com/crytic/slither/blob/master/slither/tools/read_storage/README.md)      
 - [Rattle](https://github.com/crytic/rattle) - binary static analysis   
 - [Wagmi](https://wagmi.sh/)   
 - [Web3.js](https://web3js.org/#/)
