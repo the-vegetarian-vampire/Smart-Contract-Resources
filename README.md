@@ -15,6 +15,7 @@ Resources for Solidity, Defi, and blockchain technologies.
 
 🔖 [Solidity Contract Layout](https://github.com/Cyfrin/foundry-full-course-f23#solidity-contract-layout)      
 🔖 [Awesome Foundry](https://github.com/crisgarner/awesome-foundry#awesome-foundry)    
+🔖 [RareSkills Git](https://github.com/RareSkills)   
 
 ## Tutorial Resources
 
@@ -25,9 +26,6 @@ Resources for Solidity, Defi, and blockchain technologies.
 `2. Smart Contract Programmer:` 
    - [Youtube](https://www.youtube.com/@smartcontractprogrammer) (one of the creators of Solidity by example)   
    - [Foundry playlist](https://www.youtube.com/playlist?list=PLO5VPQH6OWdUrKEWPF07CSuVm3T99DQki)   
-  
-`3. HashLips NFT:` 
-   - [Youtube](https://www.youtube.com/@HashLipsNFT) and [Github](https://github.com/hashlips)   
 
 🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)    
 🔖 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/) (great links to DeFi)   
@@ -94,8 +92,9 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
 ### Interviews and Questions   
 - [10 Solidity Questions](https://www.youtube.com/watch?v=Vzjc-xffhJs)   
 - [40 Solidity Questions](https://www.youtube.com/watch?v=tpekiuASieo)   
-- [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)
+- [100 Solidity Questions](https://youtu.be/FoCM07HlfhU?t=1644)   
 - [Rareskills 140 interview questions for Ethereum Developers](https://www.rareskills.io/post/solidity-interview-questions)   
+- [Jumpdest](https://www.jumpdest.dev/)   
   
 ----- 
 
