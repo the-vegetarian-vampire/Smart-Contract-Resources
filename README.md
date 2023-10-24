@@ -902,5 +902,31 @@ NFT's and Atomic NFT's [lecture](https://youtu.be/tVyS3Ut_1eE?t=2535) with Ari J
    - `zkSNARK` - succinct non interactive argument of knowledge
    - `optimistic rollup` - assumes transactions are valid by default until proven otherwise. Incorrect transactions are challenged and rolled back.
    - zk-friendly vs. non-zk-friendly hash Functions: zk-friendly hash functions can be efficiently computed inside a zk-SNARK circuit, whereas non-zk-friendly ones can't.
-   - Nullifier in Zero Knowledge: It's a unique value associated with a secret, used in zk-SNARKs protocols (like Zcash) to prevent double-spending without revealing the secret itself.   
+   - Nullifier in Zero Knowledge: It's a unique value associated with a secret, used in zk-SNARKs protocols (like Zcash) to prevent double-spending without revealing the secret itself.
+
+## Solidity Contract Layout
+
+```
+// Layout of Contract:
+// version
+// imports
+// errors
+// interfaces, libraries, contracts
+// Type declarations
+// State variables
+// Events
+// Modifiers
+// Functions
+
+// Layout of Functions:
+// constructor
+// receive function (if exists)
+// fallback function (if exists)
+// external
+// public
+// internal
+// private
+// internal & private view & pure functions
+// external & public view & pure functions
+```
 
