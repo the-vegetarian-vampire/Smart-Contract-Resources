@@ -25,7 +25,11 @@ Resources for Solidity, Defi, and blockchain technologies.
   
 `2. Smart Contract Programmer:` 
    - [Youtube](https://www.youtube.com/@smartcontractprogrammer) (one of the creators of Solidity by example)   
-   - [Foundry playlist](https://www.youtube.com/playlist?list=PLO5VPQH6OWdUrKEWPF07CSuVm3T99DQki)   
+   - [Foundry playlist](https://www.youtube.com/playlist?list=PLO5VPQH6OWdUrKEWPF07CSuVm3T99DQki)
+
+`3. Guardian Audits - Advanced Web3 Security Course`
+   - [Youtube](https://www.youtube.com/watch?v=DRZogmD647U)
+   - [Gateway-Free-Web3-Security-Course](https://guardianaudits.notion.site/guardianaudits/Gateway-Free-Web3-Security-Course-574f4d819c144d7895cda6d61ba26503)
 
 🔖 [Secureum Mind Map](https://github.com/x676f64/secureum-mind_map)    
 🔖 [Teachyourselfcrypto.com](https://teachyourselfcrypto.com/) (great links to DeFi)   
@@ -229,7 +233,12 @@ Reports
    - 🔖 [Solodit](https://solodit.xyz/)
    - 🔖 [Code4rena](https://code4rena.com/reports)
      	- [Code4rena github issues](https://github.com/code-423n4)   
-   - [Report Blog](https://www.dylandavis.net/2022/06/the-ideal-audit-report/) and [Bowtie's blog](https://bowtiedisland.com/how-to-read-a-smart-contract-audit-report/)   
+   - [Report Blog](https://www.dylandavis.net/2022/06/the-ideal-audit-report/) and [Bowtie's blog](https://bowtiedisland.com/how-to-read-a-smart-contract-audit-report/)
+   - use ` ```diff` for report comparison when reporting a block of code
+     	```diff
+      + this is correct
+      - this is incorrect 
+      ```
      
 1. solidity/evm oriented bugs, this include bugs based on compiler version or certain evm specific bugs
 2. Logical bugs, this is arguably the biggest surface for attacks as it can be very project-specific
@@ -297,6 +306,9 @@ Typical Risk classification:
    - [Makefile](https://github.com/the-vegetarian-vampire/Solidity-Smart-Contract-Resources/blob/main/Smart%20Contracts/Makefile)
    - [Hoax](https://youtu.be/sas02qSFZ74?t=5248)   
    - [txGasPrice](https://youtu.be/sas02qSFZ74?t=5753)
+
+In 𝗳𝗼𝘂𝗻𝗱𝗿𝘆.𝘁𝗼𝗺𝗹 and add: `𝙫𝙞𝙖_𝙞𝙧 = 𝙛𝙖𝙡𝙨𝙚` to opt-out of [Solidity's IR compilation](https://docs.soliditylang.org/en/latest/ir-breaking-changes.html).   
+`Cloc` - will count lines of code: once installed: `cloc .`
 
 [Exploiting Precision Loss via Fuzz Testing Article](https://dacian.me/exploiting-precision-loss-via-fuzz-testing)    
 
