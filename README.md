@@ -128,16 +128,10 @@ Foundry Debugger [7:01:10](https://youtu.be/sas02qSFZ74?list=PL4Rj_WH6yLgWe7Txan
 `Priority fee` - most willing to give to miner out of what’s left when max fee is subtracted from basefee, aka miner tip   
 `cold access` vs `warm access` - cold access the first time you read a storage slot, warm access when you read it again  
 
-|type | bytes| 
-| ------------- | ------------- | 
-| address | 20 | 
-| bool | 1 | 
-| uint8| 1 | 
-| uint16 | 2 | 
-| uint32| 4 | 
-| uint64 | 8 | 
-| uint128| 16 | 
-| uint256 | 32 | 
+|   type  | address | bool | uint8 | uint16 | uint32 | uint64 | uint128 | uint256 |
+|-------|---------|------|-------|--------|--------|--------|---------|---------|
+| bytes | 20      | 1    | 1     | 2      | 4      | 8      | 16      | 32      |
+
 
 `0x40` - the free memory pointer; a "pointer" is an address within memory and the free memory pointer is the address pointing to the start of unallocated, free memory.    
 `0x80` - action begins   
