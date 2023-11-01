@@ -87,7 +87,8 @@ Matt Levine: [Bloomberg](https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/m
  
 🔖 [Damn Vulnerable DeFi](https://www.damnvulnerabledefi.xyz/)    
    - [In Foundry](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry)   
-        
+
+[Paradigm CTFs](https://ctf.paradigm.xyz/)    
 [Crypto Zombies](https://cryptozombies.io/) (old)     
 [Speed Run Ethereum](https://speedrunethereum.com/) via [Austin Griffith](https://www.youtube.com/@austingriffith3550/videos)   
 [JumpCryptoHQ](https://github.com/keone/crypto-reading-list/blob/main/Exercises.md) exercises   
