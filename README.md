@@ -45,10 +45,19 @@ Resources for Solidity, Defi, and blockchain technologies.
 [Why Hexadecimal](https://www.youtube.com/watch?v=dPxCGlW9lfM&t=367s) and [256 Bit Computing](https://en.wikipedia.org/wiki/256-bit_computing)   
 
 -----    
+
+### News
+🔖 [Rekt ](https://rekt.news/)      
+[Web3isgoinggreat](https://web3isgoinggreat.com/)   
+
+-----
+
 ### Youtube Resources
 
 🔖 Andy Li - [interviews](https://www.youtube.com/@andyli)      
 Johnny Time - [interviews](https://www.youtube.com/@JohnnyTime)  
+[OpenSense - Free Ethereum Security](https://www.youtube.com/@opensensepw)   
+
 [Blockchain and Money](https://www.youtube.com/playlist?list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn) (MIT Fall 2018) ...taught by Gary Gensler...   
    - Conceptual idea of contracts with Harvard Prof. [Lawrence Lessig](https://youtu.be/JPkgJwJHYSc)  
 
@@ -174,7 +183,6 @@ Set optimizer as high as possible until improvement stops; [Uniswap optimizer](h
 -----
 
 ## Hacks and [Security](https://docs.soliditylang.org/en/latest/security-considerations.html#pitfalls)
-🔖 [Rekt News](https://rekt.news/)   
 🔖 [Vulnerabilities types](https://github.com/kadenzipfel/smart-contract-vulnerabilities)   
 [Defillama Hacks](https://defillama.com/hacks)   
 
