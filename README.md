@@ -22,7 +22,7 @@ Resources for Solidity, Defi, and blockchain technologies.
 `1. Patrick Collins Courses:` 
    -  Harhat Course - [Youtube](https://www.youtube.com/watch?v=gyMwXuJrbJQ&list=PLQj6KMbjsRt7ft3xEtU8WhkK5-TsxDplY&t=12715s) and [Github](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)   
    -  🔖 Foundry Course - [Youtube](https://github.com/Cyfrin/foundry-full-course-f23) and [Github](https://github.com/Cyfrin/foundry-full-course-f23)
-   -  Smart Contract Audits, Security, and DeFi Course [Youtube](https://www.youtube.com/watch?v=pUWmJ86X_do&t=64331s)
+   -  Smart Contract Audits, Security, and DeFi Course [Youtube](https://www.youtube.com/watch?v=pUWmJ86X_do&t=64331s) and [Github](https://github.com/Cyfrin/security-and-auditing-full-course-s23)   
   
 `2. Smart Contract Programmer:` 
    - [Youtube](https://www.youtube.com/@smartcontractprogrammer) (one of the creators of Solidity by example)   
