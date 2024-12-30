@@ -527,6 +527,7 @@ Nomi Prins - [Collusion: How Central Bankers Rigged the World](https://www.amazo
 - [Rattle](https://github.com/crytic/rattle) - binary static analysis   
 - [Wagmi](https://wagmi.sh/)   
 - [Web3.js](https://web3js.org/#/)
+- [Web3Bugs](https://github.com/ZhangZhuoSJTU/Web3Bugs)
 
 [Metadock](https://chrome.google.com/webstore/detail/metadock/fkhgpeojcbhimodmppkbbliepkpcgcoo/related) - extends Etherscan; "Proxy Upgrade Log"   
 [Visualizer tool](https://github.com/naddison36/sol2uml)   
